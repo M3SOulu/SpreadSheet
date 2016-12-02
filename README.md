@@ -9,8 +9,7 @@ The spreadsheet shall be able to store and return strings entered between single
 Therefore, when a string does not have heading or trailing quotes, the evaluation shall return the message #Error.
 
 The spreadsheet evaluates simple formulas (e.g., without operators or cell references). A formula starts with '=' followed by a string or integer number, the evaluation of that cell shall return the corresponding string or integer.
-When a cell contains a '= sign, followed by a wrong string or integer number the evaluation of that cell shall return the message #Error.
-Example: if set(“A1”, “=’a string”) is run, a subsequent call to evaluate(“A1”) returns “#Error”.
+When a cell contains a '=' sign, followed by a wrong string or integer number the evaluation of that cell shall return the message #Error.
 
 A formula can contain a reference to a cell (following Excel convention, e.g.: A5). In such case the evaluation shall be recursive, i.e.: the referenced cell is evaluated, and the result is returned by the formula.
 When the value contained in a cell referenced by a formula is incorrect, the evaluation shall return the  message #Error.
