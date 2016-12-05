@@ -15,7 +15,7 @@ A formula can contain a reference to a cell (following Excel convention, e.g.: A
 When the value contained in a cell referenced by a formula is incorrect, the evaluation shall return the message `#Error`.
 There could be cases in which the formula contains circular references (e.g.: A5 contains a formula referencing A1, and A1 contains a formula referencing A5). In this case the evaluation shall return the message `#Circular`.
 
-The spreadsheet performs integer addition, subtraction, multiplication, division, and module when the corresponding operators (`+ - * / %`) are present in a formula. In such cases the formulas are always evaluated from left to right (e.g., usual operator precendence does not apply). When an operation cannot be performed because (1) the operators are incorrect integer numbers or (2) there is a division by zero, the evaluation shall return the message `#Error`.
+The spreadsheet performs integer addition, subtraction, multiplication, division, and module when the corresponding operators (`+ - * / %`) are present in a formula. In such cases the formulas are always evaluated from left to right (e.g., usual operator precedence does not apply). When an operation cannot be performed because (1) the operators are incorrect integer numbers or (2) there is a division by zero, the evaluation shall return the message `#Error`.
 Moreover, a formula containing `&` performs the concatenation of strings.
 A concatenation cannot be performed when the strings are wrongly formatted. In this case the evaluation shall return the message `#Error`.
 
