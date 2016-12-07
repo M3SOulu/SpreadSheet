@@ -17,7 +17,7 @@ public class SheetTest {
 		spreadSheet = new Sheet();
 		spreadSheet.set("A1", "55");
 		spreadSheet.set("X33", "=2+2");
-		spreadSheet.set("L2", "=2.2+2");
+		spreadSheet.set("L2", "2.2+2");
 	}
 	
 	@Test
