@@ -54,7 +54,7 @@ public class Sheet {
 		result = get(cell);
 		temp = result.split("=");
 
-		if (temp[0].contains("+")) {
+		if (temp[1].contains("+")) {
 
 			result = "3";
 
