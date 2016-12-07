@@ -35,7 +35,7 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) {
 		String contentValue = get(cell);
-		String result = null;
+		String result = "#Error";
 		
 		// caso in cui non è una formula
 		// quindi la stringa non inizia con '\'' o '='
@@ -64,7 +64,7 @@ public class Sheet {
 		
 		// caso in cui è una formula
 		else {
-			result= "#Error";
+			result = contentValue.substring(1, contentValue.length()-1);
 		}
 
 		
