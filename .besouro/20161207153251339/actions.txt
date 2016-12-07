@@ -221,3 +221,5 @@ UnitTestSessionAction 1481129683031 SheetTest FAIL
 RefactoringAction 1481129716420 SheetTest.java REMOVE testFunctionEvaluateVoidString() METHOD
 EditAction 1481129721324 SheetTest.java 1459 7 12 5
 EditAction 1481129721439 Sheet.java 3246 3 5 0
+UnitTestCaseAction 1481129723263 SheetTest.java OK
+UnitTestSessionAction 1481129723264 SheetTest OK
