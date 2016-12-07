@@ -87,4 +87,10 @@ public class SheetTest {
 		Assert.assertEquals("1",sheet.evaluate("A1"));
 	}
 	
+	@Test
+	public void testSumWithSpaces(){
+		sheet.set("A1","=1 + 1");		
+		Assert.assertEquals("2",sheet.evaluate("A1"));
+	}
+	
 }

@@ -304,3 +304,6 @@ CompilationAction 1481127437376 SheetTest.java
 UnitTestCaseAction 1481127442791 SheetTest.java OK
 UnitTestSessionAction 1481127442792 SheetTest OK
 EditAction 1481127588140 Sheet.java 3820 3 8 0
+RefactoringAction 1481127825816 SheetTest.java ADD void testSumWithBrakets()/2 METHOD
+RefactoringAction 1481127830321 SheetTest.java RENAME testSumWithBrakets()/2=>void testSumWithSpaces() METHOD
+EditAction 1481127844265 SheetTest.java 1901 14 27 13
