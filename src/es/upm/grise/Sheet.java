@@ -85,16 +85,13 @@ public class Sheet {
 						}
 						operator = c.toString();
 						readyForOperation = true;
-						print("Ready");
 					}
 					else{
 						if (readyForOperation){
 							number += c;
-							print("adding to second number " + c);
 						}
 						else{
 							result += c;
-							print("adding to first number " + c);
 						}
 					}
 				}

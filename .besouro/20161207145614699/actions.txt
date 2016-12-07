@@ -290,3 +290,6 @@ UnitTestCaseAction 1481127032985 SheetTest.java FAIL
 UnitTestSessionAction 1481127032986 SheetTest FAIL
 RefactoringAction 1481127053579 Sheet.java RENAME isOperator(Character)=>boolean isOperator(String) METHOD
 EditAction 1481127054383 Sheet.java 5296 14 38 0
+UnitTestCaseAction 1481127056049 SheetTest.java OK
+UnitTestSessionAction 1481127056050 SheetTest OK
+EditAction 1481127099843 Sheet.java 5183 14 38 0
