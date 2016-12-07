@@ -85,8 +85,9 @@ public class Sheet {
 					//str = valueCell.split("\'");
 					//value = str.toString();
 					value = valueCell.replace("\'", "");
+				}else{
+					return value = cells.get(cell);
 				}
-				return value = cells.get(cell);
 			}
 		} else {
 			throw new CircularReferenceException();
