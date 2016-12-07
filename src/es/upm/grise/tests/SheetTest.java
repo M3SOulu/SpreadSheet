@@ -32,9 +32,9 @@ public class SheetTest {
 	
 	@Test
 	public void value_is_simpre_formula() {
-		testSheet.set("C1", "=88");
+		testSheet.set("C1", "=88ciao");
 		
-		assertEquals("88", testSheet.evaluate("C1"));
+		assertEquals("88ciao", testSheet.evaluate("C1"));
 	}
 	
 	@Test
