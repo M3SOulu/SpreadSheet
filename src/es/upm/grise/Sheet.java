@@ -82,6 +82,7 @@ public class Sheet {
 				if (!result.equals("#Error")){
 					if (isOperator(c.toString())){
 						if (readyForOperation){
+							print(number);
 							if (isCell(number)){
 								number = evaluateValue(number);
 							}
@@ -94,7 +95,6 @@ public class Sheet {
 					else{
 						if (readyForOperation){
 							number += c;
-							print(number);
 						}
 						else{
 							result += c;
