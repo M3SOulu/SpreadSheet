@@ -74,7 +74,6 @@ public class Sheet {
 		}
 		else if (isCell(value)){ //Cell
 			result = visitedCells.contains(value) ? "#Circular" : evaluate(value);
-			System.out.println(result);
 		}
 		return result;
 	}
