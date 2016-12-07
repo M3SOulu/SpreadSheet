@@ -49,6 +49,6 @@ public class SheetTest {
 	
 	@Test (expected = CircularReferenceException.class)
 	public void testFunctionEvaluateString() throws CircularReferenceException {
-		Assert.assertEquals("ciao", spreadSheet.evaluate("T76"));
+		Assert.assertEquals("'ciao'", spreadSheet.evaluate("T76"));
 	}
 }
