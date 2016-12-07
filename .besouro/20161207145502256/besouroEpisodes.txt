@@ -18,3 +18,17 @@
 1481123985958 test-addition 2 181 true
 1481123985959 test-addition 1 181 true
 1481124243771 refactoring 2A 184 true
+1481124334899 refactoring 2A 1 true
+1481124357772 regression 1 0 true
+1481124504008 test-addition 1 22 true
+1481124628452 test-addition 2 102 true
+1481124628453 test-addition 1 102 true
+1481124628454 test-addition 2 102 true
+1481124628455 test-addition 2 102 true
+1481124628456 test-addition 1 102 true
+1481124628457 test-addition 2 102 true
+1481124662220 test-addition 1 25 true
+1481124668165 regression 1 0 true
+1481124672288 regression 1 0 true
+1481124678796 regression 1 0 true
+1481124689496 regression 1 0 true

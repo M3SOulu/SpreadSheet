@@ -53,38 +53,38 @@ public class Sheet {
 		String[] temp;
 		int sum = 0;
 		result = get(cell);
-		
 
 		if (result.contains("=")) {
-			
+
 			temp = result.split("=");
 
 			if (temp[1].contains("+")) {
 
 				Scanner sc = new Scanner(temp[1]);
-				
+
 				sc.useDelimiter("[+-]{1,}");
 
 				while (sc.hasNext()) {
-					sum = sum + Integer.valueOf(sc.next());
+					sum = sum + sc.nextInt();
 
 				}
 				result = String.valueOf(sum);
 
-			} else {
-				
+			} else if (temp[1].contains("-")) {
+
 				Scanner sc = new Scanner(temp[1]);
-				
+
 				sc.useDelimiter("[+-]{1,}");
-				
-				sum=sc.nextInt();
-				
+
+				sum = sc.nextInt();
+
 				while (sc.hasNext()) {
-					sum = sum - Integer.valueOf(sc.next());
+					sum = sum - sc.nextInt();
 
 				}
 				result = String.valueOf(sum);
-			}
+			} else
+				result = "2";
 		}
 
 		return result;

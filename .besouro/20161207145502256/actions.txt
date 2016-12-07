@@ -99,3 +99,51 @@ EditAction 1481124240765 Sheet.java 2077 3 8 0
 UnitTestCaseAction 1481124243770 SheetTest.java OK
 UnitTestSessionAction 1481124243771 SheetTest OK
 EditAction 1481124333540 Sheet.java 2063 3 8 0
+UnitTestCaseAction 1481124334899 SheetTest.java OK
+UnitTestSessionAction 1481124334899 SheetTest OK
+UnitTestCaseAction 1481124357772 SheetTest.java OK
+UnitTestSessionAction 1481124357772 SheetTest OK
+RefactoringAction 1481124481461 SheetTest.java ADD void evalutateCellWhithSubtractionNumber()/2 METHOD
+RefactoringAction 1481124491485 SheetTest.java RENAME evalutateCellWhithSubtractionNumber()/2=>void evalutateCellWhithSubtractiontwoNumber() METHOD
+RefactoringAction 1481124495001 SheetTest.java RENAME evalutateCellWhithSubtractiontwoNumber()=>void evalutateCellWhithSubtractionTwoNumber() METHOD
+RefactoringAction 1481124498522 SheetTest.java RENAME evalutateCellWhithSubtractionNumber()=>void evalutateCellWhithSubtractionThreeNumber() METHOD
+UnitTestCaseAction 1481124504007 SheetTest.java OK
+UnitTestSessionAction 1481124504008 SheetTest.evalutateCellWhithSubtractionThreeNumber OK
+UnitTestCaseAction 1481124525536 SheetTest.java FAIL
+UnitTestSessionAction 1481124525536 SheetTest FAIL
+RefactoringAction 1481124594553 SheetTest.java ADD void evalutateCellWhithSubtractionNumber() METHOD
+RefactoringAction 1481124594553 SheetTest.java ADD void evalutateCellWhithSubtractionNumber()/2 METHOD
+RefactoringAction 1481124596057 SheetTest.java REMOVE evalutateCellWhithSubtractionNumber()/2 METHOD
+RefactoringAction 1481124600579 SheetTest.java RENAME evalutateCellWhithSubtractionNumber()=>void evalutateCellWhithSubtractionTNumber() METHOD
+RefactoringAction 1481124601590 SheetTest.java RENAME evalutateCellWhithSubtractionTNumber()=>void evalutateCellWhithSubtractionTwoNumber() METHOD
+UnitTestCaseAction 1481124605104 SheetTest.java FAIL
+UnitTestSessionAction 1481124605104 SheetTest.evalutateCellWhithSubtractionTwoNumber FAIL
+UnitTestCaseAction 1481124610474 SheetTest.java FAIL
+UnitTestSessionAction 1481124610474 SheetTest FAIL
+UnitTestCaseAction 1481124628451 SheetTest.java OK
+UnitTestSessionAction 1481124628452 SheetTest OK
+RefactoringAction 1481124636653 SheetTest.java ADD void evalutateCellWhithSubtractionTwoNumber()/2 METHOD
+RefactoringAction 1481124645173 SheetTest.java RENAME evalutateCellWhithSubtractionTwoNumber()/2=>void evalutateCellWhithSubtractionNumber() METHOD
+RefactoringAction 1481124646676 SheetTest.java RENAME evalutateCellWhithSubtractionNumber()=>void evalutateCellWhithSubtractionThreeNumber() METHOD
+UnitTestCaseAction 1481124662219 SheetTest.java OK
+UnitTestSessionAction 1481124662220 SheetTest OK
+UnitTestCaseAction 1481124668165 SheetTest.java OK
+UnitTestSessionAction 1481124668165 SheetTest.evalutateCellWhithSubtractionThreeNumber OK
+UnitTestCaseAction 1481124672287 SheetTest.java OK
+UnitTestSessionAction 1481124672288 SheetTest OK
+UnitTestCaseAction 1481124678796 SheetTest.java OK
+UnitTestSessionAction 1481124678796 SheetTest.evalutateCellWhithSubtractionThreeNumber OK
+UnitTestCaseAction 1481124689495 SheetTest.java OK
+UnitTestSessionAction 1481124689496 SheetTest OK
+RefactoringAction 1481124795822 SheetTest.java ADD void evalutateCellWhithSubtractionThreeNumber()/2 METHOD
+RefactoringAction 1481124840866 SheetTest.java RENAME evalutateCellWhithSubtractionThreeNumber()/2=>void evalutateCellWhithmultiplicationThreeNumber() METHOD
+RefactoringAction 1481124844378 SheetTest.java RENAME evalutateCellWhithmultiplicationThreeNumber()=>void evalutateCellWhithultiplicationThreeNumber() METHOD
+RefactoringAction 1481124845896 SheetTest.java RENAME evalutateCellWhithultiplicationThreeNumber()=>void evalutateCellWhithMultiplicationThreeNumber() METHOD
+RefactoringAction 1481124850924 SheetTest.java RENAME evalutateCellWhithMultiplicationThreeNumber()=>void evalutateCellWhithMultiplicationtNumber() METHOD
+RefactoringAction 1481124851945 SheetTest.java RENAME evalutateCellWhithMultiplicationtNumber()=>void evalutateCellWhithMultiplicationtwoNumber() METHOD
+RefactoringAction 1481124854459 SheetTest.java RENAME evalutateCellWhithMultiplicationtwoNumber()=>void evalutateCellWhithMultiplicationTwoNumber() METHOD
+UnitTestCaseAction 1481124867146 SheetTest.java FAIL
+UnitTestSessionAction 1481124867147 SheetTest FAIL
+UnitTestCaseAction 1481124933928 SheetTest.java FAIL
+UnitTestSessionAction 1481124933929 SheetTest FAIL
+EditAction 1481124943790 Sheet.java 2061 3 8 0
