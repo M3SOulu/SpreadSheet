@@ -36,13 +36,13 @@ public class Sheet {
 	public String evaluate(String cell) {
 		String contentValue = get(cell);
 		
-		if(contentValue.charAt(0) != "=")
+		if(contentValue.charAt(0) != '=')
 			return contentValue;
 		else{
-			
+			return "#Error";
 		}
 			
-			return "#Error";
+			
 		
 	}
 
