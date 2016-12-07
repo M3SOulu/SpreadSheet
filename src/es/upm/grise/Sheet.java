@@ -52,6 +52,8 @@ public class Sheet {
 						&& valueCell.charAt(j) != '+' && valueCell.charAt(j) != '-' && valueCell.charAt(j) != '*'
 						&& valueCell.charAt(j) != '/' && valueCell.charAt(j) != '\'') {
 					throw new CircularReferenceException("#Error.");
+				} else if (valueCell.charAt(j) != '\''){
+					value = 
 				}
 			}
 			if (valueCell.charAt(0) == '=') {
