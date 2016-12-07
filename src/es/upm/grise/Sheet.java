@@ -75,18 +75,18 @@ public class Sheet {
 		else{ //Integer operations
 			result = "";
 			String newFormula = formula.replaceAll(" ", "");
-			boolean filledFirstNumber = false;
+			boolean readyForOperation = false;
 			String firstNumber = "", secondNumber = "", operator = "";
 			for (Character c : newFormula.toCharArray()){
 				if (isOperator(c)){
-					if (filledFirstNumber){
+					if (readyForOperation){
 						result = (Integer.parseInt(result) + Integer.parseInt(secondNumber)) + "";
 					}
 					operator = c.toString();
-					filledFirstNumber = true;
+					readyForOperation = true;
 				}
 				else{
-					if (filledFirstNumber){
+					if (readyForOperation){
 						secondNumber += c;
 					}
 					else{

@@ -256,3 +256,4 @@ RefactoringAction 1481126213364 Sheet.java RENAME i(String)=>boolean isOperator(
 RefactoringAction 1481126217380 Sheet.java RENAME isOperator(String)=>boolean isOperator(Character) METHOD
 EditAction 1481126413910 Sheet.java 4739 12 33 0
 EditAction 1481126428794 Sheet.java 4729 12 33 0
+EditAction 1481126445020 Sheet.java 4729 12 33 0
