@@ -35,6 +35,7 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) {
 		String content = cells.get(cell);
+		int value = 0;
 		int a=0;
 		int b=0;
 		int startIndex = 1;
