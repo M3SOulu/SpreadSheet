@@ -153,3 +153,8 @@ RefactoringAction 1481123346953 Sheet.java RENAME is=>boolean isCell FIELD
 RefactoringAction 1481123349465 Sheet.java RENAME isCell=>boolean isCell() METHOD
 RefactoringAction 1481123467544 Sheet.java RENAME isCell()=>boolean isCell(String) METHOD
 EditAction 1481123821708 Sheet.java 3174 9 25 0
+UnitTestCaseAction 1481123824369 SheetTest.java FAIL
+UnitTestSessionAction 1481123824370 SheetTest FAIL
+UnitTestCaseAction 1481123834501 SheetTest.java FAIL
+UnitTestSessionAction 1481123834502 SheetTest FAIL
+EditAction 1481123876252 SheetTest.java 2436 12 25 11
