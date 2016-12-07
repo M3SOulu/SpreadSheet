@@ -46,19 +46,22 @@ public class Sheet {
 					if(content.charAt(i)=='+') num=2;
 					if(content.charAt(i)=='-') num=3;
 					if(content.charAt(i)>='0'||content.charAt(i)>='9'){
-						a+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-1));
+						a+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-startIndex));
 					}	
 				}
 				else{
 					if(content.charAt(i)>='0'||content.charAt(i)>='9'){
 						if(num==2)
-							b+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-1));
+							b+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-startIndex));
 						else 
-							b-=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-1));
+							b-=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-startIndex));
 					}
 				}
 			}
-			return ""+ (startIndex==1) ? (a+b) : (-a+b);
+			if (startIndex==1)
+				return ""+ (a+b);
+			else
+				return ""+ (-a+b);
 		}
 		for(int i=0; i<content.length(); i++){
 			if(content.charAt(i)=='\'') return content.replaceAll("\'","");
