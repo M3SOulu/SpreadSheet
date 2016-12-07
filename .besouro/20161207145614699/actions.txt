@@ -175,3 +175,4 @@ UnitTestSessionAction 1481124290497 SheetTest OK
 RefactoringAction 1481124301877 SheetTest.java ADD void testEvaluateSimpleCellReferenceErrorFormula()/2 METHOD
 RefactoringAction 1481124314883 SheetTest.java RENAME testEvaluateSimpleCellReferenceErrorFormula()/2=>void testEvaluateSimpleCellReferenceCircularErrorFormula() METHOD
 EditAction 1481124328939 SheetTest.java 2702 13 29 12
+EditAction 1481124336171 SheetTest.java 2705 13 29 12

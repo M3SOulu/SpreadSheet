@@ -89,7 +89,7 @@ public class SheetTest {
 		sheet.set("A1", "=A3");
 		sheet.set("A2", "=A1");
 		sheet.set("A3", "=A2");
-		assertEquals("#Error", sheet.evaluate("A2"));
+		assertEquals("#Circular", sheet.evaluate("A2"));
 	}
 
 }
