@@ -18,7 +18,7 @@ public class SheetTest {
 	@Test
 	public void evalutate_is_1() {
 		testSheet.set("A1", "1");
-		assertEquals(1, testSheet.evaluate("A1"));
+		assertEquals("1", testSheet.evaluate("A1"));
 	}
 
 }
