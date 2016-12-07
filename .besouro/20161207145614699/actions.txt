@@ -466,3 +466,6 @@ EditAction 1481130073601 SheetTest.java 5518 24 65 24
 UnitTestCaseAction 1481130074558 SheetTest.java FAIL
 UnitTestSessionAction 1481130074559 SheetTest FAIL
 EditAction 1481130079314 SheetTest.java 5517 24 65 24
+RefactoringAction 1481130087969 SheetTest.java ADD void testEvaluateMultipleOperationsWithCellReferenceFormula()/2 METHOD
+RefactoringAction 1481130094502 SheetTest.java RENAME testEvaluateMultipleOperationsWithCellReferenceFormula()/2=>void testEvaluateMultipleOperationsWithCellReferenceWithParenthesisFormula() METHOD
+EditAction 1481130101327 SheetTest.java 5818 25 69 25
