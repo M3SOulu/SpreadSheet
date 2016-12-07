@@ -76,6 +76,7 @@ public class Sheet {
 		}else{
 			throw new CircularReferenceException();
 		}
+		return null;
 	}
 
 }
