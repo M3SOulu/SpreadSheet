@@ -30,3 +30,11 @@ UnitTestCaseAction 1481120032501 SheetTest.java OK
 UnitTestSessionAction 1481120032502 SheetTest OK
 EditAction 1481120036247 Sheet.java 1213 3 3 0
 EditAction 1481120310835 Sheet.java 1347 3 5 0
+CompilationAction 1481120310989 Sheet.java
+CompilationAction 1481120359156 Sheet.java
+CompilationAction 1481120359288 Sheet.java
+CompilationAction 1481120359289 Sheet.java
+RefactoringAction 1481120367383 SheetTest.java ADD void testNumber1()/2 METHOD
+RefactoringAction 1481120370922 SheetTest.java RENAME testNumber1()/2=>void testNumberMinus1() METHOD
+RefactoringAction 1481120394004 SheetTest.java RENAME testNumberMinus1()=>void testNumberPositive1() METHOD
+EditAction 1481120403345 SheetTest.java 509 3 5 2
