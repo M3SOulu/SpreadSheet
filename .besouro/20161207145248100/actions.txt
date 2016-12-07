@@ -86,3 +86,8 @@ EditAction 1481125529435 SheetTest.java 723 2 7 3
 UnitTestCaseAction 1481125530374 SheetTest.java FAIL
 UnitTestSessionAction 1481125530375 Spreadsheet FAIL
 EditAction 1481125725542 SheetTest.java 723 2 7 3
+RefactoringAction 1481125910398 SheetTest.java ADD void test FIELD
+RefactoringAction 1481125911407 SheetTest.java RENAME test=>void test2 FIELD
+RefactoringAction 1481125912422 SheetTest.java RENAME test2=>void test2() METHOD
+RefactoringAction 1481126352829 SheetTest.java REMOVE test2() METHOD
+EditAction 1481126353006 SheetTest.java 723 2 7 3
