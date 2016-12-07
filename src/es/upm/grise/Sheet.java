@@ -56,6 +56,7 @@ public class Sheet {
 					}
 					else if((content.charAt(i)>='A'||content.charAt(i)>='Z')&&(content.charAt(i+1)>='0'||content.charAt(i+1)>='9')){
 						visitedCells.add(""+content.charAt(i)+content.charAt(i+1));
+						System.out.println(visitedCells.get(0));
 						a=Integer.parseInt(this.evaluate(""+content.charAt(i)+content.charAt(i+1)));
 						i++;
 					}
