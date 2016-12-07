@@ -65,3 +65,8 @@ RefactoringAction 1481121626181 SheetTest.java ADD void testEvaluateStringValue(
 RefactoringAction 1481121652194 SheetTest.java RENAME testEvaluateStringValue()/2=>void testEvaluatValue() METHOD
 RefactoringAction 1481121653702 SheetTest.java RENAME testEvaluatValue()=>void testEvaluatIntegerValue() METHOD
 EditAction 1481121655008 SheetTest.java 979 5 9 4
+UnitTestCaseAction 1481121656272 SheetTest.java OK
+UnitTestSessionAction 1481121656272 SheetTest.testEvaluateIntegerValue OK
+RefactoringAction 1481121666218 SheetTest.java ADD void testEvaluateIntegerValue()/2 METHOD
+RefactoringAction 1481121669236 SheetTest.java RENAME testEvaluateIntegerValue()/2=>void testEvaluateBadIntegerValue() METHOD
+EditAction 1481121675702 SheetTest.java 1171 6 11 5
