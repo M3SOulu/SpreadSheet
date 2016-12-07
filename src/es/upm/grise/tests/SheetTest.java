@@ -19,6 +19,8 @@ public class SheetTest {
 		foglio.set("A4", "=2-1");
 		foglio.set("A5", "=2-1-2");
 		foglio.set("A6", "=2*1");
+		foglio.set("A7", "=2*1*2");
+		foglio.set("A8", "=2/1");
 	}
 
 	@Test
@@ -49,6 +51,16 @@ public class SheetTest {
 	@Test
 	public void evalutateCellWhithMultiplicationTwoNumber() {
 		assertEquals("2", foglio.evaluate("A6"));
+	}
+	
+	@Test
+	public void evalutateCellWhithMultiplicationThreeNumber() {
+		assertEquals("4", foglio.evaluate("A7"));
+	}
+	
+	@Test
+	public void evalutateCellWhithDivisionTwoNumber() {
+		assertEquals("2", foglio.evaluate("A8"));
 	}
 	
 	

@@ -158,3 +158,34 @@ CompilationAction 1481125081174 Sheet.java
 UnitTestCaseAction 1481125082943 SheetTest.java FAIL
 UnitTestSessionAction 1481125082943 SheetTest FAIL
 EditAction 1481125177473 Sheet.java 2252 3 8 0
+UnitTestCaseAction 1481125179097 SheetTest.java OK
+UnitTestSessionAction 1481125179098 SheetTest OK
+RefactoringAction 1481125678363 Sheet.java ADD String arithmeticOperation(String METHOD
+RefactoringAction 1481125690451 Sheet.java RENAME arithmeticOperation(String=>String arithmeticOperation(String, int) METHOD
+RefactoringAction 1481125716020 Sheet.java RENAME arithmeticOperation(String, int)=>String arithmeticOperation(String) METHOD
+RefactoringAction 1481125806725 Sheet.java RENAME arithmeticOperation(String)=>String arithmeticOperation(String, int) METHOD
+RefactoringAction 1481125811289 Sheet.java REMOVE arithmeticOperation(String, int) METHOD
+RefactoringAction 1481126030465 Sheet.java ADD String arithmeticOperation(String METHOD
+RefactoringAction 1481126041388 Sheet.java RENAME arithmeticOperation(String=>String arithmeticOperation() METHOD
+RefactoringAction 1481126043903 Sheet.java RENAME arithmeticOperation()=>String arithmeticOperation(String METHOD
+RefactoringAction 1481126079038 Sheet.java RENAME arithmeticOperation(String=>String arithmeticOperation(String) METHOD
+RefactoringAction 1481126277261 Sheet.java RENAME arithmeticOperation(String)=>String arithmeticOperation(String, String) METHOD
+UnitTestCaseAction 1481126401097 SheetTest.java OK
+UnitTestSessionAction 1481126401098 SheetTest OK
+UnitTestCaseAction 1481126430350 SheetTest.java OK
+UnitTestSessionAction 1481126430351 SheetTest OK
+RefactoringAction 1481126507182 SheetTest.java ADD void evalutateCellWhithMultiplicationTwoNumber()/2 METHOD
+RefactoringAction 1481126518687 SheetTest.java RENAME evalutateCellWhithMultiplicationTwoNumber()/2=>void evalutateCellWhithDivisionTwoNumber() METHOD
+RefactoringAction 1481126527209 SheetTest.java ADD void evalutateCellWhithMultiplicationTwoNumber()/2 METHOD
+RefactoringAction 1481126534232 SheetTest.java RENAME evalutateCellWhithMultiplicationTwoNumber()/2=>void evalutateCellWhithMultiplicationThreeNumber() METHOD
+RefactoringAction 1481126593828 SheetTest.java REMOVE evalutateCellWhithDivisionTwoNumber() METHOD
+UnitTestCaseAction 1481126597016 SheetTest.java OK
+UnitTestSessionAction 1481126597016 SheetTest OK
+RefactoringAction 1481126609359 SheetTest.java ADD void evalutateCellWhithDivisionTwoNumber() METHOD
+UnitTestCaseAction 1481126635742 SheetTest.java OK
+UnitTestSessionAction 1481126635743 SheetTest OK
+UnitTestCaseAction 1481126711713 SheetTest.java FAIL
+UnitTestSessionAction 1481126711714 SheetTest FAIL
+UnitTestCaseAction 1481126759694 SheetTest.java FAIL
+UnitTestSessionAction 1481126759695 SheetTest FAIL
+EditAction 1481126775322 Sheet.java 2402 4 14 0

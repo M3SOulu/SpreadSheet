@@ -60,45 +60,50 @@ public class Sheet {
 
 			if (temp[1].contains("+")) {
 
-				Scanner sc = new Scanner(temp[1]);
-
-				sc.useDelimiter("[+-]{1,}");
-
-				while (sc.hasNext()) {
-					sum = sum + sc.nextInt();
-
-				}
-				result = String.valueOf(sum);
+				result = arithmeticOperation(temp[1], "+");
 
 			} else if (temp[1].contains("-")) {
 
-				Scanner sc = new Scanner(temp[1]);
-
-				sc.useDelimiter("[+-]{1,}");
-
-				sum = sc.nextInt();
-
-				while (sc.hasNext()) {
-					sum = sum - sc.nextInt();
-
-				}
-				result = String.valueOf(sum);
+				result = arithmeticOperation(temp[1], "-");
+			} else if (temp[1].contains("*")) {
+				result = arithmeticOperation(temp[1], "*");
 			} else {
-				Scanner sc = new Scanner(temp[1]);
+				result = arithmeticOperation(temp[1], "/");
 
-				sc.useDelimiter("[+-\\/*]{1,}");
-
-				sum = sc.nextInt();
-
-				while (sc.hasNext()) {
-					sum = sum * sc.nextInt();
-
-				}
-				result = String.valueOf(sum);
 			}
 		}
 
 		return result;
+	}
+
+	private String arithmeticOperation(String formula, String operation) {
+		int sum;
+		Scanner sc = new Scanner(formula);
+
+		sc.useDelimiter("[+-\\/*]{1,}");
+
+		sum = sc.nextInt();
+
+		while (sc.hasNext()) {
+			switch (operation) {
+			case "+":
+				sum = sum + sc.nextInt();
+				break;
+			case "-":
+				sum = sum - sc.nextInt();
+				break;
+			case "*":
+				sum = sum * sc.nextInt();
+				break;
+			case "/":
+				sum = sum / sc.nextInt();
+				break;
+
+			}
+
+		}
+
+		return String.valueOf(sum);
 	}
 
 }
