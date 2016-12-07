@@ -52,9 +52,9 @@ public class Sheet {
 				else{
 					if(content.charAt(i)>='0'||content.charAt(i)>='9'){
 						if(num==2)
-							b+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-startIndex));
+							b+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-startIndex-1));
 						else 
-							b-=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-startIndex));
+							b-=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-startIndex-1));
 					}
 				}
 			}
