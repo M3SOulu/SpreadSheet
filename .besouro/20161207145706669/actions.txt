@@ -14,3 +14,6 @@ EditAction 1481120982586 SheetTest.java 538 1 4 1
 CompilationAction 1481120982777 SheetTest.java
 CompilationAction 1481120982777 SheetTest.java
 EditAction 1481120982791 Sheet.java 1394 3 5 0
+RefactoringAction 1481121628193 SheetTest.java ADD void testError()/2 METHOD
+RefactoringAction 1481121634200 SheetTest.java RENAME testError()/2=>void testError2() METHOD
+EditAction 1481121801970 Sheet.java 1357 3 5 0
