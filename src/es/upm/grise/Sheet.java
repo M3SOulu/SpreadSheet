@@ -81,11 +81,21 @@ public class Sheet {
 			System.out.println(a);
 			System.out.println(b);
 			if (startIndex==1){
-				value= (Integer.valueOf(a)+Integer.valueOf(b));
+				switch(num){
+				case 2: value= (Integer.valueOf(a)+Integer.valueOf(b)); break;
+				case 4: value= (Integer.valueOf(a)+Integer.valueOf(b)); break;
+				case 5: value= (Integer.valueOf(a)+Integer.valueOf(b)); break;
+				default: return "#Error";
+				}				
 			}
 				
 			else{
-				value= (Integer.valueOf(b)-Integer.valueOf(a));
+				switch(num){
+				case 2: value= (Integer.valueOf(a)+Integer.valueOf(b)); break;
+				case 3: value= (Integer.valueOf(a)+Integer.valueOf(b)); break;
+				case 4: value= (Integer.valueOf(a)+Integer.valueOf(b)); break;
+				default: return "#Error";
+				}
 			}
 				
 			return ""+value;
