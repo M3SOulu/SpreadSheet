@@ -27,9 +27,21 @@ public class SheetTest {
 	}
 	
 	@Test
-	public void testReturnAString(){
+	public void testReturnAString1(){
 		s.set("A1", "\'ciao\'");
 		assertEquals(s.evaluate("A1"),"ciao");
+	}
+	
+	@Test
+	public void testReturnAString2(){
+		s.set("A1", "\'ciao");
+		assertEquals(s.evaluate("A1"),"#Error");
+	}
+	
+	@Test
+	public void testReturnAString3(){
+		s.set("A1", "\'\'");
+		assertEquals(s.evaluate("A1"),"#Error");
 	}
 
 }

@@ -80,3 +80,12 @@ EditAction 1481123869976 Sheet.java 1624 3 7 0
 UnitTestCaseAction 1481123870548 SheetTest.java FAIL
 UnitTestSessionAction 1481123870548 SheetTest FAIL
 EditAction 1481123923681 Sheet.java 1624 3 7 0
+UnitTestCaseAction 1481123924240 SheetTest.java OK
+UnitTestSessionAction 1481123924241 SheetTest OK
+RefactoringAction 1481123953994 SheetTest.java ADD void testReturnAString()/2 METHOD
+RefactoringAction 1481123955501 SheetTest.java ADD void testReturnAString()/3 METHOD
+RefactoringAction 1481123959520 SheetTest.java RENAME testReturnAString()/3=>void testReturnAString1() METHOD
+RefactoringAction 1481123962524 SheetTest.java RENAME testReturnAString()/2=>void testReturnAString23() METHOD
+RefactoringAction 1481123964037 SheetTest.java RENAME testReturnAString23()=>void testReturnAString2() METHOD
+RefactoringAction 1481123967551 SheetTest.java RENAME testReturnAString()=>void testReturnAString3() METHOD
+EditAction 1481124025215 SheetTest.java 788 5 10 5
