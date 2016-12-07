@@ -60,7 +60,6 @@ public class Sheet {
 							break;
 						else
 							otherCell += formula.charAt(j);
-						i = j;
 					}
 					if (visitedCells.get(0).equals(otherCell))
 						throw new CircularReferenceException("#Circular");
@@ -68,19 +67,21 @@ public class Sheet {
 						visitedCells.add(otherCell);
 					operation = Integer.parseInt(evaluate(otherCell));
 				}		
-				if (formula.charAt(i) == '+')
-					total = "" + (operation + Integer.parseInt("" + formula.charAt(++i)));
+				if (formula.charAt(i) == '+'){
+					total = "" + (operation + Integer.parseInt("" + formula.charAt(i + 1)));
+					i= i+1;
+				}
 				else if (formula.charAt(i) == '-')
-					total = "" + (operation - Integer.parseInt("" + formula.charAt(i++)));
+					total = "" + (operation - Integer.parseInt("" + formula.charAt(i + 1)));
 				else if (formula.charAt(i) == '*')
-					total = "" + (operation * Integer.parseInt("" + formula.charAt(i++)));
+					total = "" + (operation * Integer.parseInt("" + formula.charAt(i + 1)));
 				else if (formula.charAt(i) == '/') {
 					if (formula.charAt(i + 1) != '0')
-						total = "" + (operation / Integer.parseInt("" + formula.charAt(i++)));
+						total = "" + (operation / Integer.parseInt("" + formula.charAt(i + 1)));
 					else
 						throw new ComputationErrorException("#Error");
 				}else if (formula.charAt(i) == '%')
-					total = "" + (operation % Integer.parseInt("" + formula.charAt(i++)));
+					total = "" + (operation % Integer.parseInt("" + formula.charAt(i + 1)));
 			} else {
 				total = formula;
 			}
