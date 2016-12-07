@@ -75,6 +75,6 @@ public class SheetTest {
 		//act
 		result = mySheet.evaluate("=1+1");
 		//assert
-		assertEquals("2",cell);
+		assertEquals("2",result);
 	}
 }
