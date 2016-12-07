@@ -23,9 +23,21 @@ public class SheetTest {
 		//assert
 		assertEquals("#Error",result);
 	}	
-
 	}
 	
+	@Test
+	public void testIsOneNumber() throws ComputationErrorException, CircularReferenceException{
+	//arrange
+	Sheet mySheet = new Sheet();	
+	//act
+	
+	try {
+		result = mySheet.evaluate("a");
+	} catch (ComputationErrorException e) {
+		//assert
+		assertEquals("#Error",result);
+	}	
+	}
 	
 
 }

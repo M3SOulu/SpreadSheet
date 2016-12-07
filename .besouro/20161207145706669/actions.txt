@@ -75,3 +75,4 @@ RefactoringAction 1481124949713 SheetTest.java RENAME testErrorOneDivZero()/2=>v
 RefactoringAction 1481124955723 SheetTest.java RENAME testError()=>void test() METHOD
 RefactoringAction 1481124965228 SheetTest.java RENAME test()=>void testIsOneNumber() METHOD
 EditAction 1481124983484 Sheet.java 1809 4 10 0
+EditAction 1481124983641 SheetTest.java 850 2 4 0
