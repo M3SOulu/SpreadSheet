@@ -43,7 +43,10 @@ public class Sheet {
 			if(content.charAt(1)=='-') startIndex = 2;
 			int num = 1, offset = 0;
 			for(int i=startIndex; i<content.length(); i++){	
-				if(content.charAt(i)==' ' || content.charAt(i)=='(' || content.charAt(i)==')') i++;
+				if(content.charAt(i)==' ' || content.charAt(i)=='(' || content.charAt(i)==')'){
+					i++;
+					offset--;
+				}
 				if(num==1){
 					if(content.charAt(i)=='+'){
 						num=2;
