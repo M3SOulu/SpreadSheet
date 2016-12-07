@@ -9,14 +9,15 @@ import es.upm.grise.ComputationErrorException;
 import es.upm.grise.Sheet;
 
 public class SheetTest {
-
+	private String result = null;
 	@Test
 	public void testErrorOneDivZero() throws ComputationErrorException, CircularReferenceException{
 	//arrange
 	Sheet mySheet = new Sheet();	
 	//act
-	String result = null;
+	
 	try {
+		
 		result = mySheet.evaluate("1/0");
 	} catch (ComputationErrorException e) {
 		
