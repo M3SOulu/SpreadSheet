@@ -13,8 +13,7 @@ public class Sheet {
 	 * @return		The cell's contents (e.g. "1", "=5", "=1+B3", "=1+(B3*4)", etc.)
 	 */
 	public String get(String cell) {
-		cell = "";
-		return String.valueOf(cell);
+		
 	}
 
 	/**
@@ -23,6 +22,7 @@ public class Sheet {
 	 */
 	public void set(String cell, String contents) {
 		// implement me
+		cells.put(cell, contents);
 	}
 
 	/**
