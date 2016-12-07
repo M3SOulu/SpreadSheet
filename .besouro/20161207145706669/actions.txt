@@ -82,3 +82,9 @@ RefactoringAction 1481124993756 SheetTest.java RENAME testIsOneNumber()=>void te
 RefactoringAction 1481124997760 SheetTest.java RENAME testErrorIsOneNumber()=>void testErrorChara() METHOD
 RefactoringAction 1481124998767 SheetTest.java RENAME testErrorChara()=>void testErrorCharather() METHOD
 EditAction 1481125008675 SheetTest.java 856 2 4 0
+UnitTestCaseAction 1481125009181 SheetTest.java OK
+UnitTestSessionAction 1481125009181 SheetTest OK
+RefactoringAction 1481125014801 SheetTest.java ADD void testErrorOneDivZero()/2 METHOD
+RefactoringAction 1481125019313 SheetTest.java RENAME testErrorOneDivZero()/2=>void testOne() METHOD
+RefactoringAction 1481125020832 SheetTest.java RENAME testOne()=>void testOneNumber() METHOD
+EditAction 1481125038495 SheetTest.java 1131 3 6 0

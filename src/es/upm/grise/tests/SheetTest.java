@@ -39,5 +39,17 @@ public class SheetTest {
 	}	
 	}
 	
+	@Test
+	public void testOneNumber() throws ComputationErrorException, CircularReferenceException{
+	//arrange
+	Sheet mySheet = new Sheet();	
+	//act
+	try {
+		result = mySheet.evaluate("1");
+	} catch (ComputationErrorException e) {
+		//assert
+		assertEquals("1",result);
+	}	
+	}
 
 }
