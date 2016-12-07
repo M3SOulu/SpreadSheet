@@ -23,7 +23,7 @@ public class SheetTest {
 	@Test
 	public void testNumber(){
 		cells.put("B1", "=1+1");
-		int result = Integer.parseInt("1+1");
+		int result = Integer.parseInt("(1+1)");
 		assertEquals(2, result);
 	}
 
