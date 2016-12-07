@@ -45,18 +45,18 @@ public class Sheet {
 		String total = "";
 		char[] formula = get(cell).toCharArray();
 		for(char c : formula)
-		if(c != '='){
-			total = "" + formula[0];
-		}else{
-			if(formula.charAt(1) > '0' || formula.charAt(1) < '9')
-				operation = Integer.parseInt(""+formula.charAt(1));
-			else if(formula.charAt(1) > 'A' || formula.charAt(1) < 'Z'){
-				if(formula.charAt(2) > 'A' || formula.charAt(2) < 'Z'){
-			}
-			if(formula.charAt(2) == '+')
-				total = "" + (operation + Integer.parseInt(""+formula.charAt(3)));
-			else if(formula.charAt(2) == '-')
-				total = "" + (operation - Integer.parseInt(""+formula.charAt(3)));
+			if(c != '='){
+				total = "" + c;
+			}else{
+				if(c > '0' || c < '9')
+					operation = Integer.parseInt(""+ c);
+				else if(c > 'A' || c < 'Z'){
+					if(c > 'A' || c < 'Z'){
+					}
+			if(c == '+')
+				total = "" + (operation + Integer.parseInt("" + c));
+			else if(c == '-')
+				total = "" + (operation - Integer.parseInt(""+ c));
 		}
 		return total;
 	}
