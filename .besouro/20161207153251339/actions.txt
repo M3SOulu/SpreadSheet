@@ -206,3 +206,10 @@ EditAction 1481129602788 Sheet.java 3326 3 5 0
 UnitTestCaseAction 1481129604837 SheetTest.java OK
 UnitTestSessionAction 1481129604837 SheetTest OK
 EditAction 1481129625710 SheetTest.java 1487 7 13 5
+UnitTestCaseAction 1481129628262 SheetTest.java OK
+UnitTestSessionAction 1481129628262 SheetTest OK
+RefactoringAction 1481129637817 SheetTest.java ADD void testFunctionEvaluateNumberNotInteger()/2 METHOD
+RefactoringAction 1481129655338 SheetTest.java RENAME testFunctionEvaluateNumberNotInteger()/2=>void testFunctionEvaluateVoid() METHOD
+RefactoringAction 1481129656867 SheetTest.java RENAME testFunctionEvaluateVoid()=>void testFunctionEvaluateVoidStr() METHOD
+RefactoringAction 1481129658374 SheetTest.java RENAME testFunctionEvaluateVoidStr()=>void testFunctionEvaluateVoidString() METHOD
+EditAction 1481129662821 SheetTest.java 1683 8 15 5
