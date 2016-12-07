@@ -24,7 +24,7 @@ public class SheetTest {
 	@Test
 	public void testSetAndGetCellIntegerValue() {
 		sheet.set("A1", "123");
-		assertEquals(123, sheet.get("A1"));
+		assertEquals("123", sheet.get("A1"));
 	}
 
 }
