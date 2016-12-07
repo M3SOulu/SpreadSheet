@@ -40,35 +40,24 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) {
 		String s = "";
-		char[] array0;
 		char[] array;
-		array0 = this.get(cell).toCharArray();
-		if (array0[0] == '=') {
+		array = this.get(cell).toCharArray();
+		if (array[0] == '=') {
 			String a = this.get(cell).substring(1);
-			s = valutaNumAndString(a);
-//			array = a.toCharArray();
-//			if (array[0] == '\'' && array[array.length - 1] == '\'') {
-//				if (a.substring(1, array.length - 1).isEmpty())
-//					s = "#Error";
-//				else
-//					s = a.substring(1, array.length - 1);
-//			} else {
-//				try {
-//					Integer.parseInt(a);
-//					s = a;
-//				} catch (NumberFormatException e) {
-//					s = "#Error";
-//				}
-//
-//			}
-		} else {			
+			if (cells.containsKey(a)) {
+				s= valutaNumAndString(cells.get(a));
+			} else {
+				s = valutaNumAndString(a);
+			}
+
+		} else {
 			s = valutaNumAndString(this.get(cell));
 		}
 
 		return s;
 	}
-	
-	public String valutaNumAndString(String content){
+
+	public String valutaNumAndString(String content) {
 		char[] array;
 		String s;
 		array = content.toCharArray();

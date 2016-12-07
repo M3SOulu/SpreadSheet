@@ -151,3 +151,12 @@ EditAction 1481125790837 Sheet.java 2752 4 13 0
 UnitTestCaseAction 1481125791344 SheetTest.java OK
 UnitTestSessionAction 1481125791345 SheetTest OK
 EditAction 1481125837353 Sheet.java 2372 4 13 0
+UnitTestCaseAction 1481125837899 SheetTest.java OK
+UnitTestSessionAction 1481125837900 SheetTest OK
+UnitTestCaseAction 1481126041108 SheetTest.java OK
+UnitTestSessionAction 1481126041108 SheetTest OK
+RefactoringAction 1481126064664 SheetTest.java ADD void test FIELD
+RefactoringAction 1481126068672 SheetTest.java RENAME test=>void testContentAno FIELD
+RefactoringAction 1481126071180 SheetTest.java RENAME testContentAno=>void testContentAnotherCell FIELD
+RefactoringAction 1481126073702 SheetTest.java RENAME testContentAnotherCell=>void testContentAnotherCell() METHOD
+EditAction 1481126105975 SheetTest.java 1248 9 19 9
