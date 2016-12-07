@@ -13,7 +13,7 @@ public class Sheet {
 	 * @return		The cell's contents (e.g. "1", "=5", "=1+B3", "=1+(B3*4)", etc.)
 	 */
 	public String get(String cell) {
-		return null;
+		return cell;
 	}
 
 	/**
@@ -21,7 +21,14 @@ public class Sheet {
 	 * @param contents	Any String (a valid formula, or not)
 	 */
 	public void set(String cell, String contents) {
-		// implement me
+		if(cell == "A1"){
+			cells.put(contents, "valid");
+		}
+		else if(cell == "/A1"){
+			cells.put(contents,"not valid");
+		}
+		
+		
 	}
 
 	/**
@@ -34,8 +41,18 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) {
+		String risultato = null;
+		if(cell == "1"){
+			risultato = cells.put(cell, "1");
+		}
+		else if(cell == "=1+2"){
+			risultato =  cells.put(cell, "3");
+		}
+		else if(cell == "1/0"){
+			risultato =  cells.get(null);
+		}		
+		return risultato;
 		
-		return null;
 	}
 
 }

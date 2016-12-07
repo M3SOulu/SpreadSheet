@@ -1,0 +1,97 @@
+FileOpenedAction 1481118774591 SheetTest.java 180 1 1 0
+FileOpenedAction 1481118776676 Sheet.java 1192 3 2 0
+EditAction 1481119217521 Sheet.java 1192 3 2 0
+EditAction 1481119257221 SheetTest.java 152 1 0 0
+EditAction 1481120143618 Sheet.java 1285 3 4 0
+RefactoringAction 1481120162491 SheetTest.java RENAME test()=>void cell() METHOD
+RefactoringAction 1481120165003 SheetTest.java RENAME cell()=>void cellcontains() METHOD
+RefactoringAction 1481120177023 SheetTest.java RENAME cellcontains()=>void cellcontainsone FIELD
+RefactoringAction 1481120182040 SheetTest.java RENAME cellcontainsone()=>void cellcontainsoneintegernumber() METHOD
+EditAction 1481120187714 SheetTest.java 177 1 0 0
+EditAction 1481120236787 SheetTest.java 177 1 0 0
+EditAction 1481120790825 SheetTest.java 242 1 2 1
+CompilationAction 1481120790959 SheetTest.java
+RefactoringAction 1481120799486 SheetTest.java ADD import es.upm.grise.Sheet IMPORT
+CompilationAction 1481120810672 SheetTest.java
+CompilationAction 1481120810833 SheetTest.java
+CompilationAction 1481120840800 SheetTest.java
+EditAction 1481121209612 Sheet.java 1310 3 5 0
+EditAction 1481121312390 Sheet.java 1310 3 5 0
+EditAction 1481121648052 SheetTest.java 271 1 2 1
+CompilationAction 1481121648210 SheetTest.java
+EditAction 1481121774903 SheetTest.java 261 1 2 1
+EditAction 1481121846703 Sheet.java 1367 3 5 0
+EditAction 1481122420264 Sheet.java 1391 3 5 0
+EditAction 1481122599913 SheetTest.java 269 1 2 1
+CompilationAction 1481122600215 SheetTest.java
+RefactoringAction 1481122695626 Sheet.java REMOVE cells FIELD
+RefactoringAction 1481122696636 Sheet.java ADD HashMap<String,String> cells FIELD
+RefactoringAction 1481122701596 SheetTest.java ADD import java.util.HashMap IMPORT
+CompilationAction 1481122705219 SheetTest.java
+CompilationAction 1481122705379 SheetTest.java
+CompilationAction 1481122705379 SheetTest.java
+CompilationAction 1481122705380 SheetTest.java
+CompilationAction 1481122705380 SheetTest.java
+CompilationAction 1481122709685 SheetTest.java
+CompilationAction 1481122709685 SheetTest.java
+CompilationAction 1481122709685 SheetTest.java
+CompilationAction 1481122709834 SheetTest.java
+EditAction 1481122715855 SheetTest.java 371 1 2 1
+EditAction 1481122776327 SheetTest.java 375 1 1 1
+RefactoringAction 1481122804226 SheetTest.java ADD void cellcontain FIELD
+RefactoringAction 1481122807733 SheetTest.java RENAME cellcontain=>void cellcontains FIELD
+RefactoringAction 1481122838241 SheetTest.java REMOVE cellcontains FIELD
+EditAction 1481122865176 SheetTest.java 375 1 1 1
+EditAction 1481123258575 Sheet.java 1367 3 5 0
+EditAction 1481123458931 Sheet.java 1370 3 5 0
+EditAction 1481123995631 Sheet.java 1439 3 5 0
+EditAction 1481124007622 SheetTest.java 380 1 1 1
+RefactoringAction 1481124071933 SheetTest.java ADD void test() METHOD
+RefactoringAction 1481124128250 SheetTest.java ADD import org.junit.Before IMPORT
+EditAction 1481124355501 Sheet.java 1439 3 5 0
+EditAction 1481124359039 SheetTest.java 656 2 7 3
+RefactoringAction 1481124409912 SheetTest.java ADD void sum FIELD
+RefactoringAction 1481124411921 SheetTest.java RENAME sum=>void sumB FIELD
+RefactoringAction 1481124415428 SheetTest.java RENAME sumB=>void sumBe FIELD
+RefactoringAction 1481124417448 SheetTest.java RENAME sumBe=>void sumBetween FIELD
+RefactoringAction 1481124431967 SheetTest.java RENAME sumBetween=>void sumBetweenNum FIELD
+RefactoringAction 1481124432974 SheetTest.java RENAME sumBetweenNum=>void sumBetweenNumber FIELD
+RefactoringAction 1481124434979 SheetTest.java RENAME sumBetweenNumber=>void sumBetweenNumber() METHOD
+RefactoringAction 1481124441497 SheetTest.java RENAME cellcontainsoneintegernumber()=>void cellontainsoneintegernumber() METHOD
+RefactoringAction 1481124442515 SheetTest.java RENAME cellontainsoneintegernumber()=>void cellContainsoneintegernumber() METHOD
+RefactoringAction 1481124444539 SheetTest.java RENAME cellContainsoneintegernumber()=>void cellContainsneintegernumber() METHOD
+RefactoringAction 1481124445544 SheetTest.java RENAME cellContainsneintegernumber()=>void cellContainsOneintegernumber() METHOD
+RefactoringAction 1481124447551 SheetTest.java RENAME cellContainsOneintegernumber()=>void cellContainsOneIntegernumber() METHOD
+RefactoringAction 1481124450065 SheetTest.java RENAME cellContainsOneIntegernumber()=>void cellContainsOneIntegerNumber() METHOD
+EditAction 1481124643139 Sheet.java 1411 3 4 0
+CompilationAction 1481124643305 Sheet.java
+CompilationAction 1481124651394 Sheet.java
+CompilationAction 1481124651561 Sheet.java
+CompilationAction 1481124660515 Sheet.java
+EditAction 1481124662870 SheetTest.java 718 3 7 3
+CompilationAction 1481124663157 SheetTest.java
+CompilationAction 1481124663158 SheetTest.java
+RefactoringAction 1481124782774 SheetTest.java ADD import sun.org.mozilla.javascript.internal.EvaluatorException IMPORT
+RefactoringAction 1481124948357 SheetTest.java REMOVE sumBetweenNumber() METHOD
+RefactoringAction 1481125040411 SheetTest.java ADD void test2 FIELD
+RefactoringAction 1481125041421 SheetTest.java RENAME test2=>void test2() METHOD
+EditAction 1481125050265 Sheet.java 1439 3 5 0
+EditAction 1481125116024 SheetTest.java 759 3 7 3
+EditAction 1481125226377 Sheet.java 1355 3 4 0
+EditAction 1481125290390 SheetTest.java 793 3 8 4
+UnitTestCaseAction 1481125502561 SheetTest.java FAIL
+UnitTestSessionAction 1481125502573 Spreadsheet FAIL
+RefactoringAction 1481125516166 SheetTest.java REMOVE test2() METHOD
+EditAction 1481125529435 SheetTest.java 723 2 7 3
+UnitTestCaseAction 1481125530374 SheetTest.java FAIL
+UnitTestSessionAction 1481125530375 Spreadsheet FAIL
+EditAction 1481125725542 SheetTest.java 723 2 7 3
+RefactoringAction 1481125910398 SheetTest.java ADD void test FIELD
+RefactoringAction 1481125911407 SheetTest.java RENAME test=>void test2 FIELD
+RefactoringAction 1481125912422 SheetTest.java RENAME test2=>void test2() METHOD
+RefactoringAction 1481126352829 SheetTest.java REMOVE test2() METHOD
+EditAction 1481126353006 SheetTest.java 723 2 7 3
+EditAction 1481126956070 Sheet.java 1357 3 4 0
+EditAction 1481128030739 Sheet.java 1465 3 3 0
+CompilationAction 1481128030866 Sheet.java
+EditAction 1481128095633 Sheet.java 1529 3 5 0
