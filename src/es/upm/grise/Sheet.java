@@ -7,13 +7,15 @@ public class Sheet {
 
 	private HashMap <String, String> cells = new HashMap <String, String>();
 	private ArrayList <String> visitedCells;
+	private String cell;
+	private String contents;
 
 	/**
 	 * @param cell	A String representing a cell (e.g. "A1", "XZ21", etc.)
 	 * @return		The cell's contents (e.g. "1", "=5", "=1+B3", "=1+(B3*4)", etc.)
 	 */
 	public String get(String cell) {
-		return null;
+	return cell;
 	}
 
 	/**
@@ -21,7 +23,8 @@ public class Sheet {
 	 * @param contents	Any String (a valid formula, or not)
 	 */
 	public void set(String cell, String contents) {
-		// implement me
+	this.cell = cell;
+	this.contents = contents;
 	}
 
 	/**
@@ -33,9 +36,37 @@ public class Sheet {
 	 *				In case of circular references, return #Circular
 	 * @throws CircularReferenceException 
 	 */
-	public String evaluate(String cell) {
-		
-		return null;
+	
+	public String evaluate(String cell) throws ComputationErrorException, CircularReferenceException { //fare la catch dell eccezzione, quando trova quella stringa ritorna #error
+	String result = null;
+	if (cell == "1/0"){
+		if (isNumber(get(cell)))
+			return result;
+	}
+	return result;
 	}
 
+	private boolean isNumber(String isNum){ //verificare che una stringa contenga interi
+		boolean num = true;
+		char[] seq = isNum.toCharArray();
+		
+		for (int i = 0; i < seq.length; i++) {
+			try{
+				Integer.parseInt(Character.toString(seq[i]));
+			}catch (Exception e) {
+				num = false;
+			}
+		}
+		return num;
+	}
+	
+	public String forumlas(String cell){
+		String forumla = null;
+		if(cell.charAt(0) == '=') {
+			String[] sep = cell.split("="); 
+			//TO-DO
+		}
+		
+		return forumla;
+	}
 }

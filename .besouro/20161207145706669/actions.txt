@@ -1,0 +1,139 @@
+FileOpenedAction 1481119027102 Sheet.java 1192 3 2 0
+FileOpenedAction 1481119335248 SheetTest.java 180 1 1 0
+RefactoringAction 1481119849927 Sheet.java ADD String cell FIELD
+RefactoringAction 1481119852958 Sheet.java ADD String contents FIELD
+EditAction 1481119949128 Sheet.java 1299 3 4 0
+EditAction 1481120021803 Sheet.java 1327 3 5 0
+RefactoringAction 1481120269949 SheetTest.java RENAME test()=>void testE() METHOD
+RefactoringAction 1481120271957 SheetTest.java RENAME testE()=>void testError() METHOD
+RefactoringAction 1481120331573 SheetTest.java ADD import es.upm.grise.Sheet IMPORT
+RefactoringAction 1481120420256 SheetTest.java ADD import es.upm.grise.CircularReferenceException IMPORT
+RefactoringAction 1481120431789 SheetTest.java ADD import es.upm.grise.ComputationErrorException IMPORT
+FileOpenedAction 1481120678400 ComputationErrorException.java 85 0 0 0
+EditAction 1481120982586 SheetTest.java 538 1 4 1
+CompilationAction 1481120982777 SheetTest.java
+CompilationAction 1481120982777 SheetTest.java
+EditAction 1481120982791 Sheet.java 1394 3 5 0
+RefactoringAction 1481121628193 SheetTest.java ADD void testError()/2 METHOD
+RefactoringAction 1481121634200 SheetTest.java RENAME testError()/2=>void testError2() METHOD
+EditAction 1481121801970 Sheet.java 1357 3 5 0
+CompilationAction 1481121804710 SheetTest.java
+UnitTestCaseAction 1481121807695 SheetTest.java FAIL
+UnitTestSessionAction 1481121807703 SheetTest FAIL
+CompilationAction 1481121834893 SheetTest.java
+UnitTestCaseAction 1481121835261 SheetTest.java FAIL
+UnitTestSessionAction 1481121835262 SheetTest FAIL
+UnitTestCaseAction 1481121866752 SheetTest.java FAIL
+UnitTestSessionAction 1481121866753 SheetTest FAIL
+CompilationAction 1481121898242 SheetTest.java
+RefactoringAction 1481122677167 SheetTest.java REMOVE testError2() METHOD
+RefactoringAction 1481122713190 SheetTest.java RENAME testError()=>void testErrorone FIELD
+RefactoringAction 1481122720734 SheetTest.java RENAME testError()=>void testErrorOneDiv() METHOD
+RefactoringAction 1481122722265 SheetTest.java RENAME testErrorOneDiv()=>void testErrorOneDivZero() METHOD
+EditAction 1481123259198 Sheet.java 1558 3 7 0
+CompilationAction 1481123259365 Sheet.java
+UnitTestCaseAction 1481123262843 SheetTest.java FAIL
+UnitTestSessionAction 1481123262844 SheetTest FAIL
+UnitTestCaseAction 1481123374422 SheetTest.java FAIL
+UnitTestSessionAction 1481123374422 SheetTest FAIL
+EditAction 1481123402708 Sheet.java 1509 3 6 0
+UnitTestCaseAction 1481123403246 SheetTest.java FAIL
+UnitTestSessionAction 1481123403247 SheetTest FAIL
+UnitTestCaseAction 1481123511882 SheetTest.java FAIL
+UnitTestSessionAction 1481123511882 SheetTest FAIL
+EditAction 1481123563867 SheetTest.java 582 1 3 0
+UnitTestCaseAction 1481123564417 SheetTest.java FAIL
+UnitTestSessionAction 1481123564418 SheetTest FAIL
+RefactoringAction 1481123590773 SheetTest.java ADD String result FIELD
+EditAction 1481123598175 SheetTest.java 594 1 2 0
+UnitTestCaseAction 1481123598700 SheetTest.java FAIL
+UnitTestSessionAction 1481123598701 SheetTest FAIL
+RefactoringAction 1481123766728 Sheet.java ADD boolean d FIELD
+RefactoringAction 1481123769751 Sheet.java REMOVE d FIELD
+RefactoringAction 1481123771267 Sheet.java ADD boolean isNum FIELD
+RefactoringAction 1481123772277 Sheet.java RENAME isNum=>boolean isNum() METHOD
+RefactoringAction 1481123784862 Sheet.java RENAME isNum()=>boolean isNum(int) METHOD
+RefactoringAction 1481123841563 Sheet.java RENAME isNum(int)=>boolean isNum(String) METHOD
+RefactoringAction 1481123853101 Sheet.java RENAME isNum(String)=>boolean isNumber(String) METHOD
+EditAction 1481124139666 SheetTest.java 591 1 2 0
+UnitTestCaseAction 1481124141000 SheetTest.java FAIL
+UnitTestSessionAction 1481124141001 SheetTest FAIL
+UnitTestCaseAction 1481124388408 SheetTest.java FAIL
+UnitTestSessionAction 1481124388409 SheetTest FAIL
+UnitTestCaseAction 1481124391949 SheetTest.java FAIL
+UnitTestSessionAction 1481124391949 SheetTest FAIL
+UnitTestCaseAction 1481124428004 SheetTest.java FAIL
+UnitTestSessionAction 1481124428005 SheetTest FAIL
+UnitTestCaseAction 1481124466677 SheetTest.java FAIL
+UnitTestSessionAction 1481124466678 SheetTest FAIL
+EditAction 1481124895962 Sheet.java 1813 4 10 0
+EditAction 1481124896191 SheetTest.java 567 1 2 0
+UnitTestCaseAction 1481124896692 SheetTest.java OK
+UnitTestSessionAction 1481124896692 SheetTest OK
+RefactoringAction 1481124945697 SheetTest.java ADD void testErrorOneDivZero()/2 METHOD
+RefactoringAction 1481124949713 SheetTest.java RENAME testErrorOneDivZero()/2=>void testError() METHOD
+RefactoringAction 1481124955723 SheetTest.java RENAME testError()=>void test() METHOD
+RefactoringAction 1481124965228 SheetTest.java RENAME test()=>void testIsOneNumber() METHOD
+EditAction 1481124983484 Sheet.java 1809 4 10 0
+EditAction 1481124983641 SheetTest.java 850 2 4 0
+UnitTestCaseAction 1481124984262 SheetTest.java OK
+UnitTestSessionAction 1481124984263 SheetTest OK
+RefactoringAction 1481124993756 SheetTest.java RENAME testIsOneNumber()=>void testErrorIsOneNumber() METHOD
+RefactoringAction 1481124997760 SheetTest.java RENAME testErrorIsOneNumber()=>void testErrorChara() METHOD
+RefactoringAction 1481124998767 SheetTest.java RENAME testErrorChara()=>void testErrorCharather() METHOD
+EditAction 1481125008675 SheetTest.java 856 2 4 0
+UnitTestCaseAction 1481125009181 SheetTest.java OK
+UnitTestSessionAction 1481125009181 SheetTest OK
+RefactoringAction 1481125014801 SheetTest.java ADD void testErrorOneDivZero()/2 METHOD
+RefactoringAction 1481125019313 SheetTest.java RENAME testErrorOneDivZero()/2=>void testOne() METHOD
+RefactoringAction 1481125020832 SheetTest.java RENAME testOne()=>void testOneNumber() METHOD
+EditAction 1481125038495 SheetTest.java 1131 3 6 0
+UnitTestCaseAction 1481125039025 SheetTest.java OK
+UnitTestSessionAction 1481125039026 SheetTest OK
+RefactoringAction 1481125044884 SheetTest.java REMOVE testOneNumber() METHOD
+RefactoringAction 1481125047388 SheetTest.java ADD void testOneNumber() METHOD
+RefactoringAction 1481125053429 SheetTest.java REMOVE result FIELD
+EditAction 1481125054700 SheetTest.java 1106 3 6 0
+CompilationAction 1481125054859 SheetTest.java
+UnitTestCaseAction 1481125056272 SheetTest.java FAIL
+UnitTestSessionAction 1481125056273 SheetTest FAIL
+RefactoringAction 1481125060711 SheetTest.java ADD Object result FIELD
+CompilationAction 1481125065811 SheetTest.java
+UnitTestCaseAction 1481125066205 SheetTest.java OK
+UnitTestSessionAction 1481125066206 SheetTest OK
+RefactoringAction 1481125219500 SheetTest.java ADD void testOneNumber()/2 METHOD
+RefactoringAction 1481125222508 SheetTest.java RENAME testOneNumber()/2=>void testOneNumberDecimal() METHOD
+RefactoringAction 1481125227054 SheetTest.java RENAME testOneNumberDecimal()=>void testErrorNumberDecimal() METHOD
+EditAction 1481125234821 SheetTest.java 1418 4 8 0
+UnitTestCaseAction 1481125235359 SheetTest.java OK
+UnitTestSessionAction 1481125235360 SheetTest OK
+EditAction 1481125243992 SheetTest.java 1420 4 8 0
+UnitTestCaseAction 1481125244562 SheetTest.java OK
+UnitTestSessionAction 1481125244562 SheetTest OK
+EditAction 1481125385689 SheetTest.java 1416 4 8 0
+RefactoringAction 1481126165986 SheetTest.java ADD import java.util.HashMap IMPORT
+RefactoringAction 1481126180008 SheetTest.java ADD void test FIELD
+RefactoringAction 1481126183020 SheetTest.java RENAME test=>void testCell FIELD
+RefactoringAction 1481126185032 SheetTest.java RENAME testCell=>void testCell() METHOD
+EditAction 1481126560175 SheetTest.java 1769 5 12 1
+UnitTestCaseAction 1481126560705 SheetTest.java FAIL
+UnitTestSessionAction 1481126560706 SheetTest FAIL
+EditAction 1481126653432 SheetTest.java 1771 5 12 1
+UnitTestCaseAction 1481126654027 SheetTest.java FAIL
+UnitTestSessionAction 1481126654027 SheetTest FAIL
+EditAction 1481126663204 SheetTest.java 1773 5 12 1
+UnitTestCaseAction 1481126663716 SheetTest.java FAIL
+UnitTestSessionAction 1481126663717 SheetTest FAIL
+UnitTestCaseAction 1481127472764 SheetTest.java FAIL
+UnitTestSessionAction 1481127472765 SheetTest FAIL
+RefactoringAction 1481127947007 Sheet.java ADD String forum FIELD
+RefactoringAction 1481127952513 Sheet.java RENAME forum=>String forumla FIELD
+RefactoringAction 1481127954038 Sheet.java RENAME forumla=>String forumlas FIELD
+RefactoringAction 1481127956058 Sheet.java RENAME forumlas=>String forumlas() METHOD
+RefactoringAction 1481128012670 Sheet.java RENAME forumlas()=>String forumlas(String) METHOD
+EditAction 1481128537941 Sheet.java 1968 5 13 0
+EditAction 1481128622922 Sheet.java 1972 5 13 0
+EditAction 1481128623082 SheetTest.java 1757 5 12 1
+UnitTestCaseAction 1481128623607 SheetTest.java FAIL
+UnitTestSessionAction 1481128623607 SheetTest FAIL
+EditAction 1481128641206 Sheet.java 1979 5 13 0
