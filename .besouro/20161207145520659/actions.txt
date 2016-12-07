@@ -1,0 +1,249 @@
+FileOpenedAction 1481118921205 Sheet.java 1192 3 2 0
+EditAction 1481119437880 Sheet.java 1216 3 3 0
+FileOpenedAction 1481119512797 SheetTest.java 180 1 1 0
+EditAction 1481119886052 Sheet.java 1410 3 5 0
+EditAction 1481119900428 Sheet.java 1402 3 5 0
+EditAction 1481120095371 Sheet.java 1579 3 8 0
+RefactoringAction 1481120118668 SheetTest.java ADD Sheet spreadSheet FIELD
+RefactoringAction 1481120126431 SheetTest.java ADD import es.upm.grise.Sheet IMPORT
+EditAction 1481120135476 SheetTest.java 244 1 1 0
+RefactoringAction 1481120201376 SheetTest.java ADD import org.junit.Before IMPORT
+RefactoringAction 1481120223217 SheetTest.java REMOVE spreadSheet FIELD
+RefactoringAction 1481120224741 SheetTest.java ADD Sheet spreadSheet FIELD
+RefactoringAction 1481120310774 SheetTest.java ADD import es.upm.grise.ComputationErrorException IMPORT
+EditAction 1481120314395 SheetTest.java 396 1 2 1
+UnitTestCaseAction 1481120322029 SheetTest.java OK
+UnitTestSessionAction 1481120322036 SheetTest OK
+UnitTestCaseAction 1481120331959 SheetTest.java OK
+UnitTestSessionAction 1481120331960 SheetTest OK
+EditAction 1481120342409 SheetTest.java 396 1 2 1
+UnitTestCaseAction 1481120342983 SheetTest.java FAIL
+UnitTestSessionAction 1481120342984 SheetTest FAIL
+EditAction 1481120348314 SheetTest.java 396 1 2 1
+UnitTestCaseAction 1481120348861 SheetTest.java OK
+UnitTestSessionAction 1481120348861 SheetTest OK
+RefactoringAction 1481120359785 SheetTest.java RENAME test()=>void basictest() METHOD
+RefactoringAction 1481120361309 SheetTest.java RENAME basictest()=>void basicTest() METHOD
+EditAction 1481120362416 SheetTest.java 401 1 2 1
+FileOpenedAction 1481120727945 CircularReferenceException.java 86 0 0 0
+FileOpenedAction 1481120729832 ComputationErrorException.java 85 0 0 0
+RefactoringAction 1481120743887 ComputationErrorException.java ADD ComputationErrorException() METHOD
+RefactoringAction 1481120746414 ComputationErrorException.java RENAME ComputationErrorException()=>ComputationErrorException(String) METHOD
+EditAction 1481120773193 ComputationErrorException.java 151 1 1 0
+CompilationAction 1481120773381 Sheet.java
+EditAction 1481120773407 Sheet.java 1618 3 4 0
+CompilationAction 1481120774414 Sheet.java
+CompilationAction 1481120774415 Sheet.java
+CompilationAction 1481120774415 Sheet.java
+RefactoringAction 1481120795046 CircularReferenceException.java ADD CircularReferenceException(String) METHOD
+EditAction 1481120802506 CircularReferenceException.java 153 1 1 0
+CompilationAction 1481120802833 Sheet.java
+CompilationAction 1481120802833 Sheet.java
+CompilationAction 1481120802834 Sheet.java
+CompilationAction 1481120819275 Sheet.java
+CompilationAction 1481120819276 Sheet.java
+CompilationAction 1481120819276 Sheet.java
+CompilationAction 1481120819537 Sheet.java
+CompilationAction 1481120819540 Sheet.java
+EditAction 1481120827418 SheetTest.java 385 1 2 1
+CompilationAction 1481121072687 Sheet.java
+CompilationAction 1481121072688 Sheet.java
+CompilationAction 1481121072870 Sheet.java
+CompilationAction 1481121243952 Sheet.java
+RefactoringAction 1481121252093 SheetTest.java REMOVE import org.junit.Before IMPORT
+RefactoringAction 1481121252094 SheetTest.java REMOVE import es.upm.grise.ComputationErrorException IMPORT
+EditAction 1481121377357 Sheet.java 1851 3 10 0
+EditAction 1481121464241 Sheet.java 1877 3 10 0
+RefactoringAction 1481121516171 SheetTest.java ADD void basicTest()/2 METHOD
+RefactoringAction 1481121523189 SheetTest.java RENAME basicTest()/2=>void est() METHOD
+RefactoringAction 1481121524194 SheetTest.java RENAME est()=>void test() METHOD
+RefactoringAction 1481121525732 SheetTest.java RENAME test()=>void testA() METHOD
+RefactoringAction 1481121529237 SheetTest.java RENAME testA()=>void testAformula() METHOD
+EditAction 1481121540397 SheetTest.java 453 2 4 2
+UnitTestCaseAction 1481121541959 SheetTest.java FAIL
+UnitTestSessionAction 1481121541960 SheetTest FAIL
+EditAction 1481121567308 Sheet.java 1858 3 9 0
+UnitTestCaseAction 1481121570743 SheetTest.java OK
+UnitTestSessionAction 1481121570743 SheetTest OK
+EditAction 1481121583292 SheetTest.java 454 2 4 2
+UnitTestCaseAction 1481121585014 SheetTest.java OK
+UnitTestSessionAction 1481121585014 SheetTest OK
+RefactoringAction 1481121634922 SheetTest.java RENAME testAformula()=>void testABasicformula() METHOD
+RefactoringAction 1481121639440 SheetTest.java RENAME testABasicformula()=>void testABasicormula() METHOD
+RefactoringAction 1481121644458 SheetTest.java RENAME testABasicormula()=>void testABasicFormula() METHOD
+EditAction 1481121646297 SheetTest.java 459 2 4 2
+UnitTestCaseAction 1481121647839 SheetTest.java OK
+UnitTestSessionAction 1481121647840 SheetTest OK
+EditAction 1481122018549 Sheet.java 2017 3 8 0
+CompilationAction 1481122018766 Sheet.java
+CompilationAction 1481122018766 Sheet.java
+CompilationAction 1481122051507 Sheet.java
+CompilationAction 1481122051508 Sheet.java
+UnitTestCaseAction 1481122052988 SheetTest.java FAIL
+UnitTestSessionAction 1481122052989 SheetTest FAIL
+EditAction 1481122123517 Sheet.java 1845 3 8 0
+CompilationAction 1481122123870 Sheet.java
+UnitTestCaseAction 1481122129758 SheetTest.java FAIL
+UnitTestSessionAction 1481122129760 SheetTest FAIL
+CompilationAction 1481122140743 Sheet.java
+CompilationAction 1481122140911 Sheet.java
+CompilationAction 1481122140912 Sheet.java
+CompilationAction 1481122176602 Sheet.java
+UnitTestCaseAction 1481122178587 SheetTest.java FAIL
+UnitTestSessionAction 1481122178587 SheetTest FAIL
+EditAction 1481122223432 Sheet.java 1877 3 9 0
+UnitTestCaseAction 1481122225637 SheetTest.java FAIL
+UnitTestSessionAction 1481122225637 SheetTest FAIL
+EditAction 1481122324515 Sheet.java 1876 3 9 0
+EditAction 1481122424877 Sheet.java 1987 3 8 0
+CompilationAction 1481122425051 Sheet.java
+CompilationAction 1481122436623 Sheet.java
+UnitTestCaseAction 1481122437138 SheetTest.java FAIL
+UnitTestSessionAction 1481122437139 SheetTest FAIL
+EditAction 1481122448017 Sheet.java 1923 3 9 0
+UnitTestCaseAction 1481122448593 SheetTest.java OK
+UnitTestSessionAction 1481122448593 SheetTest OK
+EditAction 1481122728718 Sheet.java 2031 3 9 0
+UnitTestCaseAction 1481122730332 SheetTest.java FAIL
+UnitTestSessionAction 1481122730333 SheetTest FAIL
+EditAction 1481122740155 Sheet.java 2016 3 9 0
+UnitTestCaseAction 1481122744912 SheetTest.java OK
+UnitTestSessionAction 1481122744913 SheetTest OK
+EditAction 1481122794118 Sheet.java 2125 3 9 0
+EditAction 1481123143935 Sheet.java 2357 3 4 0
+CompilationAction 1481123144277 Sheet.java
+CompilationAction 1481123144278 Sheet.java
+CompilationAction 1481123176281 Sheet.java
+CompilationAction 1481123176281 Sheet.java
+UnitTestCaseAction 1481123182500 SheetTest.java OK
+UnitTestSessionAction 1481123182500 SheetTest OK
+EditAction 1481123272890 Sheet.java 2472 3 9 0
+EditAction 1481123330838 Sheet.java 2498 3 10 0
+UnitTestCaseAction 1481123352922 SheetTest.java FAIL
+UnitTestSessionAction 1481123352923 SheetTest FAIL
+UnitTestCaseAction 1481123381167 SheetTest.java FAIL
+UnitTestSessionAction 1481123381168 SheetTest FAIL
+EditAction 1481123410694 Sheet.java 2518 3 10 0
+UnitTestCaseAction 1481123412393 SheetTest.java OK
+UnitTestSessionAction 1481123412394 SheetTest OK
+EditAction 1481123911311 Sheet.java 2872 3 11 0
+UnitTestCaseAction 1481124287663 SheetTest.java OK
+UnitTestSessionAction 1481124287664 SheetTest OK
+RefactoringAction 1481124591318 SheetTest.java ADD void testABasicFormula()/2 METHOD
+RefactoringAction 1481124598323 SheetTest.java RENAME testABasicFormula()/2=>void testADoubleFormula() METHOD
+EditAction 1481124641822 Sheet.java 3084 3 11 0
+UnitTestCaseAction 1481124643516 SheetTest.java FAIL
+UnitTestSessionAction 1481124643517 SheetTest FAIL
+EditAction 1481124706486 Sheet.java 3088 3 11 0
+UnitTestCaseAction 1481124707975 SheetTest.java FAIL
+UnitTestSessionAction 1481124707975 SheetTest FAIL
+EditAction 1481124862768 Sheet.java 3088 3 11 0
+EditAction 1481124938448 Sheet.java 3047 3 11 0
+EditAction 1481124980901 Sheet.java 3047 3 11 0
+EditAction 1481125130967 Sheet.java 3077 3 11 0
+EditAction 1481125332179 Sheet.java 3089 3 11 0
+EditAction 1481125456631 Sheet.java 3079 3 11 0
+UnitTestCaseAction 1481125458334 SheetTest.java FAIL
+UnitTestSessionAction 1481125458335 SheetTest FAIL
+EditAction 1481125471433 Sheet.java 3079 3 11 0
+UnitTestCaseAction 1481125472096 SheetTest.java FAIL
+UnitTestSessionAction 1481125472097 SheetTest FAIL
+EditAction 1481125559192 Sheet.java 3096 3 11 0
+UnitTestCaseAction 1481125559790 SheetTest.java FAIL
+UnitTestSessionAction 1481125559791 SheetTest FAIL
+EditAction 1481125605949 Sheet.java 3093 3 11 0
+UnitTestCaseAction 1481125607775 SheetTest.java FAIL
+UnitTestSessionAction 1481125607775 SheetTest FAIL
+EditAction 1481125680088 Sheet.java 3093 3 11 0
+EditAction 1481125792207 Sheet.java 3084 3 11 0
+CompilationAction 1481125792498 Sheet.java
+EditAction 1481125804067 Sheet.java 3084 3 11 0
+UnitTestCaseAction 1481125805541 SheetTest.java OK
+UnitTestSessionAction 1481125805542 SheetTest OK
+EditAction 1481125837853 Sheet.java 3072 3 11 0
+UnitTestCaseAction 1481125838416 SheetTest.java FAIL
+UnitTestSessionAction 1481125838416 SheetTest FAIL
+EditAction 1481125844917 Sheet.java 3072 3 11 0
+UnitTestCaseAction 1481125846875 SheetTest.java OK
+UnitTestSessionAction 1481125846876 SheetTest OK
+EditAction 1481125890781 Sheet.java 3167 3 11 0
+EditAction 1481125904075 Sheet.java 3167 3 11 0
+UnitTestCaseAction 1481125914478 SheetTest.java OK
+UnitTestSessionAction 1481125914479 SheetTest OK
+UnitTestCaseAction 1481125938943 SheetTest.java FAIL
+UnitTestSessionAction 1481125938944 SheetTest FAIL
+EditAction 1481126223874 Sheet.java 3541 3 11 0
+UnitTestCaseAction 1481126236561 SheetTest.java FAIL
+UnitTestSessionAction 1481126236561 SheetTest FAIL
+EditAction 1481126310106 Sheet.java 3533 3 11 0
+UnitTestCaseAction 1481126313321 SheetTest.java FAIL
+UnitTestSessionAction 1481126313322 SheetTest FAIL
+EditAction 1481126330664 Sheet.java 3533 3 11 0
+UnitTestCaseAction 1481126335182 SheetTest.java FAIL
+UnitTestSessionAction 1481126335182 SheetTest FAIL
+EditAction 1481126388386 Sheet.java 3167 3 11 0
+UnitTestCaseAction 1481126389790 SheetTest.java FAIL
+UnitTestSessionAction 1481126389791 SheetTest FAIL
+EditAction 1481126753501 Sheet.java 3415 3 11 0
+UnitTestCaseAction 1481126756972 SheetTest.java FAIL
+UnitTestSessionAction 1481126756972 SheetTest FAIL
+EditAction 1481126948560 Sheet.java 3417 3 11 0
+EditAction 1481127085756 Sheet.java 3431 3 4 0
+CompilationAction 1481127085916 Sheet.java
+EditAction 1481127092405 Sheet.java 3432 3 11 0
+UnitTestCaseAction 1481127095430 SheetTest.java OK
+UnitTestSessionAction 1481127095431 SheetTest OK
+RefactoringAction 1481127131733 SheetTest.java ADD void testADoubleFormula()/2 METHOD
+RefactoringAction 1481127141737 SheetTest.java RENAME testADoubleFormula()/2=>void testADoubleFormulaBis() METHOD
+UnitTestCaseAction 1481127157912 SheetTest.java FAIL
+UnitTestSessionAction 1481127157913 SheetTest FAIL
+EditAction 1481127228195 Sheet.java 3432 3 11 0
+EditAction 1481127431203 Sheet.java 3709 3 11 0
+EditAction 1481127477476 Sheet.java 3709 3 11 0
+EditAction 1481127511098 Sheet.java 3721 3 11 0
+EditAction 1481127562183 Sheet.java 3686 3 4 0
+CompilationAction 1481127562463 Sheet.java
+CompilationAction 1481127562463 Sheet.java
+CompilationAction 1481127562463 Sheet.java
+CompilationAction 1481127608336 Sheet.java
+CompilationAction 1481127608336 Sheet.java
+CompilationAction 1481127608337 Sheet.java
+EditAction 1481127693844 Sheet.java 3686 3 11 0
+EditAction 1481127833375 Sheet.java 3696 3 11 0
+UnitTestCaseAction 1481127834894 SheetTest.java FAIL
+UnitTestSessionAction 1481127834894 SheetTest FAIL
+EditAction 1481127847866 Sheet.java 3699 3 11 0
+UnitTestCaseAction 1481127848609 SheetTest.java FAIL
+UnitTestSessionAction 1481127848609 SheetTest FAIL
+EditAction 1481127920620 Sheet.java 3696 3 11 0
+UnitTestCaseAction 1481128005184 SheetTest.java FAIL
+UnitTestSessionAction 1481128005184 SheetTest FAIL
+EditAction 1481128136045 Sheet.java 3696 3 11 0
+UnitTestCaseAction 1481128140265 SheetTest.java OK
+UnitTestSessionAction 1481128140265 SheetTest OK
+UnitTestCaseAction 1481128512621 SheetTest.java OK
+UnitTestSessionAction 1481128512621 SheetTest OK
+RefactoringAction 1481128527815 SheetTest.java ADD void testADoubleFormulaBis()/2 METHOD
+RefactoringAction 1481128535847 SheetTest.java ADD void testADoubleFormulaBis()/3 METHOD
+RefactoringAction 1481128538361 SheetTest.java REMOVE testADoubleFormulaBis()/3 METHOD
+RefactoringAction 1481128575008 SheetTest.java RENAME testADoubleFormulaBis()/2=>void testAWrongFormulaBis() METHOD
+RefactoringAction 1481128578570 SheetTest.java RENAME testAWrongFormulaBis()=>void testAWrongFormuls() METHOD
+RefactoringAction 1481128581077 SheetTest.java RENAME testAWrongFormuls()=>void testAWrongFormula() METHOD
+RefactoringAction 1481128607642 SheetTest.java ADD import es.upm.grise.ComputationErrorException IMPORT
+RefactoringAction 1481128613913 SheetTest.java ADD import es.upm.grise.CircularReferenceException IMPORT
+UnitTestCaseAction 1481128640803 SheetTest.java OK
+UnitTestSessionAction 1481128640803 SheetTest OK
+UnitTestCaseAction 1481128702650 SheetTest.java FAIL
+UnitTestSessionAction 1481128702650 SheetTest FAIL
+EditAction 1481128831720 Sheet.java 3541 3 12 0
+UnitTestCaseAction 1481128843826 SheetTest.java FAIL
+UnitTestSessionAction 1481128843826 SheetTest FAIL
+EditAction 1481129166933 Sheet.java 4053 3 12 0
+UnitTestCaseAction 1481129174192 SheetTest.java OK
+UnitTestSessionAction 1481129174193 SheetTest OK
+UnitTestCaseAction 1481129180530 SheetTest.java OK
+UnitTestSessionAction 1481129180531 SheetTest OK
+RefactoringAction 1481129218681 SheetTest.java ADD void testADoubleFormula()/2 METHOD
+RefactoringAction 1481129225195 SheetTest.java RENAME testADoubleFormula()/2=>void testATripleFormula() METHOD
+UnitTestCaseAction 1481129311662 SheetTest.java OK
+UnitTestSessionAction 1481129311662 SheetTest OK
