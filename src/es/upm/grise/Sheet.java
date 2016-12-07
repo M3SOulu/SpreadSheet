@@ -55,22 +55,22 @@ public class Sheet {
 		temp = result.split("=");
 
 		if (temp[1].contains("+")) {
+			
+			String[] tempSum = temp[1].split("+");
+			
+			int sum =+ Integer.valueOf(tempSum[0]);
+			sum =+ Integer.valueOf(tempSum[2]);
+			result = String.valueOf(sum);
+			
 
-			result = "3";
+			//result = "3";
 
 		} else {
 
 			result = temp[1];
 		}
 
-		/*if (temp.length == 1) {
-
-			result = temp[0];
-
-		} else {
-
-			result = "3";
-		}*/
+		
 
 		return result;
 	}
