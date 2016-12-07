@@ -84,6 +84,7 @@ public class Sheet {
 							if (isCell(number)){
 								number = evaluateValue(number);
 							}
+							print(number);
 							result = doOperation(result, number, operator);
 							number = "";
 						}

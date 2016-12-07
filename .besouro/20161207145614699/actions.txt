@@ -329,3 +329,10 @@ RefactoringAction 1481127740000 SheetTest.java ADD void testEvaluateMultipleOper
 RefactoringAction 1481127745024 SheetTest.java RENAME testEvaluateMultipleOperatorsFormula()/2=>void testEvaluateMultipleOperatorsCFormula() METHOD
 RefactoringAction 1481127752531 SheetTest.java RENAME testEvaluateMultipleOperatorsCFormula()=>void testEvaluateOperationsWithCellReferenceFormula() METHOD
 EditAction 1481127806049 SheetTest.java 4973 22 58 22
+UnitTestCaseAction 1481127807653 SheetTest.java FAIL
+UnitTestSessionAction 1481127807654 SheetTest FAIL
+UnitTestCaseAction 1481127827275 SheetTest.java FAIL
+UnitTestSessionAction 1481127827276 SheetTest FAIL
+UnitTestCaseAction 1481127836701 SheetTest.java FAIL
+UnitTestSessionAction 1481127836701 SheetTest FAIL
+EditAction 1481127846544 SheetTest.java 4995 22 59 22
