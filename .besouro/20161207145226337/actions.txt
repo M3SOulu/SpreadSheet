@@ -160,3 +160,6 @@ RefactoringAction 1481126068672 SheetTest.java RENAME test=>void testContentAno 
 RefactoringAction 1481126071180 SheetTest.java RENAME testContentAno=>void testContentAnotherCell FIELD
 RefactoringAction 1481126073702 SheetTest.java RENAME testContentAnotherCell=>void testContentAnotherCell() METHOD
 EditAction 1481126105975 SheetTest.java 1248 9 19 9
+UnitTestCaseAction 1481126106520 SheetTest.java FAIL
+UnitTestSessionAction 1481126106521 SheetTest FAIL
+EditAction 1481126157686 SheetTest.java 1251 9 19 9
