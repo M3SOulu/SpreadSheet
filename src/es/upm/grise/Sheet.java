@@ -41,10 +41,12 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) throws ComputationErrorException {
-		String value = "";
+		String[] value = new String[50];
 		String formula = get(cell);
 		if(formula.charAt(0) != '='){
-			value = formula;
+			value[0] = formula;
+		}else{
+			value += 
 		}
 		return value;
 	}
