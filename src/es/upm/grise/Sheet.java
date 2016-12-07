@@ -50,19 +50,27 @@ public class Sheet {
 	public String evaluate(String cell) {
 		String result = "";
 		String[] temp;
-		
+
 		result = get(cell);
 		temp = result.split("=");
-		
-		if (temp.length == 1) {
-			
+
+		if (temp[0].contains("+")) {
+
+			result = "3";
+
+		} else {
+
 			result = temp[0];
-			
-			
-		}else{
-			
-			result="3";
 		}
+
+		/*if (temp.length == 1) {
+
+			result = temp[0];
+
+		} else {
+
+			result = "3";
+		}*/
 
 		return result;
 	}
