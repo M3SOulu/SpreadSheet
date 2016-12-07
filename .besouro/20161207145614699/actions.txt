@@ -475,3 +475,4 @@ RefactoringAction 1481130166169 SheetTest.java ADD void testEvaluateManyNumbersA
 RefactoringAction 1481130171185 SheetTest.java RENAME testEvaluateManyNumbersAdditionFormula()/2=>void testEvaluateManyNumbersOperationsFormula() METHOD
 RefactoringAction 1481130174192 SheetTest.java RENAME testEvaluateManyNumbersOperationsFormula()=>void testEvaluateManyNumbersOperationsWithParenthesisFormula() METHOD
 EditAction 1481130180334 SheetTest.java 6039 26 71 26
+EditAction 1481130187006 SheetTest.java 6039 26 71 26

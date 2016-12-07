@@ -174,7 +174,7 @@ public class SheetTest {
 	@Test
 	public void testEvaluateManyNumbersOperationsWithParenthesisFormula() throws CircularReferenceException, ComputationErrorException{
 		sheet.set("A1", "=1 + (2 * 2)");
-		assertEquals("9", sheet.evaluate("A1"));
+		assertEquals("5", sheet.evaluate("A1"));
 	}
 	
 	@Test
