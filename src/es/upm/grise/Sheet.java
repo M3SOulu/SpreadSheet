@@ -45,7 +45,12 @@ public class Sheet {
 		if (array[0] == '=') {
 			String arg = this.get(cell).substring(1);
 			if (cells.containsKey(arg)) {
-				s= evaluate(arg);
+				if (!visitedCells.contains(arg)) {
+					visitedCells.add(arg);
+					s = evaluate(arg);
+				} else {
+					s = "#Circular";
+				}
 			} else {
 				s = valutaNumAndString(arg);
 			}
