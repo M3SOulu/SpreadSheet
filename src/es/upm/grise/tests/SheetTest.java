@@ -8,6 +8,8 @@ import es.upm.grise.Sheet;
 
 public class SheetTest {
 	
+	@Before
+	
 	@Test
 	public void cellcontainsoneintegernumber() {
 		Sheet number = new Sheet();
