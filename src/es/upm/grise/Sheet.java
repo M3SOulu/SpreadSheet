@@ -58,6 +58,7 @@ public class Sheet {
 					}
 				}
 			}
+			return ""+ (a+b);
 		}
 		for(int i=0; i<content.length(); i++){
 			if(content.charAt(i)=='\'') return content.replaceAll("\'","");
