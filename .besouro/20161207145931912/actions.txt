@@ -189,3 +189,12 @@ EditAction 1481125214384 Sheet.java 2935 3 7 0
 UnitTestCaseAction 1481125216324 SheetTest.java FAIL
 UnitTestSessionAction 1481125216324 SheetTest FAIL
 EditAction 1481125229690 Sheet.java 2867 3 7 0
+RefactoringAction 1481125277993 SheetTest.java RENAME testSumWithReference()=>void testSumOfTwoNumbers()/2 METHOD
+RefactoringAction 1481125281506 SheetTest.java RENAME testSumOfTwoNumbers()/2=>void testDOfTwoNumbers() METHOD
+RefactoringAction 1481125285030 SheetTest.java RENAME testDOfTwoNumbers()=>void testDifferenceOfTwoNumbers() METHOD
+RefactoringAction 1481125288548 SheetTest.java RENAME testDifferenceOfTwoNumbers()=>void testDifferenceBetweenTwoNumbers() METHOD
+UnitTestCaseAction 1481125313655 SheetTest.java OK
+UnitTestSessionAction 1481125313655 SheetTest OK
+RefactoringAction 1481125323642 SheetTest.java ADD void testDifferenceBetweenTwoNumbers()/2 METHOD
+RefactoringAction 1481125329651 SheetTest.java RENAME testDifferenceBetweenTwoNumbers()/2=>void testDivisionBetweenTwoNumbers() METHOD
+EditAction 1481125338906 SheetTest.java 1290 9 17 8
