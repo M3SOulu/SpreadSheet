@@ -258,3 +258,7 @@ UnitTestSessionAction 1481127941102 SheetTest FAIL
 RefactoringAction 1481127999219 SheetTest.java REMOVE testContentAnotherCellCircular() METHOD
 EditAction 1481128001453 SheetTest.java 1448 9 19 9
 EditAction 1481128001597 Sheet.java 2228 4 13 0
+UnitTestCaseAction 1481128002154 SheetTest.java OK
+UnitTestSessionAction 1481128002154 SheetTest OK
+RefactoringAction 1481128010792 SheetTest.java ADD void testContentAnotherCellCircular() METHOD
+EditAction 1481128030186 SheetTest.java 1432 10 24 10
