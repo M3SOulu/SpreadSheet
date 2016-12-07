@@ -49,6 +49,7 @@ public class Sheet {
 		else{
 			result = evaluateValue(value);
 		}
+		
 		visitedCells.clear();
 		return result;
 	}
