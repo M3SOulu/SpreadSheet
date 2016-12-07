@@ -255,3 +255,18 @@ CompilationAction 1481126736599 Sheet.java
 EditAction 1481126748772 Sheet.java 3593 3 2 0
 CompilationAction 1481126749157 Sheet.java
 EditAction 1481126751903 Sheet.java 3594 3 8 0
+UnitTestCaseAction 1481126756107 SheetTest.java FAIL
+UnitTestSessionAction 1481126756108 SheetTest FAIL
+RefactoringAction 1481126943277 SheetTest.java REMOVE testCircularCall() METHOD
+RefactoringAction 1481126950287 SheetTest.java ADD void testDifferenceBetweenTwoNumbers()/2 METHOD
+RefactoringAction 1481126956342 SheetTest.java RENAME testDifferenceBetweenTwoNumbers()/2=>void testOpa() METHOD
+RefactoringAction 1481126959388 SheetTest.java RENAME testOpa()=>void testSumWIth() METHOD
+RefactoringAction 1481126964411 SheetTest.java RENAME testSumWIth()=>void testSumWithBrack() METHOD
+RefactoringAction 1481126965935 SheetTest.java RENAME testSumWithBrack()=>void testSumWithBrackers() METHOD
+RefactoringAction 1481126967462 SheetTest.java RENAME testSumWithBrackers()=>void testSumWithBrackets() METHOD
+RefactoringAction 1481126971024 SheetTest.java RENAME testSumWithBrackets()=>void testSumWithBrakets() METHOD
+UnitTestCaseAction 1481126991590 SheetTest.java OK
+UnitTestSessionAction 1481126991591 SheetTest OK
+UnitTestCaseAction 1481127011977 SheetTest.java OK
+UnitTestSessionAction 1481127011978 SheetTest OK
+EditAction 1481127020534 SheetTest.java 1816 13 25 12
