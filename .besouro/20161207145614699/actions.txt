@@ -109,3 +109,6 @@ RefactoringAction 1481122545416 Sheet.java RENAME evaluateValue=>String evaluate
 RefactoringAction 1481122553982 Sheet.java RENAME evaluateValue()=>String evaluateValue(String) METHOD
 RefactoringAction 1481122678269 Sheet.java ADD String evaluateFormula(String) METHOD
 EditAction 1481122692406 Sheet.java 2627 7 17 0
+UnitTestCaseAction 1481122698704 SheetTest.java OK
+UnitTestSessionAction 1481122698705 SheetTest OK
+EditAction 1481122763998 Sheet.java 2651 7 18 0
