@@ -25,22 +25,22 @@ public class SheetTest {
 	
 	@Test
 	public void value_is_string() {
-		testSheet.set("A1", "'ciao'");
+		testSheet.set("B1", "'ciao'");
 		
-		assertEquals("ciao", testSheet.evaluate("A1"));
+		assertEquals("ciao", testSheet.evaluate("B1"));
 	}
 	
 	@Test
 	public void evalutate_have_error() {
-		testSheet.set("A1", "=");
-		testSheet.set("A2", ",");
-		testSheet.set("A3", "b11");
-		testSheet.set("A4", " ");
+		testSheet.set("E1", "=");
+		testSheet.set("E2", ",");
+		testSheet.set("E3", "b11");
+		testSheet.set("E4", " ");
 		
-		assertEquals("#Error", testSheet.evaluate("A1"));
-		assertEquals("#Error", testSheet.evaluate("A2"));
-		assertEquals("#Error", testSheet.evaluate("A3"));
-		assertEquals("#Error", testSheet.evaluate("A4"));
+		assertEquals("#Error", testSheet.evaluate("E1"));
+		assertEquals("#Error", testSheet.evaluate("E2"));
+		assertEquals("#Error", testSheet.evaluate("E3"));
+		assertEquals("#Error", testSheet.evaluate("E4"));
 	}
 	
 	
