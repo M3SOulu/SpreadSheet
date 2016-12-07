@@ -122,3 +122,6 @@ RefactoringAction 1481122842069 SheetTest.java RENAME testEvaluateSimpleCellRefe
 RefactoringAction 1481122846593 SheetTest.java RENAME testEvaluateSimpleIntegerFormulaValue()=>void testEvaluateSimpleIntegerFormula() METHOD
 RefactoringAction 1481122848153 SheetTest.java RENAME testEvaluateSimpleStringFormulaValue()=>void testEvaluateSimpleStringFormula() METHOD
 EditAction 1481122874933 SheetTest.java 2191 11 22 10
+RefactoringAction 1481122879728 SheetTest.java ADD void testEvaluateSimpleCellReferenceFormula()/2 METHOD
+RefactoringAction 1481122882247 SheetTest.java RENAME testEvaluateSimpleCellReferenceFormula()/2=>void testEvaluateSimpleCellReferenceErrorFormula() METHOD
+EditAction 1481122897746 SheetTest.java 2435 12 25 11

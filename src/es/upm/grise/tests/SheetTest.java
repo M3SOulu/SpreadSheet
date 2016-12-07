@@ -76,5 +76,12 @@ public class SheetTest {
 		sheet.set("A2", "=A1");
 		assertEquals("qwerty", sheet.evaluate("A2"));
 	}
+	
+	@Test
+	public void testEvaluateSimpleCellReferenceErrorFormula() throws CircularReferenceException, ComputationErrorException{
+		sheet.set("A1", "'testBadString");
+		sheet.set("A2", "=A1");
+		assertEquals("#Error", sheet.evaluate("A2"));
+	}
 
 }
