@@ -59,6 +59,22 @@ public class Sheet {
 				}
 
 			}
+		}else{
+			array = this.get(cell).toCharArray();
+			if (array[0] == '\'' && array[array.length - 1] == '\'') {
+				if (this.get(cell).substring(1, array.length - 1).isEmpty())
+					s = "#Error";
+				else
+					s = this.get(cell).substring(1, array.length - 1);
+			} else {
+				try {
+					Integer.parseInt(this.get(cell));
+					s = this.get(cell);
+				} catch (NumberFormatException e) {
+					s = "#Error";
+				}
+
+			}
 		}
 
 		return s;

@@ -103,3 +103,6 @@ UnitTestSessionAction 1481124161541 SheetTest OK
 RefactoringAction 1481124252163 Sheet.java ADD void elseif() METHOD
 RefactoringAction 1481124253176 Sheet.java REMOVE elseif() METHOD
 EditAction 1481124568701 Sheet.java 1834 3 8 0
+UnitTestCaseAction 1481124569275 SheetTest.java FAIL
+UnitTestSessionAction 1481124569275 SheetTest FAIL
+EditAction 1481124645948 Sheet.java 2252 3 8 0
