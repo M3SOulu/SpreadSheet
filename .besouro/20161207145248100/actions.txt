@@ -23,3 +23,17 @@ EditAction 1481121774903 SheetTest.java 261 1 2 1
 EditAction 1481121846703 Sheet.java 1367 3 5 0
 EditAction 1481122420264 Sheet.java 1391 3 5 0
 EditAction 1481122599913 SheetTest.java 269 1 2 1
+CompilationAction 1481122600215 SheetTest.java
+RefactoringAction 1481122695626 Sheet.java REMOVE cells FIELD
+RefactoringAction 1481122696636 Sheet.java ADD HashMap<String,String> cells FIELD
+RefactoringAction 1481122701596 SheetTest.java ADD import java.util.HashMap IMPORT
+CompilationAction 1481122705219 SheetTest.java
+CompilationAction 1481122705379 SheetTest.java
+CompilationAction 1481122705379 SheetTest.java
+CompilationAction 1481122705380 SheetTest.java
+CompilationAction 1481122705380 SheetTest.java
+CompilationAction 1481122709685 SheetTest.java
+CompilationAction 1481122709685 SheetTest.java
+CompilationAction 1481122709685 SheetTest.java
+CompilationAction 1481122709834 SheetTest.java
+EditAction 1481122715855 SheetTest.java 371 1 2 1
