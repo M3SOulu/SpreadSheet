@@ -21,7 +21,7 @@ public class SheetTest {
 
 	@Test
 	public void evalutateCellOneValue() {
-		assertEquals(1, foglio.evaluate("A1"));
+		assertEquals("1", foglio.evaluate("A1"));
 	}
 
 }
