@@ -141,3 +141,7 @@ UnitTestCaseAction 1481125045961 SheetTest.java OK
 UnitTestSessionAction 1481125045961 SheetTest OK
 EditAction 1481125223950 Sheet.java 2323 3 6 0
 EditAction 1481125258288 Sheet.java 2321 3 6 0
+RefactoringAction 1481125292809 SheetTest.java ADD void value_is_string()/2 METHOD
+RefactoringAction 1481125303350 SheetTest.java RENAME value_is_string()/2=>void value_is_simpre_f() METHOD
+RefactoringAction 1481125305367 SheetTest.java RENAME value_is_simpre_f()=>void value_is_simpre_formula() METHOD
+EditAction 1481125326545 SheetTest.java 1442 5 21 10

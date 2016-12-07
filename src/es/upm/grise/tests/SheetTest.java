@@ -31,6 +31,13 @@ public class SheetTest {
 	}
 	
 	@Test
+	public void value_is_simpre_formula() {
+		testSheet.set("C1", "=88");
+		
+		assertEquals("88", testSheet.evaluate("C1"));
+	}
+	
+	@Test
 	public void evalutate_have_error() {
 		testSheet.set("E1", "=");	//Formula senza parametri
 		testSheet.set("E2", ",");	//carattere casuale non accettato
