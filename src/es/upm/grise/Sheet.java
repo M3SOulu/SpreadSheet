@@ -12,8 +12,8 @@ public class Sheet {
 	 * @param cell	A String representing a cell (e.g. "A1", "XZ21", etc.)
 	 * @return		The cell's contents (e.g. "1", "=5", "=1+B3", "=1+(B3*4)", etc.)
 	 */
-	public String get(String cell) {
-		return null;
+	public String get(String cell) {		
+		return cells.get(cell);
 	}
 
 	/**
@@ -21,7 +21,7 @@ public class Sheet {
 	 * @param contents	Any String (a valid formula, or not)
 	 */
 	public void set(String cell, String contents) {
-		// implement me
+		cells.put(cell, contents);
 	}
 
 	/**
