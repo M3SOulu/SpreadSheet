@@ -80,12 +80,22 @@ public class Sheet {
 					else
 						total = "" + (operation + Integer.parseInt("" + formula.charAt(++i)));
 				}
-				else if (formula.charAt(i) == '-')
-					total = "" + (operation - Integer.parseInt("" + formula.charAt(++i)));
-				else if (formula.charAt(i) == '*')
-					total = "" + (operation * Integer.parseInt("" + formula.charAt(++i)));
+				else if (formula.charAt(i) == '-'){
+					if(((formula.charAt(i+1) >= 'A') && (formula.charAt(i+1) <= 'Z')))
+						total = "" + (operation - Integer.parseInt(evaluate(formula.substring(++i))));
+					else
+						total = "" + (operation - Integer.parseInt("" + formula.charAt(++i)));
+				}
+				else if (formula.charAt(i) == '*'){
+					if(((formula.charAt(i+1) >= 'A') && (formula.charAt(i+1) <= 'Z')))
+						total = "" + (operation - Integer.parseInt(evaluate(formula.substring(++i))));
+					else
+						total = "" + (operation * Integer.parseInt("" + formula.charAt(++i)));
+				}
 				else if (formula.charAt(i) == '/') {
-					if (formula.charAt(i + 1) != '0')
+					if(((formula.charAt(i+1) >= 'A') && (formula.charAt(i+1) <= 'Z')))
+						total = "" + (operation - Integer.parseInt(evaluate(formula.substring(++i))));
+					else if (formula.charAt(i + 1) != '0')
 						total = "" + (operation / Integer.parseInt("" + formula.charAt(++i)));
 					else
 						throw new ComputationErrorException("#Error");
