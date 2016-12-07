@@ -26,3 +26,8 @@ RefactoringAction 1481120009895 SheetTest.java RENAME evalutate_is_not_expressin
 RefactoringAction 1481120013403 SheetTest.java RENAME evalutate_is_not_expressins()=>void evalutate_is_not_expressin() METHOD
 RefactoringAction 1481120023417 SheetTest.java ADD void evalutate_is_not_expressin()/2 METHOD
 EditAction 1481120062560 Sheet.java 1311 3 4 0
+RefactoringAction 1481120070967 SheetTest.java RENAME evalutate_is_not_expressin()/2=>void evalutate_have() METHOD
+RefactoringAction 1481120072982 SheetTest.java RENAME evalutate_have()=>void evalutate_have_error() METHOD
+UnitTestCaseAction 1481120094842 SheetTest.java OK
+UnitTestSessionAction 1481120094843 SheetTest OK
+EditAction 1481120109430 SheetTest.java 486 3 5 2
