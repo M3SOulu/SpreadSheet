@@ -36,6 +36,7 @@ public class Sheet {
 	 *				In case of circular references, return #Circular
 	 * @throws CircularReferenceException 
 	 */
+	
 	public String evaluate(String cell) throws ComputationErrorException, CircularReferenceException { //fare la catch dell eccezzione, quando trova quella stringa ritorna #error
 	String result = null;
 	if (cell == "1/0"){
