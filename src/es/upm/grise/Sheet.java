@@ -43,10 +43,12 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) {
+		String result = "";
+		result = get(cell);
 		
 		
 		
-		return "1";
+		return result;
 	}
 
 }
