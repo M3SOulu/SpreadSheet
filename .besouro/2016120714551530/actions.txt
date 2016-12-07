@@ -31,3 +31,4 @@ UnitTestSessionAction 1481122556751 SheetTest OK
 RefactoringAction 1481123223023 SheetTest.java ADD void testNumber() METHOD
 RefactoringAction 1481123945196 SheetTest.java ADD HashMap<String,String> cells FIELD
 EditAction 1481124037950 SheetTest.java 569 2 7 2
+EditAction 1481124038144 Sheet.java 1275 3 5 0
