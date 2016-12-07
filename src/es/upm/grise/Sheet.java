@@ -80,7 +80,7 @@ public class Sheet {
 			for (Character c : newFormula.toCharArray()){
 				if (isOperator(c)){
 					if (filledFirstNumber){
-						result = (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) + "";
+						result = (Integer.parseInt(result) + Integer.parseInt(secondNumber)) + "";
 					}
 					operator = c.toString();
 					filledFirstNumber = true;
@@ -90,7 +90,7 @@ public class Sheet {
 						secondNumber += c;
 					}
 					else{
-						firstNumber += c;
+						result += c;
 					}
 				}
 			}
