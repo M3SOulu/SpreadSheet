@@ -68,6 +68,7 @@ public class Sheet {
 			//ricavo formula senza '='
 			String formula = contentValue.substring(1, contentValue.length());
 			formula.toUpperCase();
+			System.out.println(formula);
 			try{
 				if(formula == null || formula == "" || formula == " ")
 					throw new ComputationErrorException();
