@@ -145,3 +145,6 @@ RefactoringAction 1481125618269 Sheet.java RENAME valutaNumAndString()=>String v
 EditAction 1481125692737 Sheet.java 2773 4 8 0
 CompilationAction 1481125692943 Sheet.java
 EditAction 1481125699449 Sheet.java 2774 4 13 0
+UnitTestCaseAction 1481125700015 SheetTest.java OK
+UnitTestSessionAction 1481125700016 SheetTest OK
+EditAction 1481125790837 Sheet.java 2752 4 13 0

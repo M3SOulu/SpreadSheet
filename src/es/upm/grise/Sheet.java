@@ -62,7 +62,7 @@ public class Sheet {
 			}
 		} else {
 			
-			s = valutaNumAndString(cell);
+			s = valutaNumAndString(this.get(cell));
 //			array = this.get(cell).toCharArray();
 //			if (array[0] == '\'' && array[array.length - 1] == '\'') {
 //				if (this.get(cell).substring(1, array.length - 1).isEmpty())
@@ -83,19 +83,19 @@ public class Sheet {
 		return s;
 	}
 	
-	public String valutaNumAndString(String cell){
+	public String valutaNumAndString(String content){
 		char[] array;
 		String s;
-		array = this.get(cell).toCharArray();
+		array = content.toCharArray();
 		if (array[0] == '\'' && array[array.length - 1] == '\'') {
-			if (this.get(cell).substring(1, array.length - 1).isEmpty())
+			if (content.substring(1, array.length - 1).isEmpty())
 				s = "#Error";
 			else
-				s = this.get(cell).substring(1, array.length - 1);
+				s = content.substring(1, array.length - 1);
 		} else {
 			try {
-				Integer.parseInt(this.get(cell));
-				s = this.get(cell);
+				Integer.parseInt(content);
+				s = content;
 			} catch (NumberFormatException e) {
 				s = "#Error";
 			}
