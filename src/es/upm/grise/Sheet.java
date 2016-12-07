@@ -35,7 +35,8 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) {
 		String contentValue = get(cell);
-		String result = "#Error";
+		String result = new String();
+		result = "#Error";
 		
 		// caso in cui non è una formula
 		// quindi la stringa valore non inizia con '\'' o '='
