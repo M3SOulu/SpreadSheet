@@ -85,7 +85,6 @@ public class Sheet {
 							if (isCell(number)){
 								number = evaluateValue(number);
 							}
-							print(number);
 							result = doOperation(result, number, operator);
 							number = "";
 						}
@@ -95,6 +94,7 @@ public class Sheet {
 					else{
 						if (readyForOperation){
 							number += c;
+							print(number);
 						}
 						else{
 							result += c;
