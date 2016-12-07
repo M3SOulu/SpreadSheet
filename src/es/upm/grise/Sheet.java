@@ -68,6 +68,12 @@ public class Sheet {
 			//ricavo formula senza '='
 			String formula = contentValue.substring(1, contentValue.length());
 			formula.toUpperCase();
+			try{
+				if(formula == null || formula == "" || formula == "")
+					throw new ComputationErrorException();
+			}catch(ComputationErrorException e){
+				result = "#Error";
+			}
 			if(formula.charAt(0) >= 'A' && formula.charAt(0) <= 'Z')		
 				result = evaluate(formula);
 			else
