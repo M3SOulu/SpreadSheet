@@ -4,11 +4,19 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class SheetTest {
+import com.sun.org.apache.bcel.internal.generic.NEW;
 
+import es.upm.grise.Sheet;
+
+public class SheetTest {
+	
+	Sheet s = new Sheet();
+	
+	
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testReturnTheContent() {
+		s.set("A1","\' 1\'");
+		assertEquals(s.evaluate("A1"),1);
 	}
 
 }
