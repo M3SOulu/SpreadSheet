@@ -205,3 +205,9 @@ EditAction 1481126838518 Sheet.java 2164 4 12 0
 UnitTestCaseAction 1481126839095 SheetTest.java FAIL
 UnitTestSessionAction 1481126839096 SheetTest FAIL
 EditAction 1481126900427 Sheet.java 2202 4 12 0
+UnitTestCaseAction 1481126900995 SheetTest.java OK
+UnitTestSessionAction 1481126900995 SheetTest OK
+RefactoringAction 1481126915785 SheetTest.java ADD void testContentAnotherCell()/2 METHOD
+RefactoringAction 1481126919813 SheetTest.java RENAME testContentAnotherCell()/2=>void testContentAnotherCellC() METHOD
+RefactoringAction 1481126923825 SheetTest.java RENAME testContentAnotherCellC()=>void testContentAnotherCellCircular() METHOD
+EditAction 1481127007216 SheetTest.java 1423 10 24 10
