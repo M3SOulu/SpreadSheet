@@ -11,3 +11,6 @@ RefactoringAction 1481120420256 SheetTest.java ADD import es.upm.grise.CircularR
 RefactoringAction 1481120431789 SheetTest.java ADD import es.upm.grise.ComputationErrorException IMPORT
 FileOpenedAction 1481120678400 ComputationErrorException.java 85 0 0 0
 EditAction 1481120982586 SheetTest.java 538 1 4 1
+CompilationAction 1481120982777 SheetTest.java
+CompilationAction 1481120982777 SheetTest.java
+EditAction 1481120982791 Sheet.java 1394 3 5 0
