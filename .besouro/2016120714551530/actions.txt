@@ -120,3 +120,8 @@ UnitTestCaseAction 1481128913395 SheetTest.java FAIL
 UnitTestSessionAction 1481128913395 SheetTest FAIL
 RefactoringAction 1481129086793 Sheet.java REMOVE valutaNumAndString(String) METHOD
 EditAction 1481129127145 Sheet.java 3915 3 10 0
+UnitTestCaseAction 1481129127877 SheetTest.java FAIL
+UnitTestSessionAction 1481129127878 SheetTest FAIL
+RefactoringAction 1481129143138 SheetTest.java RENAME testReturnTheContent()=>void testNumber1() METHOD
+RefactoringAction 1481129150209 SheetTest.java RENAME s=>Sheet sheet FIELD
+EditAction 1481129158659 SheetTest.java 1066 8 16 8

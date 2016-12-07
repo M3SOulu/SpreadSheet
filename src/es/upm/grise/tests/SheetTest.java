@@ -9,13 +9,12 @@ import org.junit.Test;
 
 public class SheetTest {
 
-	Sheet s = new Sheet();
+	Sheet sheet = new Sheet();
 
-	@Test
-	public void testReturnTheContent() {
-		s.set("A1","1");
-		assertEquals(s.evaluate("A1"),"1");
-	}
+	public void testNumber1(){
+				sheet.set("A1","1");		
+				assertEquals("1",sheet.evaluate("A1"));
+		 	}
 
 	@Test
 	public void testIsNotInteger(){
