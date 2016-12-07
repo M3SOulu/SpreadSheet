@@ -60,7 +60,7 @@ public class SheetTest {
 	Sheet mySheet = new Sheet();	
 	//act
 	try {
-		result = mySheet.evaluate("1");
+		result = mySheet.evaluate("1,4");
 	} catch (ComputationErrorException e) {
 		//assert
 		assertEquals("#Error",result);

@@ -105,3 +105,6 @@ RefactoringAction 1481125219500 SheetTest.java ADD void testOneNumber()/2 METHOD
 RefactoringAction 1481125222508 SheetTest.java RENAME testOneNumber()/2=>void testOneNumberDecimal() METHOD
 RefactoringAction 1481125227054 SheetTest.java RENAME testOneNumberDecimal()=>void testErrorNumberDecimal() METHOD
 EditAction 1481125234821 SheetTest.java 1418 4 8 0
+UnitTestCaseAction 1481125235359 SheetTest.java OK
+UnitTestSessionAction 1481125235360 SheetTest OK
+EditAction 1481125243992 SheetTest.java 1420 4 8 0
