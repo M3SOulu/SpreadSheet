@@ -27,4 +27,10 @@ public class SheetTest {
 		sheet.set("A1","+1");		
 		Assert.assertEquals("1",sheet.evaluate("A1"));
 	}
+	
+	@Test
+	public void testNumberNegative1(){
+		sheet.set("A1","-1");		
+		Assert.assertEquals("-1",sheet.evaluate("A1"));
+	}
 }
