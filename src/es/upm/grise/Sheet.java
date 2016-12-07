@@ -11,9 +11,14 @@ public class Sheet {
 	/**
 	 * @param cell	A String representing a cell (e.g. "A1", "XZ21", etc.)
 	 * @return		The cell's contents (e.g. "1", "=5", "=1+B3", "=1+(B3*4)", etc.)
+	 * @throws ComputationErrorException 
 	 */
-	public String get(String cell) {
-		return null;
+	public String get(String cell) throws ComputationErrorException {
+		if (cells.containsKey(cell)){
+			return cells.get(cell);
+		} else{
+			throw new ComputationErrorException("#Error");
+		}
 	}
 
 	/**
@@ -21,7 +26,7 @@ public class Sheet {
 	 * @param contents	Any String (a valid formula, or not)
 	 */
 	public void set(String cell, String contents) {
-		// implement me
+		cells.put(cell, contents);
 	}
 
 	/**
@@ -33,9 +38,16 @@ public class Sheet {
 	 *				In case of circular references, return #Circular
 	 * @throws CircularReferenceException 
 	 */
-	public String evaluate(String cell) {
-		
-		return null;
+	public String evaluate(String cell) throws CircularReferenceException {
+		if (cells.containsKey(cell)){
+			if (cell.charAt(0) == '='){
+				String[] array = new String[20];
+			} else {
+				return cells.get(cell);
+			}
+		}else{
+			throw new CircularReferenceException();
+		}
 	}
 
 }
