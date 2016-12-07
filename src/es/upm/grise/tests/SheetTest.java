@@ -15,12 +15,13 @@ public class SheetTest {
 	//arrange
 	Sheet mySheet = new Sheet();	
 	//act
-	String cell = "1/0";
+	String result = null;
 	try {
-		String result = mySheet.evaluate("1/0");
+		result = mySheet.evaluate("1/0");
 	} catch (ComputationErrorException e) {
+		
 		//assert
-		assertEquals("#Error",mySheet.evaluate(cell));
+		assertEquals("#Error",result);
 		e.printStackTrace();
 	}	
 
