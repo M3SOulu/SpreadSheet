@@ -25,8 +25,8 @@ public class SheetTest {
 	@Test
 	public void testADoubleFormula() throws Exception {
 		spreadSheet.set("A2", "=1-2");
-		spreadSheet.set("A1", "=A2+4");
-		assertEquals("3",spreadSheet.evaluate("A1"));
+		spreadSheet.set("A1", "=2+A2");
+		assertEquals("1",spreadSheet.evaluate("A1"));
 	}
 
 }
