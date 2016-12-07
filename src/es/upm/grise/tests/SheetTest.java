@@ -12,7 +12,7 @@ public class SheetTest {
 	@Test
 	public void cellcontainsoneintegernumber() {
 		Sheet number = new Sheet();
-		assertEquals("1",number);
+		assertEquals("1",cells.set("1"));
 	}
 
 }
