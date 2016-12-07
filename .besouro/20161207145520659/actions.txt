@@ -132,3 +132,6 @@ UnitTestSessionAction 1481124287664 SheetTest OK
 RefactoringAction 1481124591318 SheetTest.java ADD void testABasicFormula()/2 METHOD
 RefactoringAction 1481124598323 SheetTest.java RENAME testABasicFormula()/2=>void testADoubleFormula() METHOD
 EditAction 1481124641822 Sheet.java 3084 3 11 0
+UnitTestCaseAction 1481124643516 SheetTest.java FAIL
+UnitTestSessionAction 1481124643517 SheetTest FAIL
+EditAction 1481124706486 Sheet.java 3088 3 11 0
