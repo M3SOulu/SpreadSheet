@@ -53,6 +53,12 @@ public class SheetTest {
 	}
 	
 	@Test
+	public void testFirstNumberNegative(){
+		sheet.set("A1","=-1+1");		
+		Assert.assertEquals("0",sheet.evaluate("A1"));
+	}
+	
+	@Test
 	public void testDifferenceBetweenTwoNumbers(){
 		sheet.set("A1","=1-1");		
 		Assert.assertEquals("0",sheet.evaluate("A1"));
