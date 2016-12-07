@@ -53,7 +53,7 @@ public class SheetTest {
 	@Test
 	public void testFormulas2(){
 		s.set("A1", "=1.5");
-		assertEquals(s.evaluate("A1"),"#Errorb");
+		assertEquals(s.evaluate("A1"),"#Error");
 	}
 	
 	@Test
