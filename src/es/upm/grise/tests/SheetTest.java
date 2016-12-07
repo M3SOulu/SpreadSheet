@@ -73,7 +73,7 @@ public class SheetTest {
 		Sheet mySheet = new Sheet();
 		cells.get(cells);
 		//act
-		result = mySheet.evaluate("=1+1");
+		result = mySheet.forumlas("=1+1");
 		//assert
 		assertEquals("2",result);
 	}
