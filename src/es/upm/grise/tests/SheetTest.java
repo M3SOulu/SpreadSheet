@@ -90,7 +90,7 @@ public class SheetTest {
 		sheet.set("A2", "=A1");
 		sheet.set("A3", "=A4");
 		sheet.set("A4", "='test'");
-		assertEquals("#Circular", sheet.evaluate("A2"));
+		assertEquals("test", sheet.evaluate("A2"));
 	}
 
 }
