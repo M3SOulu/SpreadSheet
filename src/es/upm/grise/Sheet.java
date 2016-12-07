@@ -42,8 +42,6 @@ public class Sheet {
 		if (isNumber(get(cell)))
 			return result;
 	}
-	
-	
 	return result;
 	}
 

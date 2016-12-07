@@ -68,3 +68,10 @@ UnitTestCaseAction 1481124466677 SheetTest.java FAIL
 UnitTestSessionAction 1481124466678 SheetTest FAIL
 EditAction 1481124895962 Sheet.java 1813 4 10 0
 EditAction 1481124896191 SheetTest.java 567 1 2 0
+UnitTestCaseAction 1481124896692 SheetTest.java OK
+UnitTestSessionAction 1481124896692 SheetTest OK
+RefactoringAction 1481124945697 SheetTest.java ADD void testErrorOneDivZero()/2 METHOD
+RefactoringAction 1481124949713 SheetTest.java RENAME testErrorOneDivZero()/2=>void testError() METHOD
+RefactoringAction 1481124955723 SheetTest.java RENAME testError()=>void test() METHOD
+RefactoringAction 1481124965228 SheetTest.java RENAME test()=>void testIsOneNumber() METHOD
+EditAction 1481124983484 Sheet.java 1809 4 10 0
