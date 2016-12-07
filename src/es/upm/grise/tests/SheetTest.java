@@ -25,5 +25,12 @@ public class SheetTest {
 		String result = evaluate("B1");
 		assertEquals("1", result);
 	}
+	
+	@Test
+	public void testSingleNumberWithSingleQuotes(){
+		cells.put("F7", '4');
+		String result = evaluate("F7");
+		assertEquals(4, result);
+	}
 
 }
