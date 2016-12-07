@@ -85,13 +85,16 @@ public class Sheet {
 						}
 						operator = c.toString();
 						readyForOperation = true;
+						print("Ready");
 					}
 					else{
 						if (readyForOperation){
 							number += c;
+							print("adding to second number " + c);
 						}
 						else{
 							result += c;
+							print("adding to first number " + c);
 						}
 					}
 				}
@@ -99,17 +102,6 @@ public class Sheet {
 			if (!result.equals("#Error")){
 				result = doOperation(result, number, operator);
 			}
-		}
-		return result;
-	}
-	
-	private String doOperation(String a, String b, String op){
-		System.out.println("ATTEMPTING->" + a + "_" + op + "_" + b);
-		String result = "#Error";
-		try{
-			result = (Integer.parseInt(a) + Integer.parseInt(b)) + "";
-		} catch(NumberFormatException e){
-			result = "#Error";
 		}
 		return result;
 	}
@@ -125,6 +117,21 @@ public class Sheet {
 		else if (isCell(value)){ //Cell
 			result = visitedCells.contains(value) ? "#Circular" : evaluate(value);
 			visitedCells.clear();
+		}
+		return result;
+	}
+	
+	private void print(String str){
+		System.out.println(str);
+	}
+	
+	private String doOperation(String a, String b, String op){
+		print("ATTEMPTING->" + a + "_" + op + "_" + b);
+		String result = "#Error";
+		try{
+			result = (Integer.parseInt(a) + Integer.parseInt(b)) + "";
+		} catch(NumberFormatException e){
+			result = "#Error";
 		}
 		return result;
 	}
