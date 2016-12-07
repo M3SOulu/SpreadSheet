@@ -44,6 +44,7 @@ public class Sheet {
 		Integer operation = 0;
 		String total = "";
 		String formula = get(cell);
+		visitedCells.add(cell);
 		for (int i = 0; i < formula.length(); i++) {
 			if (formula.charAt(0) == '=') {
 				if (formula.charAt(i) > '0' || formula.charAt(i) < '9') {
