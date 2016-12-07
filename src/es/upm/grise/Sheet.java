@@ -38,23 +38,25 @@ public class Sheet {
 		String result = null;
 		
 		// caso in cui non è una formula
-		if(contentValue.charAt(0) != '='){			
+		if(contentValue.charAt(0) != '=' && contentValue.charAt(0) != '\''){			
 			
 			//controllo dei caratteri non accettati
 			try{
 				for(int i = 0; i < contentValue.length(); i++){
+					
+					// lancio eccezione nel caso in cui ci sono caratteri diversi dalle 10 cifre o diversi dal '-' 
+					// altrimenti la stringa è corretta					
 					if((contentValue.charAt(i) < '0' || contentValue.charAt(i) > '9') && contentValue.charAt(i) != '-'){					
 						throw new CircularReferenceException();
-					}else{
+					}else
 						result = contentValue;
-					}
 				}
 			}catch(CircularReferenceException e){
 				result = "#Error";
 			}
 
 		// caso in cui è una formula
-		}else
+		}else if
 			result = "#Error";
 		
 		return result;
