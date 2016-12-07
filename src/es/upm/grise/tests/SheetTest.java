@@ -22,9 +22,9 @@ public class SheetTest {
 	
 	@Test
 	public void testNumber(){
-		cells.put("B1", "=15");
-		int result = Integer.parseInt("3*5");
-		assertEquals(15, result);
+		cells.put("B1", "=1+1");
+		int result = Integer.parseInt("");
+		assertEquals(2, result);
 	}
 
 }
