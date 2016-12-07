@@ -52,9 +52,12 @@ public class Sheet {
 						&& valueCell.charAt(j) != '+' && valueCell.charAt(j) != '-' && valueCell.charAt(j) != '*'
 						&& valueCell.charAt(j) != '/' && valueCell.charAt(j) != '\'') {
 					throw new CircularReferenceException("#Error.");
-				} else if (valueCell.charAt(j) != '\''){
-					value = 
 				}
+			}
+			if (valueCell.charAt(0) == '\''){
+				String[] str = new String[20];
+				str = valueCell.split("\'");
+				value = str.toString();
 			}
 			if (valueCell.charAt(0) == '=') {
 				int result = 0;
