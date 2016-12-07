@@ -28,7 +28,7 @@ public class SheetTest {
 		testSheet.set("A1", "=");
 		testSheet.set("A2", ",");
 		testSheet.set("A3", "b11");
-		testSheet.set("A4", "");
+		testSheet.set("A4", " ");
 		
 		assertEquals("#Error", testSheet.evaluate("A1"));
 		assertEquals("#Error", testSheet.evaluate("A2"));
