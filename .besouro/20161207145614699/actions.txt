@@ -24,3 +24,6 @@ RefactoringAction 1481120266728 SheetTest.java REMOVE testSetCellIntegerValue() 
 RefactoringAction 1481120266729 SheetTest.java REMOVE testSetCellStringValue() METHOD
 RefactoringAction 1481120270758 SheetTest.java RENAME testGetCellIntegerValue()=>void testSetAndGetCellIntegerValue() METHOD
 EditAction 1481120283155 Sheet.java 1253 3 2 0
+UnitTestCaseAction 1481120284754 SheetTest.java FAIL
+UnitTestSessionAction 1481120284762 SheetTest FAIL
+EditAction 1481120369205 Sheet.java 1275 3 3 0
