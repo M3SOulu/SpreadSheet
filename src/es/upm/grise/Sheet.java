@@ -39,16 +39,41 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) throws CircularReferenceException {
+		String value = null;
 		if (cells.containsKey(cell)){
-			if (cell.charAt(0) == '='){
-				String[] array = new String[20];
-				array = cell.split("=");
+			String valueCell = cells.get(cell);
+			if (valueCell.charAt(0) == '=') {
+				int result = 0;
+				for(int i = 0; i < cell.length(); i++){
+					if (valueCell.charAt(i) == '+'){
+						String a = String.valueOf(i-1);
+						String b = String.valueOf(i+1);
+						result = Integer.parseInt(a)+Integer.parseInt(b);
+						value = String.valueOf(result);
+					} else if (cell.charAt(i) == '-'){
+						String a = String.valueOf(i-1);
+						String b = String.valueOf(i+1);
+						result = Integer.parseInt(a)-Integer.parseInt(b);
+						value = String.valueOf(result);
+					} else if (cell.charAt(i) == '*'){
+						String a = String.valueOf(i-1);
+						String b = String.valueOf(i+1);
+						result = Integer.parseInt(a)*Integer.parseInt(b);
+						value = String.valueOf(result);
+					} else if (cell.charAt(i) == '/'){
+						String a = String.valueOf(i-1);
+						String b = String.valueOf(i+1);
+						result = Integer.parseInt(a)/Integer.parseInt(b);
+						value = String.valueOf(result);
+					}
+				}
 			} else {
-				return cells.get(cell);
+				value = cells.get(cell);
 			}
 		}else{
 			throw new CircularReferenceException();
 		}
+		return value;
 	}
 
 }
