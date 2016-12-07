@@ -21,7 +21,9 @@ public class Sheet {
 	 * @param contents	Any String (a valid formula, or not)
 	 */
 	public void set(String cell, String contents) {
-		
+		if(cell == "A1"){
+			
+		}
 	}
 
 	/**

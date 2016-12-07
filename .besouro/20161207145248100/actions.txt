@@ -10,3 +10,9 @@ RefactoringAction 1481120182040 SheetTest.java RENAME cellcontainsone()=>void ce
 EditAction 1481120187714 SheetTest.java 177 1 0 0
 EditAction 1481120236787 SheetTest.java 177 1 0 0
 EditAction 1481120790825 SheetTest.java 242 1 2 1
+CompilationAction 1481120790959 SheetTest.java
+RefactoringAction 1481120799486 SheetTest.java ADD import es.upm.grise.Sheet IMPORT
+CompilationAction 1481120810672 SheetTest.java
+CompilationAction 1481120810833 SheetTest.java
+CompilationAction 1481120840800 SheetTest.java
+EditAction 1481121209612 Sheet.java 1310 3 5 0
