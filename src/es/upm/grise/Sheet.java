@@ -58,7 +58,7 @@ public class Sheet {
 				//String[] str = new String[20];
 				//str = valueCell.split("\'");
 				//value = str.toString();
-				valueCell.replace("\'", "");
+				valueCell.replace("'", "");
 			}
 			if (valueCell.charAt(0) == '=') {
 				int result = 0;

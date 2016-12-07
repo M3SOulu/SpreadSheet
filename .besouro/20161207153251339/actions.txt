@@ -160,3 +160,8 @@ UnitTestSessionAction 1481128740160 SheetTest FAIL
 EditAction 1481128919229 Sheet.java 3325 3 5 0
 CompilationAction 1481128919357 Sheet.java
 EditAction 1481128935946 Sheet.java 3325 3 5 0
+UnitTestCaseAction 1481128938612 SheetTest.java FAIL
+UnitTestSessionAction 1481128938612 SheetTest FAIL
+UnitTestCaseAction 1481128947348 SheetTest.java FAIL
+UnitTestSessionAction 1481128947348 SheetTest FAIL
+EditAction 1481128961975 Sheet.java 3324 3 5 0
