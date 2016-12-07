@@ -49,7 +49,7 @@ public class SheetTest {
 	@Test
 	public void testSumOfTwoNumbers(){
 		sheet.set("A1","=1+1");		
-		Assert.assertEquals("2",sheet.evaluate("A1"));
+		Assert.assertEquals("3",sheet.evaluate("A1"));
 	}
 	
 	@Test
