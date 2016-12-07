@@ -233,3 +233,25 @@ RefactoringAction 1481125222813 SheetTest.java ADD void testEvaluateStringConcat
 RefactoringAction 1481125225825 SheetTest.java RENAME testEvaluateStringConcatWithCellReferenceFormula()/2=>void testEvaluateStringConcatWithWrongCellReferenceFormula() METHOD
 EditAction 1481125230032 SheetTest.java 4115 18 49 18
 EditAction 1481125242835 SheetTest.java 4118 18 49 18
+UnitTestCaseAction 1481125244125 SheetTest.java OK
+UnitTestSessionAction 1481125244126 SheetTest OK
+RefactoringAction 1481125540364 Sheet.java ADD String SUM FIELD
+RefactoringAction 1481125551420 Sheet.java ADD String SUB FIELD
+RefactoringAction 1481125551421 Sheet.java ADD String DIV FIELD
+RefactoringAction 1481125555970 Sheet.java ADD String MUL FIELD
+RefactoringAction 1481125562003 Sheet.java ADD String MOD FIELD
+RefactoringAction 1481125597691 Sheet.java REMOVE DIV FIELD
+RefactoringAction 1481125597692 Sheet.java REMOVE MOD FIELD
+RefactoringAction 1481125597692 Sheet.java REMOVE SUB FIELD
+RefactoringAction 1481125597692 Sheet.java REMOVE MUL FIELD
+RefactoringAction 1481125620947 Sheet.java ADD DIV ù FIELD
+RefactoringAction 1481125621982 Sheet.java REMOVE ù FIELD
+RefactoringAction 1481125636107 Sheet.java ADD String SUB FIELD
+RefactoringAction 1481125636108 Sheet.java ADD String DIV FIELD
+RefactoringAction 1481125636108 Sheet.java ADD String MUL FIELD
+RefactoringAction 1481125636108 Sheet.java ADD String MOD FIELD
+RefactoringAction 1481126210270 Sheet.java ADD boolean containsOperators(String)/2 METHOD
+RefactoringAction 1481126212283 Sheet.java RENAME containsOperators(String)/2=>boolean i(String) METHOD
+RefactoringAction 1481126213364 Sheet.java RENAME i(String)=>boolean isOperator(String) METHOD
+RefactoringAction 1481126217380 Sheet.java RENAME isOperator(String)=>boolean isOperator(Character) METHOD
+EditAction 1481126413910 Sheet.java 4739 12 33 0

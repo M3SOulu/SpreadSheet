@@ -7,6 +7,8 @@ public class Sheet {
 	private static final String[] SPECIAL_CHARACTERS = new String[]{"\\", "/" , "*" , "?" , ":" , "[" , "]", "."};
 	private static final String[] OPERATOR_CHARACTERS = new String[]{"+", "-", "/", "*", "%", "&"};
 	public static final String STRING_OPERATOR_CHARACTER = "&";
+	public static final String SUM = "+", SUB = "-", DIV = "/", MUL = "*", MOD ="%";
+	
 	private HashMap <String, String> cells = new HashMap <String, String>();
 	private ArrayList <String> visitedCells;
 	
@@ -61,8 +63,8 @@ public class Sheet {
 	private String evaluateFormula(String formula) throws CircularReferenceException, ComputationErrorException{
 		String result = "#Error"; //If formula tries to concatenate strings with numbers (+ and & in the same formula)
 		if (formula.contains(STRING_OPERATOR_CHARACTER)){ //String concat
-			String[] strings = formula.split(STRING_OPERATOR_CHARACTER);
 			result = "";
+			String[] strings = formula.split(STRING_OPERATOR_CHARACTER);
 			for (String str : strings){
 				result += evaluateValue(str);
 			}
@@ -70,8 +72,28 @@ public class Sheet {
 				result = "#Error";
 			}
 		}
-		else{ //Not string concat
-			
+		else{ //Integer operations
+			result = "";
+			String newFormula = formula.replaceAll(" ", "");
+			boolean filledFirstNumber = false;
+			String firstNumber = "", secondNumber = "", operator = "";
+			for (Character c : newFormula.toCharArray()){
+				if (isOperator(c)){
+					if (filledFirstNumber){
+						result = (Integer.parseInt(firstNumber) + Integer.parseInt(secondNumber)) + "";
+					}
+					operator = c.toString();
+					filledFirstNumber = true;
+				}
+				else{
+					if (filledFirstNumber){
+						secondNumber += c;
+					}
+					else{
+						firstNumber += c;
+					}
+				}
+			}
 		}
 		return result;
 	}
@@ -127,6 +149,14 @@ public class Sheet {
 		boolean result = false;
 		for (String sc : OPERATOR_CHARACTERS){
 			result |= str.contains(sc);
+		}
+		return result;
+	}
+	
+	private boolean isOperator(Character c){
+		boolean result = false;
+		for (String sc : OPERATOR_CHARACTERS){
+			result |= c.equals(sc);
 		}
 		return result;
 	}
