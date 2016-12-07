@@ -39,14 +39,12 @@ public class Sheet {
 	public String evaluate(String cell) throws ComputationErrorException, CircularReferenceException { //fare la catch dell eccezzione, quando trova quella stringa ritorna #error
 	String result = null;
 	if (cell == "1/0"){
-		throw new ComputationErrorException();
+		if (isNumber(get(cell)))
+			return result;
 	}
-	if (isNumber(cell)){
-		return result;
-	}
-	else{
-		throw new ComputationErrorException();
-	}
+	
+	
+	return result;
 	}
 
 	private boolean isNumber(String isNum){ //verificare che una stringa contenga interi
