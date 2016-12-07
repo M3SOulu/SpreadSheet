@@ -26,13 +26,13 @@ public class SheetTest {
 	}
 	
 	@Test
-	public void testIsOneNumber() throws ComputationErrorException, CircularReferenceException{
+	public void testErrorCharather() throws ComputationErrorException, CircularReferenceException{
 	//arrange
 	Sheet mySheet = new Sheet();	
 	//act
 	
 	try {
-		result = mySheet.evaluate("a");
+		result = mySheet.evaluate("aBcd");
 	} catch (ComputationErrorException e) {
 		//assert
 		assertEquals("#Error",result);

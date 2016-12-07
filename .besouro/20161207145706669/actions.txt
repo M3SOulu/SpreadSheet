@@ -76,3 +76,9 @@ RefactoringAction 1481124955723 SheetTest.java RENAME testError()=>void test() M
 RefactoringAction 1481124965228 SheetTest.java RENAME test()=>void testIsOneNumber() METHOD
 EditAction 1481124983484 Sheet.java 1809 4 10 0
 EditAction 1481124983641 SheetTest.java 850 2 4 0
+UnitTestCaseAction 1481124984262 SheetTest.java OK
+UnitTestSessionAction 1481124984263 SheetTest OK
+RefactoringAction 1481124993756 SheetTest.java RENAME testIsOneNumber()=>void testErrorIsOneNumber() METHOD
+RefactoringAction 1481124997760 SheetTest.java RENAME testErrorIsOneNumber()=>void testErrorChara() METHOD
+RefactoringAction 1481124998767 SheetTest.java RENAME testErrorChara()=>void testErrorCharather() METHOD
+EditAction 1481125008675 SheetTest.java 856 2 4 0
