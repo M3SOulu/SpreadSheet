@@ -61,7 +61,14 @@ public class Sheet {
 	private String evaluateFormula(String formula) throws CircularReferenceException, ComputationErrorException{
 		String result = "#Error"; //If formula tries to concatenate strings with numbers (+ and & in the same formula)
 		if (formula.contains(STRING_OPERATOR_CHARACTER)){ //String concat
-			
+			String[] strings = formula.split(STRING_OPERATOR_CHARACTER);
+			result = "";
+			for (String str : strings){
+				result += evaluateValue(str);
+			}
+			if (result.contains("#Error")){
+				result = "#Error";
+			}
 		}
 		else{ //Not string concat
 			
