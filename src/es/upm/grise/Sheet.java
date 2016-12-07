@@ -68,7 +68,8 @@ public class Sheet {
 			formula.toUpperCase();
 			if(formula.charAt(0) >= 'A' && formula.charAt(0) <= 'Z')		
 				result = evaluate(formula);
-			
+			else
+				result = formula;
 		}
 		else
 			result = "#Error";
