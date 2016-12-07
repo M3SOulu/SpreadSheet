@@ -48,7 +48,6 @@ public class Sheet {
 			if (formula.charAt(0) == '=') {
 				if (formula.charAt(i) > '0' || formula.charAt(i) < '9'){
 					operation = Integer.parseInt("" + formula.charAt(1));
-					continue;
 				}
 					
 				// else if(formula.charAt(1) > 'A' || formula.charAt(1) < 'Z')
