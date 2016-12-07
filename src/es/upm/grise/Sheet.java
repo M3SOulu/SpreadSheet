@@ -64,7 +64,7 @@ public class Sheet {
 			result = contentValue.substring(1, contentValue.length()-1);
 		
 		// caso in cui è una formula
-		else if(contentValue.charAt(0) == '='){
+		else if(contentValue.charAt(0) == '=' && contentValue.charAt(0) == ' '){
 			result = contentValue.substring(1, contentValue.length());
 		}
 		else
