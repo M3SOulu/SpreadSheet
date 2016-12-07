@@ -101,3 +101,11 @@ RefactoringAction 1481122147912 Sheet.java RENAME containsSpecialCharacters(Stri
 RefactoringAction 1481122176512 Sheet.java ADD String FIELD
 RefactoringAction 1481122180021 Sheet.java RENAME SPECIAL_CHARACTERS/2=>String FIELD
 EditAction 1481122476136 Sheet.java 2326 5 12 0
+UnitTestCaseAction 1481122479725 SheetTest.java FAIL
+UnitTestSessionAction 1481122479726 SheetTest FAIL
+RefactoringAction 1481122542386 Sheet.java ADD String eva FIELD
+RefactoringAction 1481122544401 Sheet.java RENAME eva=>String evaluateValue FIELD
+RefactoringAction 1481122545416 Sheet.java RENAME evaluateValue=>String evaluateValue() METHOD
+RefactoringAction 1481122553982 Sheet.java RENAME evaluateValue()=>String evaluateValue(String) METHOD
+RefactoringAction 1481122678269 Sheet.java ADD String evaluateFormula(String) METHOD
+EditAction 1481122692406 Sheet.java 2627 7 17 0

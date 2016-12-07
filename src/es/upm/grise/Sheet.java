@@ -40,13 +40,26 @@ public class Sheet {
 		
 		if (value.startsWith("=")){ //Formula
 			if (!containsOperators(value)){
-				evaluate(value.replaceFirst("=", ""));
+				result = evaluateValue(value.replaceFirst("=", ""));
 			}
 			else{
-				
+				result = evaluateFormula(value.replaceFirst("=", ""));
 			}
 		}
-		else if (value.startsWith("'") && value.endsWith("'")){ //String
+		else{
+			result = evaluateValue(value);
+		}
+		return result;
+	}
+	
+	public String evaluateFormula(String formula){
+		String result = "#Error";
+		return result;
+	}
+	
+	public String evaluateValue(String value){
+		String result = "#Error";
+		if (value.startsWith("'") && value.endsWith("'")){ //String
 			result = value.replaceAll("'", "");
 		}
 		else if (!containsSpecialCharacters(value)){ //Integer
