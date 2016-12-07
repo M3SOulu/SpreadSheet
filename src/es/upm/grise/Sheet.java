@@ -46,7 +46,7 @@ public class Sheet {
 				for(int i = 0; i < valueCell.length(); i++){
 					char letter = valueCell.charAt(i);
 					if(!Character.isDigit(letter) && letter != '=' && letter != '+' && letter != '-' && letter != '*' && letter != '/'){
-						
+						throw new CircularReferenceException("#Error.");
 					}
 					if (valueCell.charAt(i) == '+'){
 						String a = String.valueOf(i-1);
