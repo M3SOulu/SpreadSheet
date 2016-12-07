@@ -14,3 +14,6 @@ RefactoringAction 1481120717391 SheetTest.java RENAME evalutateCell()=>void eval
 RefactoringAction 1481120719395 SheetTest.java RENAME evalutateCellOne()=>void evalutateCellOneValu() METHOD
 RefactoringAction 1481120721403 SheetTest.java RENAME evalutateCellOneValu()=>void evalutateCellOneValue() METHOD
 EditAction 1481120791603 SheetTest.java 443 2 6 1
+UnitTestCaseAction 1481120798174 SheetTest.java FAIL
+UnitTestSessionAction 1481120798181 SheetTest FAIL
+EditAction 1481120809240 Sheet.java 1345 3 3 0
