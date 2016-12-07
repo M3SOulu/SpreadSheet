@@ -211,3 +211,6 @@ RefactoringAction 1481126915785 SheetTest.java ADD void testContentAnotherCell()
 RefactoringAction 1481126919813 SheetTest.java RENAME testContentAnotherCell()/2=>void testContentAnotherCellC() METHOD
 RefactoringAction 1481126923825 SheetTest.java RENAME testContentAnotherCellC()=>void testContentAnotherCellCircular() METHOD
 EditAction 1481127007216 SheetTest.java 1423 10 24 10
+UnitTestCaseAction 1481127007770 SheetTest.java OK
+UnitTestSessionAction 1481127007771 SheetTest OK
+EditAction 1481127015050 SheetTest.java 1424 10 24 10

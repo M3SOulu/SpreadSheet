@@ -74,7 +74,7 @@ public class SheetTest {
 		s.set("A1", "=A2");
 		s.set("A2", "=A3");
 		s.set("A3", "=A4");
-		s.set("A4", "=2");
+		s.set("A4", "=A2");
 		assertEquals(s.evaluate("A1"),"2");
 	}
 
