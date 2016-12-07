@@ -218,3 +218,8 @@ EditAction 1481126059749 Sheet.java 3510 3 8 0
 UnitTestCaseAction 1481126063830 SheetTest.java FAIL
 UnitTestSessionAction 1481126063831 SheetTest FAIL
 EditAction 1481126107205 Sheet.java 3450 3 8 0
+UnitTestCaseAction 1481126109438 SheetTest.java OK
+UnitTestSessionAction 1481126109439 SheetTest OK
+RefactoringAction 1481126122794 SheetTest.java ADD void testDivisionBetweenTwoNumbers()/2 METHOD
+RefactoringAction 1481126130299 SheetTest.java RENAME testDivisionBetweenTwoNumbers()/2=>void testMoltiplicationBetweenTwoNumbers() METHOD
+EditAction 1481126133145 SheetTest.java 1431 10 19 9
