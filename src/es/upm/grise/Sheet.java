@@ -21,7 +21,7 @@ public class Sheet {
 	 * @param contents	Any String (a valid formula, or not)
 	 */
 	public void set(String cell, String contents) {
-		// implement me
+		
 	}
 
 	/**
@@ -34,8 +34,12 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) {
-		
-		return null;
+		String cellcontains = null;
+		if(cell == "1"){
+			cellcontains = "1";
+		}
+		//else if(cell == "=1+")
+		return cellcontains;
 	}
 
 }
