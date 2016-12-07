@@ -38,7 +38,7 @@ public class Sheet {
 		String result = "#Error";
 		String value = get(cell);
 		
-		if (value.startsWith("=")){ //Formula
+		if (value.startsWith("=")){
 			if (!containsOperators(value)){
 				result = evaluateValue(value.replaceFirst("=", ""));
 			}
