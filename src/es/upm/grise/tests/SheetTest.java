@@ -15,7 +15,7 @@ public class SheetTest {
 	@Test
 	public void test() throws ComputationErrorException {
 		spreadSheet.set("A1", "6");
-		assertEquals("5",spreadSheet.evaluate("A1"));
+		assertEquals("6",spreadSheet.evaluate("A1"));
 	}
 
 }
