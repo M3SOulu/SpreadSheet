@@ -77,9 +77,10 @@ public class Sheet {
 			result = "";
 			if (formula.replace("(", "").length() != formula.replace(")", "").length())
 				return DEFAULT_ERROR;
-			
+
+			System.out.println(formula);
 			String newFormula = formula.replaceAll(" ", "");
-			String[] subFormulas = newFormula.split("(");
+			String[] subFormulas = newFormula.contains("(") ? newFormula.replaceAll(")", "(").split("(") : new String[]{newFormula};
 			for (String subFormula : subFormulas){
 				boolean readyForOperation = false;
 				String number = "", operator = "";
