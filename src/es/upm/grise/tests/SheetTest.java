@@ -33,4 +33,9 @@ public class SheetTest {
 	public void testFunctionEvaluateWithAnExpression() throws CircularReferenceException {
 		Assert.assertEquals("2", spreadSheet.evaluate("X33"));
 	}
+	
+	@Test (expected = CircularReferenceException.class)
+	public void testExceptionEvaluate() throws CircularReferenceException {
+		Assert.assertEquals("2", spreadSheet.evaluate("B4"));
+	}
 }
