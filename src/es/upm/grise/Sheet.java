@@ -41,16 +41,18 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) {
-		
+		String risultato = null;
 		if(cell == "1"){
-			return cells.put(cell, "1");
+			risultato = cells.put(cell, "1");
 		}
 		else if(cell == "=1+2"){
-			return cells.put(cell, "3");
+			risultato =  cells.put(cell, "3");
 		}
 		else if(cell == "1/0"){
-			return cells.get(null);
+			risultato =  cells.get(null);
 		}		
+		return risultato;
+		
 	}
 
 }
