@@ -63,7 +63,7 @@ public class Sheet {
 		array = content.toCharArray();
 		if (array[0] == '\'' && array[array.length - 1] == '\'') {
 			if (content.substring(1, array.length - 1).isEmpty())
-				s = "#Error1";
+				s = "#Error";
 			else
 				s = content.substring(1, array.length - 1);
 		} else {
@@ -71,7 +71,7 @@ public class Sheet {
 				Integer.parseInt(content);
 				s = content;
 			} catch (NumberFormatException e) {
-				s = "#Error2";
+				s = "#Error";
 			}
 
 		}
