@@ -81,6 +81,9 @@ public class Sheet {
 				if (!result.equals("#Error")){
 					if (isOperator(c.toString())){
 						if (readyForOperation){
+							if (isCell(number)){
+								number = evaluateValue(number);
+							}
 							result = doOperation(result, number, operator);
 							number = "";
 						}
@@ -124,7 +127,6 @@ public class Sheet {
 	}
 	
 	private String doOperation(String a, String b, String op){
-		print("ATTEMPTING->" + a + "_" + op + "_" + b);
 		String result = "#Error";
 		int numA = 0, numB = 0;
 		try{

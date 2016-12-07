@@ -323,3 +323,9 @@ EditAction 1481127659458 SheetTest.java 4778 21 56 21
 UnitTestCaseAction 1481127660646 SheetTest.java FAIL
 UnitTestSessionAction 1481127660646 SheetTest FAIL
 EditAction 1481127665232 SheetTest.java 4733 21 55 21
+UnitTestCaseAction 1481127736241 SheetTest.java OK
+UnitTestSessionAction 1481127736241 SheetTest OK
+RefactoringAction 1481127740000 SheetTest.java ADD void testEvaluateMultipleOperatorsFormula()/2 METHOD
+RefactoringAction 1481127745024 SheetTest.java RENAME testEvaluateMultipleOperatorsFormula()/2=>void testEvaluateMultipleOperatorsCFormula() METHOD
+RefactoringAction 1481127752531 SheetTest.java RENAME testEvaluateMultipleOperatorsCFormula()=>void testEvaluateOperationsWithCellReferenceFormula() METHOD
+EditAction 1481127806049 SheetTest.java 4973 22 58 22
