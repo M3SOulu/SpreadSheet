@@ -104,7 +104,7 @@ public class Sheet {
 	}
 	
 	private String doOperation(String a, String b, String op){
-		System.out.println("ATTEMPTING->" + a + "" + op + "" + b);
+		System.out.println("ATTEMPTING->" + a + "_" + op + "_" + b);
 		String result = "#Error";
 		try{
 			result = (Integer.parseInt(a) + Integer.parseInt(b)) + "";
