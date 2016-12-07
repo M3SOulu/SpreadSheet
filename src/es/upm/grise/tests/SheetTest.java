@@ -15,5 +15,11 @@ public class SheetTest {
 		spreadSheet.set("A1", "6");
 		assertEquals("6",spreadSheet.evaluate("A1"));
 	}
+	
+	@Test
+	public void testAformula() throws Exception {
+		spreadSheet.set("A1", "=1+2");
+		assertEquals("3",spreadSheet.evaluate("A1"));
+	}
 
 }

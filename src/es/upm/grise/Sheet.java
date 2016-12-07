@@ -41,12 +41,11 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) throws Exception {
-		String value = "";
 		Integer operation = 0;
 		String total = "";
 		String formula = get(cell);
 		if(formula.charAt(0) != '='){
-			value = formula;
+			total = formula;
 		}else{
 			if(formula.charAt(1) > '0' || formula.charAt(1) < '9')
 				operation = Integer.parseInt(""+formula.charAt(1));
@@ -55,7 +54,7 @@ public class Sheet {
 			else if(formula.charAt(2) == '-')
 				total = "" + (operation - Integer.parseInt(""+formula.charAt(3)));
 		}
-		return value;
+		return total;
 	}
 
 }

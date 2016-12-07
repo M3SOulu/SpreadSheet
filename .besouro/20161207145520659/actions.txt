@@ -54,3 +54,9 @@ RefactoringAction 1481121252093 SheetTest.java REMOVE import org.junit.Before IM
 RefactoringAction 1481121252094 SheetTest.java REMOVE import es.upm.grise.ComputationErrorException IMPORT
 EditAction 1481121377357 Sheet.java 1851 3 10 0
 EditAction 1481121464241 Sheet.java 1877 3 10 0
+RefactoringAction 1481121516171 SheetTest.java ADD void basicTest()/2 METHOD
+RefactoringAction 1481121523189 SheetTest.java RENAME basicTest()/2=>void est() METHOD
+RefactoringAction 1481121524194 SheetTest.java RENAME est()=>void test() METHOD
+RefactoringAction 1481121525732 SheetTest.java RENAME test()=>void testA() METHOD
+RefactoringAction 1481121529237 SheetTest.java RENAME testA()=>void testAformula() METHOD
+EditAction 1481121540397 SheetTest.java 453 2 4 2
