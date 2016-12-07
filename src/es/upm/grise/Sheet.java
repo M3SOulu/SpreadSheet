@@ -53,11 +53,11 @@ public class Sheet {
 				if ((formula.charAt(i) >= 'A') && (formula.charAt(i) <= 'Z')){
 					int count = 0;
 					for(;i<formula.length();i++){
-						while((formula.charAt(i)=='+')||
-							  (formula.charAt(i)=='-')||
-							  (formula.charAt(i)=='*')||
-							  (formula.charAt(i)=='/')||
-							  (formula.charAt(i)=='%')){
+						while((formula.charAt(i)!='+')||
+							  (formula.charAt(i)!='-')||
+							  (formula.charAt(i)!='*')||
+							  (formula.charAt(i)!='/')||
+							  (formula.charAt(i)!='%')){
 							count ++;
 						}
 					}
