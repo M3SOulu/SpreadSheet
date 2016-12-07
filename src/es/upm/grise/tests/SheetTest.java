@@ -19,16 +19,11 @@ public class SheetTest {
 		assertEquals(s.evaluate("A1"),"1");
 	}
 	
+	
 	@Test
-	public void test(){
-		assertEquals(Integer.parseInt("1"),1);
+	public void testIsNotInteger(){
+		s.set("A1", "1.5");
+		assertEquals(s.evaluate("A1"),"#Error");
 	}
-	
-	
-//	@Test
-//	public void testIsNotInteger(){
-//		s.set("A1", "1.5");
-//		assertEquals(s.evaluate("A1"),"#Error");
-//	}
 
 }
