@@ -239,3 +239,11 @@ EditAction 1481128831720 Sheet.java 3541 3 12 0
 UnitTestCaseAction 1481128843826 SheetTest.java FAIL
 UnitTestSessionAction 1481128843826 SheetTest FAIL
 EditAction 1481129166933 Sheet.java 4053 3 12 0
+UnitTestCaseAction 1481129174192 SheetTest.java OK
+UnitTestSessionAction 1481129174193 SheetTest OK
+UnitTestCaseAction 1481129180530 SheetTest.java OK
+UnitTestSessionAction 1481129180531 SheetTest OK
+RefactoringAction 1481129218681 SheetTest.java ADD void testADoubleFormula()/2 METHOD
+RefactoringAction 1481129225195 SheetTest.java RENAME testADoubleFormula()/2=>void testATripleFormula() METHOD
+UnitTestCaseAction 1481129311662 SheetTest.java OK
+UnitTestSessionAction 1481129311662 SheetTest OK

@@ -44,4 +44,12 @@ public class SheetTest {
 		spreadSheet.set("A1", "=((A2)+2");
 		assertEquals("1",spreadSheet.evaluate("A1"));
 	}
+	
+	@Test
+	public void testATripleFormula() throws ComputationErrorException, CircularReferenceException {
+		spreadSheet.set("A2", "=A3*2");
+		spreadSheet.set("A3", "=1-2");
+		spreadSheet.set("A1", "=2+A2");
+		assertEquals("0",spreadSheet.evaluate("A1"));
+	}
 }
