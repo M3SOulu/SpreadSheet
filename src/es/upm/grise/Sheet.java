@@ -55,9 +55,10 @@ public class Sheet {
 				}
 			}
 			if (valueCell.charAt(0) == '\''){
-				String[] str = new String[20];
-				str = valueCell.split("\'");
-				value = str.toString();
+				//String[] str = new String[20];
+				//str = valueCell.split("\'");
+				//value = str.toString();
+				valueCell.replace('\'', "");
 			}
 			if (valueCell.charAt(0) == '=') {
 				int result = 0;
