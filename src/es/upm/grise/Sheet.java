@@ -57,8 +57,8 @@ public class Sheet {
 			}
 
 		// caso in cui è una formula
-		}else if (contentValue.charAt(0) == '\'' && contentValue.charAt(contentValue.length()) == '\'')
-			result = contentValue.substring(1, contentValue.length());
+		}else if (contentValue.charAt(0) == '\'' && contentValue.charAt(contentValue.length()-1) == '\'')
+			result = contentValue.substring(1, contentValue.length()-1);
 		else
 			result ="#Error";
 		
