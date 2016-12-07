@@ -34,12 +34,13 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) {
-
 		try{
 			Integer.parseInt(this.get(cell));
 		}catch (NumberFormatException e) {
 			return "#Error";
 		}
+		if(true)
+			return "ciao";
 		return this.get(cell);
 	}
 
