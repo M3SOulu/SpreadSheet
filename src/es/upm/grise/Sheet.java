@@ -59,6 +59,7 @@ public class Sheet {
 							  (formula.charAt(i)!='/')||
 							  (formula.charAt(i)!='%')){
 							count ++;
+							i++;
 						}
 					}
 					operation = Integer.parseInt(evaluate(formula.substring(i, count)));
