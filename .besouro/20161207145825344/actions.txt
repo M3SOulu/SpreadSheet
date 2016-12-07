@@ -80,3 +80,6 @@ EditAction 1481122594594 SheetTest.java 732 3 11 5
 UnitTestCaseAction 1481122596488 SheetTest.java OK
 UnitTestSessionAction 1481122596489 SheetTest OK
 EditAction 1481122626639 SheetTest.java 734 3 11 5
+UnitTestCaseAction 1481122629205 SheetTest.java OK
+UnitTestSessionAction 1481122629206 SheetTest OK
+EditAction 1481122670016 SheetTest.java 813 3 13 6
