@@ -37,3 +37,12 @@ CompilationAction 1481120774415 Sheet.java
 CompilationAction 1481120774415 Sheet.java
 RefactoringAction 1481120795046 CircularReferenceException.java ADD CircularReferenceException(String) METHOD
 EditAction 1481120802506 CircularReferenceException.java 153 1 1 0
+CompilationAction 1481120802833 Sheet.java
+CompilationAction 1481120802833 Sheet.java
+CompilationAction 1481120802834 Sheet.java
+CompilationAction 1481120819275 Sheet.java
+CompilationAction 1481120819276 Sheet.java
+CompilationAction 1481120819276 Sheet.java
+CompilationAction 1481120819537 Sheet.java
+CompilationAction 1481120819540 Sheet.java
+EditAction 1481120827418 SheetTest.java 385 1 2 1
