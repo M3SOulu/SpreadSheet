@@ -53,7 +53,7 @@ public class Sheet {
 					s = a.substring(1, array.length - 1);
 			} else {
 				try {
-					Integer.parseInt(this.get(cell));
+					Integer.parseInt(a);
 					s = a;
 				} catch (NumberFormatException e) {
 					s = "#Error";
