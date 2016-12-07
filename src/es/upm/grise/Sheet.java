@@ -49,12 +49,13 @@ public class Sheet {
 				if (formula.charAt(i) > '0' || formula.charAt(i) < '9'){
 					operation = Integer.parseInt("" + formula.charAt(1));
 				}
-					
 				// else if(formula.charAt(1) > 'A' || formula.charAt(1) < 'Z')
 				if (formula.charAt(i) == '+')
 					total = "" + (operation + Integer.parseInt("" + formula.charAt(i+1)));
 				else if (formula.charAt(i) == '-')
 					total = "" + (operation - Integer.parseInt("" + formula.charAt(i+1)));
+				else if (formula.charAt(i) == '*')
+					total = "" + (operation * Integer.parseInt("" + formula.charAt(i+1)));
 			} else {
 				total = formula;
 			}
