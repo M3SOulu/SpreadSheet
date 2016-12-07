@@ -37,8 +37,11 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) throws CircularReferenceException{
-		
-	return null;
+	String result = null;
+	
+	
+	
+	return result;
 	}
 
 }
