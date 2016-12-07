@@ -12,50 +12,80 @@ public class SheetTest {
 	Sheet sheet = new Sheet();
 
 	public void testNumber1(){
-				sheet.set("A1","1");		
-				assertEquals("1",sheet.evaluate("A1"));
-		 	}
-
-	@Test
-	public void testIsNotInteger(){
-		s.set("A1", "1.5");
-		assertEquals(s.evaluate("A1"),"#Error");
+		sheet.set("A1","1");		
+		assertEquals("1",sheet.evaluate("A1"));
 	}
 
 	@Test
-	public void testReturnAString1(){
-		s.set("A1", "\'ciao\'");
-		assertEquals(s.evaluate("A1"),"ciao");
+	public void testNumberPositive1(){
+		sheet.set("A1","+1");		
+		assertEquals("1",sheet.evaluate("A1"));
 	}
 
 	@Test
-	public void testReturnAString2(){
-		s.set("A1", "\'ciao");
-		assertEquals(s.evaluate("A1"),"#Error");
+	public void testNumberNegative1(){
+		sheet.set("A1","-1");		
+		assertEquals("-1",sheet.evaluate("A1"));
 	}
 
 	@Test
-	public void testReturnAString3(){
-		s.set("A1", "\'\'");
-		assertEquals(s.evaluate("A1"),"#Error");
+	public void testFloatNumber(){
+		sheet.set("A1","1.2");		
+		assertEquals("#Error",sheet.evaluate("A1"));
 	}
 
 	@Test
-	public void testFormulas1(){
-		s.set("A1","=1");
-		assertEquals(s.evaluate("A1"),"1");
+	public void testStringWithQuotes(){
+		sheet.set("A1","'hello'");		
+		assertEquals("hello",sheet.evaluate("A1"));
 	}
 
 	@Test
-	public void testFormulas2(){
-		s.set("A1", "=1.5");
-		assertEquals(s.evaluate("A1"),"#Error");
+	public void testSumOfTwoNumbers(){
+		sheet.set("A1","=1+1");		
+		assertEquals("2",sheet.evaluate("A1"));
 	}
 
 	@Test
-	public void testFormulas3(){
-		s.set("A1", "=\'ciao\'");
-		assertEquals(s.evaluate("A1"),"ciao");
+	public void testFirstNumberNegative(){
+		sheet.set("A1","=-1+1");		
+		assertEquals("0",sheet.evaluate("A1"));
+	}
+
+	@Test
+	public void testDifferenceBetweenTwoNumbers(){
+		sheet.set("A1","=1-1");		
+		assertEquals("0",sheet.evaluate("A1"));
+	}
+
+	@Test
+	public void testDivisionBetweenTwoNumbers(){
+		sheet.set("A1","=1/1");		
+		assertEquals("1",sheet.evaluate("A1"));
+	}
+
+	@Test
+	public void testDivisionByZero(){
+		sheet.set("A1","=1/0");		
+		assertEquals("#Error",sheet.evaluate("A1"));
+	}
+
+	@Test
+	public void testSumWithBrakets(){
+		sheet.set("A1","=(1)-1");		
+		assertEquals("0",sheet.evaluate("A1"));
+	}
+
+	@Test
+	public void testMoltiplicationBetweenTwoNumbers(){
+		sheet.set("A1","=1*1");		
+		assertEquals("1",sheet.evaluate("A1"));
+	}
+
+	@Test
+	public void testSumWithSpaces(){
+		sheet.set("A1","=1 + 1");		
+		assertEquals("2",sheet.evaluate("A1"));
 	}
 
 }
