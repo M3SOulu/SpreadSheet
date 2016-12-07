@@ -54,12 +54,6 @@ public class Sheet {
 					throw new CircularReferenceException("#Error.");
 				}
 			}
-			if (valueCell.charAt(0) == '\''){
-				//String[] str = new String[20];
-				//str = valueCell.split("\'");
-				//value = str.toString();
-				value = valueCell.replace("\'", "");
-			}
 			if (valueCell.charAt(0) == '=') {
 				int result = 0;
 				for (int i = 0; i < valueCell.length(); i++) {
@@ -86,6 +80,12 @@ public class Sheet {
 					}
 				}
 			} else {
+				if (valueCell.charAt(0) == '\''){
+					//String[] str = new String[20];
+					//str = valueCell.split("\'");
+					//value = str.toString();
+					value = valueCell.replace("\'", "");
+				}
 				return value = cells.get(cell);
 			}
 		} else {
