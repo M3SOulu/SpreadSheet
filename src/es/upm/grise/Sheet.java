@@ -86,12 +86,12 @@ public class Sheet {
 			} else {
 				Scanner sc = new Scanner(temp[1]);
 
-				sc.useDelimiter("[+-\*]{1,}");
+				sc.useDelimiter("[+-\\/*]{1,}");
 
 				sum = sc.nextInt();
 
 				while (sc.hasNext()) {
-					sum = sum - sc.nextInt();
+					sum = sum * sc.nextInt();
 
 				}
 				result = String.valueOf(sum);
