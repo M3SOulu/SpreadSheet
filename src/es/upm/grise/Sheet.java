@@ -56,6 +56,14 @@ public class Sheet {
 					total = "" + (operation - Integer.parseInt("" + formula.charAt(i+1)));
 				else if (formula.charAt(i) == '*')
 					total = "" + (operation * Integer.parseInt("" + formula.charAt(i+1)));
+				else if (formula.charAt(i) == '/'){
+					if(formula.charAt(i+1) != '0')
+					total = "" + (operation / Integer.parseInt("" + formula.charAt(i+1)));
+					else throw new ComputationErrorException("#Error");
+				}
+					
+			}
+					
 			} else {
 				total = formula;
 			}
