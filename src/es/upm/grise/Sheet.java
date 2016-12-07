@@ -33,8 +33,7 @@ public class Sheet {
 	 *				In case of circular references, return #Circular
 	 * @throws CircularReferenceException 
 	 */
-	public String evaluate(String cell) {
-		
+	public String evaluate(String cell) {		
 		return cells.get(cell);
 	}
 
