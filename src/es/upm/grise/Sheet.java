@@ -38,16 +38,19 @@ public class Sheet {
 		String result = null;
 		
 		// caso in cui non è una formula
-		if(contentValue.charAt(0) != '='){
+		if(contentValue.charAt(0) != '='){			
+			boolean exit = false;
 			
 			//controllo dei caratteri non accettati
-			for(int i = 0; i < contentValue.length(); i++){
-				if(contentValue.charAt(i) >= '0' && contentValue.charAt(i) <= '9')
+			for(int i = 0; i < contentValue.length() && !exit ; i++){
+				if(contentValue.charAt(i) < '0' || contentValue.charAt(i) > '9' || contentValue.charAt(i) > '9')
 					result = contentValue;
-				else
-					result = "#Error";				
+				else{
+					result = "#Error";
+					exit = true;
+				}
 			}
-		
+
 		// caso in cui è una formula
 		}else
 			result = "#Error";
