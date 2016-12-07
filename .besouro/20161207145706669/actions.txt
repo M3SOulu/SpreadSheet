@@ -94,3 +94,14 @@ RefactoringAction 1481125044884 SheetTest.java REMOVE testOneNumber() METHOD
 RefactoringAction 1481125047388 SheetTest.java ADD void testOneNumber() METHOD
 RefactoringAction 1481125053429 SheetTest.java REMOVE result FIELD
 EditAction 1481125054700 SheetTest.java 1106 3 6 0
+CompilationAction 1481125054859 SheetTest.java
+UnitTestCaseAction 1481125056272 SheetTest.java FAIL
+UnitTestSessionAction 1481125056273 SheetTest FAIL
+RefactoringAction 1481125060711 SheetTest.java ADD Object result FIELD
+CompilationAction 1481125065811 SheetTest.java
+UnitTestCaseAction 1481125066205 SheetTest.java OK
+UnitTestSessionAction 1481125066206 SheetTest OK
+RefactoringAction 1481125219500 SheetTest.java ADD void testOneNumber()/2 METHOD
+RefactoringAction 1481125222508 SheetTest.java RENAME testOneNumber()/2=>void testOneNumberDecimal() METHOD
+RefactoringAction 1481125227054 SheetTest.java RENAME testOneNumberDecimal()=>void testErrorNumberDecimal() METHOD
+EditAction 1481125234821 SheetTest.java 1418 4 8 0

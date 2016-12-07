@@ -11,6 +11,8 @@ import es.upm.grise.Sheet;
 public class SheetTest {
 	
 	
+	private Object result;
+
 	@Test
 	public void testOneNumber() throws ComputationErrorException, CircularReferenceException{
 	//arrange
@@ -52,6 +54,17 @@ public class SheetTest {
 	}	
 	}
 	
-	
+	@Test
+	public void testErrorNumberDecimal() throws ComputationErrorException, CircularReferenceException{
+	//arrange
+	Sheet mySheet = new Sheet();	
+	//act
+	try {
+		result = mySheet.evaluate("1");
+	} catch (ComputationErrorException e) {
+		//assert
+		assertEquals("#Error",result);
+	}	
+	}
 
 }
