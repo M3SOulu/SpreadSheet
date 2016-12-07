@@ -60,24 +60,41 @@ public class Sheet {
 
 	private String evaluateFormula(String formula) throws CircularReferenceException, ComputationErrorException{
 		String result = "#Error";
-		if (isCell(formula) && !containsOperators(formula)){
-			result = evaluate(formula);
+		return result;
+	}
+	
+	private String evaluateValue(String value) throws CircularReferenceException, ComputationErrorException{
+		String result = "#Error";
+		if (isString(value)){ //String
+			result = value.replaceAll("'", "");
+		}
+		else if (isNumber(value)){ //Integer
+			result = value;
+		}
+		else if (isCell(value)){ //Cell
+			if (visitedCells.contains(value)){
+				result = "#Circular";
+			}
+			else{
+				result = evaluate(value);
+				visitedCells.add(value);
+			}
 		}
 		return result;
 	}
 	
-	private String evaluateValue(String value){
-		String result = "#Error";
-		if (value.startsWith("'") && value.endsWith("'")){ //String
-			result = value.replaceAll("'", "");
+	private boolean isString(String value){
+		boolean result = value.startsWith("'") && value.endsWith("'");
+		return result;
+	}
+	
+	private boolean isNumber(String value){
+		boolean result = !containsSpecialCharacters(value);
+		try{
+			Integer.parseInt(value);
 		}
-		else if (!containsSpecialCharacters(value)){ //Integer
-			try{
-				result = Integer.parseInt(value) + "";
-			}
-			catch(NumberFormatException e){
-				result = "#Error";
-			}
+		catch(NumberFormatException e){
+			result = false;
 		}
 		return result;
 	}

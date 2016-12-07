@@ -161,3 +161,12 @@ EditAction 1481123876252 SheetTest.java 2436 12 25 11
 UnitTestCaseAction 1481123877457 SheetTest.java FAIL
 UnitTestSessionAction 1481123877458 SheetTest FAIL
 EditAction 1481123883802 SheetTest.java 2435 12 25 11
+UnitTestCaseAction 1481123885408 SheetTest.java OK
+UnitTestSessionAction 1481123885409 SheetTest.testEvaluateSimpleCellReferenceErrorFormula OK
+UnitTestCaseAction 1481123892829 SheetTest.java FAIL
+UnitTestSessionAction 1481123892829 SheetTest FAIL
+RefactoringAction 1481124092226 Sheet.java ADD boolean isNumber FIELD
+RefactoringAction 1481124097739 Sheet.java RENAME isNumber=>boolean isNumber(String) METHOD
+RefactoringAction 1481124165520 Sheet.java ADD boolean isNumber(String)/2 METHOD
+RefactoringAction 1481124167534 Sheet.java RENAME isNumber(String)/2=>boolean isString(String) METHOD
+EditAction 1481124283131 Sheet.java 3519 11 29 0
