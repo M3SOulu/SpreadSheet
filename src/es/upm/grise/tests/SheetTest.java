@@ -31,7 +31,6 @@ public class SheetTest {
 	//arrange
 	Sheet mySheet = new Sheet();	
 	//act
-	
 	try {
 		result = mySheet.evaluate("1/0");
 	} catch (ComputationErrorException e) {
@@ -45,7 +44,6 @@ public class SheetTest {
 	//arrange
 	Sheet mySheet = new Sheet();	
 	//act
-	
 	try {
 		result = mySheet.evaluate("aBcd");
 	} catch (ComputationErrorException e) {
