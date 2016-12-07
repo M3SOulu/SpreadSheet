@@ -170,3 +170,8 @@ RefactoringAction 1481124097739 Sheet.java RENAME isNumber=>boolean isNumber(Str
 RefactoringAction 1481124165520 Sheet.java ADD boolean isNumber(String)/2 METHOD
 RefactoringAction 1481124167534 Sheet.java RENAME isNumber(String)/2=>boolean isString(String) METHOD
 EditAction 1481124283131 Sheet.java 3519 11 29 0
+UnitTestCaseAction 1481124290496 SheetTest.java OK
+UnitTestSessionAction 1481124290497 SheetTest OK
+RefactoringAction 1481124301877 SheetTest.java ADD void testEvaluateSimpleCellReferenceErrorFormula()/2 METHOD
+RefactoringAction 1481124314883 SheetTest.java RENAME testEvaluateSimpleCellReferenceErrorFormula()/2=>void testEvaluateSimpleCellReferenceCircularErrorFormula() METHOD
+EditAction 1481124328939 SheetTest.java 2702 13 29 12
