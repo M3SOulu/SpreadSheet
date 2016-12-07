@@ -23,7 +23,13 @@ public class SheetTest {
 	@Test
 	public void testIsNotInteger(){
 		s.set("A1", "1.5");
-		assertEquals(s.evaluate("A1"),"#Errr");
+		assertEquals(s.evaluate("A1"),"#Error");
+	}
+	
+	@Test
+	public void testReturnAString(){
+		s.set("A1", "\'ciao\'");
+		assertEquals(s.evaluate("A1"),"ciao");
 	}
 
 }

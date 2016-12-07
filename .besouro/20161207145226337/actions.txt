@@ -52,3 +52,12 @@ EditAction 1481122151357 Sheet.java 1327 3 4 0
 UnitTestCaseAction 1481122151942 SheetTest.java OK
 UnitTestSessionAction 1481122151943 SheetTest OK
 EditAction 1481122166871 SheetTest.java 444 2 4 2
+UnitTestCaseAction 1481122167479 SheetTest.java FAIL
+UnitTestSessionAction 1481122167480 SheetTest FAIL
+FileOpenedAction 1481122177822 Sheet.java 1327 3 4 0
+RefactoringAction 1481122344590 SheetTest.java ADD void test FIELD
+RefactoringAction 1481122346598 SheetTest.java RENAME test=>void testRe FIELD
+RefactoringAction 1481122348117 SheetTest.java RENAME testRe=>void testReturnA FIELD
+RefactoringAction 1481122350130 SheetTest.java RENAME testReturnA=>void testReturnAString FIELD
+RefactoringAction 1481122353150 SheetTest.java RENAME testReturnAString=>void testReturnAString() METHOD
+EditAction 1481122418827 SheetTest.java 559 3 6 3
