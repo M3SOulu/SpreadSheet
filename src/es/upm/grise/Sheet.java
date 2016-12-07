@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Sheet {
-
+	private static final String[] SPECIAL_CHARACTERS = new String[]{"\\", "/" , "*" , "?" , ":" , "[" , "]"};
 	private HashMap <String, String> cells = new HashMap <String, String>();
 	private ArrayList <String> visitedCells;
 
@@ -34,19 +34,25 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) throws CircularReferenceException, ComputationErrorException {
-		String result = get(cell);
-		System.out.println("123.3".contains("[',.]"));
-		if (result.startsWith("=")){ //Formula
+		String result = "#Error";
+		String value = get(cell);
+		
+		if (value.startsWith("=")){ //Formula
 			
 		}
-		else if (result.startsWith("'") && result.endsWith("'")){ //String
-			result = result.replaceAll("'", "");
+		else if (value.startsWith("'") && value.endsWith("'")){ //String
+			result = value.replaceAll("'", "");
 		}
-		else if (!result.contains("['.]")){ //Integer
-			
+		else if (!containsSpecialCharacters(value)){ //Integer
+			result = value;
 		}
-		else{ //Error
-			result = "#Error";
+		return result;
+	}
+	
+	public boolean containsSpecialCharacters(String str){
+		boolean result = false;
+		for (String sc : SPECIAL_CHARACTERS){
+			result |= str.contains(sc);
 		}
 		return result;
 	}

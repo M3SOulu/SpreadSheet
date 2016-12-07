@@ -52,3 +52,10 @@ RefactoringAction 1481121215094 SheetTest.java RENAME import org.junit.excep=>im
 RefactoringAction 1481121225601 SheetTest.java REMOVE import org.junit.AssumptionViolatedException IMPORT
 EditAction 1481121245966 SheetTest.java 794 4 7 3
 EditAction 1481121281914 Sheet.java 1612 3 6 0
+UnitTestCaseAction 1481121309454 SheetTest.java OK
+UnitTestSessionAction 1481121309455 SheetTest OK
+RefactoringAction 1481121381258 Sheet.java ADD String FIELD
+RefactoringAction 1481121486234 Sheet.java ADD boolean containsSpecialCharacters FIELD
+RefactoringAction 1481121487250 Sheet.java RENAME containsSpecialCharacters=>boolean containsSpecialCharacters() METHOD
+RefactoringAction 1481121495315 Sheet.java RENAME containsSpecialCharacters()=>boolean containsSpecialCharacters(String) METHOD
+EditAction 1481121620207 Sheet.java 1855 4 9 0
