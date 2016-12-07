@@ -78,35 +78,30 @@ public class Sheet {
 			if (formula.replace("(", "").length() != formula.replace(")", "").length())
 				return DEFAULT_ERROR;
 
-			System.out.println(formula);
-			String newFormula = formula.replaceAll(" ", "");
-			String[] subFormulas = newFormula.contains("(") ? newFormula.replaceAll(")", "(").split("(") : new String[]{newFormula};
-			for (String subFormula : subFormulas){
-				boolean readyForOperation = false;
-				String number = "", operator = "";
-				for (Character c : subFormula.toCharArray()){
-					if (!result.equals(DEFAULT_ERROR)){
-						if (isOperator(c.toString())){
-							if (readyForOperation){
-								result = doOperation(result, number, operator);
-								number = "";
-							}
-							operator = c.toString();
-							readyForOperation = true;
+			boolean readyForOperation = false;
+			String number = "", operator = "";
+			for (Character c : subFormula.toCharArray()){
+				if (!result.equals(DEFAULT_ERROR)){
+					if (isOperator(c.toString())){
+						if (readyForOperation){
+							result = doOperation(result, number, operator);
+							number = "";
+						}
+						operator = c.toString();
+						readyForOperation = true;
+					}
+					else{
+						if (readyForOperation){
+							number += c;
 						}
 						else{
-							if (readyForOperation){
-								number += c;
-							}
-							else{
-								result += c;
-							}
+							result += c;
 						}
 					}
 				}
-				if (!result.equals(DEFAULT_ERROR)){
-					result = doOperation(result, number, operator);
-				}
+			}
+			if (!result.equals(DEFAULT_ERROR)){
+				result = doOperation(result, number, operator);
 			}
 		}
 		return result;
