@@ -62,3 +62,9 @@ RefactoringAction 1481120698802 Sheet.java REMOVE import org.apache.commons.lang
 RefactoringAction 1481120721337 Sheet.java ADD import org.apache.commons.lang.StringUtils IMPORT
 RefactoringAction 1481120746379 Sheet.java REMOVE import org.apache.commons.lang.StringUtils IMPORT
 EditAction 1481120992298 Sheet.java 1471 3 5 0
+UnitTestCaseAction 1481121001513 SheetTest.java OK
+UnitTestSessionAction 1481121001514 SheetTest OK
+RefactoringAction 1481121121765 SheetTest.java ADD void testFloatNumber()/2 METHOD
+RefactoringAction 1481121126771 SheetTest.java RENAME testFloatNumber()/2=>void testString() METHOD
+RefactoringAction 1481121130779 SheetTest.java RENAME testString()=>void testStringWithQuotes() METHOD
+EditAction 1481121158001 SheetTest.java 893 6 11 5

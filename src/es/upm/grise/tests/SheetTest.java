@@ -39,4 +39,11 @@ public class SheetTest {
 		sheet.set("A1","1.2");		
 		Assert.assertEquals("#Error",sheet.evaluate("A1"));
 	}
+	
+	@Test
+	public void testStringWithQuotes(){
+		sheet.set("A1","'hello'");		
+		Assert.assertEquals("hello",sheet.evaluate("A1"));
+	}
+	
 }
