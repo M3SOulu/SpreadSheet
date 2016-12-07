@@ -37,9 +37,8 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) {
-		
-		String formula = "=";
-		for(String formula: )
+	
+		cells.containsKey(cell);
 		return null;
 	}
 
