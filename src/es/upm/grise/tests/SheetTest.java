@@ -24,7 +24,7 @@ public class SheetTest {
 	public void testNumber(){
 		cells.put("B1", "15.1");
 		int result = Integer.parseInt("15");
-		assertEquals(15, result);
+		assertEquals(15.1, result);
 	}
 
 }
