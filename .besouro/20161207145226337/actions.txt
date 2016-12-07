@@ -22,3 +22,12 @@ EditAction 1481120334449 SheetTest.java 328 1 2 1
 UnitTestCaseAction 1481120334980 SheetTest.java OK
 UnitTestSessionAction 1481120334981 SheetTest OK
 EditAction 1481120482649 SheetTest.java 333 1 2 1
+UnitTestCaseAction 1481120483253 SheetTest.java OK
+UnitTestSessionAction 1481120483254 SheetTest OK
+RefactoringAction 1481120573663 SheetTest.java ADD void test FIELD
+RefactoringAction 1481120816204 SheetTest.java RENAME test=>void testI FIELD
+RefactoringAction 1481120817215 SheetTest.java RENAME testI=>void testIs FIELD
+RefactoringAction 1481120819730 SheetTest.java RENAME testIs=>void testIsNot FIELD
+RefactoringAction 1481120822252 SheetTest.java RENAME testIsNot=>void testIsNotInteger FIELD
+RefactoringAction 1481120824266 SheetTest.java RENAME testIsNotInteger=>void testIsNotInteger() METHOD
+EditAction 1481120929169 SheetTest.java 443 2 4 2

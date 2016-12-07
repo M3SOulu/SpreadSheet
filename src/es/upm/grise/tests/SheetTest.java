@@ -18,5 +18,11 @@ public class SheetTest {
 		s.set("A1","1");
 		assertEquals(s.evaluate("A1"),"1");
 	}
+	
+	@Test
+	public void testIsNotInteger(){
+		s.set("A1", "1.5");
+		assertEquals(s.evaluate("A1"),"#Error");
+	}
 
 }
