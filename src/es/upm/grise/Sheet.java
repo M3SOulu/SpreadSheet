@@ -58,8 +58,8 @@ public class Sheet {
 			
 			String[] tempSum = temp[1].split("+");
 			
-			int sum =+ Integer.valueOf(tempSum[0]);
-			sum =+ Integer.valueOf(tempSum[1]);
+			int sum = Integer.valueOf(tempSum[0]);
+			sum = sum + Integer.valueOf(tempSum[1]);
 			result = String.valueOf(sum);
 			
 
