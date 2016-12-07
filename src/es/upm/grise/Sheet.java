@@ -35,6 +35,7 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) {
 
+		Integer.parseInt(this.get(cell));
 		return this.get(cell);
 	}
 
