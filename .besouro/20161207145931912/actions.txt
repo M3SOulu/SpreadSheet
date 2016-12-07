@@ -281,3 +281,6 @@ UnitTestSessionAction 1481127102798 SheetTest OK
 RefactoringAction 1481127197258 SheetTest.java ADD void testMoltiplicationBetweenTwoNumbers()/2 METHOD
 RefactoringAction 1481127202278 SheetTest.java RENAME testMoltiplicationBetweenTwoNumbers()/2=>void testModuleBetweenTwoNumbers() METHOD
 EditAction 1481127233503 SheetTest.java 1950 14 27 13
+UnitTestCaseAction 1481127236159 SheetTest.java FAIL
+UnitTestSessionAction 1481127236159 SheetTest FAIL
+EditAction 1481127247230 Sheet.java 3728 3 8 0
