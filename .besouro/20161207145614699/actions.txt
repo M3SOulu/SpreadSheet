@@ -5,3 +5,22 @@ RefactoringAction 1481119780592 SheetTest.java ADD import org.junit.Before IMPOR
 RefactoringAction 1481119809170 SheetTest.java ADD Sheet sheet FIELD
 RefactoringAction 1481119811189 SheetTest.java RENAME import org.junit.Assert.*=>import org.junit.Assert.fail IMPORT
 EditAction 1481119817261 SheetTest.java 317 2 2 0
+RefactoringAction 1481119848268 SheetTest.java RENAME test()=>void testSet() METHOD
+RefactoringAction 1481119864779 SheetTest.java RENAME testSet()=>void testSetCellValues() METHOD
+RefactoringAction 1481119868807 SheetTest.java ADD void testSetCellValues()/2 METHOD
+RefactoringAction 1481119872907 SheetTest.java RENAME testSetCellValues()/2=>void testGetCellValue() METHOD
+RefactoringAction 1481119875421 SheetTest.java RENAME testSetCellValues()=>void testSetCellValue() METHOD
+RefactoringAction 1481119942573 SheetTest.java RENAME testSetCellValue()=>void testSetCellStringValue() METHOD
+RefactoringAction 1481119948114 SheetTest.java ADD void testSetCellStringValue()/2 METHOD
+RefactoringAction 1481119951130 SheetTest.java RENAME testSetCellStringValue()/2=>void testSetCellIntegerValue() METHOD
+RefactoringAction 1481120004196 SheetTest.java RENAME testGetCellValue()=>void testGetCellStringValue() METHOD
+RefactoringAction 1481120193897 SheetTest.java ADD void testGetCellStringValue()/2 METHOD
+RefactoringAction 1481120206933 SheetTest.java RENAME testGetCellStringValue()/2=>void testGetCellValue() METHOD
+RefactoringAction 1481120208448 SheetTest.java RENAME testGetCellValue()=>void testGetCellIntegerValue() METHOD
+RefactoringAction 1481120245649 SheetTest.java RENAME import org.junit.Assert.fail=>import org.junit.Assert.* IMPORT
+RefactoringAction 1481120262198 SheetTest.java RENAME testGetCellStringValue()=>void testSetandGetCellStringValue() METHOD
+RefactoringAction 1481120264718 SheetTest.java RENAME testSetandGetCellStringValue()=>void testSetAndGetCellStringValue() METHOD
+RefactoringAction 1481120266728 SheetTest.java REMOVE testSetCellIntegerValue() METHOD
+RefactoringAction 1481120266729 SheetTest.java REMOVE testSetCellStringValue() METHOD
+RefactoringAction 1481120270758 SheetTest.java RENAME testGetCellIntegerValue()=>void testSetAndGetCellIntegerValue() METHOD
+EditAction 1481120283155 Sheet.java 1253 3 2 0
