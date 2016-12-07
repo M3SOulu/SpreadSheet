@@ -2,10 +2,8 @@ package es.upm.grise.tests;
 
 import static org.junit.Assert.*;
 
-import org.junit.Before;
 import org.junit.Test;
 
-import es.upm.grise.ComputationErrorException;
 import es.upm.grise.Sheet;
 
 public class SheetTest {

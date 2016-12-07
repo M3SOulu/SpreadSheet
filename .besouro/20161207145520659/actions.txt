@@ -46,3 +46,10 @@ CompilationAction 1481120819276 Sheet.java
 CompilationAction 1481120819537 Sheet.java
 CompilationAction 1481120819540 Sheet.java
 EditAction 1481120827418 SheetTest.java 385 1 2 1
+CompilationAction 1481121072687 Sheet.java
+CompilationAction 1481121072688 Sheet.java
+CompilationAction 1481121072870 Sheet.java
+CompilationAction 1481121243952 Sheet.java
+RefactoringAction 1481121252093 SheetTest.java REMOVE import org.junit.Before IMPORT
+RefactoringAction 1481121252094 SheetTest.java REMOVE import es.upm.grise.ComputationErrorException IMPORT
+EditAction 1481121377357 Sheet.java 1851 3 10 0

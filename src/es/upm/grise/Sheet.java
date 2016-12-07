@@ -37,16 +37,23 @@ public class Sheet {
 	 * 				cell contains "=1+B3", then a recursive evaluation is performed). If
 	 * 				the evaluation gives an incorrect value (e.g.: "=1/0") return "#Error".
 	 *				In case of circular references, return #Circular
-	 * @throws ComputationErrorException 
+	 * @throws Exception 
 	 * @throws CircularReferenceException 
 	 */
-	public String evaluate(String cell) throws ComputationErrorException {
-		String[] value = new String[50];
+	public String evaluate(String cell) throws Exception {
+		String value = "";
+		Integer operation = 0;
+		String total = "";
 		String formula = get(cell);
 		if(formula.charAt(0) != '='){
-			value[0] = formula;
+			value = formula;
 		}else{
-			value += 
+			if(formula.charAt(1) > '0' || formula.charAt(1) < '9')
+				operation = Integer.parseInt(""+formula.charAt(1));
+			if(formula.charAt(2) == '+')
+				operation += Integer.parseInt(""+formula.charAt(3));
+			else if(formula.charAt(2) == '-')
+				operation -= Integer.parseInt(""+formula.charAt(3));
 		}
 		return value;
 	}
