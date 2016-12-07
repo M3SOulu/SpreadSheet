@@ -83,8 +83,19 @@ public class Sheet {
 
 				}
 				result = String.valueOf(sum);
-			} else
-				result = "2";
+			} else {
+				Scanner sc = new Scanner(temp[1]);
+
+				sc.useDelimiter("[+-*]{1,}");
+
+				sum = sc.nextInt();
+
+				while (sc.hasNext()) {
+					sum = sum - sc.nextInt();
+
+				}
+				result = String.valueOf(sum);
+			}
 		}
 
 		return result;
