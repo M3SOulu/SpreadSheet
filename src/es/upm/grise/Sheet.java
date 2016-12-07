@@ -17,7 +17,7 @@ public class Sheet {
 		String formula = "";
 		formula = cells.get(cell);
 		if(formula != null)
-			return cells.get(cell);
+			return formula;
 		else
 			throw new ComputationErrorException();
 	}
