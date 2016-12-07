@@ -28,6 +28,10 @@ public class SheetTest {
 		assertEquals("/A1",cells.get("not valid"));
 	}
 	
+	@Before
+	public void test2(){
+		
+	}
 
 	
 
