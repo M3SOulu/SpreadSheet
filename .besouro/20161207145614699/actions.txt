@@ -83,3 +83,6 @@ EditAction 1481121811488 Sheet.java 1942 4 9 0
 UnitTestCaseAction 1481121816909 SheetTest.java OK
 UnitTestSessionAction 1481121816909 SheetTest OK
 EditAction 1481121837834 Sheet.java 1960 4 9 0
+RefactoringAction 1481121888823 SheetTest.java ADD void testEvaluateIntegerValue()/2 METHOD
+RefactoringAction 1481121891368 SheetTest.java RENAME testEvaluateIntegerValue()/2=>void testEvaluateNegativeIntegerValue() METHOD
+EditAction 1481121894066 SheetTest.java 1567 8 15 7
