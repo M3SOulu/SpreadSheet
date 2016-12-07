@@ -86,7 +86,7 @@ public class Sheet {
 			} else {
 				Scanner sc = new Scanner(temp[1]);
 
-				sc.useDelimiter("[+-*]{1,}");
+				sc.useDelimiter("[+-\*]{1,}");
 
 				sum = sc.nextInt();
 
