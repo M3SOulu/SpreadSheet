@@ -28,3 +28,11 @@ UnitTestCaseAction 1481120284754 SheetTest.java FAIL
 UnitTestSessionAction 1481120284762 SheetTest FAIL
 EditAction 1481120369205 Sheet.java 1275 3 3 0
 EditAction 1481120386870 SheetTest.java 504 3 5 2
+UnitTestCaseAction 1481120388539 SheetTest.java OK
+UnitTestSessionAction 1481120388540 SheetTest OK
+RefactoringAction 1481120398020 SheetTest.java ADD void test FIELD
+RefactoringAction 1481120403043 SheetTest.java RENAME test=>void testEvaluate FIELD
+RefactoringAction 1481120407052 SheetTest.java RENAME testEvaluate=>void testEvaluateStringValue() METHOD
+RefactoringAction 1481120802437 SheetTest.java ADD import es.upm.grise.CircularReferenceException IMPORT
+RefactoringAction 1481120802438 SheetTest.java ADD import es.upm.grise.ComputationErrorException IMPORT
+EditAction 1481120874247 SheetTest.java 795 4 7 3

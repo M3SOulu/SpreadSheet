@@ -5,6 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
+import es.upm.grise.CircularReferenceException;
+import es.upm.grise.ComputationErrorException;
 import es.upm.grise.Sheet;
 
 public class SheetTest {
@@ -17,14 +19,20 @@ public class SheetTest {
 	
 	@Test
 	public void testSetAndGetCellStringValue() {
-		sheet.set("A1", "qwerty");
-		assertEquals("qwerty", sheet.get("A1"));
+		sheet.set("A1", "'qwerty'");
+		assertEquals("'qwerty'", sheet.get("A1"));
 	}
 
 	@Test
 	public void testSetAndGetCellIntegerValue() {
 		sheet.set("A1", "123");
 		assertEquals("123", sheet.get("A1"));
+	}
+	
+	@Test
+	public void testEvaluateStringValue() throws CircularReferenceException, ComputationErrorException{
+		sheet.set("A1", "'qwerty'");
+		assertEquals("qwerty", sheet.evaluate("A1"));
 	}
 
 }
