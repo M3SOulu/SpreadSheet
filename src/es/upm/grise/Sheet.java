@@ -42,13 +42,14 @@ public class Sheet {
 		String value = null;
 		if (cells.containsKey(cell)){
 			String valueCell = cells.get(cell);
+			for(int j = 0; j<valueCell.length();j++){
+				if(!Character.isDigit(valueCell.charAt(j)) && valueCell.charAt(j) != '=' && valueCell.charAt(j) != '+' && valueCell.charAt(j) != '-' && valueCell.charAt(j) != '*' && valueCell.charAt(j) != '/'){
+					throw new CircularReferenceException("#Error.");
+				}
+			}
 			if (valueCell.charAt(0) == '=') {
 				int result = 0;
 				for(int i = 0; i < valueCell.length(); i++){
-					char letter = valueCell.charAt(i);
-					if(!Character.isDigit(letter) && letter != '=' && letter != '+' && letter != '-' && letter != '*' && letter != '/'){
-						throw new CircularReferenceException("#Error.");
-					}
 					if (valueCell.charAt(i) == '+'){
 						String a = String.valueOf(i-1);
 						String b = String.valueOf(i+1);
