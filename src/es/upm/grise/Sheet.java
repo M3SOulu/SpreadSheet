@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Sheet {
+public class Sheet { 
 
 	private HashMap<String, String> cells = new HashMap<String, String>();
 	private ArrayList<String> visitedCells;
