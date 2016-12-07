@@ -32,3 +32,8 @@ RefactoringAction 1481120746414 ComputationErrorException.java RENAME Computatio
 EditAction 1481120773193 ComputationErrorException.java 151 1 1 0
 CompilationAction 1481120773381 Sheet.java
 EditAction 1481120773407 Sheet.java 1618 3 4 0
+CompilationAction 1481120774414 Sheet.java
+CompilationAction 1481120774415 Sheet.java
+CompilationAction 1481120774415 Sheet.java
+RefactoringAction 1481120795046 CircularReferenceException.java ADD CircularReferenceException(String) METHOD
+EditAction 1481120802506 CircularReferenceException.java 153 1 1 0
