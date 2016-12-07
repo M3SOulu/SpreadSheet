@@ -69,7 +69,7 @@ public class Sheet {
 			String formula = contentValue.substring(1, contentValue.length());
 			formula.toUpperCase();
 			try{
-				if(formula == null || formula == "" || formula == "")
+				if(formula == null || formula == "" || formula == " ")
 					throw new ComputationErrorException();
 			}catch(ComputationErrorException e){
 				result = "#Error";
