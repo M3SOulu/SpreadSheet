@@ -58,4 +58,13 @@ public class Sheet {
 		}
 		return num;
 	}
+	
+	public String forumlas(String cell){
+		String forumla = null;
+		if(cell.charAt(0) == '=') {
+			String[] sep = cell.split("="); 
+		}
+		
+		return forumla;
+	}
 }

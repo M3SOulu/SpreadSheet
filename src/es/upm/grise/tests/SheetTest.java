@@ -12,7 +12,7 @@ import es.upm.grise.Sheet;
 
 public class SheetTest {
 	
-	private HashMap <String, String> cells = new HashMap <String, String>();
+	private HashMap<String, String> cells = new HashMap <String, String>();
 	private Object result;
 
 	@Test
@@ -71,7 +71,7 @@ public class SheetTest {
 	public void testCell() throws ComputationErrorException, CircularReferenceException{
 		//arrange
 		Sheet mySheet = new Sheet();
-		String cell = cells.get(result);
+		cells.get(cells);
 		//act
 		result = mySheet.evaluate("=1+1");
 		//assert

@@ -122,3 +122,13 @@ EditAction 1481126653432 SheetTest.java 1771 5 12 1
 UnitTestCaseAction 1481126654027 SheetTest.java FAIL
 UnitTestSessionAction 1481126654027 SheetTest FAIL
 EditAction 1481126663204 SheetTest.java 1773 5 12 1
+UnitTestCaseAction 1481126663716 SheetTest.java FAIL
+UnitTestSessionAction 1481126663717 SheetTest FAIL
+UnitTestCaseAction 1481127472764 SheetTest.java FAIL
+UnitTestSessionAction 1481127472765 SheetTest FAIL
+RefactoringAction 1481127947007 Sheet.java ADD String forum FIELD
+RefactoringAction 1481127952513 Sheet.java RENAME forum=>String forumla FIELD
+RefactoringAction 1481127954038 Sheet.java RENAME forumla=>String forumlas FIELD
+RefactoringAction 1481127956058 Sheet.java RENAME forumlas=>String forumlas() METHOD
+RefactoringAction 1481128012670 Sheet.java RENAME forumlas()=>String forumlas(String) METHOD
+EditAction 1481128537941 Sheet.java 1968 5 13 0
