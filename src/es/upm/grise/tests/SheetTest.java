@@ -14,7 +14,7 @@ public class SheetTest {
 	public void setUp() {
 		foglio = new Sheet();
 		foglio.set("A1", "=1");
-		foglio.set("A2", "1+2");
+		foglio.set("A2", "=1+2");
 		foglio.set("A3", "1*2");
 		foglio.set("A4", "1/2");
 	}
