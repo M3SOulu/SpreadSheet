@@ -19,7 +19,6 @@ public class SheetTest {
 		spreadSheet.set("X33", "=2+2");
 		spreadSheet.set("L2", "2.2+2");
 		spreadSheet.set("T76", "'ciao'");
-		spreadSheet.set("Z24", "");
 	}
 	
 	@Test
@@ -51,11 +50,5 @@ public class SheetTest {
 	@Test
 	public void testFunctionEvaluateString() throws CircularReferenceException {
 		Assert.assertEquals("ciao", spreadSheet.evaluate("T76"));
-	}
-	
-	@Test (expected = CircularReferenceException.class)
-	public void testFunctionEvaluateVoidString() throws CircularReferenceException {
-		spreadSheet.evaluate("Z24");
-		Assert.fail("#Error.");
 	}
 }
