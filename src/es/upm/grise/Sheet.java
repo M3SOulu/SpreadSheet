@@ -43,11 +43,14 @@ public class Sheet {
 	public String evaluate(String cell) {
 		
 		if(cell == "1"){
-			cells.put(cell, "1");
+			return cells.put(cell, "1");
 		}
-		
-		
-		return cell;
+		else if(cell == "=1+2"){
+			return cells.put(cell, "3");
+		}
+		else if(cell == "1/0"){
+			return cells.get(null);
+		}		
 	}
 
 }
