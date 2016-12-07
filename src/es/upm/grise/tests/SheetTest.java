@@ -45,5 +45,11 @@ public class SheetTest {
 		sheet.set("A1", "1.23");
 		assertEquals("#Error", sheet.evaluate("A1"));
 	}
+	
+	@Test
+	public void testEvaluateBadStringValue() throws CircularReferenceException, ComputationErrorException{
+		sheet.set("A1", "'testBadString");
+		assertEquals("#Error", sheet.evaluate("A1"));
+	}
 
 }
