@@ -16,10 +16,10 @@ public class SheetTest {
 	
 	@Test
 	public void evalutate_is_not_expressin() {
-		testSheet.set("A1", "1");
+		testSheet.set("A1", "0");
 		testSheet.set("A2", "-12");
 		
-		assertEquals("1", testSheet.evaluate("A1"));
+		assertEquals("0", testSheet.evaluate("A1"));
 		assertEquals("-12", testSheet.evaluate("A2"));
 	}
 	
