@@ -191,3 +191,10 @@ EditAction 1481126948560 Sheet.java 3417 3 11 0
 EditAction 1481127085756 Sheet.java 3431 3 4 0
 CompilationAction 1481127085916 Sheet.java
 EditAction 1481127092405 Sheet.java 3432 3 11 0
+UnitTestCaseAction 1481127095430 SheetTest.java OK
+UnitTestSessionAction 1481127095431 SheetTest OK
+RefactoringAction 1481127131733 SheetTest.java ADD void testADoubleFormula()/2 METHOD
+RefactoringAction 1481127141737 SheetTest.java RENAME testADoubleFormula()/2=>void testADoubleFormulaBis() METHOD
+UnitTestCaseAction 1481127157912 SheetTest.java FAIL
+UnitTestSessionAction 1481127157913 SheetTest FAIL
+EditAction 1481127228195 Sheet.java 3432 3 11 0

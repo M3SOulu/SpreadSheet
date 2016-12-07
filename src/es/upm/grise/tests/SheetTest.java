@@ -29,4 +29,10 @@ public class SheetTest {
 		assertEquals("1",spreadSheet.evaluate("A1"));
 	}
 
+	@Test
+	public void testADoubleFormulaBis() throws Exception {
+		spreadSheet.set("A2", "=1-2");
+		spreadSheet.set("A1", "=A2+2");
+		assertEquals("1",spreadSheet.evaluate("A1"));
+	}
 }
