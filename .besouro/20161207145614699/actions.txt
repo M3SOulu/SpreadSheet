@@ -86,3 +86,12 @@ EditAction 1481121837834 Sheet.java 1960 4 9 0
 RefactoringAction 1481121888823 SheetTest.java ADD void testEvaluateIntegerValue()/2 METHOD
 RefactoringAction 1481121891368 SheetTest.java RENAME testEvaluateIntegerValue()/2=>void testEvaluateNegativeIntegerValue() METHOD
 EditAction 1481121894066 SheetTest.java 1567 8 15 7
+UnitTestCaseAction 1481121894996 SheetTest.java OK
+UnitTestSessionAction 1481121894996 SheetTest OK
+RefactoringAction 1481121966399 SheetTest.java ADD void testEvaluateBadStringValue()/2 METHOD
+RefactoringAction 1481121974416 SheetTest.java RENAME testEvaluateBadStringValue()/2=>void testValue() METHOD
+RefactoringAction 1481121975440 SheetTest.java RENAME testValue()=>void testEvaluateValue() METHOD
+RefactoringAction 1481121979459 SheetTest.java RENAME testEvaluateValue()=>void testEvaluateSimpleIntegerFormulaValue() METHOD
+RefactoringAction 1481121995538 SheetTest.java ADD void testEvaluateSimpleIntegerFormulaValue()/2 METHOD
+RefactoringAction 1481122004545 SheetTest.java RENAME testEvaluateSimpleIntegerFormulaValue()/2=>void testEvaluateSimpleStringFormulaValue() METHOD
+EditAction 1481122068781 SheetTest.java 1964 10 19 9

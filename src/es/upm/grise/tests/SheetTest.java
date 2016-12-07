@@ -57,5 +57,17 @@ public class SheetTest {
 		sheet.set("A1", "'testBadString");
 		assertEquals("#Error", sheet.evaluate("A1"));
 	}
+	
+	@Test
+	public void testEvaluateSimpleIntegerFormulaValue() throws CircularReferenceException, ComputationErrorException{
+		sheet.set("A1", "=1");
+		assertEquals("1", sheet.evaluate("A1"));
+	}
+	
+	@Test
+	public void testEvaluateSimpleStringFormulaValue() throws CircularReferenceException, ComputationErrorException{
+		sheet.set("A1", "='Nord'");
+		assertEquals("Nord", sheet.evaluate("A1"));
+	}
 
 }
