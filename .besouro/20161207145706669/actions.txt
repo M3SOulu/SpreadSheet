@@ -4,3 +4,10 @@ RefactoringAction 1481119849927 Sheet.java ADD String cell FIELD
 RefactoringAction 1481119852958 Sheet.java ADD String contents FIELD
 EditAction 1481119949128 Sheet.java 1299 3 4 0
 EditAction 1481120021803 Sheet.java 1327 3 5 0
+RefactoringAction 1481120269949 SheetTest.java RENAME test()=>void testE() METHOD
+RefactoringAction 1481120271957 SheetTest.java RENAME testE()=>void testError() METHOD
+RefactoringAction 1481120331573 SheetTest.java ADD import es.upm.grise.Sheet IMPORT
+RefactoringAction 1481120420256 SheetTest.java ADD import es.upm.grise.CircularReferenceException IMPORT
+RefactoringAction 1481120431789 SheetTest.java ADD import es.upm.grise.ComputationErrorException IMPORT
+FileOpenedAction 1481120678400 ComputationErrorException.java 85 0 0 0
+EditAction 1481120982586 SheetTest.java 538 1 4 1
