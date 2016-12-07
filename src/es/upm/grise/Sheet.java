@@ -40,9 +40,7 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) throws CircularReferenceException, ComputationErrorException {
 		String result = "#Error";
-		System.out.println("key: " + cell);
 		String value = cells.containsKey(cell) ? get(cell) : "";
-		System.out.println("value: " + value);
 		
 		if (value.startsWith("=")){
 			if (!containsOperators(value)){
@@ -60,12 +58,15 @@ public class Sheet {
 		return result;
 	}
 
-	public String evaluateFormula(String formula){
+	private String evaluateFormula(String formula) throws CircularReferenceException, ComputationErrorException{
 		String result = "#Error";
+		if (isCell(formula) && !containsOperators(formula)){
+			result = evaluate(formula);
+		}
 		return result;
 	}
 	
-	public String evaluateValue(String value){
+	private String evaluateValue(String value){
 		String result = "#Error";
 		if (value.startsWith("'") && value.endsWith("'")){ //String
 			result = value.replaceAll("'", "");
@@ -81,7 +82,15 @@ public class Sheet {
 		return result;
 	}
 	
-	public boolean containsSpecialCharacters(String str){
+	private boolean isCell(String value){
+		int start = 0, end = value.length() - 1;
+		boolean result = value.length() == 2;
+		result &= value.charAt(start) >= 'A' && value.charAt(start) <= 'Z';
+		result &= value.charAt(end) >= '1' && value.charAt(end) <= '9';
+		return result;
+	}
+	
+	private boolean containsSpecialCharacters(String str){
 		boolean result = false;
 		for (String sc : SPECIAL_CHARACTERS){
 			result |= str.contains(sc);
@@ -89,7 +98,7 @@ public class Sheet {
 		return result;
 	}
 	
-	public boolean containsOperators(String str){
+	private boolean containsOperators(String str){
 		boolean result = false;
 		for (String sc : OPERATOR_CHARACTERS){
 			result |= str.contains(sc);

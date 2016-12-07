@@ -146,3 +146,10 @@ UnitTestSessionAction 1481123201292 SheetTest FAIL
 RefactoringAction 1481123245665 Sheet.java ADD Sheet() METHOD
 RefactoringAction 1481123267723 Sheet.java REMOVE Sheet() METHOD
 EditAction 1481123269746 Sheet.java 2818 8 21 0
+UnitTestCaseAction 1481123277427 SheetTest.java FAIL
+UnitTestSessionAction 1481123277428 SheetTest FAIL
+RefactoringAction 1481123336946 Sheet.java ADD boolean is FIELD
+RefactoringAction 1481123346953 Sheet.java RENAME is=>boolean isCell FIELD
+RefactoringAction 1481123349465 Sheet.java RENAME isCell=>boolean isCell() METHOD
+RefactoringAction 1481123467544 Sheet.java RENAME isCell()=>boolean isCell(String) METHOD
+EditAction 1481123821708 Sheet.java 3174 9 25 0
