@@ -104,7 +104,13 @@ public class Sheet {
 	}
 	
 	private String doOperation(String a, String b, String op){
-		String result = (Integer.parseInt(a) + Integer.parseInt(b)) + "";
+		System.out.println("ATTEMPTING: " + a + " " + op + " " + b);
+		String result = "#Error";
+		try{
+			result = (Integer.parseInt(a) + Integer.parseInt(b)) + "";
+		} catch(NumberFormatException e){
+			result = "#Error";
+		}
 		return result;
 	}
 	
