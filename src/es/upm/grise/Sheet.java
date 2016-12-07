@@ -13,7 +13,7 @@ public class Sheet {
 	 * @return		The cell's contents (e.g. "1", "=5", "=1+B3", "=1+(B3*4)", etc.)
 	 */
 	public String get(String cell) {
-		return null;
+		return cells.get(cell);
 	}
 
 	/**
@@ -21,7 +21,7 @@ public class Sheet {
 	 * @param contents	Any String (a valid formula, or not)
 	 */
 	public void set(String cell, String contents) {
-		// implement me
+		cells.put(cell, contents);
 	}
 
 	/**
@@ -34,8 +34,55 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) {
+		String contentValue = get(cell);
+		String result = new String();
 		
-		return null;
+		// caso in cui non è una formula
+		// quindi la stringa valore non inizia con '\'' o '='
+		if(contentValue.charAt(0) != '=' && contentValue.charAt(0) != '\''){			
+			
+			//controllo dei caratteri non accettati
+			try{
+				for(int i = 0; i < contentValue.length(); i++){
+					
+					// lancio eccezione nel caso in cui ci sono caratteri diversi dalle 10 cifre o diversi dal '-' 
+					// altrimenti la stringa è corretta					
+					if((contentValue.charAt(i) < '0' || contentValue.charAt(i) > '9') && contentValue.charAt(i) != '-'){					
+						throw new ComputationErrorException();
+					}else
+						result = contentValue;
+				}
+			}catch(ComputationErrorException e){
+				result = "#Error";
+			}
+
+		// caso in cui è una stringa
+		}else if (contentValue.charAt(0) == '\'' && contentValue.charAt(contentValue.length()-1) == '\'')
+			
+			//restituisco la stringa senza apici 
+			result = contentValue.substring(1, contentValue.length()-1);
+		
+		// caso in cui è una formula
+		else if(contentValue.charAt(0) == '='){
+			
+			
+
+			
+			//ricavo formula senza '='
+			String formula = contentValue.substring(1, contentValue.length());
+			formula.toUpperCase();
+			System.out.println(formula);
+			
+			if(formula.charAt(0) >= 'A' && formula.charAt(0) <= 'Z')		
+				result = evaluate(formula);
+			else
+				result = formula;
+			}
+		
+		else
+			result = "#Error";
+		
+		return result;
 	}
 
 }
