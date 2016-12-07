@@ -38,6 +38,7 @@ public class Sheet {
 		String result = null;
 		
 		// caso in cui non è una formula
+		// quindi la stringa non inizia con '\'' o '='
 		if(contentValue.charAt(0) != '=' && contentValue.charAt(0) != '\''){			
 			
 			//controllo dei caratteri non accettati
@@ -56,7 +57,7 @@ public class Sheet {
 			}
 
 		// caso in cui è una formula
-		}else if
+		}else if (contentValue.charAt(0) == '\'' && contentValue.charAt(contentValue.length()) == '\'')
 			result = "#Error";
 		
 		return result;
