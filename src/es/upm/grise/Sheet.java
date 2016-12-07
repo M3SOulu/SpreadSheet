@@ -8,6 +8,10 @@ public class Sheet {
 	private static final String[] OPERATOR_CHARACTERS = new String[]{"+", "-", "/", "*", "%", "&"};
 	private HashMap <String, String> cells = new HashMap <String, String>();
 	private ArrayList <String> visitedCells;
+	
+	public Sheet() {
+		visitedCells = new ArrayList<String>();
+	}
 
 	/**
 	 * @param cell	A String representing a cell (e.g. "A1", "XZ21", etc.)
@@ -52,10 +56,10 @@ public class Sheet {
 			result = evaluateValue(value);
 		}
 		
-		//visitedCells.clear();
+		visitedCells.clear();
 		return result;
 	}
-	
+
 	public String evaluateFormula(String formula){
 		String result = "#Error";
 		return result;
