@@ -11,5 +11,6 @@
 1481124513724 test-first 3 223 true
 1481124542001 refactoring 1A 28 true
 1481124641048 test-last 1 99 false
-1481124715208 refactoring 2A 74 false
-1481124742709 test-addition 1 27 false
+1481124715208 refactoring 2A 74 true
+1481124742709 test-addition 1 27 true
+1481125178693 test-first 4 435 true

@@ -222,3 +222,8 @@ RefactoringAction 1481124905572 Sheet.java ADD String STRING_OPERATOR FIELD
 EditAction 1481124934629 Sheet.java 3536 11 29 0
 EditAction 1481124993396 Sheet.java 3733 11 30 0
 EditAction 1481125167137 Sheet.java 3942 11 30 0
+UnitTestCaseAction 1481125178692 SheetTest.java OK
+UnitTestSessionAction 1481125178693 SheetTest OK
+RefactoringAction 1481125185677 SheetTest.java ADD void testEvaluateStringConcatFormula()/2 METHOD
+RefactoringAction 1481125195682 SheetTest.java RENAME testEvaluateStringConcatFormula()/2=>void testEvaluateStringConcatWithCellReferenceFormula() METHOD
+EditAction 1481125215014 SheetTest.java 3854 17 46 17

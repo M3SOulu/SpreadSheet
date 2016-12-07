@@ -117,5 +117,12 @@ public class SheetTest {
 		sheet.set("A1", "='qwerty'&'uiop'");
 		assertEquals("qwertyuiop", sheet.evaluate("A1"));
 	}
+	
+	@Test
+	public void testEvaluateStringConcatWithCellReferenceFormula() throws CircularReferenceException, ComputationErrorException{
+		sheet.set("A1", "='qwerty'&A2");
+		sheet.set("A2", "='uiop'");
+		assertEquals("qwertyuiop", sheet.evaluate("A1"));
+	}
 
 }
