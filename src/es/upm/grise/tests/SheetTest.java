@@ -43,5 +43,23 @@ public class SheetTest {
 		s.set("A1", "\'\'");
 		assertEquals(s.evaluate("A1"),"#Error");
 	}
+	
+	@Test
+	public void testFormulas1(){
+		s.set("A1","=1");
+		assertEquals(s.evaluate("A1"),"1");
+	}
+	
+	@Test
+	public void testFormulas2(){
+		s.set("A1", "=1.5");
+		assertEquals(s.evaluate("A1"),"#Error");
+	}
+	
+	@Test
+	public void testFormulas3(){
+		s.set("A1", "=\'ciao\'");
+		assertEquals(s.evaluate("A1"),"ciao");
+	}
 
 }
