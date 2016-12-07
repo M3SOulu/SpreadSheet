@@ -31,3 +31,5 @@ RefactoringAction 1481120072982 SheetTest.java RENAME evalutate_have()=>void eva
 UnitTestCaseAction 1481120094842 SheetTest.java OK
 UnitTestSessionAction 1481120094843 SheetTest OK
 EditAction 1481120109430 SheetTest.java 486 3 5 2
+RefactoringAction 1481120114116 SheetTest.java RENAME evalutate_have_errors()=>void evalutate_have_error() METHOD
+EditAction 1481120115754 SheetTest.java 486 3 5 2
