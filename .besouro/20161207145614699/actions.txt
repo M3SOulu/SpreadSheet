@@ -320,3 +320,6 @@ EditAction 1481127631303 SheetTest.java 4733 21 55 21
 UnitTestCaseAction 1481127632180 SheetTest.java OK
 UnitTestSessionAction 1481127632181 SheetTest OK
 EditAction 1481127659458 SheetTest.java 4778 21 56 21
+UnitTestCaseAction 1481127660646 SheetTest.java FAIL
+UnitTestSessionAction 1481127660646 SheetTest FAIL
+EditAction 1481127665232 SheetTest.java 4733 21 55 21

@@ -147,8 +147,7 @@ public class SheetTest {
 	@Test
 	public void testEvaluateMultipleOperatorsFormula() throws CircularReferenceException, ComputationErrorException{
 		sheet.set("A1", "=1 * 2 + 2 / 4 + 1");
-		String result = 1 * 2 + 2 / 4 + 1 + "";
-		assertEquals(result, sheet.evaluate("A1"));
+		assertEquals("2", sheet.evaluate("A1"));
 	}
 
 }
