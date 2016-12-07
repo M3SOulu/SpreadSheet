@@ -40,7 +40,7 @@ public class Sheet {
 			
 		}
 		else if (result.startsWith("'") && result.endsWith("'")){ //String
-			
+			result = result.replaceAll("'", "");
 		}
 		else if (!result.contains("['.]")){ //Integer
 			
