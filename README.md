@@ -26,3 +26,5 @@ evaluates to "3"). If the parentheses in a formula are unbalanced, it shall retu
 - Finally, formulas can contain arbitrary spaces which are to be ignored (e.g., Formula  "=1+ (1 \* 2 )" evaluates to "3")
 
 https://github.com/M3SOulu/SpreadSheet
+
+**PLEASE COMPLETE THE QUESTIONNAIRE AT:** https://goo.gl/forms/jesnxyN1IfFNSRrq2
