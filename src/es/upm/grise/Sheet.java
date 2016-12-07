@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Sheet {
+	public boolean debug = false;
 	private static final String[] SPECIAL_CHARACTERS = new String[]{"\\", "/" , "*" , "?" , ":" , "[" , "]", "."};
 	private static final String[] OPERATOR_CHARACTERS = new String[]{"+", "-", "/", "*", "%", "&"};
 	public static final String STRING_OPERATOR_CHARACTER = "&";
@@ -124,7 +125,8 @@ public class Sheet {
 	}
 	
 	private void print(String str){ //TODO remove
-		System.out.println(str);
+		if (debug)
+			System.out.println(str);
 	}
 	
 	private String doOperation(String a, String b, String op){

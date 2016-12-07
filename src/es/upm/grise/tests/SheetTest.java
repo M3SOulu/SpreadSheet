@@ -153,7 +153,7 @@ public class SheetTest {
 	@Test
 	public void testEvaluateOperationsWithCellReferenceFormula() throws CircularReferenceException, ComputationErrorException{
 		sheet.set("A1", "=1 + 1 * A2");
-		sheet.set("A2", "=10");
+		sheet.set("A2", "10");
 		sheet.debug = true;
 		assertEquals("20", sheet.evaluate("A1"));
 	}
