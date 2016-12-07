@@ -43,11 +43,11 @@ public class Sheet {
 		char[] array;
 		array = this.get(cell).toCharArray();
 		if (array[0] == '=') {
-			String a = this.get(cell).substring(1);
-			if (cells.containsKey(a)) {
-				s= valutaNumAndString(this.get(a));
+			String arg = this.get(cell).substring(1);
+			if (cells.containsKey(arg)) {
+				s= valutaNumAndString(this.get(arg));
 			} else {
-				s = valutaNumAndString(a);
+				s = valutaNumAndString(arg);
 			}
 
 		} else {

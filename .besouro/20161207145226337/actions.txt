@@ -187,3 +187,4 @@ UnitTestCaseAction 1481126401510 SheetTest.java FAIL
 UnitTestSessionAction 1481126401510 SheetTest FAIL
 RefactoringAction 1481126519024 SheetTest.java REMOVE testContentAnotherCell() METHOD
 EditAction 1481126521247 SheetTest.java 1261 8 16 8
+EditAction 1481126521419 Sheet.java 2074 4 12 0
