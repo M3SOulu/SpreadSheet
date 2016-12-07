@@ -46,11 +46,11 @@ public class Sheet {
 		if (array[0] == '=') {
 			String arg = this.get(cell).substring(1);
 			if (cells.containsKey(arg)) {
-				if (!visitedCells.contains(arg)) {
+				if (visitedCells.contains(arg)) {
+					s = "#Circular";
+				} else {
 					visitedCells.add(cell);
 					s = evaluate(arg);
-				} else {
-					s = "#Circular";
 				}
 			} else {
 				s = valutaNumAndString(arg);
