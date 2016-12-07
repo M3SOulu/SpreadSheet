@@ -48,17 +48,20 @@ public class Sheet {
 			if(c != '='){
 				total = "" + c;
 			}else{
-				if(c > '0' || c < '9')
+				if(c > '0' || c < '9'){
 					operation = Integer.parseInt(""+ c);
+					continue;
+				}
 				else if(c > 'A' || c < 'Z'){
 					if(c > 'A' || c < 'Z'){
 					}
+				}
 			if(c == '+')
 				total = "" + (operation + Integer.parseInt("" + c));
 			else if(c == '-')
 				total = "" + (operation - Integer.parseInt(""+ c));
-		}
+			
+			}
 		return total;
 	}
-
 }
