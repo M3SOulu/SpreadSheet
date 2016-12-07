@@ -67,9 +67,9 @@ public class Sheet {
 			System.out.print(a+" ");
 			System.out.println(b);
 			if (startIndex==1)
-				return ""+ Integer.valueOf(a)+Integer.valueOf(b);
+				return ""+ (Integer.valueOf(a)+Integer.valueOf(b));
 			else
-				return ""+ (-a+b);
+				return ""+ (Integer.valueOf(a)+Integer.valueOf(b));
 		}
 		for(int i=0; i<content.length(); i++){
 			if(content.charAt(i)=='\'') return content.replaceAll("\'","");
