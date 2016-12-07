@@ -53,8 +53,6 @@ public class Sheet {
 		else{
 			result = evaluateValue(value);
 		}
-		
-		visitedCells.clear();
 		return result;
 	}
 
@@ -67,9 +65,11 @@ public class Sheet {
 		String result = "#Error";
 		if (isString(value)){ //String
 			result = value.replaceAll("'", "");
+			visitedCells.clear();
 		}
 		else if (isNumber(value)){ //Integer
 			result = value;
+			visitedCells.clear();
 		}
 		else if (isCell(value)){ //Cell
 			if (visitedCells.contains(value)){
