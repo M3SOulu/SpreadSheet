@@ -139,8 +139,14 @@ public class SheetTest {
 	}
 	
 	@Test
-	public void testEvaluateLongNumberAdditionFormula() throws CircularReferenceException, ComputationErrorException{
+	public void testEvaluateManyNumbersAdditionFormula() throws CircularReferenceException, ComputationErrorException{
 		sheet.set("A1", "=1 + 2 + 2 + 3 + 1");
+		assertEquals("9", sheet.evaluate("A1"));
+	}
+	
+	@Test
+	public void testEvaluateMultipleOperatorsFormula() throws CircularReferenceException, ComputationErrorException{
+		sheet.set("A1", "=1 * 2 + 2 / 3 + 1");
 		assertEquals("9", sheet.evaluate("A1"));
 	}
 

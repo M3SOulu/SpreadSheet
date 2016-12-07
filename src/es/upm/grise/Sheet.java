@@ -82,6 +82,7 @@ public class Sheet {
 					if (isOperator(c.toString())){
 						if (readyForOperation){
 							result = doOperation(result, number, operator);
+							number = "";
 						}
 						operator = c.toString();
 						readyForOperation = true;
@@ -118,17 +119,39 @@ public class Sheet {
 		return result;
 	}
 	
-	private void print(String str){
+	private void print(String str){ //TODO remove
 		System.out.println(str);
 	}
 	
 	private String doOperation(String a, String b, String op){
 		print("ATTEMPTING->" + a + "_" + op + "_" + b);
 		String result = "#Error";
+		int numA = 0, numB = 0;
 		try{
-			result = (Integer.parseInt(a) + Integer.parseInt(b)) + "";
+			numA = (Integer.parseInt(a));
+			numB = (Integer.parseInt(b));
 		} catch(NumberFormatException e){
 			result = "#Error";
+		}
+		switch(op){
+		case SUM:
+			result = numA + numB + "";
+			break;
+		case SUB:
+			result = numA - numB + "";
+			break;
+		case DIV:
+			result = numB != 0 ? numA / numB + "" : "#Error";
+			break;
+		case MUL:
+			result = numA * numB + "";
+			break;
+		case MOD:
+			result = numA % numB + "";
+			break;
+		default:
+			result = "#Error";
+			break;
 		}
 		return result;
 	}

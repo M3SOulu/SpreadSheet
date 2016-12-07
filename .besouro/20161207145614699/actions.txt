@@ -302,3 +302,17 @@ EditAction 1481127153124 SheetTest.java 4522 20 53 20
 UnitTestCaseAction 1481127154459 SheetTest.java FAIL
 UnitTestSessionAction 1481127154459 SheetTest FAIL
 EditAction 1481127212935 Sheet.java 5212 14 38 0
+UnitTestCaseAction 1481127245746 SheetTest.java FAIL
+UnitTestSessionAction 1481127245747 SheetTest FAIL
+CompilationAction 1481127276743 Sheet.java
+UnitTestCaseAction 1481127279419 SheetTest.java OK
+UnitTestSessionAction 1481127279420 SheetTest OK
+UnitTestCaseAction 1481127571474 SheetTest.java OK
+UnitTestSessionAction 1481127571475 SheetTest OK
+RefactoringAction 1481127576965 SheetTest.java ADD void testEvaluateLongNumberAdditionFormula()/2 METHOD
+RefactoringAction 1481127599480 SheetTest.java RENAME testEvaluateLongNumberAdditionFormula()/2=>void testEvaluateNumberAdditionFormula()/2 METHOD
+RefactoringAction 1481127601992 SheetTest.java RENAME testEvaluateNumberAdditionFormula()/2=>void testEvaluateNumberLongAdditionFormula() METHOD
+RefactoringAction 1481127608026 SheetTest.java RENAME testEvaluateNumberLongAdditionFormula()=>void testEvaluateManyNumberAdditionFormula() METHOD
+RefactoringAction 1481127609039 SheetTest.java RENAME testEvaluateManyNumberAdditionFormula()=>void testEvaluateManyNumbersAdditionFormula() METHOD
+RefactoringAction 1481127615066 SheetTest.java RENAME testEvaluateLongNumberAdditionFormula()=>void testEvaluateMultipleOperatorsFormula() METHOD
+EditAction 1481127621220 SheetTest.java 4733 21 55 21
