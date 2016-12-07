@@ -90,8 +90,8 @@ public class SheetTest {
 	
 	@Test
 	public void testModuleBetweenTwoNumbers(){
-		sheet.set("A1","=10%3");		
-		Assert.assertEquals("1",sheet.evaluate("A1"));
+		sheet.set("A1","=5%3");		
+		Assert.assertEquals("2",sheet.evaluate("A1"));
 	}
 	
 }
