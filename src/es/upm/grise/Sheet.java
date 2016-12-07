@@ -79,7 +79,7 @@ public class Sheet {
 				}		
 				if (formula.charAt(i) == '+'){
 					if(((formula.charAt(i+1) >= 'A') && (formula.charAt(i+1) <= 'Z')))
-						total = "" + (operation + Integer.parseInt(evaluate(formula.substring(i+1))));
+						total = "" + (operation + Integer.parseInt(evaluate(formula.substring(++i))));
 					else
 						total = "" + (operation + Integer.parseInt("" + formula.charAt(++i)));
 				}
