@@ -67,27 +67,23 @@ public class Sheet {
 						visitedCells.add(otherCell);
 					operation = Integer.parseInt(evaluate(otherCell));
 				}		
-				if (formula.charAt(i) == '+')
-					if (!((formula.charAt(i+1) >= 'A')||(formula.charAt(i+1) <= 'Z')))
-						total = "" + (operation + Integer.parseInt("" + formula.charAt(++i)));
+				if (formula.charAt(i) == '+'){
+					total = "" + (operation + Integer.parseInt("" + formula.charAt(++i)));
+				}
 				else if (formula.charAt(i) == '-')
-					if (!((formula.charAt(i+1) >= 'A')||(formula.charAt(i+1) <= 'Z')))
-						total = "" + (operation - Integer.parseInt("" + formula.charAt(++i)));
+					total = "" + (operation - Integer.parseInt("" + formula.charAt(++i)));
 				else if (formula.charAt(i) == '*')
-					if (!((formula.charAt(i+1) >= 'A')||(formula.charAt(i+1) <= 'Z')))
-						total = "" + (operation * Integer.parseInt("" + formula.charAt(++i)));
+					total = "" + (operation * Integer.parseInt("" + formula.charAt(++i)));
 				else if (formula.charAt(i) == '/') {
-					if (!((formula.charAt(i+1) >= 'A')||(formula.charAt(i+1) <= 'Z')))
-						if (formula.charAt(i + 2) != '0')
-							total = "" + (operation / Integer.parseInt("" + formula.charAt(++i)));
-						else
-							throw new ComputationErrorException("#Error");
+					if (formula.charAt(i + 1) != '0')
+						total = "" + (operation / Integer.parseInt("" + formula.charAt(++i)));
+					else
+						throw new ComputationErrorException("#Error");
 				}else if (formula.charAt(i) == '%')
-					if (!((formula.charAt(i+1) >= 'A') && (formula.charAt(i+1) <= 'Z')))
-						if (formula.charAt(i + 1) != '0')
-							total = "" + (operation % Integer.parseInt("" + formula.charAt(++i)));
-						else
-							throw new ComputationErrorException("#Error");
+					if (formula.charAt(i + 1) != '0')
+						total = "" + (operation % Integer.parseInt("" + formula.charAt(++i)));
+					else
+						throw new ComputationErrorException("#Error");
 			} else {
 				total = formula;
 			}
