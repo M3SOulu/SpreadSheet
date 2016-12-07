@@ -44,16 +44,21 @@ public class Sheet {
 		Integer operation = 0;
 		String total = "";
 		String formula = get(cell);
-		if(formula.charAt(0) != '='){
-			total = formula;
-		}else{
-			if(formula.charAt(1) > '0' || formula.charAt(1) < '9')
-				operation = Integer.parseInt(""+formula.charAt(1));
-//			else if(formula.charAt(1) > 'A' || formula.charAt(1) < 'Z')
-			if(formula.charAt(2) == '+')
-				total = "" + (operation + Integer.parseInt(""+formula.charAt(3)));
-			else if(formula.charAt(2) == '-')
-				total = "" + (operation - Integer.parseInt(""+formula.charAt(3)));
+		for (int i = 0; i < formula.length(); i++) {
+			if (formula.charAt(0) == '=') {
+				if (formula.charAt(i) > '0' || formula.charAt(i) < '9'){
+					operation = Integer.parseInt("" + formula.charAt(1));
+					continue;
+				}
+					
+				// else if(formula.charAt(1) > 'A' || formula.charAt(1) < 'Z')
+				if (formula.charAt(i) == '+')
+					total = "" + (operation + Integer.parseInt("" + formula.charAt(i+1)));
+				else if (formula.charAt(i) == '-')
+					total = "" + (operation - Integer.parseInt("" + formula.charAt(i+1)));
+			} else {
+				total = formula;
+			}
 		}
 		return total;
 	}
