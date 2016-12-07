@@ -96,6 +96,7 @@ public class Sheet {
 					}
 				}
 			}
+			result = doOperation(result, number, operator);
 		}
 		return result;
 	}
