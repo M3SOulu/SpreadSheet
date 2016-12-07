@@ -58,6 +58,7 @@ public class Sheet {
 					}
 				}
 			}
+			System.out.println(a+b);
 			if (startIndex==1)
 				return ""+ (a+b);
 			else
