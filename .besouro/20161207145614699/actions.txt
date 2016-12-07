@@ -364,3 +364,10 @@ UnitTestSessionAction 1481128027923 SheetTest FAIL
 UnitTestCaseAction 1481128142139 SheetTest.java FAIL
 UnitTestSessionAction 1481128142139 SheetTest FAIL
 EditAction 1481128149135 SheetTest.java 5255 23 62 23
+UnitTestCaseAction 1481128150088 SheetTest.java FAIL
+UnitTestSessionAction 1481128150089 SheetTest FAIL
+RefactoringAction 1481128164926 SheetTest.java ADD void testEvaluateOperationsWithCellReferenceFormula()/2 METHOD
+RefactoringAction 1481128173938 SheetTest.java RENAME testEvaluateOperationsWithCellReferenceFormula()/2=>void testEvaluateOperationsWithCellReferenceMultipleOperationsFormula() METHOD
+RefactoringAction 1481128177944 SheetTest.java RENAME testEvaluateOperationsWithCellReferenceMultipleOperationsFormula()=>void testEvaluateOperationsWithCellReferenceMultipleFormula() METHOD
+RefactoringAction 1481128180452 SheetTest.java RENAME testEvaluateOperationsWithCellReferenceMultipleFormula()=>void testEvaluateMultipleOperationsWithCellReferenceFormula() METHOD
+EditAction 1481128188784 SheetTest.java 5527 24 66 24

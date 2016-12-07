@@ -159,6 +159,14 @@ public class SheetTest {
 	}
 	
 	@Test
+	public void testEvaluateMultipleOperationsWithCellReferenceFormula() throws CircularReferenceException, ComputationErrorException{
+		sheet.set("A1", "=1 + 1 + A2");
+		sheet.set("A2", "=1 + 1");
+		sheet.debug = true;
+		assertEquals("4", sheet.evaluate("A1"));
+	}
+	
+	@Test
 	public void testEvaluateOperationsWithCellReferenceFormulaCircularError() throws CircularReferenceException, ComputationErrorException{
 		sheet.set("A1", "=1 + 1 * A2");
 		sheet.set("A2", "=A1");
