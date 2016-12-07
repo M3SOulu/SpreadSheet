@@ -13,7 +13,7 @@ public class SheetTest {
 	Sheet spreadSheet = new Sheet();
 
 	@Test
-	public void test() throws ComputationErrorException {
+	public void basicTest() throws ComputationErrorException {
 		spreadSheet.set("A1", "6");
 		assertEquals("6",spreadSheet.evaluate("A1"));
 	}

@@ -20,3 +20,8 @@ EditAction 1481120342409 SheetTest.java 396 1 2 1
 UnitTestCaseAction 1481120342983 SheetTest.java FAIL
 UnitTestSessionAction 1481120342984 SheetTest FAIL
 EditAction 1481120348314 SheetTest.java 396 1 2 1
+UnitTestCaseAction 1481120348861 SheetTest.java OK
+UnitTestSessionAction 1481120348861 SheetTest OK
+RefactoringAction 1481120359785 SheetTest.java RENAME test()=>void basictest() METHOD
+RefactoringAction 1481120361309 SheetTest.java RENAME basictest()=>void basicTest() METHOD
+EditAction 1481120362416 SheetTest.java 401 1 2 1
