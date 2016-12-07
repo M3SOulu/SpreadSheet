@@ -95,3 +95,4 @@ RefactoringAction 1481121979459 SheetTest.java RENAME testEvaluateValue()=>void 
 RefactoringAction 1481121995538 SheetTest.java ADD void testEvaluateSimpleIntegerFormulaValue()/2 METHOD
 RefactoringAction 1481122004545 SheetTest.java RENAME testEvaluateSimpleIntegerFormulaValue()/2=>void testEvaluateSimpleStringFormulaValue() METHOD
 EditAction 1481122068781 SheetTest.java 1964 10 19 9
+EditAction 1481122075189 SheetTest.java 1968 10 19 9
