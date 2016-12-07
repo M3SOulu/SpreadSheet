@@ -143,3 +143,5 @@ RefactoringAction 1481125566664 Sheet.java RENAME valutaNum()=>String valutaNumA
 RefactoringAction 1481125568682 Sheet.java RENAME valutaNumAnd()=>String valutaNumAndString() METHOD
 RefactoringAction 1481125618269 Sheet.java RENAME valutaNumAndString()=>String valutaNumAndString(String) METHOD
 EditAction 1481125692737 Sheet.java 2773 4 8 0
+CompilationAction 1481125692943 Sheet.java
+EditAction 1481125699449 Sheet.java 2774 4 13 0
