@@ -62,7 +62,7 @@ public class Sheet {
 						offset=i;
 					}
 					else if(content.charAt(i)=='%'){
-						num=5;
+						num=6;
 						offset=i;
 					}
 					else if(content.charAt(i)>='0'||content.charAt(i)>='9'){
@@ -94,6 +94,7 @@ public class Sheet {
 				case 2: value= (Integer.valueOf(a)+Integer.valueOf(b)); break;
 				case 4: value= (Integer.valueOf(a)*Integer.valueOf(b)); break;
 				case 5: value= (Integer.valueOf(a)/Integer.valueOf(b)); break;
+				case 6: value= (Integer.valueOf(a)%Integer.valueOf(b)); break;
 				}				
 			}
 				
@@ -102,6 +103,7 @@ public class Sheet {
 				case 2: value= ((-Integer.valueOf(a))+Integer.valueOf(b)); break;
 				case 4: value= ((-Integer.valueOf(a))*Integer.valueOf(b)); break;
 				case 5: value= ((-Integer.valueOf(a))/Integer.valueOf(b)); break;
+				case 6: value= ((-Integer.valueOf(a))%Integer.valueOf(b)); break;
 				}
 			}
 				
