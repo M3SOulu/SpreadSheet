@@ -44,7 +44,12 @@ public class Sheet {
 			result = value.replaceAll("'", "");
 		}
 		else if (!containsSpecialCharacters(value)){ //Integer
-			result = value;
+			try{
+				result = Integer.parseInt(value) + "";
+			}
+			catch(NumberFormatException e){
+				
+			}
 		}
 		return result;
 	}
