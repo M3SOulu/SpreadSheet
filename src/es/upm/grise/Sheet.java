@@ -66,15 +66,18 @@ public class Sheet {
 		else if(contentValue.charAt(0) == '='){
 			
 			//ricavo formula senza '='
-			String formula = contentValue.substring(1, contentValue.length());
-			formula.toUpperCase();
-			System.out.println(formula);
+			
 			try{
-				if(formula == null || formula == "" || formula == " ")
+				if(contentValue == "=")
 					throw new ComputationErrorException();
 			}catch(ComputationErrorException e){
 				result = "#Error";
 			}
+			
+			String formula = contentValue.substring(1, contentValue.length());
+			formula.toUpperCase();
+			System.out.println(formula);
+			
 			if(formula.charAt(0) >= 'A' && formula.charAt(0) <= 'Z')		
 				result = evaluate(formula);
 			else
