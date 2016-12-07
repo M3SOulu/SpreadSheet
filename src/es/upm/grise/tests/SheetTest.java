@@ -14,10 +14,10 @@ public class SheetTest {
 	private HashMap <String, String> cells = new HashMap <String, String>();
 	 @Before
 	 public void test(){
-		 cells.put("A1","valid");
-		 cells.put("XZ21", "valid");
-		 cells.put("/A1", "not valid");
-		 cells.put(".21A", "not valid");
+		 cells.put("valid","A1");
+		 cells.put("valid", "XZ21");
+		 cells.put("not valid", "/A1");
+		 cells.put("not valid", ".21A");
 	 }
 	
 	@Test
