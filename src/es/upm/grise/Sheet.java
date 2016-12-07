@@ -24,7 +24,7 @@ public class Sheet {
 		if(cell == "A1"){
 			cells.put(contents, "valid");
 		}
-		else if(cell == "/"){
+		else if(cell == "/A1"){
 			cells.put(contents,"not valid");
 		}
 		
