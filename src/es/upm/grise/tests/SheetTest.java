@@ -28,10 +28,7 @@ public class SheetTest {
 		assertEquals("/A1",cells.get("not valid"));
 	}
 	
-	@Test
-	public void test2(){
-		assertEquals("1",cells.get("cell"));
-	}
+
 
 	
 
