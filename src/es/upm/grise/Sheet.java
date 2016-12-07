@@ -37,6 +37,7 @@ public class Sheet {
 		String content = cells.get(cell);
 		int a=0;
 		int b=0;
+		boolean negative = false;
 		if(content.charAt(0)=='='){
 			if(content.charAt(1)=='-'){
 				for(int i=2; i<content.length(); i++){
