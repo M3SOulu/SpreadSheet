@@ -37,3 +37,6 @@ RefactoringAction 1481120802437 SheetTest.java ADD import es.upm.grise.CircularR
 RefactoringAction 1481120802438 SheetTest.java ADD import es.upm.grise.ComputationErrorException IMPORT
 EditAction 1481120874247 SheetTest.java 795 4 7 3
 EditAction 1481120977351 Sheet.java 1306 3 4 0
+UnitTestCaseAction 1481120978965 SheetTest.java FAIL
+UnitTestSessionAction 1481120978966 SheetTest FAIL
+EditAction 1481121104863 Sheet.java 1505 3 6 0

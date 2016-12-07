@@ -35,7 +35,16 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) throws CircularReferenceException, ComputationErrorException {
 		String result = get(cell);
-		
+		System.out.println("123.3".contains("[',.]"));
+		if (result.startsWith("=")){
+			
+		}
+		else if (result.startsWith("'") && result.endsWith("'")){
+			
+		}
+		else if (!result.contains("['.]")){
+			
+		}
 		return result;
 	}
 
