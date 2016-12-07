@@ -50,7 +50,7 @@ public class Sheet {
 			for (int j = 0; j < valueCell.length(); j++) {
 				if (!(Character.isDigit(valueCell.charAt(j)) || Character.isAlphabetic(j)) && valueCell.charAt(j) != '='
 						&& valueCell.charAt(j) != '+' && valueCell.charAt(j) != '-' && valueCell.charAt(j) != '*'
-						&& valueCell.charAt(j) != '/') {
+						&& valueCell.charAt(j) != '/' && valueCell.charAt(j) != '\'') {
 					throw new CircularReferenceException("#Error.");
 				}
 			}
