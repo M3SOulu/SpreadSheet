@@ -101,5 +101,15 @@ public class SheetTest {
 		sheet.set("A4", "='test'");
 		assertEquals("test", sheet.evaluate("A2"));
 	}
+	
+	@Test
+	public void testEvaluateSimpleCellReferenceNotCircularErrorFormulaDoubleEvaluate() throws CircularReferenceException, ComputationErrorException{
+		sheet.set("A1", "=A3");
+		sheet.set("A2", "=A1");
+		sheet.set("A3", "=A4");
+		sheet.set("A4", "='test'");
+		assertEquals("test", sheet.evaluate("A2"));
+		assertEquals("test", sheet.evaluate("A2"));
+	}
 
 }
