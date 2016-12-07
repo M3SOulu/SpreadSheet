@@ -11,9 +11,15 @@ public class Sheet {
 	/**
 	 * @param cell	A String representing a cell (e.g. "A1", "XZ21", etc.)
 	 * @return		The cell's contents (e.g. "1", "=5", "=1+B3", "=1+(B3*4)", etc.)
+	 * @throws ComputationErrorException 
 	 */
-	public String get(String cell) {		
-		return cells.get(cell);
+	public String get(String cell) throws ComputationErrorException {
+		String formula = "";
+		formula = cells.get(cell);
+		if(formula != null)
+			return cells.get(cell);
+		else
+			throw new ComputationErrorException();
 	}
 
 	/**
