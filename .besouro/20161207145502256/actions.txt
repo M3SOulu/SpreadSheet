@@ -189,3 +189,45 @@ UnitTestSessionAction 1481126711714 SheetTest FAIL
 UnitTestCaseAction 1481126759694 SheetTest.java FAIL
 UnitTestSessionAction 1481126759695 SheetTest FAIL
 EditAction 1481126775322 Sheet.java 2402 4 14 0
+UnitTestCaseAction 1481126776679 SheetTest.java OK
+UnitTestSessionAction 1481126776680 SheetTest OK
+RefactoringAction 1481126791492 SheetTest.java ADD void evalutateCellWhithDivisionTwoNumber()/2 METHOD
+RefactoringAction 1481126795998 SheetTest.java RENAME evalutateCellWhithDivisionTwoNumber()/2=>void evalutateCellWhithDivisionNumber() METHOD
+RefactoringAction 1481126798002 SheetTest.java RENAME evalutateCellWhithDivisionNumber()=>void evalutateCellWhithDivisionthreeNumber() METHOD
+RefactoringAction 1481126801009 SheetTest.java RENAME evalutateCellWhithDivisionthreeNumber()=>void evalutateCellWhithDivisionThreeNumber() METHOD
+UnitTestCaseAction 1481127227259 SheetTest.java FAIL
+UnitTestSessionAction 1481127227259 SheetTest FAIL
+RefactoringAction 1481127243649 SheetTest.java RENAME evalutateCellWhithDivisionThreeNumber()=>void Str() METHOD
+RefactoringAction 1481127245674 SheetTest.java RENAME Str()=><initializer /1> null
+RefactoringAction 1481127249207 SheetTest.java RENAME <initializer /1>=>void formu() METHOD
+RefactoringAction 1481127253719 SheetTest.java RENAME formu()=>void formulaContains() METHOD
+RefactoringAction 1481127275738 SheetTest.java RENAME formulaContains()=>void formula() METHOD
+RefactoringAction 1481127276745 SheetTest.java RENAME formula()=>void formulacontains FIELD
+RefactoringAction 1481127279759 SheetTest.java RENAME formulacontains=>void formulaContains FIELD
+RefactoringAction 1481127283828 SheetTest.java RENAME formulaContainsa=>void formulaContainsA FIELD
+RefactoringAction 1481127285843 SheetTest.java RENAME formulaContainsA=>void formulaContainsADecimal FIELD
+FileOpenedAction 1481128116219 CircularReferenceException.java 86 0 0 0
+FileOpenedAction 1481128118372 ComputationErrorException.java 85 0 0 0
+FileOpenedAction 1481128134727 CircularReferenceException.java 86 0 0 0
+UnitTestCaseAction 1481128329432 SheetTest.java FAIL
+UnitTestSessionAction 1481128329432 SheetTest FAIL
+RefactoringAction 1481128402810 SheetTest.java RENAME formulaContainsADecimalPoint()=>void formulaContainsALetter() METHOD
+UnitTestCaseAction 1481128412463 SheetTest.java FAIL
+UnitTestSessionAction 1481128412463 SheetTest FAIL
+UnitTestCaseAction 1481128524960 SheetTest.java OK
+UnitTestSessionAction 1481128524961 SheetTest.formulaContainsALetter OK
+UnitTestCaseAction 1481128540190 SheetTest.java OK
+UnitTestSessionAction 1481128540191 SheetTest OK
+RefactoringAction 1481128647655 SheetTest.java ADD void formulaContainsALetter()/2 METHOD
+RefactoringAction 1481128664171 SheetTest.java RENAME formulaContainsALetter()/2=>void formulaContainsADe() METHOD
+RefactoringAction 1481128668185 SheetTest.java RENAME formulaContainsADe()=>void formulaContainsADecimalPoint() METHOD
+UnitTestCaseAction 1481128718303 SheetTest.java FAIL
+UnitTestSessionAction 1481128718304 SheetTest FAIL
+UnitTestCaseAction 1481128739837 SheetTest.java FAIL
+UnitTestSessionAction 1481128739837 SheetTest FAIL
+UnitTestCaseAction 1481128943190 SheetTest.java FAIL
+UnitTestSessionAction 1481128943190 SheetTest FAIL
+UnitTestCaseAction 1481129143073 SheetTest.java FAIL
+UnitTestSessionAction 1481129143074 SheetTest FAIL
+UnitTestCaseAction 1481129231670 SheetTest.java OK
+UnitTestSessionAction 1481129231671 SheetTest OK

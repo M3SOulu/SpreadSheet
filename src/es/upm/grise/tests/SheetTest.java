@@ -21,6 +21,8 @@ public class SheetTest {
 		foglio.set("A6", "=2*1");
 		foglio.set("A7", "=2*1*2");
 		foglio.set("A8", "=2/1");
+		foglio.set("A9", "=2/1f");
+		foglio.set("A10", "=2/1.2");
 	}
 
 	@Test
@@ -61,6 +63,16 @@ public class SheetTest {
 	@Test
 	public void evalutateCellWhithDivisionTwoNumber() {
 		assertEquals("2", foglio.evaluate("A8"));
+	}
+	
+	@Test
+	public void formulaContainsALetter() {
+		assertEquals("#Error", foglio.evaluate("A9"));
+	}
+	
+	@Test
+	public void formulaContainsADecimalPoint() {
+		assertEquals("#Error", foglio.evaluate("A10"));
 	}
 	
 	

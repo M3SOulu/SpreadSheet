@@ -51,3 +51,14 @@
 1481126597016 test-addition 1 89 true
 1481126597017 test-addition 1 89 true
 1481126635743 test-addition 1 26 true
+1481126776680 production 3 64 false
+1481128524961 test-addition 2 1733 true
+1481128524962 test-addition 2 1733 true
+1481128524963 test-addition 2 1733 true
+1481128524964 test-addition 1 1733 true
+1481128540191 regression 1 0 true
+1481129231671 test-addition 2 584 true
+1481129231672 test-addition 1 584 true
+1481129231673 test-addition 2 584 true
+1481129231674 test-addition 2 584 true
+1481129231675 test-addition 2 584 true

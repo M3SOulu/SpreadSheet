@@ -58,6 +58,17 @@ public class Sheet {
 
 			temp = result.split("=");
 
+			for (int i = 0; i < temp[1].length(); i++) {
+				try {
+					if (temp[1].charAt(i) <= ')' || temp[1].charAt(i) >= ':' || temp[1].charAt(i) == '.'
+							|| temp[1].charAt(i) == ',') {
+						throw new CircularReferenceException();
+					}
+				} catch (CircularReferenceException e) {
+					return "#Error";
+				}
+			}
+
 			if (temp[1].contains("+")) {
 
 				result = arithmeticOperation(temp[1], "+");
