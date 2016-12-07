@@ -3,3 +3,8 @@ FileOpenedAction 1481118776676 Sheet.java 1192 3 2 0
 EditAction 1481119217521 Sheet.java 1192 3 2 0
 EditAction 1481119257221 SheetTest.java 152 1 0 0
 EditAction 1481120143618 Sheet.java 1285 3 4 0
+RefactoringAction 1481120162491 SheetTest.java RENAME test()=>void cell() METHOD
+RefactoringAction 1481120165003 SheetTest.java RENAME cell()=>void cellcontains() METHOD
+RefactoringAction 1481120177023 SheetTest.java RENAME cellcontains()=>void cellcontainsone FIELD
+RefactoringAction 1481120182040 SheetTest.java RENAME cellcontainsone()=>void cellcontainsoneintegernumber() METHOD
+EditAction 1481120187714 SheetTest.java 177 1 0 0

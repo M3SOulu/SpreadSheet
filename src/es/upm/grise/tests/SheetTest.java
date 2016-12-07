@@ -5,9 +5,9 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class SheetTest {
-
+	
 	@Test
-	public void test() {
+	public void cellcontainsoneintegernumber() {
 		
 	}
 
