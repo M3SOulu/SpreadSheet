@@ -56,7 +56,7 @@ public class Sheet {
 			}
 			if (valueCell.charAt(0) == '\''){
 				String[] str = new String[20];
-				str = valueCell.split("\'");
+				str = valueCell.split("'");
 				value = str.toString();
 			}
 			if (valueCell.charAt(0) == '=') {
