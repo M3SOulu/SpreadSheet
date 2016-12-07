@@ -14,8 +14,9 @@ public class SheetTest {
 	
 	@Test
 	public void cellcontainsoneintegernumber() {
-		Sheet number = new Sheet();
+		//Sheet number = new Sheet();
 		assertEquals("1",cells.get("1"));
 	}
+	
 
 }
