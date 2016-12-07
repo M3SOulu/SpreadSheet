@@ -39,16 +39,18 @@ public class Sheet {
 		
 		// caso in cui non è una formula
 		if(contentValue.charAt(0) != '='){			
-			boolean exit = false;
 			
 			//controllo dei caratteri non accettati
-			for(int i = 0; i < contentValue.length() && !exit ; i++){
-				if((contentValue.charAt(i) < '0' || contentValue.charAt(i) > '9') && contentValue.charAt(i) != '-'){					
-					result = "#Error";
-					exit = true;
-				}else{
-					result = contentValue;
+			try{
+				for(int i = 0; i < contentValue.length(); i++){
+					if((contentValue.charAt(i) < '0' || contentValue.charAt(i) > '9') && contentValue.charAt(i) != '-'){					
+						throw new CircularReferenceException();
+					}else{
+						result = contentValue;
+					}
 				}
+			}catch(CircularReferenceException e){
+				result = "#Error";
 			}
 
 		// caso in cui è una formula

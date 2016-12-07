@@ -184,3 +184,5 @@
 1481122550961 regression 1 1 true
 1481122596489 regression 1 1 true
 1481122629206 regression 1 2 true
+1481122715352 test-addition 2 45 true
+1481122715353 test-addition 1 45 true
