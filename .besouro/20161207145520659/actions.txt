@@ -7,3 +7,8 @@ EditAction 1481120095371 Sheet.java 1579 3 8 0
 RefactoringAction 1481120118668 SheetTest.java ADD Sheet spreadSheet FIELD
 RefactoringAction 1481120126431 SheetTest.java ADD import es.upm.grise.Sheet IMPORT
 EditAction 1481120135476 SheetTest.java 244 1 1 0
+RefactoringAction 1481120201376 SheetTest.java ADD import org.junit.Before IMPORT
+RefactoringAction 1481120223217 SheetTest.java REMOVE spreadSheet FIELD
+RefactoringAction 1481120224741 SheetTest.java ADD Sheet spreadSheet FIELD
+RefactoringAction 1481120310774 SheetTest.java ADD import es.upm.grise.ComputationErrorException IMPORT
+EditAction 1481120314395 SheetTest.java 396 1 2 1
