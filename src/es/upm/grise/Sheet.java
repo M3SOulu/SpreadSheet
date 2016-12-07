@@ -43,11 +43,11 @@ public class Sheet {
 			
 			//controllo dei caratteri non accettati
 			for(int i = 0; i < contentValue.length() && !exit ; i++){
-				if(contentValue.charAt(i) < '0' || contentValue.charAt(i) > '9' || contentValue.charAt(i) > '9')
-					result = contentValue;
-				else{
+				if(contentValue.charAt(i) < '0' || contentValue.charAt(i) > '9'){	
 					result = "#Error";
 					exit = true;
+				}else{
+					result = contentValue;
 				}
 			}
 
