@@ -38,3 +38,7 @@ CompilationAction 1481122709685 SheetTest.java
 CompilationAction 1481122709834 SheetTest.java
 EditAction 1481122715855 SheetTest.java 371 1 2 1
 EditAction 1481122776327 SheetTest.java 375 1 1 1
+RefactoringAction 1481122804226 SheetTest.java ADD void cellcontain FIELD
+RefactoringAction 1481122807733 SheetTest.java RENAME cellcontain=>void cellcontains FIELD
+RefactoringAction 1481122838241 SheetTest.java REMOVE cellcontains FIELD
+EditAction 1481122865176 SheetTest.java 375 1 1 1
