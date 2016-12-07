@@ -6,7 +6,7 @@ import java.util.HashMap;
 public class Sheet {
 
 	private HashMap <String, String> cells = new HashMap <String, String>();
-	private ArrayList <String> visitedCells;
+	private ArrayList <String> visitedCells = new ArrayList<>();
 
 	/**
 	 * @param cell	A String representing a cell (e.g. "A1", "XZ21", etc.)

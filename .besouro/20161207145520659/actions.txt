@@ -119,3 +119,8 @@ UnitTestCaseAction 1481123182500 SheetTest.java OK
 UnitTestSessionAction 1481123182500 SheetTest OK
 EditAction 1481123272890 Sheet.java 2472 3 9 0
 EditAction 1481123330838 Sheet.java 2498 3 10 0
+UnitTestCaseAction 1481123352922 SheetTest.java FAIL
+UnitTestSessionAction 1481123352923 SheetTest FAIL
+UnitTestCaseAction 1481123381167 SheetTest.java FAIL
+UnitTestSessionAction 1481123381168 SheetTest FAIL
+EditAction 1481123410694 Sheet.java 2518 3 10 0
