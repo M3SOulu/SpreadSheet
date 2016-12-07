@@ -20,8 +20,8 @@ public class SheetTest {
 	}
 	
 	@Test
-	public int test(){
-		assertEquals(Integer.parseInt("1.5"),1.5);
+	public void test(){
+		assertEquals(Integer.parseInt("1"),1);
 	}
 	
 	
