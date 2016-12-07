@@ -2,6 +2,7 @@ package es.upm.grise;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Scanner;
 
 public class Sheet {
 
@@ -50,27 +51,41 @@ public class Sheet {
 	public String evaluate(String cell) {
 		String result = "";
 		String[] temp;
-
+		int sum = 0;
 		result = get(cell);
-		temp = result.split("=");
-
-		if (temp[1].contains("+")) {
-			
-			String[] tempSum = temp[1].split("+");
-			
-			int sum = Integer.valueOf(tempSum[0]);
-			sum = sum + Integer.valueOf(tempSum[1]);
-			result = String.valueOf(sum);
-			
-
-			//result = "3";
-
-		} else {
-
-			result = temp[1];
-		}
-
 		
+
+		if (result.contains("=")) {
+			
+			temp = result.split("=");
+
+			if (temp[1].contains("+")) {
+
+				Scanner sc = new Scanner(temp[1]);
+				
+				sc.useDelimiter("[+-]{1,}");
+
+				while (sc.hasNext()) {
+					sum = sum + Integer.valueOf(sc.next());
+
+				}
+				result = String.valueOf(sum);
+
+			} else {
+				
+				Scanner sc = new Scanner(temp[1]);
+				
+				sc.useDelimiter("[+-]{1,}");
+				
+				sum=0;
+				
+				while (sc.hasNext()) {
+					sum = sum - Integer.valueOf(sc.next());
+
+				}
+				result = String.valueOf(sum);
+			}
+		}
 
 		return result;
 	}

@@ -3,3 +3,9 @@
 1481121213570 test-addition 2 174 false
 1481121804749 refactoring 2A 285 true
 1481121824234 regression 2 12 true
+1481123457182 refactoring 2A 1224 false
+1481123492889 regression 1 0 false
+1481123582065 regression 1 0 true
+1481123688421 regression 1 0 true
+1481123775876 test-addition 1 51 true
+1481123985958 test-addition 2 181 true

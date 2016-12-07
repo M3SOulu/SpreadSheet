@@ -13,10 +13,10 @@ public class SheetTest {
 	@Before
 	public void setUp() {
 		foglio = new Sheet();
-		foglio.set("A1", "=1");
+		foglio.set("A1", "1");
 		foglio.set("A2", "=1+2");
-		foglio.set("A3", "1*2");
-		foglio.set("A4", "1/2");
+		foglio.set("A3", "=1+2+5");
+		foglio.set("A4", "=2-1");
 	}
 
 	@Test
@@ -25,8 +25,18 @@ public class SheetTest {
 	}
 	
 	@Test
-	public void evalutateCellWhithSum() {
+	public void evalutateCellWhithSumTwoNumber() {
 		assertEquals("3", foglio.evaluate("A2"));
+	}
+	
+	@Test
+	public void evalutateCellWhithSumTwoThree() {
+		assertEquals("8", foglio.evaluate("A3"));
+	}
+	
+	@Test
+	public void evalutateCellWhithSubtractionNumber() {
+		assertEquals("8", foglio.evaluate("A4"));
 	}
 
 }

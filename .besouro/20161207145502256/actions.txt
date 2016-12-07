@@ -61,3 +61,35 @@ EditAction 1481122249623 Sheet.java 1773 3 8 0
 UnitTestCaseAction 1481122251094 SheetTest.java FAIL
 UnitTestSessionAction 1481122251094 SheetTest FAIL
 EditAction 1481122289993 Sheet.java 1777 3 8 0
+UnitTestCaseAction 1481122291360 SheetTest.java FAIL
+UnitTestSessionAction 1481122291360 SheetTest FAIL
+RefactoringAction 1481122808439 Sheet.java ADD import java.util.Scanner IMPORT
+UnitTestCaseAction 1481122891486 SheetTest.java FAIL
+UnitTestSessionAction 1481122891486 SheetTest FAIL
+UnitTestCaseAction 1481122935545 SheetTest.java FAIL
+UnitTestSessionAction 1481122935546 SheetTest FAIL
+UnitTestCaseAction 1481123457181 SheetTest.java OK
+UnitTestSessionAction 1481123457182 SheetTest OK
+UnitTestCaseAction 1481123492888 SheetTest.java OK
+UnitTestSessionAction 1481123492889 SheetTest OK
+UnitTestCaseAction 1481123582064 SheetTest.java OK
+UnitTestSessionAction 1481123582065 SheetTest OK
+UnitTestCaseAction 1481123688421 SheetTest.java OK
+UnitTestSessionAction 1481123688421 SheetTest OK
+RefactoringAction 1481123724864 SheetTest.java RENAME evalutateCellWhithSum()=>void evalutateCellWhithSumTwo() METHOD
+RefactoringAction 1481123726867 SheetTest.java RENAME evalutateCellWhithSumTwo()=>void evalutateCellWhithSumTwoNumber() METHOD
+RefactoringAction 1481123745897 SheetTest.java ADD void evalutateCellWhithSumTwoNumber()/2 METHOD
+RefactoringAction 1481123754402 SheetTest.java RENAME evalutateCellWhithSumTwoNumber()/2=>void evalutateCellWhithSumTwoThree() METHOD
+UnitTestCaseAction 1481123775876 SheetTest.java OK
+UnitTestSessionAction 1481123775876 SheetTest OK
+RefactoringAction 1481123804491 SheetTest.java ADD void evalutateCellWhithSumTwoThree()/2 METHOD
+RefactoringAction 1481123908592 SheetTest.java RENAME evalutateCellWhithSumTwoThree()/2=>void evalutateCellWhithSubtractionTwoThree() METHOD
+RefactoringAction 1481123914126 SheetTest.java RENAME evalutateCellWhithSubtractionTwoThree()=>void evalutateCellWhithSubtraction() METHOD
+RefactoringAction 1481123916137 SheetTest.java RENAME evalutateCellWhithSubtraction()=>void evalutateCellWhithSubtractionNumber() METHOD
+UnitTestCaseAction 1481123936687 SheetTest.java FAIL
+UnitTestSessionAction 1481123936688 SheetTest FAIL
+UnitTestCaseAction 1481123985958 SheetTest.java OK
+UnitTestSessionAction 1481123985958 SheetTest OK
+UnitTestCaseAction 1481124059072 SheetTest.java FAIL
+UnitTestSessionAction 1481124059073 SheetTest FAIL
+EditAction 1481124120117 Sheet.java 2052 3 8 0
