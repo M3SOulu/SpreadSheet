@@ -36,6 +36,7 @@ public class Sheet {
 	public String evaluate(String cell) {
 		String content = cells.get(cell);
 		for(int i=0; i<content.length(); i++){
+			if(content.charAt(i)=='\'') return content.replaceAll("\'","");
 			if(content.charAt(i)=='.') return "#Error";
 			if(content.charAt(i)=='+') return ""+content.charAt(i+1);
 			if(content.charAt(i)=='-') return ""+content.charAt(i)+content.charAt(i+1);
