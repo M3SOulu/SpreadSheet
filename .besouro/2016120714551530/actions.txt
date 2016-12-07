@@ -1,0 +1,146 @@
+FileOpenedAction 1481118915479 Sheet.java 1192 3 2 0
+UnitTestCaseAction 1481119333039 SheetTest.java FAIL
+UnitTestSessionAction 1481119333046 SheetTest FAIL
+RefactoringAction 1481120294514 SheetTest.java RENAME test()=>void testContentCell() METHOD
+RefactoringAction 1481120548472 SheetTest.java ADD import es.upm.grise.* IMPORT
+RefactoringAction 1481120745705 SheetTest.java ADD import java.util.HashMap IMPORT
+EditAction 1481120781101 SheetTest.java 345 1 3 1
+EditAction 1481120783974 Sheet.java 1192 3 2 0
+UnitTestCaseAction 1481120784614 SheetTest.java FAIL
+UnitTestSessionAction 1481120784615 SheetTest FAIL
+EditAction 1481120982102 Sheet.java 1221 3 3 0
+UnitTestCaseAction 1481120985602 SheetTest.java FAIL
+UnitTestSessionAction 1481120985603 SheetTest FAIL
+EditAction 1481121150339 Sheet.java 1209 3 2 0
+CompilationAction 1481121150512 Sheet.java
+EditAction 1481121164301 Sheet.java 1221 3 3 0
+UnitTestCaseAction 1481121164824 SheetTest.java FAIL
+UnitTestSessionAction 1481121164825 SheetTest FAIL
+EditAction 1481121343534 Sheet.java 1257 3 4 0
+UnitTestCaseAction 1481121344166 SheetTest.java FAIL
+UnitTestSessionAction 1481121344167 SheetTest FAIL
+EditAction 1481121627956 SheetTest.java 370 1 4 1
+EditAction 1481121628119 Sheet.java 1255 3 4 0
+CompilationAction 1481121628270 Sheet.java
+EditAction 1481121880961 Sheet.java 1269 3 5 0
+UnitTestCaseAction 1481121881562 SheetTest.java OK
+UnitTestSessionAction 1481121881563 SheetTest OK
+EditAction 1481122550069 Sheet.java 1275 3 5 0
+UnitTestCaseAction 1481122556751 SheetTest.java OK
+UnitTestSessionAction 1481122556751 SheetTest OK
+RefactoringAction 1481123223023 SheetTest.java ADD void testNumber() METHOD
+RefactoringAction 1481123945196 SheetTest.java ADD HashMap<String,String> cells FIELD
+EditAction 1481124037950 SheetTest.java 569 2 7 2
+EditAction 1481124038144 Sheet.java 1275 3 5 0
+UnitTestCaseAction 1481124038837 SheetTest.java OK
+UnitTestSessionAction 1481124038837 SheetTest OK
+EditAction 1481124134257 SheetTest.java 571 2 7 2
+UnitTestCaseAction 1481124134816 SheetTest.java OK
+UnitTestSessionAction 1481124134817 SheetTest OK
+EditAction 1481124142998 SheetTest.java 571 2 7 2
+UnitTestCaseAction 1481124143608 SheetTest.java OK
+UnitTestSessionAction 1481124143609 SheetTest OK
+EditAction 1481124154449 SheetTest.java 573 2 7 2
+UnitTestCaseAction 1481124155023 SheetTest.java FAIL
+UnitTestSessionAction 1481124155024 SheetTest FAIL
+UnitTestCaseAction 1481125251478 SheetTest.java FAIL
+UnitTestSessionAction 1481125251479 SheetTest FAIL
+EditAction 1481125264781 SheetTest.java 571 2 7 2
+UnitTestCaseAction 1481125265363 SheetTest.java FAIL
+UnitTestSessionAction 1481125265363 SheetTest FAIL
+EditAction 1481125290864 SheetTest.java 570 2 7 2
+UnitTestCaseAction 1481125291407 SheetTest.java OK
+UnitTestSessionAction 1481125291408 SheetTest OK
+EditAction 1481125310765 SheetTest.java 571 2 7 2
+UnitTestCaseAction 1481125311407 SheetTest.java FAIL
+UnitTestSessionAction 1481125311408 SheetTest FAIL
+EditAction 1481125460068 SheetTest.java 568 2 7 2
+UnitTestCaseAction 1481125460655 SheetTest.java FAIL
+UnitTestSessionAction 1481125460656 SheetTest FAIL
+EditAction 1481125474850 SheetTest.java 571 2 7 2
+UnitTestCaseAction 1481125475429 SheetTest.java FAIL
+UnitTestSessionAction 1481125475430 SheetTest FAIL
+EditAction 1481125487418 SheetTest.java 573 2 7 2
+UnitTestCaseAction 1481125487930 SheetTest.java FAIL
+UnitTestSessionAction 1481125487931 SheetTest FAIL
+EditAction 1481125494716 SheetTest.java 574 2 7 2
+UnitTestCaseAction 1481125495403 SheetTest.java FAIL
+UnitTestSessionAction 1481125495403 SheetTest FAIL
+EditAction 1481125843560 SheetTest.java 569 2 7 2
+CompilationAction 1481125843750 SheetTest.java
+UnitTestCaseAction 1481125846381 SheetTest.java FAIL
+UnitTestSessionAction 1481125846381 SheetTest FAIL
+RefactoringAction 1481126449637 SheetTest.java RENAME testNumber()=>void testEvaluateSingleNumber() METHOD
+CompilationAction 1481126532793 SheetTest.java
+EditAction 1481126532805 Sheet.java 1324 3 4 0
+CompilationAction 1481126532971 Sheet.java
+CompilationAction 1481126532972 Sheet.java
+CompilationAction 1481126532972 SheetTest.java
+UnitTestCaseAction 1481126534289 SheetTest.java FAIL
+UnitTestSessionAction 1481126534290 SheetTest FAIL
+RefactoringAction 1481126851967 SheetTest.java ADD void test FIELD
+RefactoringAction 1481126856481 SheetTest.java RENAME test=>void testSingleNumber FIELD
+RefactoringAction 1481126861493 SheetTest.java RENAME testSingleNumber=>void testSingleNumberWithSingleQuotes FIELD
+RefactoringAction 1481126863015 SheetTest.java RENAME testSingleNumberWithSingleQuotes=>void testSingleNumberWithSingleQuotes() METHOD
+EditAction 1481127030495 SheetTest.java 657 3 9 3
+CompilationAction 1481127030644 SheetTest.java
+CompilationAction 1481127030645 SheetTest.java
+UnitTestCaseAction 1481127034171 SheetTest.java FAIL
+UnitTestSessionAction 1481127034172 SheetTest FAIL
+CompilationAction 1481127072209 SheetTest.java
+CompilationAction 1481127072209 SheetTest.java
+CompilationAction 1481127072238 SheetTest.java
+CompilationAction 1481127072238 SheetTest.java
+UnitTestCaseAction 1481127073760 SheetTest.java FAIL
+UnitTestSessionAction 1481127073760 SheetTest FAIL
+CompilationAction 1481127087063 SheetTest.java
+CompilationAction 1481127087063 SheetTest.java
+CompilationAction 1481127087152 SheetTest.java
+CompilationAction 1481127087153 SheetTest.java
+UnitTestCaseAction 1481127088534 SheetTest.java FAIL
+UnitTestSessionAction 1481127088535 SheetTest FAIL
+CompilationAction 1481127876065 SheetTest.java
+CompilationAction 1481127876065 SheetTest.java
+EditAction 1481127876083 Sheet.java 1302 3 6 0
+CompilationAction 1481127876282 SheetTest.java
+CompilationAction 1481127876282 SheetTest.java
+UnitTestCaseAction 1481127877636 SheetTest.java FAIL
+UnitTestSessionAction 1481127877636 SheetTest FAIL
+RefactoringAction 1481128718254 Sheet.java ADD String valutaNumAndString(String) METHOD
+RefactoringAction 1481128781148 SheetTest.java RENAME testEvaluateSingleNumber()=>void testIsNotInteger() METHOD
+RefactoringAction 1481128813680 SheetTest.java REMOVE cells FIELD
+RefactoringAction 1481128818197 SheetTest.java ADD Sheet s FIELD
+RefactoringAction 1481128839742 SheetTest.java RENAME testIsNotInteger()=>void testReturnTheContent() METHOD
+RefactoringAction 1481128848274 SheetTest.java RENAME testReturnTheContent()=>void testIsNotInteger() METHOD
+RefactoringAction 1481128852800 SheetTest.java RENAME testIsNotInteger()=>void testReturnTheContent() METHOD
+RefactoringAction 1481128866826 SheetTest.java REMOVE testContentCell() METHOD
+RefactoringAction 1481128887377 SheetTest.java RENAME testSingleNumberWithSingleQuotes()=>void testIsNotInteger() METHOD
+EditAction 1481128912734 Sheet.java 2180 4 15 0
+UnitTestCaseAction 1481128913395 SheetTest.java FAIL
+UnitTestSessionAction 1481128913395 SheetTest FAIL
+RefactoringAction 1481129086793 Sheet.java REMOVE valutaNumAndString(String) METHOD
+EditAction 1481129127145 Sheet.java 3915 3 10 0
+UnitTestCaseAction 1481129127877 SheetTest.java FAIL
+UnitTestSessionAction 1481129127878 SheetTest FAIL
+RefactoringAction 1481129143138 SheetTest.java RENAME testReturnTheContent()=>void testNumber1() METHOD
+RefactoringAction 1481129150209 SheetTest.java RENAME s=>Sheet sheet FIELD
+EditAction 1481129158659 SheetTest.java 1066 8 16 8
+CompilationAction 1481129158848 SheetTest.java
+UnitTestCaseAction 1481129162346 SheetTest.java FAIL
+UnitTestSessionAction 1481129162347 SheetTest FAIL
+RefactoringAction 1481129199289 SheetTest.java ADD void testNumberPositive1() METHOD
+RefactoringAction 1481129199290 SheetTest.java ADD void testNumberNegative1() METHOD
+RefactoringAction 1481129199290 SheetTest.java ADD void testFloatNumber() METHOD
+RefactoringAction 1481129199290 SheetTest.java ADD void testStringWithQuotes() METHOD
+RefactoringAction 1481129199291 SheetTest.java ADD void testSumOfTwoNumbers() METHOD
+RefactoringAction 1481129199291 SheetTest.java ADD void testFirstNumberNegative() METHOD
+RefactoringAction 1481129199291 SheetTest.java ADD void testDifferenceBetweenTwoNumbers() METHOD
+RefactoringAction 1481129199291 SheetTest.java ADD void testDivisionBetweenTwoNumbers() METHOD
+RefactoringAction 1481129199291 SheetTest.java ADD void testDivisionByZero() METHOD
+RefactoringAction 1481129199292 SheetTest.java ADD void testSumWithBrakets() METHOD
+RefactoringAction 1481129199292 SheetTest.java ADD void testMoltiplicationBetweenTwoNumbers() METHOD
+RefactoringAction 1481129199292 SheetTest.java ADD void testSumWithSpaces() METHOD
+CompilationAction 1481129252500 SheetTest.java
+CompilationAction 1481129279943 SheetTest.java
+UnitTestCaseAction 1481129282317 SheetTest.java OK
+UnitTestSessionAction 1481129282317 SheetTest OK

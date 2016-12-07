@@ -1,0 +1,7 @@
+1481121881563 refactoring 3 2966 true
+1481122556751 refactoring 2A 675 true
+1481124038837 test-addition 1 1482 true
+1481124134817 regression 1 95 true
+1481124143609 regression 1 8 true
+1481125291408 regression 2 1147 true
+1481129282317 test-first 1 3990 true
