@@ -69,3 +69,10 @@ CompilationAction 1481124651394 Sheet.java
 CompilationAction 1481124651561 Sheet.java
 CompilationAction 1481124660515 Sheet.java
 EditAction 1481124662870 SheetTest.java 718 3 7 3
+CompilationAction 1481124663157 SheetTest.java
+CompilationAction 1481124663158 SheetTest.java
+RefactoringAction 1481124782774 SheetTest.java ADD import sun.org.mozilla.javascript.internal.EvaluatorException IMPORT
+RefactoringAction 1481124948357 SheetTest.java REMOVE sumBetweenNumber() METHOD
+RefactoringAction 1481125040411 SheetTest.java ADD void test2 FIELD
+RefactoringAction 1481125041421 SheetTest.java RENAME test2=>void test2() METHOD
+EditAction 1481125050265 Sheet.java 1439 3 5 0

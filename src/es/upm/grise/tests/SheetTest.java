@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import es.upm.grise.Sheet;
+import sun.org.mozilla.javascript.internal.EvaluatorException;
 
 public class SheetTest {
 	private HashMap <String, String> cells = new HashMap <String, String>();
@@ -27,10 +28,7 @@ public class SheetTest {
 		assertEquals("/A1",cells.get("not valid"));
 	}
 	
-	@Test
-	public void sumBetweenNumber(){
-		assertEquals()
-	}
+
 	
 
 }
