@@ -64,7 +64,7 @@ public class Sheet {
 					if(content.charAt(i)>='0'||content.charAt(i)>='9'){
 						if(num==2)
 							b+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-offset-1));
-						else 
+						else if(num==3)
 							b-=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-offset-1));
 					}
 				}
