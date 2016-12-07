@@ -234,3 +234,8 @@ EditAction 1481126249434 Sheet.java 3453 3 8 0
 UnitTestCaseAction 1481126252670 SheetTest.java OK
 UnitTestSessionAction 1481126252670 SheetTest OK
 EditAction 1481126399542 Sheet.java 3461 3 8 0
+RefactoringAction 1481126415522 SheetTest.java ADD void testDivisionBetweenTwoNumbers()/2 METHOD
+RefactoringAction 1481126421037 SheetTest.java RENAME testDivisionBetweenTwoNumbers()/2=>void testDivisionByZero() METHOD
+UnitTestCaseAction 1481126432801 SheetTest.java FAIL
+UnitTestSessionAction 1481126432802 SheetTest FAIL
+EditAction 1481126461206 Sheet.java 3500 3 8 0

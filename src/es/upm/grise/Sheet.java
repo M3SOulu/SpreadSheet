@@ -81,6 +81,7 @@ public class Sheet {
 			System.out.println(a);
 			System.out.println(b);
 			
+			if(num==5 && b==0) return "#Error";
 			
 			if (startIndex==1){
 				switch(num){

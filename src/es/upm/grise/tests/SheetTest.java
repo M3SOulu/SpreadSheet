@@ -71,6 +71,12 @@ public class SheetTest {
 	}
 	
 	@Test
+	public void testDivisionByZero(){
+		sheet.set("A1","=1/0");		
+		Assert.assertEquals("#Error",sheet.evaluate("A1"));
+	}
+	
+	@Test
 	public void testMoltiplicationBetweenTwoNumbers(){
 		sheet.set("A1","=1*1");		
 		Assert.assertEquals("1",sheet.evaluate("A1"));
