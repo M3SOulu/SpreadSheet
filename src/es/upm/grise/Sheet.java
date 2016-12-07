@@ -69,18 +69,18 @@ public class Sheet {
 					operation = Integer.parseInt(evaluate(otherCell));
 				}		
 				if (formula.charAt(i) == '+')
-					total = "" + (operation + Integer.parseInt("" + formula.charAt(i + 1)));
+					total = "" + (operation + Integer.parseInt("" + formula.charAt(i++)));
 				else if (formula.charAt(i) == '-')
-					total = "" + (operation - Integer.parseInt("" + formula.charAt(i + 1)));
+					total = "" + (operation - Integer.parseInt("" + formula.charAt(i++)));
 				else if (formula.charAt(i) == '*')
-					total = "" + (operation * Integer.parseInt("" + formula.charAt(i + 1)));
+					total = "" + (operation * Integer.parseInt("" + formula.charAt(i++)));
 				else if (formula.charAt(i) == '/') {
 					if (formula.charAt(i + 1) != '0')
-						total = "" + (operation / Integer.parseInt("" + formula.charAt(i + 1)));
+						total = "" + (operation / Integer.parseInt("" + formula.charAt(i++)));
 					else
 						throw new ComputationErrorException("#Error");
 				}else if (formula.charAt(i) == '%')
-					total = "" + (operation % Integer.parseInt("" + formula.charAt(i + 1)));
+					total = "" + (operation % Integer.parseInt("" + formula.charAt(i++)));
 			} else {
 				total = formula;
 			}
