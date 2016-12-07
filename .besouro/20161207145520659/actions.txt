@@ -25,3 +25,8 @@ UnitTestSessionAction 1481120348861 SheetTest OK
 RefactoringAction 1481120359785 SheetTest.java RENAME test()=>void basictest() METHOD
 RefactoringAction 1481120361309 SheetTest.java RENAME basictest()=>void basicTest() METHOD
 EditAction 1481120362416 SheetTest.java 401 1 2 1
+FileOpenedAction 1481120727945 CircularReferenceException.java 86 0 0 0
+FileOpenedAction 1481120729832 ComputationErrorException.java 85 0 0 0
+RefactoringAction 1481120743887 ComputationErrorException.java ADD ComputationErrorException() METHOD
+RefactoringAction 1481120746414 ComputationErrorException.java RENAME ComputationErrorException()=>ComputationErrorException(String) METHOD
+EditAction 1481120773193 ComputationErrorException.java 151 1 1 0
