@@ -24,6 +24,7 @@ public class Sheet {
 		if(cell == "1"){
 			cells.put(contents, "1");
 		}
+		
 	}
 
 	/**
@@ -44,7 +45,6 @@ public class Sheet {
 			cellcontains = "3";
 		}
 		
-		//else if(cell == "=1+")
 		return cellcontains;
 	}
 
