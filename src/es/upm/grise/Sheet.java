@@ -50,6 +50,7 @@ public class Sheet {
 				if (visitedCells.contains(arg)) {
 					s = "#Circular";
 				} else {
+					visitedCells.add(cell);
 					s = evaluate(arg);
 				}
 			} else {
