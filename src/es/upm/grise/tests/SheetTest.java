@@ -23,6 +23,8 @@ public class SheetTest {
 	public void cellcontainsoneintegernumber() {
 		//Sheet number = new Sheet();
 		assertEquals("A1",cells.get("valid"));
+		assertEquals("XZ21",cells.get("valid"));
+		assertEquals("/A1",cells.get("not valid"));
 	}
 	
 
