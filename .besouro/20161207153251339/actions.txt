@@ -26,3 +26,6 @@ RefactoringAction 1481124048503 SheetTest.java RENAME testExceptionEval=>void te
 RefactoringAction 1481124052013 SheetTest.java RENAME testExceptionEvalu=>void testExceptionEvaluate FIELD
 RefactoringAction 1481124053524 SheetTest.java RENAME testExceptionEvaluate=>void testExceptionEvaluate() METHOD
 EditAction 1481124119710 SheetTest.java 1035 5 7 4
+UnitTestCaseAction 1481124121614 SheetTest.java FAIL
+UnitTestSessionAction 1481124121615 SheetTest FAIL
+EditAction 1481124204291 SheetTest.java 1035 5 7 4
