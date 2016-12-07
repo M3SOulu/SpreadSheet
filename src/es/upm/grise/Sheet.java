@@ -77,7 +77,7 @@ public class Sheet {
 				
 				sc.useDelimiter("[+-]{1,}");
 				
-				sum=Integer.valueOf(sc.next());
+				sum=sc.nextInt();
 				
 				while (sc.hasNext()) {
 					sum = sum - Integer.valueOf(sc.next());

@@ -36,7 +36,7 @@ public class SheetTest {
 	
 	@Test
 	public void evalutateCellWhithSubtractionNumber() {
-		assertEquals("8", foglio.evaluate("A4"));
+		assertEquals("1", foglio.evaluate("A4"));
 	}
 
 }
