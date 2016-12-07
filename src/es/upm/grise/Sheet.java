@@ -37,14 +37,13 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) throws ComputationErrorException, CircularReferenceException { //fare la catch dell eccezzione, quando trova quella stringa ritorna #error
-	String result, charater;
+	String result = null, charater;
 	if ( (cell == "1/0"))  {
-		throw new CircularReferenceException();
+		throw new ComputationErrorException();
 	}
-	 if (Integer.parseInt(cell)){
-		return cell;
-	}
-	 Integer.parseInt(cell);
+	return result;
+	
+	
 	}
 
 }

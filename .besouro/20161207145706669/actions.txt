@@ -31,3 +31,9 @@ RefactoringAction 1481122713190 SheetTest.java RENAME testError()=>void testErro
 RefactoringAction 1481122720734 SheetTest.java RENAME testError()=>void testErrorOneDiv() METHOD
 RefactoringAction 1481122722265 SheetTest.java RENAME testErrorOneDiv()=>void testErrorOneDivZero() METHOD
 EditAction 1481123259198 Sheet.java 1558 3 7 0
+CompilationAction 1481123259365 Sheet.java
+UnitTestCaseAction 1481123262843 SheetTest.java FAIL
+UnitTestSessionAction 1481123262844 SheetTest FAIL
+UnitTestCaseAction 1481123374422 SheetTest.java FAIL
+UnitTestSessionAction 1481123374422 SheetTest FAIL
+EditAction 1481123402708 Sheet.java 1509 3 6 0
