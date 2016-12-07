@@ -42,7 +42,7 @@ public class Sheet {
 	 *				In case of circular references, return #Circular
 	 * @throws CircularReferenceException 
 	 */
-	public String evaluate(String cell) throws CircularReferenceException, ComputationErrorException {
+	public String evaluate(String cell) {
 		String result = "#Error";
 		String value = cells.containsKey(cell) ? get(cell) : "";
 		visitedCells.add(cell);
@@ -61,7 +61,7 @@ public class Sheet {
 		return result;
 	}
 
-	private String evaluateFormula(String formula) throws CircularReferenceException, ComputationErrorException{
+	private String evaluateFormula(String formula) {
 		String result = "#Error"; //If formula tries to concatenate strings with numbers (+ and & in the same formula)
 		if (formula.contains(STRING_OPERATOR_CHARACTER)){ //String concat
 			result = "";
@@ -82,10 +82,6 @@ public class Sheet {
 				if (!result.equals("#Error")){
 					if (isOperator(c.toString())){
 						if (readyForOperation){
-							print("N" + number);
-							if (isCell(number)){
-								number = evaluateValue(number);
-							}
 							result = doOperation(result, number, operator);
 							number = "";
 						}
@@ -109,7 +105,7 @@ public class Sheet {
 		return result;
 	}
 	
-	private String evaluateValue(String value) throws CircularReferenceException, ComputationErrorException{
+	private String evaluateValue(String value) {
 		String result = "#Error";
 		if (isString(value)){ //String
 			result = value.replaceAll("'", "");
@@ -131,6 +127,9 @@ public class Sheet {
 	
 	private String doOperation(String a, String b, String op){
 		String result = "#Error";
+		if (isCell(b)){
+			b = evaluateValue(b);
+		}
 		int numA = 0, numB = 0;
 		try{
 			numA = (Integer.parseInt(a));
