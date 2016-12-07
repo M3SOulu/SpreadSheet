@@ -72,14 +72,9 @@ public class Sheet {
 			visitedCells.clear();
 		}
 		else if (isCell(value)){ //Cell
-			if (visitedCells.contains(value)){
-				result = "#Circular";
-			}
-			else{
-				System.out.println(value);
-				result = evaluate(value);
-				visitedCells.add(value);
-			}
+			result = visitedCells.contains(value) ? "#Circular" : evaluate(value);
+			System.out.println(result);
+			visitedCells.add(value);
 		}
 		return result;
 	}
