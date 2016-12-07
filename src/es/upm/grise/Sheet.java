@@ -45,9 +45,11 @@ public class Sheet {
 				if(num==1){
 					if(content.charAt(i)=='+'){
 						num=2;
+						offset=i;
 					}
 					else if(content.charAt(i)=='-'){
 						num=3;
+						offset=i;
 					}
 					else if(content.charAt(i)>='0'||content.charAt(i)>='9'){
 						a+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-startIndex));
