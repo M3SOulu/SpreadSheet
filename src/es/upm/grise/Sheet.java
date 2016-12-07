@@ -64,10 +64,11 @@ public class Sheet {
 			result = contentValue.substring(1, contentValue.length()-1);
 		
 		// caso in cui è una formula
-		else {
+		else if(contentValue.charAt(0) != '='){
 			result = contentValue.substring(1, contentValue.length());
 		}
-
+		else
+			result = "#Error";
 		
 		return result;
 	}
