@@ -37,13 +37,29 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) throws ComputationErrorException, CircularReferenceException { //fare la catch dell eccezzione, quando trova quella stringa ritorna #error
-	String result = null, charater;
-	if ( (cell == "1/0"))  {
+	String result = null;
+	if (cell == "1/0"){
 		throw new ComputationErrorException();
 	}
-	return result;
-	
-	
+	if (isNumber(cell)){
+		return result;
+	}
+	else{
+		throw new ComputationErrorException();
+	}
 	}
 
+	private boolean isNumber(String isNum){ //verificare che una stringa contenga interi
+		boolean num = true;
+		char[] seq = isNum.toCharArray();
+		
+		for (int i = 0; i < seq.length; i++) {
+			try{
+				Integer.parseInt(Character.toString(seq[i]));
+			}catch (Exception e) {
+				num = false;
+			}
+		}
+		return num;
+	}
 }

@@ -17,7 +17,6 @@ public class SheetTest {
 	//act
 	
 	try {
-		
 		result = mySheet.evaluate("1/0");
 	} catch (ComputationErrorException e) {
 		

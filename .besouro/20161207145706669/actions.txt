@@ -46,3 +46,13 @@ UnitTestCaseAction 1481123564417 SheetTest.java FAIL
 UnitTestSessionAction 1481123564418 SheetTest FAIL
 RefactoringAction 1481123590773 SheetTest.java ADD String result FIELD
 EditAction 1481123598175 SheetTest.java 594 1 2 0
+UnitTestCaseAction 1481123598700 SheetTest.java FAIL
+UnitTestSessionAction 1481123598701 SheetTest FAIL
+RefactoringAction 1481123766728 Sheet.java ADD boolean d FIELD
+RefactoringAction 1481123769751 Sheet.java REMOVE d FIELD
+RefactoringAction 1481123771267 Sheet.java ADD boolean isNum FIELD
+RefactoringAction 1481123772277 Sheet.java RENAME isNum=>boolean isNum() METHOD
+RefactoringAction 1481123784862 Sheet.java RENAME isNum()=>boolean isNum(int) METHOD
+RefactoringAction 1481123841563 Sheet.java RENAME isNum(int)=>boolean isNum(String) METHOD
+RefactoringAction 1481123853101 Sheet.java RENAME isNum(String)=>boolean isNumber(String) METHOD
+EditAction 1481124139666 SheetTest.java 591 1 2 0
