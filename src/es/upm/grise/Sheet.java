@@ -52,7 +52,7 @@ public class Sheet {
 			result = evaluateValue(value);
 		}
 		
-		visitedCells.clear();
+		//visitedCells.clear();
 		return result;
 	}
 	
