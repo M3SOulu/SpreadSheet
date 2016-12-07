@@ -43,12 +43,12 @@ public class Sheet {
 		char[] array;
 		array = this.get(cell).toCharArray();
 		if (array[0] == '\'' && array[array.length - 1] == '\'') {
-			s =this.get(cell).substring(0, array.length - 2);
+			s=this.get(cell).substring(0, array.length - 2);
 		} else {
 			try {
 				Integer.parseInt(this.get(cell));
 			} catch (NumberFormatException e) {
-				s="#Error";
+				return "#Error";
 			}
 			s=this.get(cell);
 		}
