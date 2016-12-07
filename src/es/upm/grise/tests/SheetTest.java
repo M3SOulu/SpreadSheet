@@ -17,6 +17,7 @@ public class SheetTest {
 		spreadSheet = new Sheet();
 		spreadSheet.set("A1", "55");
 		spreadSheet.set("X33", "=2+2");
+		spreadSheet.set("L2", "2.2");
 	}
 	
 	@Test
@@ -37,5 +38,10 @@ public class SheetTest {
 	@Test (expected = CircularReferenceException.class)
 	public void testExceptionEvaluate() throws CircularReferenceException {
 		Assert.assertEquals("2", spreadSheet.evaluate("B4"));
+	}
+	
+	@Test (expected = CircularReferenceException.class)
+	public void testFunctionEvaluateNumberNotInteger() throws CircularReferenceException {
+		Assert.assertEquals("4", spreadSheet.evaluate("L2"));
 	}
 }

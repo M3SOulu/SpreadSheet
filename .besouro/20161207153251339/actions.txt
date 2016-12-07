@@ -64,3 +64,15 @@ EditAction 1481125834907 Sheet.java 2782 3 4 0
 UnitTestCaseAction 1481125836252 SheetTest.java OK
 UnitTestSessionAction 1481125836253 SheetTest OK
 EditAction 1481125917614 Sheet.java 2846 3 5 0
+UnitTestCaseAction 1481125919489 SheetTest.java OK
+UnitTestSessionAction 1481125919490 SheetTest OK
+RefactoringAction 1481125939385 SheetTest.java ADD void testFunctionEvaluateWithAnExpression()/2 METHOD
+RefactoringAction 1481125961412 SheetTest.java RENAME testFunctionEvaluateWithAnExpression()/2=>void testFunctionEvaluaten() METHOD
+RefactoringAction 1481125968440 SheetTest.java RENAME testFunctionEvaluaten()=>void testFunctionEvaluate() METHOD
+RefactoringAction 1481125971450 SheetTest.java RENAME testFunctionEvaluate()=>void testFunctionEvaluateNumber() METHOD
+RefactoringAction 1481125974978 SheetTest.java RENAME testFunctionEvaluateNumber()=>void testFunctionEvaluateNumberNon() METHOD
+RefactoringAction 1481125976496 SheetTest.java RENAME testFunctionEvaluateNumberNon()=>void testFunctionEvaluateNumberNot() METHOD
+RefactoringAction 1481125978003 SheetTest.java RENAME testFunctionEvaluateNumberNot()=>void testFunctionEvaluateNumberNotIn() METHOD
+RefactoringAction 1481125981531 SheetTest.java RENAME testFunctionEvaluateNumberNotIn()=>void testFunctionEvaluateNumberNotInte() METHOD
+RefactoringAction 1481125982556 SheetTest.java RENAME testFunctionEvaluateNumberNotInte()=>void testFunctionEvaluateNumberNotInteger() METHOD
+EditAction 1481126058454 SheetTest.java 1269 6 9 5
