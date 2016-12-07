@@ -293,3 +293,6 @@ EditAction 1481127054383 Sheet.java 5296 14 38 0
 UnitTestCaseAction 1481127056049 SheetTest.java OK
 UnitTestSessionAction 1481127056050 SheetTest OK
 EditAction 1481127099843 Sheet.java 5183 14 38 0
+RefactoringAction 1481127103676 SheetTest.java ADD void testEvaluateNumberAdditionFormula()/2 METHOD
+RefactoringAction 1481127106189 SheetTest.java RENAME testEvaluateNumberAdditionFormula()/2=>void testEvaluateLongNumberAdditionFormula() METHOD
+EditAction 1481127114549 SheetTest.java 4514 20 53 20

@@ -137,5 +137,11 @@ public class SheetTest {
 		sheet.set("A1", "=1+2");
 		assertEquals("3", sheet.evaluate("A1"));
 	}
+	
+	@Test
+	public void testEvaluateLongNumberAdditionFormula() throws CircularReferenceException, ComputationErrorException{
+		sheet.set("A1", "=1+2+2+3+1");
+		assertEquals("9", sheet.evaluate("A1"));
+	}
 
 }
