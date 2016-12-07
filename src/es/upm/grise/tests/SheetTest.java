@@ -42,6 +42,6 @@ public class SheetTest {
 	
 	@Test (expected = CircularReferenceException.class)
 	public void testFunctionEvaluateNumberNotInteger() throws CircularReferenceException {
-		Assert.assertEquals("4", spreadSheet.evaluate("L2"));
+		Assert.assertEquals("2.2", spreadSheet.evaluate("L2"));
 	}
 }
