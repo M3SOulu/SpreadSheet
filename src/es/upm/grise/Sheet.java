@@ -64,7 +64,7 @@ public class Sheet {
 						a+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-startIndex));
 					}
 					else if((content.charAt(i)>='A'||content.charAt(i)>='Z')&&(content.charAt(i+1)>='0'||content.charAt(i+1)>='9')){
-						if(visitedCells.contains(""+content.charAt(i)+content.charAt(i+1)) return "#Circular";
+						if(visitedCells.contains(""+content.charAt(i)+content.charAt(i+1))) return "#Circular";
 						visitedCells.add(""+content.charAt(i)+content.charAt(i+1));
 						a=Integer.parseInt(this.evaluate(""+content.charAt(i)+content.charAt(i+1)));
 						i++;
