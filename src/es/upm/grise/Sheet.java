@@ -80,10 +80,14 @@ public class Sheet {
 			}
 			System.out.println(a);
 			System.out.println(b);
-			if (startIndex==1)
-				return ""+ (Integer.valueOf(a)+Integer.valueOf(b));
-			else
-				return ""+ (Integer.valueOf(b)-Integer.valueOf(a));
+			if (startIndex==1){
+				value= (Integer.valueOf(a)+Integer.valueOf(b));
+			}
+				
+			else{
+				value= (Integer.valueOf(b)-Integer.valueOf(a));
+			}
+				
 			return ""+value;
 		}
 		else{
