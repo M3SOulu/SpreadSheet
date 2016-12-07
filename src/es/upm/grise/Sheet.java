@@ -49,7 +49,7 @@ public class Sheet {
 				total = "" + c;
 			}else{
 				if(c > '0' || c < '9'){
-					operation = Integer.parseInt(""+ c);
+					operation = Integer.parseInt(""+c);
 					continue;
 				}
 				else if(c > 'A' || c < 'Z'){
