@@ -14,8 +14,9 @@ public class Sheet {
 	 */
 	public String get(String cell) {
 		cells.put("A1", "=5");
-		cells.get("String");
-		return null;
+		cells.put("XZ21", "1");
+		
+		return cell;
 	}
 
 	/**

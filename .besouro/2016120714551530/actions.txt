@@ -23,3 +23,6 @@ EditAction 1481121627956 SheetTest.java 370 1 4 1
 EditAction 1481121628119 Sheet.java 1255 3 4 0
 CompilationAction 1481121628270 Sheet.java
 EditAction 1481121880961 Sheet.java 1269 3 5 0
+UnitTestCaseAction 1481121881562 SheetTest.java OK
+UnitTestSessionAction 1481121881563 SheetTest OK
+EditAction 1481122550069 Sheet.java 1275 3 5 0
