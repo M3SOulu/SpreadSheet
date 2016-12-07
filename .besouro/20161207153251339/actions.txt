@@ -107,3 +107,6 @@ RefactoringAction 1481127011697 SheetTest.java ADD void testFunctionEvaluateNumb
 RefactoringAction 1481127020219 SheetTest.java RENAME testFunctionEvaluateNumberNotInteger()/2=>void testFunctionEvaluateS() METHOD
 RefactoringAction 1481127022253 SheetTest.java RENAME testFunctionEvaluateS()=>void testFunctionEvaluateString() METHOD
 EditAction 1481127034252 SheetTest.java 1500 7 13 4
+UnitTestCaseAction 1481127035648 SheetTest.java OK
+UnitTestSessionAction 1481127035648 SheetTest OK
+EditAction 1481127126958 Sheet.java 2993 3 5 0
