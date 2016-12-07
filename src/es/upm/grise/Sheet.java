@@ -38,48 +38,92 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) {
 
-		visitedCells = new ArrayList<>();
-		String s = "";
-		char[] array;
-		array = this.get(cell).toCharArray();
-		if (array[0] == '=') {
-			String arg = this.get(cell).substring(1);
-			if (cells.containsKey(arg)) {
-				if (visitedCells.contains(arg)) {
-					s = "#Circular";
-				} else {
-					visitedCells.add(cell);
-					s = evaluate(arg);
+		String content = cells.get(cell);
+		int value = 0;
+		int a=0;
+		int b=0;
+		int startIndex = 1;
+		if(content.charAt(0)=='='){
+			if(content.charAt(1)=='-') startIndex = 2;
+			int num = 1, offset = 0;
+			for(int i=startIndex; i<content.length(); i++){	
+				if(content.charAt(i)==' ' || content.charAt(i)=='(' || content.charAt(i)==')'){
+					i++;
+					offset++;
 				}
-			} else {
-				s = valutaNumAndString(arg);
+				if(num==1){
+					if(content.charAt(i)=='+'){
+						num=2;
+						offset=i;
+
+					}
+					else if(content.charAt(i)=='-'){
+						num=3;
+						offset=i;
+					}
+					else if(content.charAt(i)=='*'){
+						num=4;
+						offset=i;
+					}
+					else if(content.charAt(i)=='/'){
+						num=5;
+						offset=i;
+					}
+					else if(content.charAt(i)=='%'){
+						num=6;
+						offset=i;
+					}
+					else if(content.charAt(i)>='0'||content.charAt(i)>='9'){
+						a+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-startIndex));
+					}
+					else if((content.charAt(i)>='A'||content.charAt(i)>='Z')&&(content.charAt(i+1)>='0'||content.charAt(i+1)>='9')){
+						if(visitedCells.contains(""+content.charAt(i)+content.charAt(i+1))) return "#Circular";
+						visitedCells.add(""+content.charAt(i)+content.charAt(i+1));
+						a=Integer.parseInt(this.evaluate(""+content.charAt(i)+content.charAt(i+1)));
+						i++;
+					}
+				}
+				else{
+					if(content.charAt(i)>='0'||content.charAt(i)>='9'){
+						if(num==2 || num==4 || num==5)
+							b+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-offset-1));
+						else if(num==3)
+							b-=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-offset-1));
+					}
+				}
 			}
 
-		} else {
-			s = valutaNumAndString(this.get(cell));
-		}
+			if(num==5 && b==0) return "#Error";
 
-		return s;
-	}
-
-	public String valutaNumAndString(String content) {
-		char[] array;
-		String s;
-		array = content.toCharArray();
-		if (array[0] == '\'' && array[array.length - 1] == '\'') {
-			if (content.substring(1, array.length - 1).isEmpty())
-				s = "#Error";
-			else
-				s = content.substring(1, array.length - 1);
-		} else {
-			try {
-				Integer.parseInt(content);
-				s = content;
-			} catch (NumberFormatException e) {
-				s = "#Error";
+			if (startIndex==1){
+				switch(num){
+				case 2: value= (Integer.valueOf(a)+Integer.valueOf(b)); break;
+				case 4: value= (Integer.valueOf(a)*Integer.valueOf(b)); break;
+				case 5: value= (Integer.valueOf(a)/Integer.valueOf(b)); break;
+				case 6: value= (Integer.valueOf(a)%Integer.valueOf(b)); break;
+				}				
 			}
 
+			else{
+				switch(num){
+				case 2: value= ((-Integer.valueOf(a))+Integer.valueOf(b)); break;
+				case 4: value= ((-Integer.valueOf(a))*Integer.valueOf(b)); break;
+				case 5: value= ((-Integer.valueOf(a))/Integer.valueOf(b)); break;
+				case 6: value= ((-Integer.valueOf(a))%Integer.valueOf(b)); break;
+				}
+			}
+
+			return ""+value;
 		}
-		return s;
+		else{
+			for(int i=0; i<content.length(); i++){
+				if(content.charAt(i)=='\'') return content.replaceAll("\'","");
+				if(content.charAt(i)=='.') return "#Error";
+				if(content.charAt(i)=='+') return ""+content.charAt(i+1);
+				if(content.charAt(i)=='-') return ""+content.charAt(i)+content.charAt(i+1);
+			}
+			return content;
+		}
 	}
+
 }

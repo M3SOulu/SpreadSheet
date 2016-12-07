@@ -116,3 +116,7 @@ RefactoringAction 1481128852800 SheetTest.java RENAME testIsNotInteger()=>void t
 RefactoringAction 1481128866826 SheetTest.java REMOVE testContentCell() METHOD
 RefactoringAction 1481128887377 SheetTest.java RENAME testSingleNumberWithSingleQuotes()=>void testIsNotInteger() METHOD
 EditAction 1481128912734 Sheet.java 2180 4 15 0
+UnitTestCaseAction 1481128913395 SheetTest.java FAIL
+UnitTestSessionAction 1481128913395 SheetTest FAIL
+RefactoringAction 1481129086793 Sheet.java REMOVE valutaNumAndString(String) METHOD
+EditAction 1481129127145 Sheet.java 3915 3 10 0
