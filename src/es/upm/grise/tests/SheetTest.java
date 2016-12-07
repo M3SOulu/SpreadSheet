@@ -40,7 +40,7 @@ public class SheetTest {
 		Assert.assertEquals("2", spreadSheet.evaluate("B4"));
 	}
 	
-	@Test (expected = CircularReferenceException.class)
+	@Test 
 	public void testFunctionEvaluateNumberNotInteger() throws CircularReferenceException {
 		Assert.assertEquals("2.2", spreadSheet.evaluate("L2"));
 	}
