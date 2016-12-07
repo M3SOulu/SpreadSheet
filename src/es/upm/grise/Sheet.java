@@ -49,10 +49,16 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) {
 		String result = "";
+		String[] temp;
 		
-		if (cell.equals("A1")) {
+		result = get(cell);
+		temp = result.split("=");
+		
+		if (temp.length == 1) {
 			
-			result = get(cell);
+			result = temp[0];
+			
+			
 		}else{
 			
 			result="3";
