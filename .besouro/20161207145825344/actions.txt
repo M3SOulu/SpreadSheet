@@ -17,3 +17,12 @@ EditAction 1481119948186 SheetTest.java 366 2 3 1
 UnitTestCaseAction 1481119952890 SheetTest.java FAIL
 UnitTestSessionAction 1481119952898 SheetTest FAIL
 EditAction 1481119974261 SheetTest.java 368 2 3 1
+UnitTestCaseAction 1481119975373 SheetTest.java OK
+UnitTestSessionAction 1481119975374 SheetTest OK
+RefactoringAction 1481119987826 SheetTest.java REMOVE import org.junit.Before IMPORT
+RefactoringAction 1481120005348 SheetTest.java RENAME evalutate_is_1()=>void evalutate_is_not() METHOD
+RefactoringAction 1481120008864 SheetTest.java RENAME evalutate_is_not()=>void evalutate_is_not_expressin() METHOD
+RefactoringAction 1481120009895 SheetTest.java RENAME evalutate_is_not_expressin()=>void evalutate_is_not_expressins() METHOD
+RefactoringAction 1481120013403 SheetTest.java RENAME evalutate_is_not_expressins()=>void evalutate_is_not_expressin() METHOD
+RefactoringAction 1481120023417 SheetTest.java ADD void evalutate_is_not_expressin()/2 METHOD
+EditAction 1481120062560 Sheet.java 1311 3 4 0

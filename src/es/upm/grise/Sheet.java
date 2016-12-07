@@ -39,7 +39,7 @@ public class Sheet {
 		if(contentValue != "=")
 			return contentValue;
 		else
-			return null;
+			return "#Error";
 	}
 
 }
