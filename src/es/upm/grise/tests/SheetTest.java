@@ -128,8 +128,8 @@ public class SheetTest {
 	@Test
 	public void testEvaluateStringConcatWithWrongCellReferenceFormula() throws CircularReferenceException, ComputationErrorException{
 		sheet.set("A1", "='qwerty'&A2");
-		sheet.set("A2", "='uiopa'");
-		assertEquals("qwertyuiop", sheet.evaluate("A1"));
+		sheet.set("A2", "='badTestString");
+		assertEquals("#Error", sheet.evaluate("A1"));
 	}
 
 }

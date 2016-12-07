@@ -232,3 +232,4 @@ UnitTestSessionAction 1481125217684 SheetTest OK
 RefactoringAction 1481125222813 SheetTest.java ADD void testEvaluateStringConcatWithCellReferenceFormula()/2 METHOD
 RefactoringAction 1481125225825 SheetTest.java RENAME testEvaluateStringConcatWithCellReferenceFormula()/2=>void testEvaluateStringConcatWithWrongCellReferenceFormula() METHOD
 EditAction 1481125230032 SheetTest.java 4115 18 49 18
+EditAction 1481125242835 SheetTest.java 4118 18 49 18
