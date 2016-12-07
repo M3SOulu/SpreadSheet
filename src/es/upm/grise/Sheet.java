@@ -79,7 +79,7 @@ public class Sheet {
 			String number = "", operator = "";
 			for (Character c : newFormula.toCharArray()){
 				if (!result.equals("#Error")){
-					if (isOperator(c)){
+					if (isOperator(c.toString())){
 						if (readyForOperation){
 							result = doOperation(result, number, operator);
 						}
@@ -176,7 +176,7 @@ public class Sheet {
 		return result;
 	}
 	
-	private boolean isOperator(Character c){
+	private boolean isOperator(String c){
 		boolean result = false;
 		for (String sc : OPERATOR_CHARACTERS){
 			result |= c.equals(sc);

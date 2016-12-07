@@ -286,3 +286,7 @@ RefactoringAction 1481126987806 Sheet.java REMOVE doOperation(String, String, St
 RefactoringAction 1481126989830 Sheet.java ADD String doOperation(String, String, String) METHOD
 RefactoringAction 1481127003892 Sheet.java ADD void print(String) METHOD
 EditAction 1481127031223 Sheet.java 5288 14 38 0
+UnitTestCaseAction 1481127032985 SheetTest.java FAIL
+UnitTestSessionAction 1481127032986 SheetTest FAIL
+RefactoringAction 1481127053579 Sheet.java RENAME isOperator(Character)=>boolean isOperator(String) METHOD
+EditAction 1481127054383 Sheet.java 5296 14 38 0
