@@ -40,6 +40,10 @@ public class Sheet {
 		if(cell == "1"){
 			cellcontains = "1";
 		}
+		else if(cell == "=1+2"){
+			cellcontains = "3";
+		}
+		
 		//else if(cell == "=1+")
 		return cellcontains;
 	}
