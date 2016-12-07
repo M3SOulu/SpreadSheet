@@ -43,7 +43,7 @@ public class Sheet {
 		char[] array;
 		array = this.get(cell).toCharArray();
 		if (array[0] == '\'' && array[array.length - 1] == '\'') {
-			s=this.get(cell).substring(0, array.length - 2);
+			s=this.get(cell).substring(1, array.length - 1);
 		} else {
 			try {
 				Integer.parseInt(this.get(cell));
