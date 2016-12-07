@@ -51,12 +51,12 @@ public class Sheet {
 					operation = Integer.parseInt("" + formula.charAt(1));
 				}
 				if ((formula.charAt(i) >= 'A') && (formula.charAt(i) <= 'Z')){
-					for(int j = i; j < formula.length(); j++){
-						if((formula.charAt(j) == '+')||
-						   (formula.charAt(j) == '-')||
-						   (formula.charAt(j) == '*')||
-						   (formula.charAt(j) == '/')||
-						   (formula.charAt(j) == '%'))
+					for(; i < formula.length(); i++){
+						if((formula.charAt(i) == '+')||
+						   (formula.charAt(i) == '-')||
+						   (formula.charAt(i) == '*')||
+						   (formula.charAt(i) == '/')||
+						   (formula.charAt(i) == '%'))
 							break;
 						else
 							otherCell += formula.charAt(j);
