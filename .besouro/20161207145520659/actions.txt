@@ -12,3 +12,8 @@ RefactoringAction 1481120223217 SheetTest.java REMOVE spreadSheet FIELD
 RefactoringAction 1481120224741 SheetTest.java ADD Sheet spreadSheet FIELD
 RefactoringAction 1481120310774 SheetTest.java ADD import es.upm.grise.ComputationErrorException IMPORT
 EditAction 1481120314395 SheetTest.java 396 1 2 1
+UnitTestCaseAction 1481120322029 SheetTest.java OK
+UnitTestSessionAction 1481120322036 SheetTest OK
+UnitTestCaseAction 1481120331959 SheetTest.java OK
+UnitTestSessionAction 1481120331960 SheetTest OK
+EditAction 1481120342409 SheetTest.java 396 1 2 1
