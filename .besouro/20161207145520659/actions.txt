@@ -66,3 +66,9 @@ EditAction 1481121567308 Sheet.java 1858 3 9 0
 UnitTestCaseAction 1481121570743 SheetTest.java OK
 UnitTestSessionAction 1481121570743 SheetTest OK
 EditAction 1481121583292 SheetTest.java 454 2 4 2
+UnitTestCaseAction 1481121585014 SheetTest.java OK
+UnitTestSessionAction 1481121585014 SheetTest OK
+RefactoringAction 1481121634922 SheetTest.java RENAME testAformula()=>void testABasicformula() METHOD
+RefactoringAction 1481121639440 SheetTest.java RENAME testABasicformula()=>void testABasicormula() METHOD
+RefactoringAction 1481121644458 SheetTest.java RENAME testABasicormula()=>void testABasicFormula() METHOD
+EditAction 1481121646297 SheetTest.java 459 2 4 2
