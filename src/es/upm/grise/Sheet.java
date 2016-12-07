@@ -81,9 +81,6 @@ public class Sheet {
 				}
 			} else {
 				if (valueCell.charAt(0) == '\''){
-					if (valueCell == ""){
-						throw new CircularReferenceException();
-					}
 					value = valueCell.replace("\'", "");
 				}else{
 					return value = cells.get(cell);
