@@ -14,7 +14,7 @@ public class Sheet {
 	 */
 	public String get(String cell) {
 		cells.put("A1", "=5");
-		return cells.get(cell);
+		cells.get("String");	
 	}
 
 	/**
