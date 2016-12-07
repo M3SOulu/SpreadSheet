@@ -82,7 +82,8 @@ public class Sheet {
 				result = evaluate(formula);
 			else
 				result = formula;
-		}
+			}
+		
 		else
 			result = "#Error";
 		
