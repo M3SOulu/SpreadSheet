@@ -76,6 +76,7 @@ public class Sheet {
 				result = "#Circular";
 			}
 			else{
+				System.out.println(value);
 				result = evaluate(value);
 				visitedCells.add(value);
 			}
