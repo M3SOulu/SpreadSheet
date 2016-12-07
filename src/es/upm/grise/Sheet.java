@@ -41,6 +41,7 @@ public class Sheet {
 	public String evaluate(String cell) throws CircularReferenceException, ComputationErrorException {
 		String result = "#Error";
 		String value = cells.containsKey(cell) ? get(cell) : "";
+		visitedCells.add(cell);
 		
 		if (value.startsWith("=")){
 			if (!containsOperators(value)){
@@ -74,7 +75,6 @@ public class Sheet {
 		else if (isCell(value)){ //Cell
 			result = visitedCells.contains(value) ? "#Circular" : evaluate(value);
 			System.out.println(result);
-			visitedCells.add(value);
 		}
 		return result;
 	}
