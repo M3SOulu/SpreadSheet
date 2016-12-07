@@ -61,7 +61,7 @@ public class Sheet {
 						else
 							otherCell += formula.charAt(j); 
 					}
-					if (visitedCells.get(1).equals(otherCell))
+					if (visitedCells.get(0).equals(otherCell))
 						throw new CircularReferenceException("#Circular");
 					else
 						visitedCells.add(otherCell);
