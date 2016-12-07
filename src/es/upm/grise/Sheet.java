@@ -45,7 +45,7 @@ public class Sheet {
 		if (array[0] == '=') {
 			String arg = this.get(cell).substring(1);
 			if (cells.containsKey(arg)) {
-				s= valutaNumAndString(this.get(arg));
+				s= evaluate(this.get(arg));
 			} else {
 				s = valutaNumAndString(arg);
 			}
