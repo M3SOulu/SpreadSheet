@@ -53,7 +53,10 @@ public class Sheet {
 					}
 					else if(content.charAt(i)>='0'||content.charAt(i)>='9'){
 						a+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-startIndex));
-					}	
+					}
+					else if((content.charAt(i)>='A'||content.charAt(i)>='Z')&&(content.charAt(i+1)>='0'||content.charAt(i+1)>='9')){
+						a=this.evaluate(content.charAt(i)+content.charAt(i+1));
+					}
 				}
 				else{
 					if(content.charAt(i)>='0'||content.charAt(i)>='9'){
