@@ -40,7 +40,7 @@ public class Sheet {
 		int startIndex = 1;
 		if(content.charAt(0)=='='){
 			if(content.charAt(1)=='-') startIndex = 2;
-			int num = 1, offset;
+			int num = 1, offset = 0;
 			for(int i=startIndex; i<content.length(); i++){				
 				if(num==1){
 					if(content.charAt(i)=='+'){
@@ -58,9 +58,9 @@ public class Sheet {
 				else{
 					if(content.charAt(i)>='0'||content.charAt(i)>='9'){
 						if(num==2)
-							b+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-startIndex-1));
+							b+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-offset));
 						else 
-							b-=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-startIndex-1));
+							b-=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-offset));
 					}
 				}
 			}
