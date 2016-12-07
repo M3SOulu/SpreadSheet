@@ -7,3 +7,6 @@ RefactoringAction 1481119999796 SheetTest.java RENAME testRetur()=>void testRetu
 RefactoringAction 1481120006321 SheetTest.java RENAME testReturn()=>void testReturnTheContent() METHOD
 EditAction 1481120114213 SheetTest.java 336 1 2 1
 EditAction 1481120116401 Sheet.java 1212 3 3 0
+UnitTestCaseAction 1481120117804 SheetTest.java FAIL
+UnitTestSessionAction 1481120117811 SheetTest FAIL
+EditAction 1481120143075 Sheet.java 1222 3 3 0
