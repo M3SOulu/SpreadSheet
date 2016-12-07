@@ -18,8 +18,8 @@ public class SheetTest {
 	
 	@Test
 	public void testAformula() throws Exception {
-		spreadSheet.set("A1", "=1+2");
-		assertEquals("3",spreadSheet.evaluate("A1"));
+		spreadSheet.set("A1", "=1-2");
+		assertEquals("-1",spreadSheet.evaluate("A1"));
 	}
 
 }
