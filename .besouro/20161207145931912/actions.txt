@@ -86,3 +86,10 @@ RefactoringAction 1481121965103 SheetTest.java RENAME testStringWithQuotes()/2=>
 RefactoringAction 1481121966640 SheetTest.java RENAME testSumOf()=>void testSumOfTwo() METHOD
 RefactoringAction 1481121969195 SheetTest.java RENAME testSumOfTwo()=>void testSumOfTwoNumbers() METHOD
 EditAction 1481121985320 SheetTest.java 1018 7 13 6
+UnitTestCaseAction 1481121988650 SheetTest.java FAIL
+UnitTestSessionAction 1481121988650 SheetTest FAIL
+CompilationAction 1481121993605 Sheet.java
+CompilationAction 1481121993606 Sheet.java
+UnitTestCaseAction 1481121996911 SheetTest.java FAIL
+UnitTestSessionAction 1481121996912 SheetTest FAIL
+EditAction 1481122146884 Sheet.java 1809 3 8 0

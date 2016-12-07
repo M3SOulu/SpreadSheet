@@ -41,7 +41,7 @@ public class Sheet {
 			if(content.charAt(1)=='-'){
 				for(int i=2; i<content.length(); i++){
 					if(content.charAt(i)>='0'||content.charAt(i)>='9'){
-						a
+						a=Character.getNumericValue(content.charAt(i))*pow(10,i-1);
 					}
 				}
 			}
