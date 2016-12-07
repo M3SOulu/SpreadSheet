@@ -111,3 +111,8 @@ EditAction 1481125243992 SheetTest.java 1420 4 8 0
 UnitTestCaseAction 1481125244562 SheetTest.java OK
 UnitTestSessionAction 1481125244562 SheetTest OK
 EditAction 1481125385689 SheetTest.java 1416 4 8 0
+RefactoringAction 1481126165986 SheetTest.java ADD import java.util.HashMap IMPORT
+RefactoringAction 1481126180008 SheetTest.java ADD void test FIELD
+RefactoringAction 1481126183020 SheetTest.java RENAME test=>void testCell FIELD
+RefactoringAction 1481126185032 SheetTest.java RENAME testCell=>void testCell() METHOD
+EditAction 1481126560175 SheetTest.java 1769 5 12 1

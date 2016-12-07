@@ -2,6 +2,8 @@ package es.upm.grise.tests;
 
 import static org.junit.Assert.*;
 
+import java.util.HashMap;
+
 import org.junit.Test;
 
 import es.upm.grise.CircularReferenceException;
@@ -10,7 +12,7 @@ import es.upm.grise.Sheet;
 
 public class SheetTest {
 	
-	
+	private HashMap <String, String> cells = new HashMap <String, String>();
 	private Object result;
 
 	@Test
@@ -65,4 +67,14 @@ public class SheetTest {
 	}	
 	}
 
+	@Test
+	public void testCell() throws ComputationErrorException, CircularReferenceException{
+		//arrange
+		Sheet mySheet = new Sheet();
+		String cell = cells.get(result);
+		//act
+		result = mySheet.evaluate(cell);
+		//assert
+		assertEquals("2",cell);
+	}
 }
