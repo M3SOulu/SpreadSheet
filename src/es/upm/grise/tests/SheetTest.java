@@ -23,5 +23,10 @@ public class SheetTest {
 	public void evalutateCellOneValue() {
 		assertEquals("1", foglio.evaluate("A1"));
 	}
+	
+	@Test
+	public void evalutateCellWhithSum() {
+		assertEquals("3", foglio.evaluate("A2"));
+	}
 
 }

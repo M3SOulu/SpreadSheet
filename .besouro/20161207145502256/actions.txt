@@ -23,3 +23,10 @@ EditAction 1481120837103 SheetTest.java 445 2 6 1
 UnitTestCaseAction 1481120899987 SheetTest.java OK
 UnitTestSessionAction 1481120899988 SheetTest OK
 EditAction 1481121016831 Sheet.java 1394 3 5 0
+UnitTestCaseAction 1481121018538 SheetTest.java OK
+UnitTestSessionAction 1481121018538 SheetTest OK
+RefactoringAction 1481121038963 SheetTest.java ADD void evalutateCellOneValue()/2 METHOD
+RefactoringAction 1481121049471 SheetTest.java RENAME evalutateCellOneValue()/2=>void evalutateCellWhi() METHOD
+RefactoringAction 1481121052484 SheetTest.java RENAME evalutateCellWhi()=>void evalutateCellWhith() METHOD
+RefactoringAction 1481121054996 SheetTest.java RENAME evalutateCellWhith()=>void evalutateCellWhithSum() METHOD
+EditAction 1481121094782 SheetTest.java 540 3 7 2
