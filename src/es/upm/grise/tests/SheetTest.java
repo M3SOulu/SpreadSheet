@@ -13,6 +13,7 @@ public class SheetTest {
 	public void testContentCell() {
 		
 		HashMap <String, String> cells = new HashMap <String, String>();
+		cells.put("A1", "=5");
 		String result = cells.get("A1");
 		assertEquals("=5", result);
 	}
