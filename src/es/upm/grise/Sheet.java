@@ -60,7 +60,7 @@ public class Sheet {
 
 		} else {
 
-			result = temp[0];
+			result = temp[1];
 		}
 
 		/*if (temp.length == 1) {
