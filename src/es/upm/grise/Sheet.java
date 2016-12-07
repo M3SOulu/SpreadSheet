@@ -48,6 +48,7 @@ public class Sheet {
 					if(content.charAt(i)=='+'){
 						num=2;
 						offset=i;
+						
 					}
 					else if(content.charAt(i)=='-'){
 						num=3;
