@@ -69,7 +69,7 @@ public class Sheet {
 				}		
 				if (formula.charAt(i) == '+'){
 					total = "" + (operation + Integer.parseInt("" + formula.charAt(i + 1)));
-					i= i+1;
+					i++;
 				}
 				else if (formula.charAt(i) == '-')
 					total = "" + (operation - Integer.parseInt("" + formula.charAt(i + 1)));
