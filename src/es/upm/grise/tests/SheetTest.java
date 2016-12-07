@@ -21,7 +21,7 @@ public class SheetTest {
 	}
 	
 	@Test
-	public void evalutate_have_#error() {
+	public void evalutate_have_error() {
 		testSheet.set("A1", "=");
 		assertEquals("#Error", testSheet.evaluate("A1"));
 	}

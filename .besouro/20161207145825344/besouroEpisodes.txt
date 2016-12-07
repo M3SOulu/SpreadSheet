@@ -168,3 +168,6 @@
 1481119975541 refactoring 3 869 true
 1481119975542 refactoring 3 869 true
 1481120094843 test-first 4 107 true
+1481120120852 test-addition 1 11 true
+1481120138434 regression 1 0 true
+1481120141219 regression 1 0 true

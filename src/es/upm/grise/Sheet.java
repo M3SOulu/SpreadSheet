@@ -36,10 +36,14 @@ public class Sheet {
 	public String evaluate(String cell) {
 		String contentValue = get(cell);
 		
-		if(contentValue != "=")
+		if(contentValue.charAt(0) != "=")
 			return contentValue;
-		else
+		else{
+			
+		}
+			
 			return "#Error";
+		
 	}
 
 }
