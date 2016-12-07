@@ -127,3 +127,8 @@ EditAction 1481123410694 Sheet.java 2518 3 10 0
 UnitTestCaseAction 1481123412393 SheetTest.java OK
 UnitTestSessionAction 1481123412394 SheetTest OK
 EditAction 1481123911311 Sheet.java 2872 3 11 0
+UnitTestCaseAction 1481124287663 SheetTest.java OK
+UnitTestSessionAction 1481124287664 SheetTest OK
+RefactoringAction 1481124591318 SheetTest.java ADD void testABasicFormula()/2 METHOD
+RefactoringAction 1481124598323 SheetTest.java RENAME testABasicFormula()/2=>void testADoubleFormula() METHOD
+EditAction 1481124641822 Sheet.java 3084 3 11 0
