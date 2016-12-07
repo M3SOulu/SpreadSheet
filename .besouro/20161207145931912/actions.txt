@@ -1,0 +1,18 @@
+FileOpenedAction 1481119172487 SheetTest.java 180 1 1 0
+UnitTestCaseAction 1481119241056 SheetTest.java FAIL
+UnitTestSessionAction 1481119241064 SheetTest FAIL
+RefactoringAction 1481119564052 SheetTest.java ADD import org.junit.Before IMPORT
+RefactoringAction 1481119572644 SheetTest.java RENAME test()=>void setup() METHOD
+RefactoringAction 1481119596824 SheetTest.java ADD import es.upm.grise.Sheet IMPORT
+RefactoringAction 1481119629485 SheetTest.java ADD void test FIELD
+RefactoringAction 1481119635512 SheetTest.java RENAME test=>void testE FIELD
+RefactoringAction 1481119654062 SheetTest.java RENAME testE=>void tes FIELD
+RefactoringAction 1481119655071 SheetTest.java RENAME tes=>void test FIELD
+RefactoringAction 1481119659098 SheetTest.java RENAME test=>void testT FIELD
+RefactoringAction 1481119661104 SheetTest.java RENAME testT=>void test FIELD
+RefactoringAction 1481119669628 SheetTest.java RENAME test=>void testN FIELD
+RefactoringAction 1481119671654 SheetTest.java RENAME testN=>void testNumber1 FIELD
+RefactoringAction 1481119672665 SheetTest.java RENAME testNumber1=>void testNumber1() METHOD
+RefactoringAction 1481119734570 SheetTest.java ADD Sheet sheet FIELD
+RefactoringAction 1481119800332 SheetTest.java ADD import junit.framework.Assert IMPORT
+EditAction 1481119811646 SheetTest.java 392 2 4 1
