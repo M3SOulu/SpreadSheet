@@ -43,7 +43,7 @@ public class Sheet {
 		if (cells.containsKey(cell)){
 			String valueCell = cells.get(cell);
 			for(int j = 0; j<valueCell.length();j++){
-				if(!(Character.isDigit(valueCell.charAt(j)) || Character.isAlphabetic(j)) && valueCell.charAt(j) != '=' && valueCell.charAt(j) != '+' && valueCell.charAt(j) != '-' && valueCell.charAt(j) != '*' && valueCell.charAt(j) != '/' && valueCell.charAt(j) != '\''){
+				if(!(Character.isDigit(valueCell.charAt(j)) || Character.isAlphabetic(j)) && valueCell.charAt(j) != '=' && valueCell.charAt(j) != '+' && valueCell.charAt(j) != '-' && valueCell.charAt(j) != '*' && valueCell.charAt(j) != '/'){
 					throw new CircularReferenceException("#Error.");
 				}
 			}
