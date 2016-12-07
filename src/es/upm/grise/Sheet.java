@@ -59,7 +59,7 @@ public class Sheet {
 						   (formula.charAt(i) == '%'))
 							break;
 						else
-							otherCell += formula.charAt(j);
+							otherCell += formula.charAt(i);
 					}
 					if (visitedCells.get(0).equals(otherCell))
 						throw new CircularReferenceException("#Circular");
