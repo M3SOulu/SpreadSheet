@@ -22,3 +22,6 @@ CompilationAction 1481119857186 SheetTest.java
 CompilationAction 1481119860079 SheetTest.java
 CompilationAction 1481119863925 SheetTest.java
 EditAction 1481119867480 SheetTest.java 386 2 3 1
+UnitTestCaseAction 1481119869398 SheetTest.java FAIL
+UnitTestSessionAction 1481119869399 SheetTest FAIL
+EditAction 1481119934953 Sheet.java 1203 3 3 0
