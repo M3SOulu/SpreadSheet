@@ -88,7 +88,8 @@ public class SheetTest {
 	public void testEvaluateSimpleCellReferenceCircularErrorFormula() throws CircularReferenceException, ComputationErrorException{
 		sheet.set("A1", "=A3");
 		sheet.set("A2", "=A1");
-		sheet.set("A3", "=A2");
+		sheet.set("A3", "=A4");
+		sheet.set("A4", "='test'");
 		assertEquals("#Circular", sheet.evaluate("A2"));
 	}
 
