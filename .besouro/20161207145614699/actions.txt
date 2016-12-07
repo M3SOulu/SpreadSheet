@@ -114,3 +114,11 @@ UnitTestSessionAction 1481122698705 SheetTest OK
 EditAction 1481122763998 Sheet.java 2651 7 18 0
 EditAction 1481122769789 Sheet.java 2654 7 18 0
 EditAction 1481122775398 Sheet.java 2644 7 18 0
+RefactoringAction 1481122827007 SheetTest.java ADD void testEvaluateSimpleStringFormulaValue()/2 METHOD
+RefactoringAction 1481122834041 SheetTest.java RENAME testEvaluateSimpleStringFormulaValue()/2=>void testEvaluateCellRe() METHOD
+RefactoringAction 1481122835550 SheetTest.java RENAME testEvaluateCellRe()=>void testEvaluateCellReference() METHOD
+RefactoringAction 1481122839059 SheetTest.java RENAME testEvaluateCellReference()=>void testEvaluateSimpleCellReference() METHOD
+RefactoringAction 1481122842069 SheetTest.java RENAME testEvaluateSimpleCellReference()=>void testEvaluateSimpleCellReferenceFormula() METHOD
+RefactoringAction 1481122846593 SheetTest.java RENAME testEvaluateSimpleIntegerFormulaValue()=>void testEvaluateSimpleIntegerFormula() METHOD
+RefactoringAction 1481122848153 SheetTest.java RENAME testEvaluateSimpleStringFormulaValue()=>void testEvaluateSimpleStringFormula() METHOD
+EditAction 1481122874933 SheetTest.java 2191 11 22 10

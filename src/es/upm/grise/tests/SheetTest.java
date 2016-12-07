@@ -59,15 +59,22 @@ public class SheetTest {
 	}
 	
 	@Test
-	public void testEvaluateSimpleIntegerFormulaValue() throws CircularReferenceException, ComputationErrorException{
+	public void testEvaluateSimpleIntegerFormula() throws CircularReferenceException, ComputationErrorException{
 		sheet.set("A1", "=1");
 		assertEquals("1", sheet.evaluate("A1"));
 	}
 	
 	@Test
-	public void testEvaluateSimpleStringFormulaValue() throws CircularReferenceException, ComputationErrorException{
+	public void testEvaluateSimpleStringFormula() throws CircularReferenceException, ComputationErrorException{
 		sheet.set("A1", "='qwerty'");
 		assertEquals("qwerty", sheet.evaluate("A1"));
+	}
+	
+	@Test
+	public void testEvaluateSimpleCellReferenceFormula() throws CircularReferenceException, ComputationErrorException{
+		sheet.set("A1", "'qwerty'");
+		sheet.set("A2", "=A1");
+		assertEquals("qwerty", sheet.evaluate("A2"));
 	}
 
 }
