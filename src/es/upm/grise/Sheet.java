@@ -48,7 +48,7 @@ public class Sheet {
 				result = Integer.parseInt(value) + "";
 			}
 			catch(NumberFormatException e){
-				
+				result = "#Error";
 			}
 		}
 		return result;
