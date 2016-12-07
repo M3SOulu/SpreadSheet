@@ -36,9 +36,17 @@ public class Sheet {
 	public String evaluate(String cell) {
 		String contentValue = get(cell);
 		
-		if(contentValue.charAt(0) != '=')
-			return contentValue;
-		else{
+		// caso in cui è una formula
+		if(contentValue.charAt(0) != '='){
+			//controllo dei caratteri non accettati
+			for(int i = 0; i < contentValue.length(); i++){
+				if(contentValue.charAt(i) < '0' || contentValue.charAt(i) > '9'){
+					return "#Error";
+				}else{
+					return contentValue;
+				}
+			}
+		}else{
 			return "#Error";
 		}
 			
