@@ -466,3 +466,5 @@
 1481126135461 test-addition 1 12 true
 1481126135462 test-addition 1 12 true
 1481126252670 test-first 3 81 true
+1481126463269 test-first 3 63 true
+1481126463270 test-last 1 63 false

@@ -77,6 +77,13 @@ public class SheetTest {
 	}
 	
 	@Test
+	public void testCircularCall(){
+		sheet.set("B1", "=A1");
+		sheet.set("A1","=B1");		
+		Assert.assertEquals("#Circular",sheet.evaluate("A1"));
+	}
+	
+	@Test
 	public void testMoltiplicationBetweenTwoNumbers(){
 		sheet.set("A1","=1*1");		
 		Assert.assertEquals("1",sheet.evaluate("A1"));
