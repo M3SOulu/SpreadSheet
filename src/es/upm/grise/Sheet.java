@@ -42,6 +42,7 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) throws Exception {
 		Integer operation = 0;
+		String otherCell = "";
 		String total = "";
 		String formula = get(cell);
 		visitedCells.add(cell);
@@ -50,7 +51,17 @@ public class Sheet {
 				if (formula.charAt(i) > '0' || formula.charAt(i) < '9') {
 					operation = Integer.parseInt("" + formula.charAt(1));
 				}
-				// else if(formula.charAt(1) > 'A' || formula.charAt(1) < 'Z')
+				if ((formula.charAt(i) > 'A') && (formula.charAt(i) < 'Z'))
+					otherCell = "" + formula.charAt(i);
+					for(int j = i; j < formula.length(); j++){
+						if((formula.charAt(j) != '+')||
+						   (formula.charAt(j) != '-')||
+						   (formula.charAt(j) != '*')||
+						   (formula.charAt(j) != '/')||
+						   (formula.charAt(j) != '%'))
+							otherCell += formula.charAt(j); 
+					}
+						
 				if (formula.charAt(i) == '+')
 					total = "" + (operation + Integer.parseInt("" + formula.charAt(i + 1)));
 				else if (formula.charAt(i) == '-')
