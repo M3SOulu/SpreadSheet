@@ -218,3 +218,5 @@ RefactoringAction 1481124834322 SheetTest.java RENAME testEvaluatetringErrorForm
 RefactoringAction 1481124836840 SheetTest.java RENAME testEvaluateStringErrorFormula()=>void testEvaluateStringFormula() METHOD
 RefactoringAction 1481124838346 SheetTest.java RENAME testEvaluateStringFormula()=>void testEvaluateStringConcatFormula() METHOD
 EditAction 1481124881412 SheetTest.java 3599 16 43 16
+RefactoringAction 1481124905572 Sheet.java ADD String STRING_OPERATOR FIELD
+EditAction 1481124934629 Sheet.java 3536 11 29 0

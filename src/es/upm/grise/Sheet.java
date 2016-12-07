@@ -6,6 +6,7 @@ import java.util.HashMap;
 public class Sheet {
 	private static final String[] SPECIAL_CHARACTERS = new String[]{"\\", "/" , "*" , "?" , ":" , "[" , "]", "."};
 	private static final String[] OPERATOR_CHARACTERS = new String[]{"+", "-", "/", "*", "%", "&"};
+	public static final String STRING_OPERATOR_CHARACTER = "&";
 	private HashMap <String, String> cells = new HashMap <String, String>();
 	private ArrayList <String> visitedCells;
 	
