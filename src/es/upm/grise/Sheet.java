@@ -81,9 +81,6 @@ public class Sheet {
 				}
 			} else {
 				if (valueCell.charAt(0) == '\''){
-					//String[] str = new String[20];
-					//str = valueCell.split("\'");
-					//value = str.toString();
 					value = valueCell.replace("\'", "");
 				}else{
 					return value = cells.get(cell);
