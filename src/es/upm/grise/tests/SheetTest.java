@@ -23,7 +23,12 @@ public class SheetTest {
 	@Test
 	public void evalutate_have_error() {
 		testSheet.set("A1", "=");
+		testSheet.set("A2", ",");
+		testSheet.set("A3", "b11");
+		
 		assertEquals("#Error", testSheet.evaluate("A1"));
+		assertEquals("#Error", testSheet.evaluate("A2"));
+		assertEquals("#Error", testSheet.evaluate("A3"));
 	}
 
 }

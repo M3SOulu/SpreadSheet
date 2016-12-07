@@ -35,23 +35,24 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) {
 		String contentValue = get(cell);
+		String result = null;
 		
-		// caso in cui è una formula
+		// caso in cui non è una formula
 		if(contentValue.charAt(0) != '='){
+			
 			//controllo dei caratteri non accettati
 			for(int i = 0; i < contentValue.length(); i++){
-				if(contentValue.charAt(i) < '0' || contentValue.charAt(i) > '9'){
-					return "#Error";
-				}else{
-					return contentValue;
-				}
+				if(contentValue.charAt(i) < '0' || contentValue.charAt(i) > '9')
+					result = "#Error";
+				else
+					result = contentValue;				
 			}
-		}else{
-			return "#Error";
-		}
-			
-			
 		
+		// caso in cui è una formula
+		}else
+			result = "#Error";
+		
+		return result;
 	}
 
 }
