@@ -64,7 +64,10 @@ public class Sheet {
 		
 		// caso in cui è una formula
 		else if(contentValue.charAt(0) == '='){
-			result = contentValue.substring(1, contentValue.length());
+			String formula = contentValue.substring(0, contentValue.length());
+			formula.toUpperCase();
+			if(formula.charAt(0) >= 'A' && formula.charAt(0) <= 'Z')		
+				result = evaluate(formula);
 		}
 		else
 			result = "#Error";
