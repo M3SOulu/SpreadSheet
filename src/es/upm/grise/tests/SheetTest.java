@@ -16,7 +16,7 @@ public class SheetTest {
 	public void setUp(){
 		spreadSheet = new Sheet();
 		spreadSheet.set("A1", "55");
-		spreadSheet.set("X33", "=1+1");
+		spreadSheet.set("X33", "=3+2");
 	}
 	
 	@Test
