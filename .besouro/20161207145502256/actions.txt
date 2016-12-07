@@ -1,3 +1,16 @@
 FileOpenedAction 1481119091796 Sheet.java 1192 3 2 0
 FileOpenedAction 1481119109724 SheetTest.java 180 1 1 0
 EditAction 1481120399664 Sheet.java 1348 3 3 0
+RefactoringAction 1481120513062 SheetTest.java RENAME test()=>void evalutate() METHOD
+RefactoringAction 1481120547082 SheetTest.java ADD void evalutate()/2 METHOD
+RefactoringAction 1481120557616 SheetTest.java RENAME evalutate()/2=>void set() METHOD
+RefactoringAction 1481120559124 SheetTest.java RENAME set()=>void setUp() METHOD
+RefactoringAction 1481120595277 SheetTest.java ADD Sheet foglio FIELD
+RefactoringAction 1481120605936 SheetTest.java ADD import es.upm.grise.Sheet IMPORT
+RefactoringAction 1481120616925 SheetTest.java ADD import org.junit.Before IMPORT
+RefactoringAction 1481120714280 SheetTest.java RENAME evalutate()=>void evalutateC() METHOD
+RefactoringAction 1481120715347 SheetTest.java RENAME evalutateC()=>void evalutateCell() METHOD
+RefactoringAction 1481120717391 SheetTest.java RENAME evalutateCell()=>void evalutateCellOne() METHOD
+RefactoringAction 1481120719395 SheetTest.java RENAME evalutateCellOne()=>void evalutateCellOneValu() METHOD
+RefactoringAction 1481120721403 SheetTest.java RENAME evalutateCellOneValu()=>void evalutateCellOneValue() METHOD
+EditAction 1481120791603 SheetTest.java 443 2 6 1
