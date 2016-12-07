@@ -50,3 +50,17 @@ RefactoringAction 1481124071933 SheetTest.java ADD void test() METHOD
 RefactoringAction 1481124128250 SheetTest.java ADD import org.junit.Before IMPORT
 EditAction 1481124355501 Sheet.java 1439 3 5 0
 EditAction 1481124359039 SheetTest.java 656 2 7 3
+RefactoringAction 1481124409912 SheetTest.java ADD void sum FIELD
+RefactoringAction 1481124411921 SheetTest.java RENAME sum=>void sumB FIELD
+RefactoringAction 1481124415428 SheetTest.java RENAME sumB=>void sumBe FIELD
+RefactoringAction 1481124417448 SheetTest.java RENAME sumBe=>void sumBetween FIELD
+RefactoringAction 1481124431967 SheetTest.java RENAME sumBetween=>void sumBetweenNum FIELD
+RefactoringAction 1481124432974 SheetTest.java RENAME sumBetweenNum=>void sumBetweenNumber FIELD
+RefactoringAction 1481124434979 SheetTest.java RENAME sumBetweenNumber=>void sumBetweenNumber() METHOD
+RefactoringAction 1481124441497 SheetTest.java RENAME cellcontainsoneintegernumber()=>void cellontainsoneintegernumber() METHOD
+RefactoringAction 1481124442515 SheetTest.java RENAME cellontainsoneintegernumber()=>void cellContainsoneintegernumber() METHOD
+RefactoringAction 1481124444539 SheetTest.java RENAME cellContainsoneintegernumber()=>void cellContainsneintegernumber() METHOD
+RefactoringAction 1481124445544 SheetTest.java RENAME cellContainsneintegernumber()=>void cellContainsOneintegernumber() METHOD
+RefactoringAction 1481124447551 SheetTest.java RENAME cellContainsOneintegernumber()=>void cellContainsOneIntegernumber() METHOD
+RefactoringAction 1481124450065 SheetTest.java RENAME cellContainsOneIntegernumber()=>void cellContainsOneIntegerNumber() METHOD
+EditAction 1481124643139 Sheet.java 1411 3 4 0
