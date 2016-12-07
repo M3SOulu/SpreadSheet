@@ -78,8 +78,8 @@ public class SheetTest {
 	
 	@Test
 	public void testSumWithBrakets(){
-		sheet.set("A1","=(2)-1");		
-		Assert.assertEquals("1",sheet.evaluate("A1"));
+		sheet.set("A1","=(1)-1");		
+		Assert.assertEquals("0",sheet.evaluate("A1"));
 	}
 	
 	@Test
