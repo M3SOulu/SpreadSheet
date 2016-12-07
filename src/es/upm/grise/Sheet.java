@@ -40,7 +40,8 @@ public class Sheet {
 		if(content.charAt(0)=='='){
 			if(content.charAt(1)=='-'){
 				for(int i=2; i<content.length(); i++){
-					if(content.charAt(i)>='0'||content.charAt(i)>='9'){
+					int num = 1;
+					if(num==1 && (content.charAt(i)>='0'||content.charAt(i)>='9')){
 						a+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-1));
 					}
 				}
