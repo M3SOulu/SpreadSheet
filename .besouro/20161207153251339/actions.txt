@@ -213,3 +213,6 @@ RefactoringAction 1481129655338 SheetTest.java RENAME testFunctionEvaluateNumber
 RefactoringAction 1481129656867 SheetTest.java RENAME testFunctionEvaluateVoid()=>void testFunctionEvaluateVoidStr() METHOD
 RefactoringAction 1481129658374 SheetTest.java RENAME testFunctionEvaluateVoidStr()=>void testFunctionEvaluateVoidString() METHOD
 EditAction 1481129662821 SheetTest.java 1683 8 15 5
+UnitTestCaseAction 1481129669027 SheetTest.java OK
+UnitTestSessionAction 1481129669027 SheetTest OK
+EditAction 1481129681516 SheetTest.java 1684 8 15 5

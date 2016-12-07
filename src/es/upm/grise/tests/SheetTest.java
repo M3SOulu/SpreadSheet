@@ -55,7 +55,7 @@ public class SheetTest {
 	
 	@Test (expected = CircularReferenceException.class)
 	public void testFunctionEvaluateVoidString() throws CircularReferenceException {
-		spreadSheet.evaluate("L2");
+		spreadSheet.evaluate("Z24");
 		Assert.fail("#Error.");
 	}
 }
