@@ -48,19 +48,25 @@ public class Sheet {
 					// lancio eccezione nel caso in cui ci sono caratteri diversi dalle 10 cifre o diversi dal '-' 
 					// altrimenti la stringa è corretta					
 					if((contentValue.charAt(i) < '0' || contentValue.charAt(i) > '9') && contentValue.charAt(i) != '-'){					
-						throw new CircularReferenceException();
+						throw new ComputationErrorException();
 					}else
 						result = contentValue;
 				}
-			}catch(CircularReferenceException e){
+			}catch(ComputationErrorException e){
 				result = "#Error";
 			}
 
-		// caso in cui è una formula
+		// caso in cui è una stringa
 		}else if (contentValue.charAt(0) == '\'' && contentValue.charAt(contentValue.length()-1) == '\'')
+			
+			//restituisco la stringa senza apici 
 			result = contentValue.substring(1, contentValue.length()-1);
-		else
-			result ="#Error";
+		
+		// caso in cui è una formula
+		else {
+			
+		}
+
 		
 		return result;
 	}
