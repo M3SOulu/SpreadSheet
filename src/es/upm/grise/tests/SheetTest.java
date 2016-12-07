@@ -19,6 +19,7 @@ public class SheetTest {
 		spreadSheet.set("X33", "=2+2");
 		spreadSheet.set("L2", "2.2+2");
 		spreadSheet.set("T76", "'ciao'");
+		spreadSheet.set("Z24", "");
 	}
 	
 	@Test

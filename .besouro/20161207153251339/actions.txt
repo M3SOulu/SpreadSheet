@@ -203,3 +203,6 @@ RefactoringAction 1481129592205 Sheet.java ADD import org.junit.Test IMPORT
 RefactoringAction 1481129593217 Sheet.java REMOVE import org.junit.Test IMPORT
 RefactoringAction 1481129593217 Sheet.java REMOVE import org.junit.Assert IMPORT
 EditAction 1481129602788 Sheet.java 3326 3 5 0
+UnitTestCaseAction 1481129604837 SheetTest.java OK
+UnitTestSessionAction 1481129604837 SheetTest OK
+EditAction 1481129625710 SheetTest.java 1487 7 13 5
