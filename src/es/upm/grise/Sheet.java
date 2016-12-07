@@ -51,9 +51,9 @@ public class Sheet {
 			if(formula.charAt(1) > '0' || formula.charAt(1) < '9')
 				operation = Integer.parseInt(""+formula.charAt(1));
 			if(formula.charAt(2) == '+')
-				operation += Integer.parseInt(""+formula.charAt(3));
+				total = "" + operation + Integer.parseInt(""+formula.charAt(3));
 			else if(formula.charAt(2) == '-')
-				operation -= Integer.parseInt(""+formula.charAt(3));
+				total = "" + (operation - Integer.parseInt(""+formula.charAt(3)));
 		}
 		return value;
 	}
