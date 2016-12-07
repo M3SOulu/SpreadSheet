@@ -51,24 +51,28 @@ public class Sheet {
 					operation = Integer.parseInt("" + formula.charAt(1));
 				}
 				if ((formula.charAt(i) >= 'A') && (formula.charAt(i) <= 'Z')){
-					for(; i < formula.length(); i++){
-						if((formula.charAt(i) == '+')||
-						   (formula.charAt(i) == '-')||
-						   (formula.charAt(i) == '*')||
-						   (formula.charAt(i) == '/')||
-						   (formula.charAt(i) == '%'))
-							break;
-						else
-							otherCell += formula.charAt(i);
-					}
-					if (visitedCells.get(0).equals(otherCell))
-						throw new CircularReferenceException("#Circular");
-					else
-						visitedCells.add(otherCell);
-					operation = Integer.parseInt(evaluate(otherCell));
+					operation = Integer.parseInt(evaluate(formula.substring(i)));
+//					for(; i < formula.length(); i++){
+//						if((formula.charAt(i) == '+')||
+//						   (formula.charAt(i) == '-')||
+//						   (formula.charAt(i) == '*')||
+//						   (formula.charAt(i) == '/')||
+//						   (formula.charAt(i) == '%'))
+//							break;
+//						else
+//							otherCell += formula.charAt(i);
+//					}
+//					if (visitedCells.get(0).equals(otherCell))
+//						throw new CircularReferenceException("#Circular");
+//					else
+//						visitedCells.add(otherCell);
+//					operation = Integer.parseInt(evaluate(otherCell));
 				}		
 				if (formula.charAt(i) == '+'){
-					total = "" + (operation + Integer.parseInt("" + formula.charAt(++i)));
+					if(((formula.charAt(i+1) >= 'A') && (formula.charAt(i+1) <= 'Z')))
+						operation = Integer.parseInt(evaluate(formula.substring(i)));
+					else
+						total = "" + (operation + Integer.parseInt("" + formula.charAt(++i)));
 				}
 				else if (formula.charAt(i) == '-')
 					total = "" + (operation - Integer.parseInt("" + formula.charAt(++i)));
