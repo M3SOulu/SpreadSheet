@@ -3,12 +3,14 @@ package es.upm.grise;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import com.sun.xml.internal.ws.util.StringUtils;
+
 public class Sheet {
-	public boolean debug = false;
 	private static final String[] SPECIAL_CHARACTERS = new String[]{"\\", "/" , "*" , "?" , ":" , "[" , "]", "."};
 	private static final String[] OPERATOR_CHARACTERS = new String[]{"+", "-", "/", "*", "%", "&"};
 	public static final String STRING_OPERATOR_CHARACTER = "&";
 	public static final String SUM = "+", SUB = "-", DIV = "/", MUL = "*", MOD ="%";
+	public static final String CIRCULAR_ERROR = "#Circular", DEFAULT_ERROR = "#Error";
 	
 	private HashMap <String, String> cells = new HashMap <String, String>();
 	private ArrayList <String> visitedCells;
@@ -43,7 +45,7 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) {
-		String result = "#Error";
+		String result = DEFAULT_ERROR;
 		String value = cells.containsKey(cell) ? get(cell) : "";
 		visitedCells.add(cell);
 		
@@ -62,24 +64,28 @@ public class Sheet {
 	}
 
 	private String evaluateFormula(String formula) {
-		String result = "#Error"; //If formula tries to concatenate strings with numbers (+ and & in the same formula)
+		String result = DEFAULT_ERROR; //If formula tries to concatenate strings with numbers (+ and & in the same formula)
 		if (formula.contains(STRING_OPERATOR_CHARACTER)){ //String concat
 			result = "";
 			String[] strings = formula.split(STRING_OPERATOR_CHARACTER);
 			for (String str : strings){
 				result += evaluateValue(str);
 			}
-			if (result.contains("#Error")){
-				result = "#Error";
+			if (result.contains(DEFAULT_ERROR)){
+				result = DEFAULT_ERROR;
 			}
 		}
 		else{ //Integer operations
 			result = "";
+			if (formula.replace("(", "").length() != formula.replace(")", "").length())
+				return DEFAULT_ERROR;
+			
 			String newFormula = formula.replaceAll(" ", "");
+			for (String subFormula : newFormula)
 			boolean readyForOperation = false;
 			String number = "", operator = "";
 			for (Character c : newFormula.toCharArray()){
-				if (!result.equals("#Error")){
+				if (!result.equals(DEFAULT_ERROR)){
 					if (isOperator(c.toString())){
 						if (readyForOperation){
 							result = doOperation(result, number, operator);
@@ -98,7 +104,7 @@ public class Sheet {
 					}
 				}
 			}
-			if (!result.equals("#Error")){
+			if (!result.equals(DEFAULT_ERROR)){
 				result = doOperation(result, number, operator);
 			}
 		}
@@ -106,7 +112,7 @@ public class Sheet {
 	}
 	
 	private String evaluateValue(String value) {
-		String result = "#Error";
+		String result = DEFAULT_ERROR;
 		if (isString(value)){ //String
 			result = value.replaceAll("'", "");
 		}
@@ -114,48 +120,47 @@ public class Sheet {
 			result = value;
 		}
 		else if (isCell(value)){ //Cell
-			result = visitedCells.contains(value) ? "#Circular" : evaluate(value);
+			result = visitedCells.contains(value) ? CIRCULAR_ERROR : evaluate(value);
 			visitedCells.clear();
 		}
 		return result;
 	}
 	
-	private void print(String str){ //TODO remove
-		if (debug)
-			System.out.println(str);
-	}
-	
 	private String doOperation(String a, String b, String op){
-		String result = "#Error";
+		String result = DEFAULT_ERROR;
 		if (isCell(b)){
 			b = evaluateValue(b);
+			if (b.equals(CIRCULAR_ERROR)){
+				result = CIRCULAR_ERROR;
+			}
 		}
 		int numA = 0, numB = 0;
 		try{
 			numA = (Integer.parseInt(a));
 			numB = (Integer.parseInt(b));
+			
+			switch(op){
+			case SUM:
+				result = numA + numB + "";
+				break;
+			case SUB:
+				result = numA - numB + "";
+				break;
+			case DIV:
+				result = numB != 0 ? numA / numB + "" : DEFAULT_ERROR;
+				break;
+			case MUL:
+				result = numA * numB + "";
+				break;
+			case MOD:
+				result = numA % numB + "";
+				break;
+			default:
+				result = DEFAULT_ERROR;
+				break;
+			}
+			
 		} catch(NumberFormatException e){
-			result = "#Error";
-		}
-		switch(op){
-		case SUM:
-			result = numA + numB + "";
-			break;
-		case SUB:
-			result = numA - numB + "";
-			break;
-		case DIV:
-			result = numB != 0 ? numA / numB + "" : "#Error";
-			break;
-		case MUL:
-			result = numA * numB + "";
-			break;
-		case MOD:
-			result = numA % numB + "";
-			break;
-		default:
-			result = "#Error";
-			break;
 		}
 		return result;
 	}

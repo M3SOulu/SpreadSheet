@@ -380,3 +380,49 @@ EditAction 1481128206539 SheetTest.java 5561 24 67 24
 UnitTestCaseAction 1481128207558 SheetTest.java FAIL
 UnitTestSessionAction 1481128207559 SheetTest FAIL
 EditAction 1481128222877 SheetTest.java 5539 24 66 24
+UnitTestCaseAction 1481128366603 SheetTest.java FAIL
+UnitTestSessionAction 1481128366604 SheetTest FAIL
+UnitTestCaseAction 1481128471450 SheetTest.java FAIL
+UnitTestSessionAction 1481128471451 SheetTest FAIL
+RefactoringAction 1481128525277 Sheet.java ADD String CIRCULAR_ERROR FIELD
+RefactoringAction 1481128533317 Sheet.java ADD String CO FIELD
+RefactoringAction 1481128534335 Sheet.java REMOVE CO FIELD
+RefactoringAction 1481128540858 Sheet.java ADD String DEFAULT_ERROR FIELD
+UnitTestCaseAction 1481128595428 SheetTest.java FAIL
+UnitTestSessionAction 1481128595429 SheetTest FAIL
+UnitTestCaseAction 1481128655807 SheetTest.java OK
+UnitTestSessionAction 1481128655808 SheetTest OK
+UnitTestCaseAction 1481128760326 SheetTest.java OK
+UnitTestSessionAction 1481128760327 SheetTest OK
+RefactoringAction 1481128789935 Sheet.java ADD String performOperation FIELD
+RefactoringAction 1481128792461 Sheet.java RENAME performOperation=>String performOperation() METHOD
+RefactoringAction 1481128798976 Sheet.java REMOVE performOperation() METHOD
+UnitTestCaseAction 1481128839247 SheetTest.java OK
+UnitTestSessionAction 1481128839248 SheetTest OK
+RefactoringAction 1481128897077 Sheet.java REMOVE print(String) METHOD
+RefactoringAction 1481128901724 Sheet.java REMOVE debug FIELD
+CompilationAction 1481128902264 SheetTest.java
+RefactoringAction 1481129483682 Sheet.java ADD import com.sun.xml.internal.ws.util.StringUtils IMPORT
+RefactoringAction 1481129486691 Sheet.java REMOVE import com.sun.xml.internal.ws.util.StringUtils IMPORT
+RefactoringAction 1481129489920 Sheet.java ADD import com.sun.xml.internal.ws.util.StringUtils IMPORT
+RefactoringAction 1481129492241 Sheet.java REMOVE import com.sun.xml.internal.ws.util.StringUtils IMPORT
+RefactoringAction 1481129519572 Sheet.java ADD import com.sun.xml.internal.ws.util.StringUtils IMPORT
+CompilationAction 1481129573713 Sheet.java
+CompilationAction 1481129573714 Sheet.java
+CompilationAction 1481129573714 Sheet.java
+CompilationAction 1481129573714 Sheet.java
+CompilationAction 1481129573715 Sheet.java
+CompilationAction 1481129573715 Sheet.java
+CompilationAction 1481129595668 Sheet.java
+CompilationAction 1481129595668 Sheet.java
+CompilationAction 1481129595668 Sheet.java
+CompilationAction 1481129595669 Sheet.java
+CompilationAction 1481129595669 Sheet.java
+CompilationAction 1481129595669 Sheet.java
+CompilationAction 1481129595832 Sheet.java
+CompilationAction 1481129595832 Sheet.java
+CompilationAction 1481129595833 Sheet.java
+CompilationAction 1481129595833 Sheet.java
+CompilationAction 1481129595833 Sheet.java
+CompilationAction 1481129595833 Sheet.java
+EditAction 1481129601012 Sheet.java 5767 13 35 0

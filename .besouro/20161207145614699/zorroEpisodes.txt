@@ -21,3 +21,6 @@
 1481127571475 regression 1 292 true
 1481127632181 test-addition 1 60 true
 1481127736241 refactoring 1A 104 true
+1481128655808 test-first 1 919 true
+1481128760327 regression 1 104 true
+1481128839248 refactoring 2B 78 true
