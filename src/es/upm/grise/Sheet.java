@@ -40,11 +40,15 @@ public class Sheet {
 		int startIndex = 1;
 		if(content.charAt(0)=='='){
 			if(content.charAt(1)=='-') startIndex = 2;
-			int num = 1;
+			int num = 1, offset;
 			for(int i=startIndex; i<content.length(); i++){				
 				if(num==1){
-					if(content.charAt(i)=='+') num=2;
-					else if(content.charAt(i)=='-') num=3;
+					if(content.charAt(i)=='+'){
+						num=2;
+					}
+					else if(content.charAt(i)=='-'){
+						num=3;
+					}
 					else if(content.charAt(i)>='0'||content.charAt(i)>='9'){
 						a+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-startIndex));
 					}	
