@@ -39,41 +39,43 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) throws CircularReferenceException {
-		String value = null;
 		if (cells.containsKey(cell)){
 			String valueCell = cells.get(cell);
 			if (valueCell.charAt(0) == '=') {
 				int result = 0;
 				for(int i = 0; i < valueCell.length(); i++){
+					char letter = valueCell.charAt(i);
+					if(!Character.isDigit(letter) && letter != '=' && letter != '+' && letter != '-' && letter != '*' && letter != '/'){
+						
+					}
 					if (valueCell.charAt(i) == '+'){
 						String a = String.valueOf(i-1);
 						String b = String.valueOf(i+1);
 						result = Integer.parseInt(a)+Integer.parseInt(b);
-						value = String.valueOf(result);
+						return String.valueOf(result);
 					} else if (valueCell.charAt(i) == '-'){
 						String a = String.valueOf(i-1);
 						String b = String.valueOf(i+1);
 						result = Integer.parseInt(a)-Integer.parseInt(b);
-						value = String.valueOf(result);
+						return String.valueOf(result);
 					} else if (valueCell.charAt(i) == '*'){
 						String a = String.valueOf(i-1);
 						String b = String.valueOf(i+1);
 						result = Integer.parseInt(a)*Integer.parseInt(b);
-						value = String.valueOf(result);
+						return String.valueOf(result);
 					} else if (valueCell.charAt(i) == '/'){
 						String a = String.valueOf(i-1);
 						String b = String.valueOf(i+1);
 						result = Integer.parseInt(a)/Integer.parseInt(b);
-						value = String.valueOf(result);
+						return String.valueOf(result);
 					}
 				}
 			} else {
-				value = cells.get(cell);
+				return cells.get(cell);
 			}
 		}else{
 			throw new CircularReferenceException();
 		}
-		return value;
 	}
 
 }
