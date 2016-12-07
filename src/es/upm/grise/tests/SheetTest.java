@@ -28,9 +28,9 @@ public class SheetTest {
 		assertEquals("/A1",cells.get("not valid"));
 	}
 	
-	@Before
+	@Test
 	public void test2(){
-		
+		assertEquals("1",cells.get("cell"));
 	}
 
 	
