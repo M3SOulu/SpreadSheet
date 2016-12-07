@@ -219,3 +219,20 @@ EditAction 1481127920620 Sheet.java 3696 3 11 0
 UnitTestCaseAction 1481128005184 SheetTest.java FAIL
 UnitTestSessionAction 1481128005184 SheetTest FAIL
 EditAction 1481128136045 Sheet.java 3696 3 11 0
+UnitTestCaseAction 1481128140265 SheetTest.java OK
+UnitTestSessionAction 1481128140265 SheetTest OK
+UnitTestCaseAction 1481128512621 SheetTest.java OK
+UnitTestSessionAction 1481128512621 SheetTest OK
+RefactoringAction 1481128527815 SheetTest.java ADD void testADoubleFormulaBis()/2 METHOD
+RefactoringAction 1481128535847 SheetTest.java ADD void testADoubleFormulaBis()/3 METHOD
+RefactoringAction 1481128538361 SheetTest.java REMOVE testADoubleFormulaBis()/3 METHOD
+RefactoringAction 1481128575008 SheetTest.java RENAME testADoubleFormulaBis()/2=>void testAWrongFormulaBis() METHOD
+RefactoringAction 1481128578570 SheetTest.java RENAME testAWrongFormulaBis()=>void testAWrongFormuls() METHOD
+RefactoringAction 1481128581077 SheetTest.java RENAME testAWrongFormuls()=>void testAWrongFormula() METHOD
+RefactoringAction 1481128607642 SheetTest.java ADD import es.upm.grise.ComputationErrorException IMPORT
+RefactoringAction 1481128613913 SheetTest.java ADD import es.upm.grise.CircularReferenceException IMPORT
+UnitTestCaseAction 1481128640803 SheetTest.java OK
+UnitTestSessionAction 1481128640803 SheetTest OK
+UnitTestCaseAction 1481128702650 SheetTest.java FAIL
+UnitTestSessionAction 1481128702650 SheetTest FAIL
+EditAction 1481128831720 Sheet.java 3541 3 12 0

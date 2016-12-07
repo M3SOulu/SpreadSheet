@@ -41,10 +41,20 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) throws CircularReferenceException, ComputationErrorException{
 		Integer operation = 0;
-		String otherCell = "";
 		String total = "";
 		String formula = get(cell);
+		formula.replaceAll(" ", "");
 		visitedCells.add(cell);
+		for (int i = 0; i < formula.length(); i++){
+			int countOP=0;
+			int countCL=0;
+			if(formula.charAt(i) == '(')
+				countOP++;
+			if(formula.charAt(i) == ')')
+				countCL++;
+			if(countOP != countCL)
+				throw new ComputationErrorException("#Error");
+		}
 		for (int i = 0; i < formula.length(); i++) {
 			if (formula.charAt(0) == '=') {
 				if (formula.charAt(i) >= '0' && formula.charAt(i) <= '9') {
@@ -59,23 +69,10 @@ public class Sheet {
 						  (formula.charAt(count)!='%')){
 						count ++;
 					}
+					if(visitedCells.contains(formula.substring(i, count)))
+						throw new CircularReferenceException("#Circular");
 					operation = Integer.parseInt(evaluate(formula.substring(i, count)));
 					i = count;
-//					for(; i < formula.length(); i++){
-//						if((formula.charAt(i) == '+')||
-//						   (formula.charAt(i) == '-')||
-//						   (formula.charAt(i) == '*')||
-//						   (formula.charAt(i) == '/')||
-//						   (formula.charAt(i) == '%'))
-//							break;
-//						else
-//							otherCell += formula.charAt(i);
-//					}
-//					if (visitedCells.get(0).equals(otherCell))
-//						throw new CircularReferenceException("#Circular");
-//					else
-//						visitedCells.add(otherCell);
-//					operation = Integer.parseInt(evaluate(otherCell));
 				}		
 				if (formula.charAt(i) == '+'){
 					if(((formula.charAt(i+1) >= 'A') && (formula.charAt(i+1) <= 'Z')))
