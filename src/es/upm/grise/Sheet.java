@@ -42,6 +42,7 @@ public class Sheet {
 		if (cells.containsKey(cell)){
 			if (cell.charAt(0) == '='){
 				String[] array = new String[20];
+				array = cell.split("=");
 			} else {
 				return cells.get(cell);
 			}
