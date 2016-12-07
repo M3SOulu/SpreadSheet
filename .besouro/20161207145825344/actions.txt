@@ -1,3 +1,16 @@
 FileOpenedAction 1481119105805 Sheet.java 1192 3 2 0
 EditAction 1481119341683 Sheet.java 1214 3 3 0
 EditAction 1481119644601 Sheet.java 1307 3 4 0
+RefactoringAction 1481119663114 SheetTest.java RENAME test()=>void evalutate() METHOD
+RefactoringAction 1481119664126 SheetTest.java RENAME evalutate()=>void evalutate_is() METHOD
+RefactoringAction 1481119665635 SheetTest.java RENAME evalutate_is()=>void evalutate_is_1() METHOD
+RefactoringAction 1481119688464 SheetTest.java ADD import org.junit.Before IMPORT
+RefactoringAction 1481119700221 SheetTest.java ADD Sheet testSheet FIELD
+RefactoringAction 1481119706579 SheetTest.java ADD import es.upm.grise.Sheet IMPORT
+RefactoringAction 1481119731259 SheetTest.java RENAME testSheet=>void Sheet FIELD
+RefactoringAction 1481119734346 SheetTest.java ADD Sheet testSheet FIELD
+RefactoringAction 1481119735859 SheetTest.java RENAME Sheet=>void SheetTe FIELD
+RefactoringAction 1481119737365 SheetTest.java RENAME SheetTe=>void SheetTest FIELD
+RefactoringAction 1481119775539 SheetTest.java ADD Sheet testShett FIELD
+RefactoringAction 1481119855722 SheetTest.java RENAME testShett=>Sheet testSheet FIELD
+EditAction 1481119948186 SheetTest.java 366 2 3 1
