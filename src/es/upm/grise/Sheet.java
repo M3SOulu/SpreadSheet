@@ -65,7 +65,7 @@ public class Sheet {
 						throw new CircularReferenceException("#Circular");
 					else
 						visitedCells.add(otherCell);
-					evaluate(otherCell);
+					operation = Integer.parseInt(evaluate(otherCell));
 				}		
 				if (formula.charAt(i) == '+')
 					total = "" + (operation + Integer.parseInt("" + formula.charAt(i + 1)));
