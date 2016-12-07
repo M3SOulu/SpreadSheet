@@ -81,7 +81,7 @@ public class SheetTest {
 	public void testEvaluateSimpleCellReferenceErrorFormula() throws CircularReferenceException, ComputationErrorException{
 		sheet.set("A1", "'testBadString");
 		sheet.set("A2", "=A1");
-		assertEquals("#Error2", sheet.evaluate("A2"));
+		assertEquals("#Error", sheet.evaluate("A2"));
 	}
 
 }
