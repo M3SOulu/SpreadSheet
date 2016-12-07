@@ -3,8 +3,6 @@ package es.upm.grise;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.sun.xml.internal.ws.util.StringUtils;
-
 public class Sheet {
 	private static final String[] SPECIAL_CHARACTERS = new String[]{"\\", "/" , "*" , "?" , ":" , "[" , "]", "."};
 	private static final String[] OPERATOR_CHARACTERS = new String[]{"+", "-", "/", "*", "%", "&"};
@@ -81,31 +79,33 @@ public class Sheet {
 				return DEFAULT_ERROR;
 			
 			String newFormula = formula.replaceAll(" ", "");
-			for (String subFormula : newFormula)
-			boolean readyForOperation = false;
-			String number = "", operator = "";
-			for (Character c : newFormula.toCharArray()){
-				if (!result.equals(DEFAULT_ERROR)){
-					if (isOperator(c.toString())){
-						if (readyForOperation){
-							result = doOperation(result, number, operator);
-							number = "";
-						}
-						operator = c.toString();
-						readyForOperation = true;
-					}
-					else{
-						if (readyForOperation){
-							number += c;
+			String[] subFormulas = newFormula.split("(");
+			for (String subFormula : subFormulas){
+				boolean readyForOperation = false;
+				String number = "", operator = "";
+				for (Character c : subFormula.toCharArray()){
+					if (!result.equals(DEFAULT_ERROR)){
+						if (isOperator(c.toString())){
+							if (readyForOperation){
+								result = doOperation(result, number, operator);
+								number = "";
+							}
+							operator = c.toString();
+							readyForOperation = true;
 						}
 						else{
-							result += c;
+							if (readyForOperation){
+								number += c;
+							}
+							else{
+								result += c;
+							}
 						}
 					}
 				}
-			}
-			if (!result.equals(DEFAULT_ERROR)){
-				result = doOperation(result, number, operator);
+				if (!result.equals(DEFAULT_ERROR)){
+					result = doOperation(result, number, operator);
+				}
 			}
 		}
 		return result;
