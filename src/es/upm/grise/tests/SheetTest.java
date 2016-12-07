@@ -41,14 +41,12 @@ public class SheetTest {
 	
 	@Test
 	public void evalutate_have_error() {
-		testSheet.set("E1", "=");	//Formula senza parametri
 		testSheet.set("E2", ",");	//carattere casuale non accettato
 		testSheet.set("E3", "b11");	//Stringa non racchiusa tra singoli apici
 		testSheet.set("E4", "'Hi");	//Stringa non racchiusa tra singoli apici
 		testSheet.set("E5", "Call'");	//Stringa non racchiusa tra singoli apici
 		testSheet.set("E6", " ");	//vuoto
 		
-		assertEquals("#Error", testSheet.evaluate("E1"));
 		assertEquals("#Error", testSheet.evaluate("E2"));
 		assertEquals("#Error", testSheet.evaluate("E3"));
 		assertEquals("#Error", testSheet.evaluate("E4"));
