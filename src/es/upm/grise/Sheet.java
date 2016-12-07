@@ -46,24 +46,23 @@ public class Sheet {
 		String formula = get(cell);
 		for (int i = 0; i < formula.length(); i++) {
 			if (formula.charAt(0) == '=') {
-				if (formula.charAt(i) > '0' || formula.charAt(i) < '9'){
+				if (formula.charAt(i) > '0' || formula.charAt(i) < '9') {
 					operation = Integer.parseInt("" + formula.charAt(1));
 				}
 				// else if(formula.charAt(1) > 'A' || formula.charAt(1) < 'Z')
 				if (formula.charAt(i) == '+')
-					total = "" + (operation + Integer.parseInt("" + formula.charAt(i+1)));
+					total = "" + (operation + Integer.parseInt("" + formula.charAt(i + 1)));
 				else if (formula.charAt(i) == '-')
-					total = "" + (operation - Integer.parseInt("" + formula.charAt(i+1)));
+					total = "" + (operation - Integer.parseInt("" + formula.charAt(i + 1)));
 				else if (formula.charAt(i) == '*')
-					total = "" + (operation * Integer.parseInt("" + formula.charAt(i+1)));
-				else if (formula.charAt(i) == '/'){
-					if(formula.charAt(i+1) != '0')
-					total = "" + (operation / Integer.parseInt("" + formula.charAt(i+1)));
-					else throw new ComputationErrorException("#Error");
-				}
-					
-			}
-					
+					total = "" + (operation * Integer.parseInt("" + formula.charAt(i + 1)));
+				else if (formula.charAt(i) == '/') {
+					if (formula.charAt(i + 1) != '0')
+						total = "" + (operation / Integer.parseInt("" + formula.charAt(i + 1)));
+					else
+						throw new ComputationErrorException("#Error");
+				}else if (formula.charAt(i) == '%')
+					total = "" + (operation % Integer.parseInt("" + formula.charAt(i + 1)));
 			} else {
 				total = formula;
 			}
