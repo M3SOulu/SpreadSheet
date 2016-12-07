@@ -260,3 +260,9 @@ EditAction 1481126445020 Sheet.java 4729 12 33 0
 RefactoringAction 1481126489743 SheetTest.java ADD void testEvaluateStringConcatFormula()/2 METHOD
 RefactoringAction 1481126497748 SheetTest.java RENAME testEvaluateStringConcatFormula()/2=>void testEvaluateNumberAdditionFormula() METHOD
 EditAction 1481126509357 SheetTest.java 4311 19 51 19
+UnitTestCaseAction 1481126510295 SheetTest.java FAIL
+UnitTestSessionAction 1481126510296 SheetTest FAIL
+RefactoringAction 1481126571803 Sheet.java ADD String doOperation() METHOD
+RefactoringAction 1481126577318 Sheet.java RENAME doOperation()=>String doOperation(String, String) METHOD
+RefactoringAction 1481126582343 Sheet.java RENAME doOperation(String, String)=>String doOperation(String, String, String) METHOD
+EditAction 1481126650343 Sheet.java 4878 13 35 0

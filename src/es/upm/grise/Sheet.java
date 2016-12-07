@@ -78,23 +78,30 @@ public class Sheet {
 			boolean readyForOperation = false;
 			String number = "", operator = "";
 			for (Character c : newFormula.toCharArray()){
-				if (isOperator(c)){
-					if (readyForOperation){
-						result = (Integer.parseInt(result) + Integer.parseInt(number)) + "";
-					}
-					operator = c.toString();
-					readyForOperation = true;
-				}
-				else{
-					if (readyForOperation){
-						number += c;
+				if (!result.equals("#Error")){
+					if (isOperator(c)){
+						if (readyForOperation){
+							result = doOperation(result, number, operator);
+						}
+						operator = c.toString();
+						readyForOperation = true;
 					}
 					else{
-						result += c;
+						if (readyForOperation){
+							number += c;
+						}
+						else{
+							result += c;
+						}
 					}
 				}
 			}
 		}
+		return result;
+	}
+	
+	private String doOperation(String a, String b, String op){
+		String result = (Integer.parseInt(a) + Integer.parseInt(b)) + "";
 		return result;
 	}
 	
