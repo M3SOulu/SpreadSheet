@@ -35,7 +35,7 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) {
 		
-		return null;
+		return cells.get(cell);
 	}
 
 }
