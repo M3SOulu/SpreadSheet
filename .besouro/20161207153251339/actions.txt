@@ -32,3 +32,16 @@ EditAction 1481124204291 SheetTest.java 1035 5 7 4
 UnitTestCaseAction 1481124205894 SheetTest.java FAIL
 UnitTestSessionAction 1481124205895 SheetTest FAIL
 EditAction 1481124216502 SheetTest.java 1035 5 7 4
+UnitTestCaseAction 1481124217937 SheetTest.java OK
+UnitTestSessionAction 1481124217937 SheetTest OK
+RefactoringAction 1481124619255 Sheet.java REMOVE visitedCells FIELD
+RefactoringAction 1481124852099 Sheet.java REMOVE import java.util.ArrayList IMPORT
+UnitTestCaseAction 1481124856323 SheetTest.java OK
+UnitTestSessionAction 1481124856324 SheetTest OK
+UnitTestCaseAction 1481125001039 SheetTest.java FAIL
+UnitTestSessionAction 1481125001041 SheetTest FAIL
+UnitTestCaseAction 1481125057865 SheetTest.java FAIL
+UnitTestSessionAction 1481125057866 SheetTest FAIL
+UnitTestCaseAction 1481125161111 SheetTest.java OK
+UnitTestSessionAction 1481125161112 SheetTest OK
+EditAction 1481125174012 SheetTest.java 1035 5 7 4

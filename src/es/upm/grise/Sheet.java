@@ -1,12 +1,12 @@
 package es.upm.grise;
 
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Sheet {
 
 	private HashMap <String, String> cells = new HashMap <String, String>();
-	private ArrayList <String> visitedCells;
+	//private ArrayList <String> visitedCells;
 
 	/**
 	 * @param cell	A String representing a cell (e.g. "A1", "XZ21", etc.)
@@ -44,23 +44,23 @@ public class Sheet {
 			String valueCell = cells.get(cell);
 			if (valueCell.charAt(0) == '=') {
 				int result = 0;
-				for(int i = 0; i < cell.length(); i++){
+				for(int i = 0; i < valueCell.length(); i++){
 					if (valueCell.charAt(i) == '+'){
 						String a = String.valueOf(i-1);
 						String b = String.valueOf(i+1);
 						result = Integer.parseInt(a)+Integer.parseInt(b);
 						value = String.valueOf(result);
-					} else if (cell.charAt(i) == '-'){
+					} else if (valueCell.charAt(i) == '-'){
 						String a = String.valueOf(i-1);
 						String b = String.valueOf(i+1);
 						result = Integer.parseInt(a)-Integer.parseInt(b);
 						value = String.valueOf(result);
-					} else if (cell.charAt(i) == '*'){
+					} else if (valueCell.charAt(i) == '*'){
 						String a = String.valueOf(i-1);
 						String b = String.valueOf(i+1);
 						result = Integer.parseInt(a)*Integer.parseInt(b);
 						value = String.valueOf(result);
-					} else if (cell.charAt(i) == '/'){
+					} else if (valueCell.charAt(i) == '/'){
 						String a = String.valueOf(i-1);
 						String b = String.valueOf(i+1);
 						result = Integer.parseInt(a)/Integer.parseInt(b);
