@@ -15,7 +15,7 @@ public class SheetTest {
 	
 	@Test
 	public void testReturnTheContent() {
-		s.set("A1","\' 1\'");
+		s.set("A1","1");
 		assertEquals(s.evaluate("A1"),1);
 	}
 
