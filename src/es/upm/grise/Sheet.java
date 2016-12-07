@@ -92,8 +92,8 @@ public class Sheet {
 			else{
 				switch(num){
 				case 2: value= (Integer.valueOf(a)+Integer.valueOf(b)); break;
-				case 4: value= (Integer.valueOf(a)+Integer.valueOf(b)); break;
-				case 5: value= (Integer.valueOf(a)+Integer.valueOf(b)); break;
+				case 4: value= ((-Integer.valueOf(a))*Integer.valueOf(b)); break;
+				case 5: value= ((-Integer.valueOf(a))/Integer.valueOf(b)); break;
 				default: return "#Error";
 				}
 			}
