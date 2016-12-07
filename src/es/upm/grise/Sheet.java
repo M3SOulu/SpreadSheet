@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 public class Sheet {
 	private static final String[] SPECIAL_CHARACTERS = new String[]{"\\", "/" , "*" , "?" , ":" , "[" , "]", "."};
+	private static final String[] OPERATOR_CHARACTERS = new String[]{"+", "-", "/", "*", "%", "&"};
 	private HashMap <String, String> cells = new HashMap <String, String>();
 	private ArrayList <String> visitedCells;
 
@@ -38,7 +39,12 @@ public class Sheet {
 		String value = get(cell);
 		
 		if (value.startsWith("=")){ //Formula
-			
+			if (!containsOperators(value)){
+				evaluate(value.replaceFirst("=", ""));
+			}
+			else{
+				
+			}
 		}
 		else if (value.startsWith("'") && value.endsWith("'")){ //String
 			result = value.replaceAll("'", "");
@@ -57,6 +63,14 @@ public class Sheet {
 	public boolean containsSpecialCharacters(String str){
 		boolean result = false;
 		for (String sc : SPECIAL_CHARACTERS){
+			result |= str.contains(sc);
+		}
+		return result;
+	}
+	
+	public boolean containsOperators(String str){
+		boolean result = false;
+		for (String sc : OPERATOR_CHARACTERS){
 			result |= str.contains(sc);
 		}
 		return result;

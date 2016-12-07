@@ -96,3 +96,8 @@ RefactoringAction 1481121995538 SheetTest.java ADD void testEvaluateSimpleIntege
 RefactoringAction 1481122004545 SheetTest.java RENAME testEvaluateSimpleIntegerFormulaValue()/2=>void testEvaluateSimpleStringFormulaValue() METHOD
 EditAction 1481122068781 SheetTest.java 1964 10 19 9
 EditAction 1481122075189 SheetTest.java 1968 10 19 9
+RefactoringAction 1481122143897 Sheet.java ADD boolean containsSpecialCharacters(String)/2 METHOD
+RefactoringAction 1481122147912 Sheet.java RENAME containsSpecialCharacters(String)/2=>boolean containsOperators(String) METHOD
+RefactoringAction 1481122176512 Sheet.java ADD String FIELD
+RefactoringAction 1481122180021 Sheet.java RENAME SPECIAL_CHARACTERS/2=>String FIELD
+EditAction 1481122476136 Sheet.java 2326 5 12 0
