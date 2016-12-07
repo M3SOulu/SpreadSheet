@@ -291,3 +291,15 @@ UnitTestCaseAction 1481127317266 SheetTest.java FAIL
 UnitTestSessionAction 1481127317266 SheetTest FAIL
 EditAction 1481127327308 Sheet.java 3813 3 8 0
 EditAction 1481127349485 SheetTest.java 1949 14 27 13
+UnitTestCaseAction 1481127353167 SheetTest.java FAIL
+UnitTestSessionAction 1481127353168 SheetTest FAIL
+UnitTestCaseAction 1481127366080 SheetTest.java FAIL
+UnitTestSessionAction 1481127366081 SheetTest FAIL
+RefactoringAction 1481127379067 SheetTest.java REMOVE testModuleBetweenTwoNumbers() METHOD
+RefactoringAction 1481127420580 SheetTest.java REMOVE import junit.framework.Assert IMPORT
+CompilationAction 1481127421521 SheetTest.java
+RefactoringAction 1481127425807 SheetTest.java ADD import org.junit.Assert IMPORT
+RefactoringAction 1481127436133 SheetTest.java REMOVE import org.junit.Assert.* IMPORT
+CompilationAction 1481127437376 SheetTest.java
+UnitTestCaseAction 1481127442791 SheetTest.java OK
+UnitTestSessionAction 1481127442792 SheetTest OK

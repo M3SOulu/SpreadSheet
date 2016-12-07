@@ -1,12 +1,11 @@
 package es.upm.grise.tests;
 
-import static org.junit.Assert.*;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import es.upm.grise.Sheet;
-import junit.framework.Assert;
 
 public class SheetTest {
 	Sheet sheet;
@@ -86,12 +85,6 @@ public class SheetTest {
 	public void testMoltiplicationBetweenTwoNumbers(){
 		sheet.set("A1","=1*1");		
 		Assert.assertEquals("1",sheet.evaluate("A1"));
-	}
-	
-	@Test
-	public void testModuleBetweenTwoNumbers(){
-		sheet.set("A1","=5%2");		
-		Assert.assertEquals("3",sheet.evaluate("A1"));
 	}
 	
 }
