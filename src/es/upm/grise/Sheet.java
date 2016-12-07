@@ -34,8 +34,9 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) throws CircularReferenceException, ComputationErrorException {
+		String result = get(cell);
 		
-		return null;
+		return result;
 	}
 
 }
