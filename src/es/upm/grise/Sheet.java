@@ -74,7 +74,7 @@ public class Sheet {
 			if (startIndex==1)
 				return ""+ (Integer.valueOf(a)+Integer.valueOf(b));
 			else
-				return ""+ (Integer.valueOf(a)+Integer.valueOf(b));
+				return ""+ (Integer.valueOf(b)-Integer.valueOf(a));
 		}
 		else{
 			for(int i=0; i<content.length(); i++){
