@@ -51,15 +51,13 @@ public class Sheet {
 					operation = Integer.parseInt("" + formula.charAt(1));
 				}
 				if ((formula.charAt(i) >= 'A') && (formula.charAt(i) <= 'Z')){
-					int count = 0;
-						while((formula.charAt(i)!='+')&&
-							  (formula.charAt(i)!='-')&&
-							  (formula.charAt(i)!='*')&&
-							  (formula.charAt(i)!='/')&&
-							  (formula.charAt(i)!='%')){
+					int count = i;
+						while((formula.charAt(count)!='+')&&
+							  (formula.charAt(count)!='-')&&
+							  (formula.charAt(count)!='*')&&
+							  (formula.charAt(count)!='/')&&
+							  (formula.charAt(count)!='%')){
 							count ++;
-							i++;
-						}
 					}
 					operation = Integer.parseInt(evaluate(formula.substring(i, count)));
 //					for(; i < formula.length(); i++){
