@@ -134,3 +134,6 @@ RefactoringAction 1481128012670 Sheet.java RENAME forumlas()=>String forumlas(St
 EditAction 1481128537941 Sheet.java 1968 5 13 0
 EditAction 1481128622922 Sheet.java 1972 5 13 0
 EditAction 1481128623082 SheetTest.java 1757 5 12 1
+UnitTestCaseAction 1481128623607 SheetTest.java FAIL
+UnitTestSessionAction 1481128623607 SheetTest FAIL
+EditAction 1481128641206 Sheet.java 1979 5 13 0
