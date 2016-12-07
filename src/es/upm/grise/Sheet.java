@@ -37,29 +37,28 @@ public class Sheet {
 		String content = cells.get(cell);
 		int a=0;
 		int b=0;
-		boolean negative = false;
+		int startIndex = 1;
 		if(content.charAt(0)=='='){
-			if(content.charAt(1)=='-'){
-				for(int i=2; i<content.length(); i++){
-					int num = 1;
-					if(num==1){
-						if(content.charAt(i)=='+') num=2;
-						if(content.charAt(i)=='-') num=3;
-						if(content.charAt(i)>='0'||content.charAt(i)>='9'){
-							a+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-1));
-						}	
-					}
-					else{
-						if(content.charAt(i)>='0'||content.charAt(i)>='9'){
-							if(num==2)
-								b+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-1));
-							else 
-								b-=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-1));
-						}
+			if(content.charAt(1)=='-') startIndex = 2;
+			for(int i=startIndex; i<content.length(); i++){
+				int num = 1;
+				if(num==1){
+					if(content.charAt(i)=='+') num=2;
+					if(content.charAt(i)=='-') num=3;
+					if(content.charAt(i)>='0'||content.charAt(i)>='9'){
+						a+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-1));
+					}	
+				}
+				else{
+					if(content.charAt(i)>='0'||content.charAt(i)>='9'){
+						if(num==2)
+							b+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-1));
+						else 
+							b-=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-1));
 					}
 				}
 			}
-			return ""+ (a+b);
+			return ""+ (startIndex==1) ? (a+b) : (-a+b);
 		}
 		for(int i=0; i<content.length(); i++){
 			if(content.charAt(i)=='\'') return content.replaceAll("\'","");
