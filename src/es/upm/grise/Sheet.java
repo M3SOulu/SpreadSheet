@@ -40,8 +40,8 @@ public class Sheet {
 		int startIndex = 1;
 		if(content.charAt(0)=='='){
 			if(content.charAt(1)=='-') startIndex = 2;
-			for(int i=startIndex; i<content.length(); i++){
-				int num = 1;
+			int num = 1;
+			for(int i=startIndex; i<content.length(); i++){				
 				if(num==1){
 					if(content.charAt(i)=='+') num=2;
 					else if(content.charAt(i)=='-') num=3;
