@@ -80,7 +80,8 @@ public class Sheet {
 
 			boolean readyForOperation = false;
 			String number = "", operator = "";
-			for (Character c : subFormula.toCharArray()){
+			String newFormula = formula.contains(" ") ? formula.replaceAll(" ", "") : formula;
+			for (Character c : newFormula.toCharArray()){
 				if (!result.equals(DEFAULT_ERROR)){
 					if (isOperator(c.toString())){
 						if (readyForOperation){

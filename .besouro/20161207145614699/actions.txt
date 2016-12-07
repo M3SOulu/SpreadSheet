@@ -490,3 +490,8 @@ CompilationAction 1481130409855 Sheet.java
 RefactoringAction 1481130413993 SheetTest.java REMOVE testEvaluateMultipleOperationsWithCellReferenceWithParenthesisFormula() METHOD
 RefactoringAction 1481130413993 SheetTest.java REMOVE testEvaluateManyNumbersOperationsWithParenthesisFormula() METHOD
 EditAction 1481130414541 SheetTest.java 5517 24 65 24
+UnitTestCaseAction 1481130417334 SheetTest.java FAIL
+UnitTestSessionAction 1481130417335 SheetTest FAIL
+CompilationAction 1481130437058 Sheet.java
+UnitTestCaseAction 1481130438812 SheetTest.java OK
+UnitTestSessionAction 1481130438812 SheetTest OK
