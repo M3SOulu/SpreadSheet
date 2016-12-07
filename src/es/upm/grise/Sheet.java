@@ -37,9 +37,49 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) {
-	
-		cells.containsKey(cell);
-		return null;
+
+		visitedCells = new ArrayList<>();
+		String s = "";
+		char[] array;
+		array = this.get(cell).toCharArray();
+		if (array[0] == '=') {
+			String arg = this.get(cell).substring(1);
+			if (cells.containsKey(arg)) {
+				if (visitedCells.contains(arg)) {
+					s = "#Circular";
+				} else {
+					visitedCells.add(cell);
+					s = evaluate(arg);
+				}
+			} else {
+				s = valutaNumAndString(arg);
+			}
+
+		} else {
+			s = valutaNumAndString(this.get(cell));
+		}
+
+		return s;
 	}
 
+	public String valutaNumAndString(String content) {
+		char[] array;
+		String s;
+		array = content.toCharArray();
+		if (array[0] == '\'' && array[array.length - 1] == '\'') {
+			if (content.substring(1, array.length - 1).isEmpty())
+				s = "#Error";
+			else
+				s = content.substring(1, array.length - 1);
+		} else {
+			try {
+				Integer.parseInt(content);
+				s = content;
+			} catch (NumberFormatException e) {
+				s = "#Error";
+			}
+
+		}
+		return s;
+	}
 }

@@ -8,29 +8,55 @@ import java.util.HashMap;
 import org.junit.Test;
 
 public class SheetTest {
-	
-	HashMap <String, String> cells = new HashMap <String, String>();
+
+	Sheet s = new Sheet();
 
 	@Test
-	public void testContentCell() {
-		
-		cells.put("A1", "=5");
-		String result = cells.get("A1");
-		assertEquals("=5", result);
+	public void testReturnTheContent() {
+		s.set("A1","1");
+		assertEquals(s.evaluate("A1"),"1");
 	}
-	
+
 	@Test
-	public void testEvaluateSingleNumber(){
-		cells.put("B1", "1");
-		String result = evaluate("B1");
-		assertEquals("1", result);
+	public void testIsNotInteger(){
+		s.set("A1", "1.5");
+		assertEquals(s.evaluate("A1"),"#Error");
 	}
-	
+
 	@Test
-	public void testSingleNumberWithSingleQuotes(){
-		cells.put("F7", '4');
-		String result = evaluate("F7");
-		assertEquals(4, result);
+	public void testReturnAString1(){
+		s.set("A1", "\'ciao\'");
+		assertEquals(s.evaluate("A1"),"ciao");
+	}
+
+	@Test
+	public void testReturnAString2(){
+		s.set("A1", "\'ciao");
+		assertEquals(s.evaluate("A1"),"#Error");
+	}
+
+	@Test
+	public void testReturnAString3(){
+		s.set("A1", "\'\'");
+		assertEquals(s.evaluate("A1"),"#Error");
+	}
+
+	@Test
+	public void testFormulas1(){
+		s.set("A1","=1");
+		assertEquals(s.evaluate("A1"),"1");
+	}
+
+	@Test
+	public void testFormulas2(){
+		s.set("A1", "=1.5");
+		assertEquals(s.evaluate("A1"),"#Error");
+	}
+
+	@Test
+	public void testFormulas3(){
+		s.set("A1", "=\'ciao\'");
+		assertEquals(s.evaluate("A1"),"ciao");
 	}
 
 }

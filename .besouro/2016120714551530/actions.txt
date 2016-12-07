@@ -102,3 +102,17 @@ UnitTestSessionAction 1481127088535 SheetTest FAIL
 CompilationAction 1481127876065 SheetTest.java
 CompilationAction 1481127876065 SheetTest.java
 EditAction 1481127876083 Sheet.java 1302 3 6 0
+CompilationAction 1481127876282 SheetTest.java
+CompilationAction 1481127876282 SheetTest.java
+UnitTestCaseAction 1481127877636 SheetTest.java FAIL
+UnitTestSessionAction 1481127877636 SheetTest FAIL
+RefactoringAction 1481128718254 Sheet.java ADD String valutaNumAndString(String) METHOD
+RefactoringAction 1481128781148 SheetTest.java RENAME testEvaluateSingleNumber()=>void testIsNotInteger() METHOD
+RefactoringAction 1481128813680 SheetTest.java REMOVE cells FIELD
+RefactoringAction 1481128818197 SheetTest.java ADD Sheet s FIELD
+RefactoringAction 1481128839742 SheetTest.java RENAME testIsNotInteger()=>void testReturnTheContent() METHOD
+RefactoringAction 1481128848274 SheetTest.java RENAME testReturnTheContent()=>void testIsNotInteger() METHOD
+RefactoringAction 1481128852800 SheetTest.java RENAME testIsNotInteger()=>void testReturnTheContent() METHOD
+RefactoringAction 1481128866826 SheetTest.java REMOVE testContentCell() METHOD
+RefactoringAction 1481128887377 SheetTest.java RENAME testSingleNumberWithSingleQuotes()=>void testIsNotInteger() METHOD
+EditAction 1481128912734 Sheet.java 2180 4 15 0
