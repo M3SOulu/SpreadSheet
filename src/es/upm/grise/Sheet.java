@@ -34,8 +34,12 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) {
+		String contentValue = get(cell);
 		
-		return null;
+		if(contentValue != "=")
+			return contentValue;
+		else
+			return null;
 	}
 
 }
