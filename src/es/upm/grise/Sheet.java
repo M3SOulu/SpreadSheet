@@ -37,6 +37,7 @@ public class Sheet {
 	public String evaluate(String cell) throws CircularReferenceException, ComputationErrorException {
 		String result = "#Error";
 		String value = cells.containsKey(cell) ? get(cell) : "";
+		System.out.println(value);
 		
 		if (value.startsWith("=")){
 			if (!containsOperators(value)){
