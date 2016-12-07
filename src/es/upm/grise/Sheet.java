@@ -35,6 +35,17 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) {
 		String content = cells.get(cell);
+		int a=0
+		int b=0;
+		if(content.charAt(0)=='='){
+			if(content.charAt(1)=='-'){
+				for(int i=2; i<content.length(); i++){
+					if(content.charAt(i)>='0'||content.charAt(i)>='9'){
+						a
+					}
+				}
+			}
+		}
 		for(int i=0; i<content.length(); i++){
 			if(content.charAt(i)=='\'') return content.replaceAll("\'","");
 			if(content.charAt(i)=='.') return "#Error";
