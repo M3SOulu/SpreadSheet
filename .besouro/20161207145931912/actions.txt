@@ -55,3 +55,10 @@ EditAction 1481120506610 SheetTest.java 758 5 9 4
 UnitTestCaseAction 1481120509268 SheetTest.java FAIL
 UnitTestSessionAction 1481120509269 SheetTest FAIL
 EditAction 1481120554909 Sheet.java 1392 3 5 0
+UnitTestCaseAction 1481120557394 SheetTest.java OK
+UnitTestSessionAction 1481120557395 SheetTest OK
+RefactoringAction 1481120685793 Sheet.java ADD import org.apache.commons.lang.StringUtils IMPORT
+RefactoringAction 1481120698802 Sheet.java REMOVE import org.apache.commons.lang.StringUtils IMPORT
+RefactoringAction 1481120721337 Sheet.java ADD import org.apache.commons.lang.StringUtils IMPORT
+RefactoringAction 1481120746379 Sheet.java REMOVE import org.apache.commons.lang.StringUtils IMPORT
+EditAction 1481120992298 Sheet.java 1471 3 5 0

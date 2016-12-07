@@ -1,4 +1,5 @@
 1481119828992 test-addition 1 656 false
 1481120032502 refactoring 3 203 false
 1481120435173 test-last 1 402 false
-1481120458956 test-addition 1 23 false
+1481120458956 test-addition 1 23 true
+1481120557395 test-first 3 98 true

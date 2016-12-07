@@ -38,6 +38,7 @@ public class Sheet {
 		for(int i=0; i<content.length(); i++){
 			if(content.charAt(i)=='.') return "#Error";
 			if(content.charAt(i)=='+') return ""+content.charAt(i+1);
+			if(content.charAt(i)=='-') return ""+content.charAt(i)+content.charAt(i+1);
 		}
 		return content;
 	}
