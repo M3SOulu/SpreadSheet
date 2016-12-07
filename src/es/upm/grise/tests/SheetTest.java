@@ -15,12 +15,19 @@ public class SheetTest {
 	}
 	
 	@Test
-	public void evalutate_is_not_expressin() {
+	public void value_is_decimal_number() {
 		testSheet.set("A1", "0");
 		testSheet.set("A2", "-999");
 		
 		assertEquals("0", testSheet.evaluate("A1"));
 		assertEquals("-999", testSheet.evaluate("A2"));
+	}
+	
+	@Test
+	public void value_is_string() {
+		testSheet.set("A1", "'ciao'");
+		
+		assertEquals("ciao", testSheet.evaluate("A1"));
 	}
 	
 	@Test
@@ -35,5 +42,8 @@ public class SheetTest {
 		assertEquals("#Error", testSheet.evaluate("A3"));
 		assertEquals("#Error", testSheet.evaluate("A4"));
 	}
+	
+	
+	
 
 }

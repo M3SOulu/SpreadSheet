@@ -98,3 +98,15 @@ UnitTestCaseAction 1481123378968 SheetTest.java OK
 UnitTestSessionAction 1481123378969 SheetTest OK
 EditAction 1481123517690 Sheet.java 2120 3 6 0
 EditAction 1481123758104 Sheet.java 2160 3 6 0
+RefactoringAction 1481123769455 SheetTest.java ADD void evalutate_is_not_expressin()/2 METHOD
+RefactoringAction 1481123795991 SheetTest.java RENAME evalutate_is_not_expressin()/2=>void value() METHOD
+RefactoringAction 1481123801523 SheetTest.java RENAME value()=>void value_is() METHOD
+RefactoringAction 1481123803588 SheetTest.java RENAME value_is()=>void value_is_number() METHOD
+RefactoringAction 1481123809616 SheetTest.java RENAME value_is_number()=>void value_is_decimal_number() METHOD
+RefactoringAction 1481123815141 SheetTest.java REMOVE evalutate_is_not_expressin() METHOD
+RefactoringAction 1481123817647 SheetTest.java ADD void evalutate_is_not_expressin() METHOD
+RefactoringAction 1481123824670 SheetTest.java RENAME evalutate_is_not_expressin()=>void value() METHOD
+RefactoringAction 1481123826703 SheetTest.java RENAME value()=>void value_is() METHOD
+RefactoringAction 1481123829223 SheetTest.java RENAME value_is()=>void value_is_() METHOD
+RefactoringAction 1481123831759 SheetTest.java RENAME value_is_()=>void value_is_string() METHOD
+EditAction 1481123863656 SheetTest.java 948 4 15 7
