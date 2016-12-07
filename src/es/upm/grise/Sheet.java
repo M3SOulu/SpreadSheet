@@ -47,10 +47,11 @@ public class Sheet {
 		} else {
 			try {
 				Integer.parseInt(this.get(cell));
+				s=this.get(cell);
 			} catch (NumberFormatException e) {
-				return "#Error";
+				s="#Error";
 			}
-			s=this.get(cell);
+			
 		}
 		return s;
 	}
