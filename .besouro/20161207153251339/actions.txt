@@ -198,3 +198,8 @@ UnitTestSessionAction 1481129521543 SheetTest FAIL
 EditAction 1481129544173 Sheet.java 3246 3 5 0
 RefactoringAction 1481129550196 SheetTest.java REMOVE testFunctionEvaluateVoidString() METHOD
 EditAction 1481129554328 SheetTest.java 1457 7 12 5
+RefactoringAction 1481129592204 Sheet.java ADD import org.junit.Assert IMPORT
+RefactoringAction 1481129592205 Sheet.java ADD import org.junit.Test IMPORT
+RefactoringAction 1481129593217 Sheet.java REMOVE import org.junit.Test IMPORT
+RefactoringAction 1481129593217 Sheet.java REMOVE import org.junit.Assert IMPORT
+EditAction 1481129602788 Sheet.java 3326 3 5 0
