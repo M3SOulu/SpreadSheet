@@ -317,3 +317,6 @@ RefactoringAction 1481127609039 SheetTest.java RENAME testEvaluateManyNumberAddi
 RefactoringAction 1481127615066 SheetTest.java RENAME testEvaluateLongNumberAdditionFormula()=>void testEvaluateMultipleOperatorsFormula() METHOD
 EditAction 1481127621220 SheetTest.java 4733 21 55 21
 EditAction 1481127631303 SheetTest.java 4733 21 55 21
+UnitTestCaseAction 1481127632180 SheetTest.java OK
+UnitTestSessionAction 1481127632181 SheetTest OK
+EditAction 1481127659458 SheetTest.java 4778 21 56 21
