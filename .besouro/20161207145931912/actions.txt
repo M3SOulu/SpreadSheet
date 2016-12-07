@@ -146,3 +146,7 @@ EditAction 1481123564317 Sheet.java 2555 3 9 0
 UnitTestCaseAction 1481123567009 SheetTest.java OK
 UnitTestSessionAction 1481123567009 SheetTest OK
 EditAction 1481123789356 Sheet.java 2501 3 9 0
+RefactoringAction 1481123801616 SheetTest.java ADD void testSumOfTwoNumbers()/2 METHOD
+RefactoringAction 1481123808639 SheetTest.java RENAME testSumOfTwoNumbers()/2=>void testSumWith() METHOD
+RefactoringAction 1481123812666 SheetTest.java RENAME testSumWith()=>void testSumWithReference() METHOD
+EditAction 1481123876899 SheetTest.java 1166 8 16 7

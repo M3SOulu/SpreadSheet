@@ -52,4 +52,11 @@ public class SheetTest {
 		Assert.assertEquals("2",sheet.evaluate("A1"));
 	}
 	
+	@Test
+	public void testSumWithReference(){
+		sheet.set("A1","=B1+1");
+		sheet.set("B1","1");
+		Assert.assertEquals("2",sheet.evaluate("A1"));
+	}
+	
 }
