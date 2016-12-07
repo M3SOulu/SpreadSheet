@@ -62,11 +62,11 @@ public class SheetTest {
 		assertEquals(s.evaluate("A1"),"ciao");
 	}
 	
-//	@Test
-//	public void testContentAnotherCell(){
-//		s.set("A1", "=\'ciao\'");
-//		s.set("A2", "=A1");
-//		assertEquals(s.evaluate("A2"),"ciao");
-//	}
+	@Test
+	public void testContentAnotherCell(){
+		s.set("A1", "=1");
+		s.set("A2", "=A1");
+		assertEquals(s.evaluate("A2"),"ciao");
+	}
 
 }

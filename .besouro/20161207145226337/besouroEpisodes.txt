@@ -67,3 +67,9 @@
 1481126187604 test-first 3 122 true
 1481126187605 test-first 3 122 true
 1481126187606 test-first 3 122 true
+1481126521974 refactoring 3 307 true
+1481126521975 refactoring 3 307 true
+1481126521976 refactoring 3 307 true
+1481126521977 refactoring 3 307 true
+1481126521978 refactoring 3 307 true
+1481126521979 refactoring 3 307 true
