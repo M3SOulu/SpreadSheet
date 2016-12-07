@@ -46,7 +46,7 @@ public class Sheet {
 		if (array[0] == '=') {
 			String arg = this.get(cell).substring(1);
 			if (cells.containsKey(arg)) {
-				if (visitedCells.contains(arg)) {
+				if (visitedCells.contains(cell)) {
 					s = "#Circular";
 				} else {
 					visitedCells.add(cell);
