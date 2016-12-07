@@ -117,3 +117,6 @@ RefactoringAction 1481124784083 SheetTest.java ADD void testFormulas2()/2 METHOD
 RefactoringAction 1481124786591 SheetTest.java RENAME testFormulas2()/2=>void testFormulas() METHOD
 RefactoringAction 1481124787608 SheetTest.java RENAME testFormulas()=>void testFormulas3() METHOD
 EditAction 1481124803620 SheetTest.java 1107 8 16 8
+UnitTestCaseAction 1481124804175 SheetTest.java FAIL
+UnitTestSessionAction 1481124804176 SheetTest FAIL
+EditAction 1481125055753 SheetTest.java 1108 8 16 8
