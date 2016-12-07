@@ -349,3 +349,10 @@ EditAction 1481127915473 Sheet.java 5714 14 39 0
 UnitTestCaseAction 1481127916930 SheetTest.java FAIL
 UnitTestSessionAction 1481127916930 SheetTest FAIL
 EditAction 1481127924867 Sheet.java 5714 14 39 0
+UnitTestCaseAction 1481127926369 SheetTest.java FAIL
+UnitTestSessionAction 1481127926370 SheetTest FAIL
+RefactoringAction 1481127947764 SheetTest.java ADD void testEvaluateOperationsWithCellReferenceFormula()/2 METHOD
+RefactoringAction 1481127953790 SheetTest.java RENAME testEvaluateOperationsWithCellReferenceFormula()/2=>void testEvaluateOperationsWithCellReferenceCircularErrorFormula() METHOD
+RefactoringAction 1481127955801 SheetTest.java RENAME testEvaluateOperationsWithCellReferenceCircularErrorFormula()=>void testEvaluateOperationsWithCellReferenceFormula()/2 METHOD
+RefactoringAction 1481127957312 SheetTest.java RENAME testEvaluateOperationsWithCellReferenceFormula()/2=>void testEvaluateOperationsWithCellReferenceFormulaCircularError() METHOD
+EditAction 1481128018751 SheetTest.java 5248 23 62 23
