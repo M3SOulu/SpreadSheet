@@ -52,14 +52,15 @@ public class Sheet {
 				}
 				if ((formula.charAt(i) >= 'A') && (formula.charAt(i) <= 'Z')){
 					int count = i;
-						while((formula.charAt(count)!='+')&&
-							  (formula.charAt(count)!='-')&&
-							  (formula.charAt(count)!='*')&&
-							  (formula.charAt(count)!='/')&&
-							  (formula.charAt(count)!='%')){
-							count ++;
+					while((formula.charAt(count)!='+')&&
+						  (formula.charAt(count)!='-')&&
+						  (formula.charAt(count)!='*')&&
+						  (formula.charAt(count)!='/')&&
+						  (formula.charAt(count)!='%')){
+						count ++;
 					}
 					operation = Integer.parseInt(evaluate(formula.substring(i, count)));
+					i = count;
 //					for(; i < formula.length(); i++){
 //						if((formula.charAt(i) == '+')||
 //						   (formula.charAt(i) == '-')||
