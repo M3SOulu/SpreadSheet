@@ -64,8 +64,6 @@ public class Sheet {
 					}
 				}
 			}
-			System.out.print(a+" ");
-			System.out.println(b);
 			if (startIndex==1)
 				return ""+ (Integer.valueOf(a)+Integer.valueOf(b));
 			else
