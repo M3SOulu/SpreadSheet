@@ -60,7 +60,7 @@ public class Sheet {
 						count ++;
 					}
 					operation = Integer.parseInt(evaluate(formula.substring(i, count)));
-					i = count;
+					i = count +1;
 //					for(; i < formula.length(); i++){
 //						if((formula.charAt(i) == '+')||
 //						   (formula.charAt(i) == '-')||
