@@ -9,7 +9,20 @@ import es.upm.grise.ComputationErrorException;
 import es.upm.grise.Sheet;
 
 public class SheetTest {
-	private String result = null;
+	
+	
+	@Test
+	public void testOneNumber() throws ComputationErrorException, CircularReferenceException{
+	//arrange
+	Sheet mySheet = new Sheet();	
+	//act
+	try {
+		result = mySheet.evaluate("1");
+	} catch (ComputationErrorException e) {
+		//assert
+		assertEquals("1",result);
+	}	
+	}
 	
 	@Test
 	public void testErrorOneDivZero() throws ComputationErrorException, CircularReferenceException{
@@ -39,17 +52,6 @@ public class SheetTest {
 	}	
 	}
 	
-	@Test
-	public void testOneNumber() throws ComputationErrorException, CircularReferenceException{
-	//arrange
-	Sheet mySheet = new Sheet();	
-	//act
-	try {
-		result = mySheet.evaluate("1");
-	} catch (ComputationErrorException e) {
-		//assert
-		assertEquals("1",result);
-	}	
-	}
+	
 
 }
