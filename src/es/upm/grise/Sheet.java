@@ -41,15 +41,13 @@ public class Sheet {
 	 * @throws CircularReferenceException 
 	 */
 	public String evaluate(String cell) {
-		String cellcontains = null;
+		
 		if(cell == "1"){
-			cellcontains = "1";
-		}
-		else if(cell == "=1+2"){
-			cellcontains = "3";
+			cells.put(cell, "1");
 		}
 		
-		return cellcontains;
+		
+		return cell;
 	}
 
 }
