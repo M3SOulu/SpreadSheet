@@ -64,7 +64,7 @@ public class Sheet {
 		
 		// caso in cui è una formula
 		else {
-			
+			result= 
 		}
 
 		
