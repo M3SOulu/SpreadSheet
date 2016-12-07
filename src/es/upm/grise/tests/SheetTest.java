@@ -20,11 +20,16 @@ public class SheetTest {
 	 }
 	
 	@Test
-	public void cellcontainsoneintegernumber() {
+	public void cellContainsOneIntegerNumber() {
 		//Sheet number = new Sheet();
 		assertEquals("A1",cells.get("valid"));
 		assertEquals("XZ21",cells.get("valid"));
 		assertEquals("/A1",cells.get("not valid"));
+	}
+	
+	@Test
+	public void sumBetweenNumber(){
+		assertEquals()
 	}
 	
 

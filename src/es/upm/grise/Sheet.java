@@ -44,11 +44,11 @@ public class Sheet {
 		if(cell == "1"){
 			cells.put(cell, "1");
 		}
-		else if(cell == "=1+2"){
+		/*else if(cell == "=1+2"){
 			cellcontains = "3";
-		}
+		}*/
 		
-		return cellcontains;
+		return cell;
 	}
 
 }
