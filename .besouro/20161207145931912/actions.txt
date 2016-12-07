@@ -150,3 +150,6 @@ RefactoringAction 1481123801616 SheetTest.java ADD void testSumOfTwoNumbers()/2 
 RefactoringAction 1481123808639 SheetTest.java RENAME testSumOfTwoNumbers()/2=>void testSumWith() METHOD
 RefactoringAction 1481123812666 SheetTest.java RENAME testSumWith()=>void testSumWithReference() METHOD
 EditAction 1481123876899 SheetTest.java 1166 8 16 7
+UnitTestCaseAction 1481123897308 SheetTest.java FAIL
+UnitTestSessionAction 1481123897308 SheetTest FAIL
+EditAction 1481123926216 Sheet.java 2520 3 7 0

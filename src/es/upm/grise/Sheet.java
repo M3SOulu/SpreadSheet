@@ -69,13 +69,15 @@ public class Sheet {
 			else
 				return ""+ (Integer.valueOf(a)+Integer.valueOf(b));
 		}
-		for(int i=0; i<content.length(); i++){
-			if(content.charAt(i)=='\'') return content.replaceAll("\'","");
-			if(content.charAt(i)=='.') return "#Error";
-			if(content.charAt(i)=='+') return ""+content.charAt(i+1);
-			if(content.charAt(i)=='-') return ""+content.charAt(i)+content.charAt(i+1);
+		else{
+			for(int i=0; i<content.length(); i++){
+				if(content.charAt(i)=='\'') return content.replaceAll("\'","");
+				if(content.charAt(i)=='.') return "#Error";
+				if(content.charAt(i)=='+') return ""+content.charAt(i+1);
+				if(content.charAt(i)=='-') return ""+content.charAt(i)+content.charAt(i+1);
+			}
+			return content;
 		}
-		return content;
 	}
 
 }
