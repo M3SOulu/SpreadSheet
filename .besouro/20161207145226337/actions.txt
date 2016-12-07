@@ -48,3 +48,4 @@ UnitTestSessionAction 1481121816497 SheetTest OK
 RefactoringAction 1481121842370 SheetTest.java REMOVE test() METHOD
 RefactoringAction 1481121850382 SheetTest.java ADD void testIsNotInteger() METHOD
 EditAction 1481122151173 SheetTest.java 445 2 4 2
+EditAction 1481122151357 Sheet.java 1327 3 4 0

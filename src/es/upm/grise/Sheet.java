@@ -35,7 +35,11 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) {
 
-		Integer.parseInt(this.get(cell));
+		try{
+			Integer.parseInt(this.get(cell));
+		}catch (NumberFormatException e) {
+			return "#Error";
+		}
 		return this.get(cell);
 	}
 
