@@ -18,8 +18,7 @@ public class SheetTest {
 
 	@Test
 	public void testNumber1(){
-		sheet.set("A1","1");
-		sheet.evaluate("A1");
-		Assert.assertEquals("1", "1");
+		sheet.set("A1","1");		
+		Assert.assertEquals("1",sheet.evaluate("A1"));
 	}
 }

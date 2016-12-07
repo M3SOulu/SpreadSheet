@@ -16,3 +16,9 @@ RefactoringAction 1481119672665 SheetTest.java RENAME testNumber1=>void testNumb
 RefactoringAction 1481119734570 SheetTest.java ADD Sheet sheet FIELD
 RefactoringAction 1481119800332 SheetTest.java ADD import junit.framework.Assert IMPORT
 EditAction 1481119811646 SheetTest.java 392 2 4 1
+UnitTestCaseAction 1481119828991 SheetTest.java OK
+UnitTestSessionAction 1481119828992 SheetTest OK
+CompilationAction 1481119857186 SheetTest.java
+CompilationAction 1481119860079 SheetTest.java
+CompilationAction 1481119863925 SheetTest.java
+EditAction 1481119867480 SheetTest.java 386 2 3 1
