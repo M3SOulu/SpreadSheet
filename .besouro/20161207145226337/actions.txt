@@ -135,3 +135,11 @@ UnitTestSessionAction 1481125314601 SheetTest FAIL
 UnitTestCaseAction 1481125364009 SheetTest.java FAIL
 UnitTestSessionAction 1481125364010 SheetTest FAIL
 EditAction 1481125485775 SheetTest.java 1107 8 16 8
+UnitTestCaseAction 1481125486288 SheetTest.java OK
+UnitTestSessionAction 1481125486289 SheetTest OK
+RefactoringAction 1481125550578 Sheet.java ADD void String() METHOD
+RefactoringAction 1481125562634 Sheet.java RENAME String()=>String valutaNum() METHOD
+RefactoringAction 1481125566664 Sheet.java RENAME valutaNum()=>String valutaNumAnd() METHOD
+RefactoringAction 1481125568682 Sheet.java RENAME valutaNumAnd()=>String valutaNumAndString() METHOD
+RefactoringAction 1481125618269 Sheet.java RENAME valutaNumAndString()=>String valutaNumAndString(String) METHOD
+EditAction 1481125692737 Sheet.java 2773 4 8 0
