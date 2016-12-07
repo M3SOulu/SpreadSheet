@@ -33,5 +33,11 @@ public class SheetTest {
 		sheet.set("A1", "'qwerty'");
 		assertEquals("qwerty", sheet.evaluate("A1"));
 	}
+	
+	@Test
+	public void testEvaluateIntegerValue() throws CircularReferenceException, ComputationErrorException{
+		sheet.set("A1", "123");
+		assertEquals("123", sheet.evaluate("A1"));
+	}
 
 }
