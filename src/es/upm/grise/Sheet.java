@@ -149,7 +149,7 @@ public class Sheet {
 		return result;
 	}
 	
-	private boolean isCell(String value){
+	private boolean isCell(String value){ //TODO expand range of cells
 		int start = 0, end = value.length() - 1;
 		boolean result = value.length() == 2;
 		result &= value.charAt(start) >= 'A' && value.charAt(start) <= 'Z';
