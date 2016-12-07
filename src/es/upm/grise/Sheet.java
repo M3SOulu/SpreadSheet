@@ -39,13 +39,13 @@ public class Sheet {
 	 * @throws CircularReferenceException
 	 */
 	public String evaluate(String cell) {
+		visitedCells = new ArrayList<>();
 		String s = "";
 		char[] array;
 		array = this.get(cell).toCharArray();
 		if (array[0] == '=') {
 			String arg = this.get(cell).substring(1);
 			if (cells.containsKey(arg)) {
-				visitedCells = new ArrayList<>();
 				if (!visitedCells.contains(arg)) {
 					visitedCells.add(arg);
 					s = evaluate(arg);
