@@ -65,15 +65,10 @@ public class Sheet {
 		// caso in cui è una formula
 		else if(contentValue.charAt(0) == '='){
 			
+			
+
+			
 			//ricavo formula senza '='
-			
-			try{
-				if(contentValue == "=")
-					throw new ComputationErrorException();
-			}catch(ComputationErrorException e){
-				result = "#Error";
-			}
-			
 			String formula = contentValue.substring(1, contentValue.length());
 			formula.toUpperCase();
 			System.out.println(formula);
