@@ -257,3 +257,6 @@ RefactoringAction 1481126217380 Sheet.java RENAME isOperator(String)=>boolean is
 EditAction 1481126413910 Sheet.java 4739 12 33 0
 EditAction 1481126428794 Sheet.java 4729 12 33 0
 EditAction 1481126445020 Sheet.java 4729 12 33 0
+RefactoringAction 1481126489743 SheetTest.java ADD void testEvaluateStringConcatFormula()/2 METHOD
+RefactoringAction 1481126497748 SheetTest.java RENAME testEvaluateStringConcatFormula()/2=>void testEvaluateNumberAdditionFormula() METHOD
+EditAction 1481126509357 SheetTest.java 4311 19 51 19

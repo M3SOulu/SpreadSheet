@@ -131,5 +131,11 @@ public class SheetTest {
 		sheet.set("A2", "='badTestString");
 		assertEquals("#Error", sheet.evaluate("A1"));
 	}
+	
+	@Test
+	public void testEvaluateNumberAdditionFormula() throws CircularReferenceException, ComputationErrorException{
+		sheet.set("A1", "=1+2");
+		assertEquals("3", sheet.evaluate("A1"));
+	}
 
 }
