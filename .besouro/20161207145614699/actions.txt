@@ -209,3 +209,12 @@ UnitTestSessionAction 1481124715208 SheetTest OK
 RefactoringAction 1481124731213 SheetTest.java ADD void testEvaluateSimpleCellReferenceNotCircularErrorFormula()/2 METHOD
 RefactoringAction 1481124735224 SheetTest.java RENAME testEvaluateSimpleCellReferenceNotCircularErrorFormula()/2=>void testEvaluateSimpleCellReferenceNotCircularErrorFormulaDoubleEvaluate() METHOD
 EditAction 1481124741419 SheetTest.java 3387 15 41 15
+UnitTestCaseAction 1481124742709 SheetTest.java OK
+UnitTestSessionAction 1481124742709 SheetTest OK
+RefactoringAction 1481124826756 SheetTest.java ADD void testEvaluateSimpleCellReferenceErrorFormula()/2 METHOD
+RefactoringAction 1481124830811 SheetTest.java RENAME testEvaluateSimpleCellReferenceErrorFormula()/2=>void testEvaluateSimpleStringErrorFormula() METHOD
+RefactoringAction 1481124833316 SheetTest.java RENAME testEvaluateSimpleStringErrorFormula()=>void testEvaluatetringErrorFormula() METHOD
+RefactoringAction 1481124834322 SheetTest.java RENAME testEvaluatetringErrorFormula()=>void testEvaluateStringErrorFormula() METHOD
+RefactoringAction 1481124836840 SheetTest.java RENAME testEvaluateStringErrorFormula()=>void testEvaluateStringFormula() METHOD
+RefactoringAction 1481124838346 SheetTest.java RENAME testEvaluateStringFormula()=>void testEvaluateStringConcatFormula() METHOD
+EditAction 1481124881412 SheetTest.java 3599 16 43 16
