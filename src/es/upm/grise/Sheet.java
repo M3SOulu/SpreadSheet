@@ -44,8 +44,8 @@ public class Sheet {
 				int num = 1;
 				if(num==1){
 					if(content.charAt(i)=='+') num=2;
-					if(content.charAt(i)=='-') num=3;
-					if(content.charAt(i)>='0'||content.charAt(i)>='9'){
+					else if(content.charAt(i)=='-') num=3;
+					else if(content.charAt(i)>='0'||content.charAt(i)>='9'){
 						a+=(int) (Character.getNumericValue(content.charAt(i))*Math.pow(10,i-startIndex));
 					}	
 				}
