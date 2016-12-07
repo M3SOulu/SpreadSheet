@@ -13,9 +13,8 @@ public class Sheet {
 	 * @return		The cell's contents (e.g. "1", "=5", "=1+B3", "=1+(B3*4)", etc.)
 	 */
 	public String get(String cell) {
-		cells.put("A1", "=5");
-		cells.put("XZ21", "1");
-		
+		String contents = null;
+		cells.put(cell, contents);
 		return cell;
 	}
 
@@ -39,6 +38,8 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) {
 		
+		String formula = "=";
+		for(String formula: )
 		return null;
 	}
 

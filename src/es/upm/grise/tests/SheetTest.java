@@ -14,17 +14,16 @@ public class SheetTest {
 	@Test
 	public void testContentCell() {
 		
-		HashMap <String, String> cells = new HashMap <String, String>();
 		cells.put("A1", "=5");
 		String result = cells.get("A1");
 		assertEquals("=5", result);
 	}
 	
 	@Test
-	public void testNumber(){
-		cells.put("B1", "=1+1");
-		int result = Sheet.evaluate(cells);
-		assertEquals(2, result);
+	public void testEvaluateSingleNumber(){
+		cells.put("B1", "1");
+		String result = evaluate("B1");
+		assertEquals("1", result);
 	}
 
 }
