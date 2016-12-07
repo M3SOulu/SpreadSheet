@@ -68,8 +68,7 @@ public class Sheet {
 					operation = Integer.parseInt(evaluate(otherCell));
 				}		
 				if (formula.charAt(i) == '+'){
-					total = "" + (operation + Integer.parseInt("" + formula.charAt(i + 1)));
-					i++;
+					total = "" + (operation + Integer.parseInt("" + formula.charAt(i++)));
 				}
 				else if (formula.charAt(i) == '-')
 					total = "" + (operation - Integer.parseInt("" + formula.charAt(i + 1)));
