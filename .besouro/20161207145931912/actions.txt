@@ -44,3 +44,11 @@ UnitTestSessionAction 1481120435173 SheetTest OK
 RefactoringAction 1481120442757 SheetTest.java ADD void testNumberPositive1()/2 METHOD
 RefactoringAction 1481120447776 SheetTest.java RENAME testNumberPositive1()/2=>void testNumberNegative1() METHOD
 EditAction 1481120453828 SheetTest.java 633 4 7 3
+UnitTestCaseAction 1481120458955 SheetTest.java OK
+UnitTestSessionAction 1481120458956 SheetTest OK
+RefactoringAction 1481120466836 SheetTest.java ADD void testNumberNegative1()/2 METHOD
+RefactoringAction 1481120471352 SheetTest.java RENAME testNumberNegative1()/2=>void testNumber() METHOD
+RefactoringAction 1481120487368 SheetTest.java RENAME testNumber()=>void testDNumber() METHOD
+RefactoringAction 1481120488882 SheetTest.java RENAME testDNumber()=>void testNumber() METHOD
+RefactoringAction 1481120492406 SheetTest.java RENAME testNumber()=>void testFloatNumber() METHOD
+EditAction 1481120506610 SheetTest.java 758 5 9 4
