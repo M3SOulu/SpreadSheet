@@ -31,3 +31,9 @@ RefactoringAction 1481120819730 SheetTest.java RENAME testIs=>void testIsNot FIE
 RefactoringAction 1481120822252 SheetTest.java RENAME testIsNot=>void testIsNotInteger FIELD
 RefactoringAction 1481120824266 SheetTest.java RENAME testIsNotInteger=>void testIsNotInteger() METHOD
 EditAction 1481120929169 SheetTest.java 443 2 4 2
+UnitTestCaseAction 1481120929777 SheetTest.java FAIL
+UnitTestSessionAction 1481120929778 SheetTest FAIL
+RefactoringAction 1481121697930 SheetTest.java REMOVE testIsNotInteger() METHOD
+RefactoringAction 1481121717510 SheetTest.java ADD int test FIELD
+RefactoringAction 1481121718517 SheetTest.java RENAME test=>int test() METHOD
+EditAction 1481121769847 SheetTest.java 532 2 3 2

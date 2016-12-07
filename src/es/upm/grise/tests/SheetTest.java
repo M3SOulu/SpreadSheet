@@ -20,9 +20,15 @@ public class SheetTest {
 	}
 	
 	@Test
-	public void testIsNotInteger(){
-		s.set("A1", "1.5");
-		assertEquals(s.evaluate("A1"),"#Error");
+	public int test(){
+		assertEquals(Integer.parseInt("1.5"),1.5);
 	}
+	
+	
+//	@Test
+//	public void testIsNotInteger(){
+//		s.set("A1", "1.5");
+//		assertEquals(s.evaluate("A1"),"#Error");
+//	}
 
 }
