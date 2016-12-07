@@ -88,4 +88,10 @@ public class SheetTest {
 		Assert.assertEquals("1",sheet.evaluate("A1"));
 	}
 	
+	@Test
+	public void testModuleBetweenTwoNumbers(){
+		sheet.set("A1","=10%3");		
+		Assert.assertEquals("1",sheet.evaluate("A1"));
+	}
+	
 }
