@@ -10,6 +10,7 @@ import es.upm.grise.Sheet;
 
 public class SheetTest {
 	private String result = null;
+	
 	@Test
 	public void testErrorOneDivZero() throws ComputationErrorException, CircularReferenceException{
 	//arrange
@@ -19,10 +20,8 @@ public class SheetTest {
 	try {
 		result = mySheet.evaluate("1/0");
 	} catch (ComputationErrorException e) {
-		
 		//assert
 		assertEquals("#Error",result);
-		e.printStackTrace();
 	}	
 
 	}
