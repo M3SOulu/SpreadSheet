@@ -45,7 +45,7 @@ public class Sheet {
 			for(int i=startIndex; i<content.length(); i++){	
 				if(content.charAt(i)==' ' || content.charAt(i)=='(' || content.charAt(i)==')'){
 					i++;
-					offset--;
+					offset++;
 				}
 				if(num==1){
 					if(content.charAt(i)=='+'){
