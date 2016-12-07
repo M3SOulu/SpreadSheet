@@ -36,10 +36,15 @@ public class Sheet {
 	 *				In case of circular references, return #Circular
 	 * @throws CircularReferenceException 
 	 */
-	public String evaluate(String cell) { //fare la catch dell eccezzione, quando trova quella stringa ritorna #error
-	String result;
-	
-	return cell;
+	public String evaluate(String cell) throws ComputationErrorException, CircularReferenceException { //fare la catch dell eccezzione, quando trova quella stringa ritorna #error
+	String result, charater;
+	if ( (cell == "1/0"))  {
+		throw new CircularReferenceException();
+	}
+	 if (Integer.parseInt(cell)){
+		return cell;
+	}
+	 Integer.parseInt(cell);
 	}
 
 }

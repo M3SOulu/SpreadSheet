@@ -11,19 +11,21 @@ import es.upm.grise.Sheet;
 public class SheetTest {
 
 	@Test
-	public void testError(){
+	public void testErrorOneDivZero() throws ComputationErrorException, CircularReferenceException{
 	//arrange
 	Sheet mySheet = new Sheet();	
-	String result = null;
 	//act
+	String cell = "1/0";
 	try {
-		result = mySheet.evaluate("1/0");
+		String result = mySheet.evaluate("1/0");
 	} catch (ComputationErrorException e) {
-		// TODO Auto-generated catch block
+		//assert
+		assertEquals("#Error",mySheet.evaluate(cell));
 		e.printStackTrace();
 	}	
-	//assert
-	assertEquals("#Error",result);
+
 	}
+	
+	
 
 }
