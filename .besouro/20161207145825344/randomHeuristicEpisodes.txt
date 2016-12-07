@@ -19,3 +19,4 @@
 1481125045961 test-first 3 167 true
 1481126069870 test-first 3 845 true
 1481126344069 test-first 3 259 true
+1481126384791 regression 1 2 false
