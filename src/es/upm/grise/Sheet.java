@@ -35,7 +35,7 @@ public class Sheet {
 	 */
 	public String evaluate(String cell) {
 		String content = cells.get(cell);
-		int a=0
+		int a=0;
 		int b=0;
 		if(content.charAt(0)=='='){
 			if(content.charAt(1)=='-'){

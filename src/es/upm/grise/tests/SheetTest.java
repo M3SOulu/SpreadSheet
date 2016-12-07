@@ -46,4 +46,10 @@ public class SheetTest {
 		Assert.assertEquals("hello",sheet.evaluate("A1"));
 	}
 	
+	@Test
+	public void testSumOfTwoNumbers(){
+		sheet.set("A1","=1+1");		
+		Assert.assertEquals("2",sheet.evaluate("A1"));
+	}
+	
 }

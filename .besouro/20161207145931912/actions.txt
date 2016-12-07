@@ -74,3 +74,15 @@ EditAction 1481121518551 Sheet.java 1538 3 5 0
 UnitTestCaseAction 1481121522721 SheetTest.java OK
 UnitTestSessionAction 1481121522721 SheetTest OK
 EditAction 1481121945578 Sheet.java 1750 3 2 0
+CompilationAction 1481121945727 Sheet.java
+CompilationAction 1481121945727 Sheet.java
+CompilationAction 1481121945728 Sheet.java
+CompilationAction 1481121949684 Sheet.java
+CompilationAction 1481121949685 Sheet.java
+CompilationAction 1481121949847 Sheet.java
+CompilationAction 1481121949847 Sheet.java
+RefactoringAction 1481121958094 SheetTest.java ADD void testStringWithQuotes()/2 METHOD
+RefactoringAction 1481121965103 SheetTest.java RENAME testStringWithQuotes()/2=>void testSumOf() METHOD
+RefactoringAction 1481121966640 SheetTest.java RENAME testSumOf()=>void testSumOfTwo() METHOD
+RefactoringAction 1481121969195 SheetTest.java RENAME testSumOfTwo()=>void testSumOfTwoNumbers() METHOD
+EditAction 1481121985320 SheetTest.java 1018 7 13 6
