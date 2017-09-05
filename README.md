@@ -1,4 +1,4 @@
-#SpreadSheet
+# SpreadSheet
 
 This exercise aims at creating a basic spreadsheet. The goal is not to develop the user interface, but the code that implements the data structures and performs the operations. The spreadsheet follows Excel's conventions. The spreadsheet implements three operations: `set()`, `get()` and `evaluate()`. Set and get assign and return cell's values. Evaluate takes the cell's content and returns the result (e.g.: a cell containing “=1+1” evaluates to 2).
 
